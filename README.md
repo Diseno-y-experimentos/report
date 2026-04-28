@@ -408,6 +408,18 @@ Empresas de transporte que necesitan gestionar sus unidades.
 ---
 
 #### 1.2.2.4. Lean UX Canvas.
+
+| **Sección** | **Contenido** |
+|-------------|---------------|
+| **Business Problem** | Los usuarios del transporte público en Lima Metropolitana enfrentan largos tiempos de espera, desinformación sobre los horarios y baja confianza en la puntualidad de las unidades. Esto genera frustración, pérdida de tiempo y afecta la percepción de seguridad en el servicio. Al mismo tiempo, las empresas de transporte carecen de herramientas digitales básicas para visualizar la posición de sus unidades y coordinar incidencias de manera eficiente. |
+| **Business Outcomes** | - Conseguir **50 000 usuarios activos** en el primer año.<br>- Reducir en un **30% la percepción de incertidumbre** en los tiempos de espera.<br>- Lograr que el **70% de las rutas principales** estén integradas en la app.<br>- Aumentar en un **20% la satisfacción general** de los pasajeros en encuestas de movilidad urbana. |
+| **Users and Customers** | **Primarios:** Estudiantes y trabajadores que dependen del transporte público para asistir a clases o llegar puntualmente al trabajo.<br><br>**Secundarios:** Supervisores y administradores de flota que necesitan controlar y optimizar la operación en tiempo real. |
+| **User Benefits** | - **Estudiantes y trabajadores:** Obtienen certeza en los horarios, reducen tiempos de espera, planifican mejor sus viajes y se sienten más seguros gracias a notificaciones inteligentes en tiempo real.<br><br>- **Supervisores y administradores:** Visualizan la ubicación de sus unidades y reciben alertas simples que permiten reaccionar con mayor rapidez ante incidencias habituales.|
+| **Solution Ideas** | - Geolocalización en tiempo real de buses.<br>- Estimaciones precisas de llegada.<br>- Mapas interactivos. <br>- Notificaciones sobre retrasos y cambios.<br>- Panel básico de monitoreo para empresas. |
+| **Hypotheses** | - Creemos que mostrar buses en tiempo real aumentará la confianza de los pasajeros.<br>- Creemos que enviar notificaciones sobre retrasos mejorará la satisfacción de los usuarios.<br>- Creemos que un panel básico de monitoreo permitirá a supervisores y administradores tomar decisiones operativas con mayor rapidez. |
+| **What's the most important thing we need to learn first?** | ¿Los pasajeros confían y usan de forma recurrente la información en tiempo real para planificar sus viajes? |
+| **What’s the least amount of work we need to do to learn the next most important thing?** | MVP: Una app funcional con mapa de rutas principales, localización en tiempo real en una zona piloto y sistema básico de notificaciones. Validar si los usuarios utilizan la app en sus trayectos diarios. |
+
 ## 1.3. Segmentos objetivo.
 
 # Capítulo II: Requirements Elicitation & Analysis

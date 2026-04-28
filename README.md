@@ -934,12 +934,12 @@ _**Fuente:** elaboración propia._
 
 ### **Documentación del endpoint de empresas (POST / GET)**
 
-<img src="img/commons/Backend 3.png" width="700">
+<img src="img/commons/Backend3.png" width="700">
 
 _**Figura 167.** Documentación del endpoint `POST /api/v1/companies`, utilizado para registrar empresas de transporte público._  
 _**Fuente:** elaboración propia._
 
-<img src="img/commons/Backend 4.png" width="700">
+<img src="img/commons/Backend4.png" width="700">
 
 _**Figura 168.** Documentación del endpoint `GET /api/v1/companies`, que devuelve la lista de empresas registradas en el sistema._  
 _**Fuente:** elaboración propia._
@@ -948,7 +948,7 @@ _**Fuente:** elaboración propia._
 
 ### **Documentación del endpoint de rutas (GET)**
 
-<img src="img/commons/Backend 8.png" width="700">
+<img src="img/commons/Backend8.png" width="700">
 
 _**Figura 169.** Vista en Swagger del endpoint `GET /api/v1/routes`, que devuelve las rutas disponibles junto con sus paraderos asociados._  
 _**Fuente:** elaboración propia._

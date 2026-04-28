@@ -565,40 +565,31 @@ El objetivo principal de este sprint es el **diseño y desarrollo de la landing 
 - Explicar el funcionamiento del servicio.  
 - Motivar a los usuarios a registrarse o explorar la plataforma.  
 
-### Sprint Backlog 1 - User Stories y Tareas
+### Sprint Backlog - User Stories y Tareas
 
-### Sprint Backlog 1 - User Stories y Tareas
 | **User Story** | **Title**                    | **Task ID** | **Task Title**                                       | **Description**                                                         | **Estimation (hours)** | **Assigned to**                         | **Status** |
 |----------------|------------------------------|-------------|------------------------------------------------------|-------------------------------------------------------------------------|-------------------------|------------------------------------------|-----------|
-| US01           | Buscar rutas                 | T09         | Diseñar interfaz de búsqueda de rutas                | Crear la pantalla con los campos “Origen” y “Destino”, botón “Buscar ruta” y mensajes de ayuda para el usuario. | 3 | Joaquin Alberto Cuentas Peña | done |
-| US01           | Buscar rutas                 | T10         | Implementar resultado de búsqueda                    | Simular la lista de rutas disponibles (mock) mostrando nombre y tiempo estimado. | 3 | Walter Luis Fajardo Monroy | done |
-| US01           | Buscar rutas                 | T11         | Validar campos vacíos y deshabilitar botón           | Deshabilitar botón si los campos están vacíos. | 1 | Lynn Jeeferzon Meza Camayo | done |
-
-| US02           | Ver paraderos cercanos       | T12         | Diseñar pantalla de paraderos cercanos               | Lista de paraderos cercanos con datos simulados. | 3 | Andrea Elizabeth Santur Tello | done |
-| US02           | Ver paraderos cercanos       | T13         | Simular ubicación por defecto                        | Usar ubicación por defecto si no hay GPS. | 1 | Walter Luis Fajardo Monroy | done |
-
-| US03           | Guardar rutas frecuentes     | T14         | Añadir botón “Guardar como favorita”                 | Simular guardado de rutas favoritas. | 2 | Lynn Jeeferzon Meza Camayo | done |
-| US03           | Guardar rutas frecuentes     | T15         | Simular validación de ruta duplicada                 | Mostrar mensaje si la ruta ya existe. | 1 | Joaquin Alberto Cuentas Peña | done |
-
-| US04           | Ver ruta en Google Maps      | T16         | Agregar botón “Ver en Google Maps”                   | Botón en resultados de búsqueda. | 2 | Walter Luis Fajardo Monroy | done |
-| US04           | Ver ruta en Google Maps      | T17         | Construir URL y apertura en nueva pestaña            | Abrir ruta en Google Maps. | 1 | Lynn Jeeferzon Meza Camayo | done |
-
-| US05           | Notificaciones de retraso    | T18         | Diseñar pantalla de notificaciones                   | Lista de notificaciones con tarjetas. | 2 | Andrea Elizabeth Santur Tello | done |
-| US05           | Notificaciones de retraso    | T19         | Implementar toast y estado vacío                     | Toast y mensaje “sin notificaciones”. | 1 | Joaquin Alberto Cuentas Peña | done |
-
-| US06           | Alertas de desvío            | T20         | Maquetar UI para alertas                             | Reutilizar UI con iconos diferenciados. | 2 | Lynn Jeeferzon Meza Camayo | done |
-| US06           | Alertas de desvío            | T21         | Eliminar alertas                                     | Botón para eliminar alertas. | 1 | Andrea Elizabeth Santur Tello | done |
-
-| US11           | Información de la solución   | T01         | Contenido de buscar ruta                             | Explicación de búsqueda de rutas. | 1 | Andrea Elizabeth Santur Tello | done |
-| US11           | Información de la solución   | T02         | Contenido de recibir alertas                         | Explicación de alertas. | 1 | Lynn Jeeferzon Meza Camayo | done |
-| US11           | Información de la solución   | T03         | Contenido de viajar más seguro                       | Explicación de seguridad. | 1 | Walter Luis Fajardo Monroy | done |
-
-| US12           | Beneficios de la aplicación  | T04         | Información en tiempo real                           | Explicación de datos en tiempo real. | 1 | Joaquin Alberto Cuentas Peña | done |
-| US12           | Beneficios de la aplicación  | T05         | Guardar rutas favoritas                              | Explicación de favoritos. | 1 | Andrea Elizabeth Santur Tello | done |
-| US12           | Beneficios de la aplicación  | T06         | Alertas y notificaciones                             | Explicación de notificaciones. | 1 | Lynn Jeeferzon Meza Camayo | done |
-
-| US13           | Misión y visión              | T07         | Desarrollar misión                                   | Definición de misión. | 1 | Joaquin Alberto Cuentas Peña | done |
-| US13           | Misión y visión              | T08         | Desarrollar visión                                   | Definición de visión. | 1 | Walter Luis Fajardo Monroy | done |
+| US01 | Buscar rutas | T09 | Diseñar interfaz de búsqueda de rutas | Crear la pantalla con los campos “Origen” y “Destino”, botón “Buscar ruta” y mensajes de ayuda para el usuario. | 3 | Joaquin Alberto Cuentas Peña | done |
+| US01 | Buscar rutas | T10 | Implementar resultado de búsqueda | Simular la lista de rutas disponibles (mock) mostrando nombre y tiempo estimado. | 3 | Walter Luis Fajardo Monroy | done |
+| US01 | Buscar rutas | T11 | Validar campos vacíos y deshabilitar botón | Deshabilitar botón si los campos están vacíos. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US02 | Ver paraderos cercanos | T12 | Diseñar pantalla de paraderos cercanos | Lista de paraderos cercanos con datos simulados. | 3 | Andrea Elizabeth Santur Tello | done |
+| US02 | Ver paraderos cercanos | T13 | Simular ubicación por defecto | Usar ubicación por defecto si no hay GPS. | 1 | Walter Luis Fajardo Monroy | done |
+| US03 | Guardar rutas frecuentes | T14 | Añadir botón “Guardar como favorita” | Simular guardado de rutas favoritas. | 2 | Lynn Jeeferzon Meza Camayo | done |
+| US03 | Guardar rutas frecuentes | T15 | Simular validación de ruta duplicada | Mostrar mensaje si la ruta ya existe. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US04 | Ver ruta en Google Maps | T16 | Agregar botón “Ver en Google Maps” | Botón en resultados de búsqueda. | 2 | Walter Luis Fajardo Monroy | done |
+| US04 | Ver ruta en Google Maps | T17 | Construir URL y apertura en nueva pestaña | Abrir ruta en Google Maps. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US05 | Notificaciones de retraso | T18 | Diseñar pantalla de notificaciones | Lista de notificaciones con tarjetas. | 2 | Andrea Elizabeth Santur Tello | done |
+| US05 | Notificaciones de retraso | T19 | Implementar toast y estado vacío | Toast y mensaje “sin notificaciones”. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US06 | Alertas de desvío | T20 | Maquetar UI para alertas | Reutilizar UI con iconos diferenciados. | 2 | Lynn Jeeferzon Meza Camayo | done |
+| US06 | Alertas de desvío | T21 | Eliminar alertas | Botón para eliminar alertas. | 1 | Andrea Elizabeth Santur Tello | done |
+| US11 | Información de la solución | T01 | Contenido de buscar ruta | Explicación de búsqueda de rutas. | 1 | Andrea Elizabeth Santur Tello | done |
+| US11 | Información de la solución | T02 | Contenido de recibir alertas | Explicación de alertas. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US11 | Información de la solución | T03 | Contenido de viajar más seguro | Explicación de seguridad. | 1 | Walter Luis Fajardo Monroy | done |
+| US12 | Beneficios de la aplicación | T04 | Información en tiempo real | Explicación de datos en tiempo real. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US12 | Beneficios de la aplicación | T05 | Guardar rutas favoritas | Explicación de favoritos. | 1 | Andrea Elizabeth Santur Tello | done |
+| US12 | Beneficios de la aplicación | T06 | Alertas y notificaciones | Explicación de notificaciones. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US13 | Misión y visión | T07 | Desarrollar misión | Definición de misión. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US13 | Misión y visión | T08 | Desarrollar visión | Definición de visión. | 1 | Walter Luis Fajardo Monroy | done |
 
 
 
@@ -963,33 +954,6 @@ _**Figura 169.** Vista en Swagger del endpoint `GET /api/v1/routes`, que devuelv
 _**Fuente:** elaboración propia._
 
 ---
-
-#### 5.2.4.7. Software Deployment Evidence for Sprint Review
-
-En este sprint se consolidó el despliegue del frontend de BusTrack y se preparó la base para el despliegue futuro del backend.
-
-1. **Actualización de la landing page y del frontend**  
-   Se generó una nueva versión de la landing page en GitHub Pages y se actualizó la aplicación frontend desplegada en Vercel, incorporando el acceso diferenciado para pasajeros y empresas, así como los ajustes finales de UI/UX.
-
-2. **Configuración de variables de entorno**  
-   La URL del backend se mantuvo configurada como variable de entorno en el frontend, apuntando a la instancia local de la API mientras el despliegue público del backend continúa en proceso. Esto permite desacoplar el frontend de la infraestructura específica del servidor.
-
-3. **Despliegue continuo del frontend**  
-   Vercel se mantiene como plataforma de despliegue continuo: cada cambio aprobado en el repositorio del frontend genera automáticamente un nuevo build y una nueva versión publicada de BusTrack.
-
-- URL de la landing page: `https://2025-2-aplicacionesweb-dalcomp.github.io/Landing-page/`  
-- URL de la aplicación web (frontend): `https://ultimo-front.vercel.app/`  
-
-A continuación, se presentan capturas del despliegue del frontend.
-
----
-
-**Panel de despliegue en Render**
-
-<img src="img/commons/r1.png" alt="Panel de despliegue de BusTrack en Vercel" width="700">
-
-_**Figura 170.** Panel de Render mostrando el proyecto de frontend de BusTrack._  
-_**Fuente:** elaboración propia._
 
 ### 5.2.7. Team Collaboration Insights
 ## 5.3. Video About-the-Product.

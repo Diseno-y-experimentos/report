@@ -1120,9 +1120,132 @@ Escenario: El supervisor necesita monitorear que todas las unidades cumplan con 
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping.
+
+### To-Be Scenario Map – Pasajeros
+
+**Descripción:**  
+El mapa muestra la experiencia futura del pasajero al utilizar BusTrack. Se observa cómo, en cada fase (abrir la app, buscar ruta, revisar ubicación, monitorear el viaje), el usuario realiza acciones guiadas por la información en tiempo real, reduciendo incertidumbre y mejorando su percepción de control. A nivel emocional, el usuario pasa de la ansiedad típica del transporte público a la tranquilidad, confianza y satisfacción gracias a las funcionalidades de la aplicación.
+
+<img src="img/commons/to-be-bustrack-pasajeros.png" width="850">
+
+<br> _**Figura 26.** To-Be Scenario Map del pasajero de BusTrack, que muestra la experiencia futura deseada desde la planificación del viaje hasta la calificación del servicio, reduciendo la ansiedad y aumentando la confianza gracias a la información en tiempo real._ <br>  _**Fuente:** elaboración propia._
+
+
+---
+
+### To-Be Scenario Map – Empresa de Transporte
+
+**Descripción:**  
+El mapa presenta la experiencia futura de una empresa de transporte utilizando el panel web de BusTrack. A lo largo de las fases (ingreso al panel, revisión de buses y gestión de alertas), se observa un flujo operativo más eficiente, basado en datos en tiempo real y reportes automáticos. Emocionalmente, el usuario empresarial pasa de la incertidumbre operativa a una sensación de control, seguridad y optimización continua.
+
+<img src="img/commons/to-be-bustrack-empresa.png" width="850">
+
+<br> _**Figura 27.** To-Be Scenario Map de la empresa de transporte, donde se representa el uso del panel web de BusTrack._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
+Enlace de miro: https://miro.com/app/board/uXjVJhIqCHk=/?share_link_id=990352521858
+
 ## 3.2. User Stories.
+
+Para el caso de BusTrack, se han definido un total de cinco épicas, las cuales representan los bloques funcionales principales de la solución: gestión de rutas y horarios, monitoreo en tiempo real, administración de flota, experiencia del usuario en la aplicación y desarrollo de la Landing Page. 
+
+A partir de estas épicas se han identificado un conjunto de **15 User Stories funcionales**, asociadas a los usuarios principales del sistema. Estas historias describen las interacciones clave que los usuarios deberán realizar dentro de la aplicación y permiten establecer el alcance funcional del producto.
+
+Adicionalmente, se han incluido **Technical Stories** orientadas al desarrollo del backend y del RESTful API. Dichas historias están definidas desde el rol de *Developer* y permiten garantizar la integración entre el frontend, la Landing Page y los servicios internos de la plataforma.
+
+### Épicas del Sistema
+
+Las siguientes épicas representan los bloques funcionales principales del producto BusTrack. Cada épica agrupa un conjunto de User Stories que definen las funcionalidades asociadas tanto al pasajero como a las empresas de transporte, así como los componentes de interfaz y backend necesarios para soportar dichas capacidades.
+
+| Código | Nombre de la Épica | Descripción |
+|--------|---------------------|-------------|
+| **E01** | **Gestión de rutas y horarios** | Incluye todas las funcionalidades que permiten a los pasajeros buscar rutas, visualizar horarios, consultar alternativas y guardar rutas frecuentes para optimizar su planificación diaria. |
+| **E02** | **Monitoreo en tiempo real** | Agrupa las capacidades relacionadas con la visualización de ubicación del bus, seguimiento del trayecto, notificaciones de retrasos y alertas por desvíos. Estas funcionalidades reducen la incertidumbre del usuario durante el viaje. |
+| **E03** | **Administración de flota** | Reúne las herramientas dirigidas a las empresas de transporte: monitoreo del estado de los buses, gestión de alertas, generación de reportes automáticos y toma de decisiones basadas en datos. |
+| **E04** | **Experiencia del usuario en la app** | Contiene funcionalidades orientadas al pasajero final: registro, login, edición de perfil, calificación del servicio y personalización de rutas. |
+| **E05** | **Landing Page y presencia digital** | Incluye los elementos informativos de la plataforma: presentación de la solución, beneficios, misión y visión del proyecto, y acceso a los módulos principales. |
+
+<br>
+
+### Historias de Usuario
+| ID   | Epic ID | Épica                        | Nombre | Historia                                                                                                                         | Criterios de Aceptación |
+|------|---------|------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| US01 | E01     | Gestión de rutas y horarios  | Guardar rutas frecuentes | Como pasajero, quiero guardar mis rutas frecuentes para acceder a ellas rápidamente.                                             | **Positivo:** Dado que selecciono una ruta, cuando presiono “Guardar como favorita”, entonces la ruta se guarda. <br> **Negativo:** Dado que la ruta ya está guardada, cuando intento guardarla otra vez, entonces aparece “Esta ruta ya está guardada”. |
+| US02 | E02     | Monitoreo en tiempo real     | Ver ruta en Google Maps | Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.        | **Positivo:** Dado que ingreso un origen y un destino válidos, cuando presiono el botón “Ver en Google Maps”, entonces se abre Google Maps mostrando la ruta correspondiente. <br> **Negativo:** Dado que ingreso un origen o destino que no corresponde a una dirección real, cuando presiono el botón “Ver en Google Maps”, entonces la aplicación igual abre Google Maps y muestra sugerencias para el origen y destino. |
+| US03 | E03     | Administración de flota      | Configurar alertas internas | Como administrador, quiero configurar alertas para incidentes de tráfico.                                                        | **Positivo:** Dado que completo los campos del formulario de “Agregar bus”, cuando presiono el botón “Guardar”, entonces el nuevo bus se agrega a la tabla de flota con un ID generado automáticamente.   <br> **Negativo:** Dado que estoy editando la información de un bus, cuando cierro el modal o presiono “Cancelar” sin guardar, entonces los cambios no se aplican y la información del bus se mantiene igual en la tabla. |
+| US04 | E04     | Experiencia del usuario      | Registro de pasajero | Como nuevo pasajero, quiero registrarme para personalizar mis rutas.                                                             | **Positivo:** Dado que completo los campos, cuando presiono “Registrarse”, entonces se crea la cuenta. <br> **Negativo:** Dado campos vacíos, cuando intento registrarme, entonces aparece “Complete todos los campos”. |
+| US05 | E04     | Experiencia del usuario      | Editar perfil | Como pasajero, quiero editar mis datos personales.                                                                               | **Positivo:** Dado datos válidos, cuando guardo cambios, entonces el perfil se actualiza. <br> **Negativo:** Dado correo inválido, cuando guardo, entonces aparece “Correo no válido”. |
+| US06 | E05     | Landing Page                 | Información de la solución | Como visitante, quiero ver información de la solución para entender su utilidad.                                                 | **Positivo:** Dado que ingreso al home, cuando reviso el bloque principal y la sección “What Does BusTrack Offer?”, entonces veo un resumen claro de qué es BusTrack y qué funcionalidades ofrece. <br> **Negativo:** Dado que la página no carga correctamente (por ejemplo, fallo de internet), cuando ingreso al home, entonces no puedo ver el texto que describe la solución. |
+| US07 | E05     | Landing Page                 | Beneficios | Como visitante, quiero conocer los beneficios de la aplicación.                                                                  | **Positivo:** Dado que accedo a la sección “Benefits of Using BusTrack”, cuando la reviso, entonces veo al menos tres beneficios explicados. <br> **Negativo:** Dado que por un problema de carga la sección de beneficios no se muestra, cuando navego por la landing, entonces no logro ver los beneficios de la aplicación. |
+| US08 | E05     | Landing Page                 | Misión y visión | Como visitante, quiero conocer la misión y visión de la empresa.                                                                 | **Positivo:** Dado que ingreso a la sección “About Us”, cuando la reviso, entonces veo claramente la misión y la visión de BusTrack. <br> **Negativo:** Dado que la sección “About Us” no carga correctamente, cuando intento verla, entonces no puedo ver la misión ni la visión. |
+| US09 | E04     | Experiencia del usuario      | Acceso diferenciado | Como usuario, quiero elegir si ingreso como pasajero o empresa.                                                                  | **Positivo:** Dado selección del tipo de usuario, cuando continúo, entonces accedo al módulo correspondiente. <br> **Negativo:** Dado que no selecciono ningún tipo de usuario, cuando intento continuar, entonces el botón “Continuar” permanece deshabilitado. |
+| US10 | E03     | Administración de flota      | Acceso para empresas | Como empresa, quiero acceder al módulo de monitoreo de flota para ver el estado de mis buses y gestionar alertas.                | **Positivo:** Dado que inicio sesión como empresa y el módulo de monitoreo carga correctamente, cuando abro “Monitoreo”, entonces veo el mapa y la lista de buses con su estado (a tiempo, con retraso o fuera de servicio). <br> **Negativo:** Dado un error de conexión con el servidor, cuando abro “Monitoreo”, entonces se muestra un aviso de “Error de conexión” con la opción de “Reintentar”. |
+
+<br>
+
+### Technical Stories (RESTful API)
+
+Las siguientes Technical Stories describen los endpoints mínimos del RESTful API necesarios para soportar los flujos implementados en BusTrack para pasajeros y empresas de transporte, sin incluir funcionalidades de dashboard ni reportes.
+
+| ID   | Epic ID | Nombre                                      | Historia (Technical Story)                                                                                                                                                                 | Criterios de Aceptación |
+|------|---------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| TS01 | E01     | Endpoint: Rutas favoritas del pasajero      | Como **Developer**, quiero implementar los endpoints `GET /api/users/{userId}/favorites` y `POST /api/users/{userId}/favorites` para que la vista de “Rutas favoritas” pueda listar y guardar rutas frecuentes. | **Positivo (listar):** Dado que el usuario tiene rutas favoritas guardadas, cuando el frontend realiza un `GET /api/users/{userId}/favorites`, entonces la API retorna código **200** y un JSON con la lista de rutas. <br><br> **Positivo (agregar):** Dado que se envía una ruta que aún no está en favoritos, cuando el frontend ejecuta un `POST` con los datos de la ruta, entonces la API retorna código **201** y la ruta queda registrada. <br><br> **Negativo (duplicado):** Dado que la ruta ya existe en favoritos, cuando se intenta registrar nuevamente con `POST`, entonces la API retorna código **409** y el mensaje `"Ruta ya registrada en favoritos"`. |
+| TS02 | E03     | Endpoint: Alertas internas de la empresa    | Como **Developer**, quiero implementar los endpoints `GET /api/companies/{companyId}/alerts` y `POST /api/companies/{companyId}/alerts` para que la vista de “Alertas internas” pueda listar y registrar incidentes. | **Positivo (listar):** Dado que existen alertas registradas, cuando el frontend ejecuta `GET /api/companies/{companyId}/alerts`, entonces la API retorna código **200** y un JSON con la lista de alertas (tipo, hora, estado). <br><br> **Positivo (registrar):** Dado que se envía una alerta válida, cuando el frontend realiza un `POST` con los datos de la alerta, entonces la API retorna código **201** y la alerta queda registrada. <br><br> **Negativo (datos inválidos):** Dado que el cuerpo del `POST` está incompleto, cuando se intenta registrar la alerta, entonces la API retorna código **400** con el mensaje `"Datos de alerta inválidos"`. |
+
+<br>
+
+
 ## 3.3. Product Backlog.
+
+| # Orden | ID   | Título                                      | Descripción                                                                                                                                                                                | Story Points |
+| ------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| 1       | US01 | Guardar rutas frecuentes                    | Como pasajero, quiero guardar mis rutas frecuentes para acceder más rápido a ellas.                                                                                                        | 3            |
+| 2       | US02 | Ver ubicación del bus                       | Como pasajero, quiero ver la ubicación del bus en el mapa para saber cuánto tardará en llegar.                                                                                             | 5            |
+| 3       | US03 | Configurar alertas internas                 | Como administrador, quiero configurar alertas para incidentes de tráfico y gestionar mejor las incidencias.                                                                                | 5            |
+| 4       | US04 | Registro de pasajero                        | Como nuevo pasajero, quiero registrarme en la aplicación para personalizar mis rutas.                                                                                                      | 3            |
+| 5       | US05 | Editar perfil                               | Como pasajero, quiero editar mis datos personales para mantener mi información actualizada.                                                                                                | 3            |
+| 6       | US06 | Información de la solución                  | Como visitante de la web, quiero ver información concisa de la solución para entender su utilidad.                                                                                         | 2            |
+| 7       | US07 | Beneficios de la aplicación                 | Como visitante de la web, quiero conocer los beneficios de la aplicación para entender cómo puede ayudarme.                                                                                | 2            |
+| 8       | US08 | Misión y visión                             | Como visitante, quiero conocer la misión y visión de la empresa para entender su propósito y enfoque.                                                                                      | 1            |
+| 9       | US09 | Acceso diferenciado                         | Como usuario, quiero elegir si ingreso como pasajero o empresa para ver solo las opciones que me corresponden.                                                                             | 3            |
+| 10      | US10 | Acceso para empresas                        | Como empresa, quiero acceder a un módulo exclusivo con las funciones disponibles para la gestión de flota.                                                                                 | 5            |
+| 11      | TS01 | Endpoint: Rutas favoritas del pasajero      | Como **Developer**, quiero implementar los endpoints `GET /api/users/{userId}/favorites` y `POST /api/users/{userId}/favorites` para que la vista de “Rutas favoritas” pueda listar y guardar rutas frecuentes. | 3            |
+| 12      | TS02 | Endpoint: Alertas internas de la empresa    | Como **Developer**, quiero implementar los endpoints `GET /api/companies/{companyId}/alerts` y `POST /api/companies/{companyId}/alerts` para que la vista de “Alertas internas” pueda listar y registrar incidentes. | 5            |
+
+La imagen muestra el tablero de Trello utilizado para la planificación y seguimiento del Sprint 4 del proyecto BusTrack. En este tablero se organizaron las User Stories (US) y Technical Stories (TS) según las buenas prácticas de Scrum, distribuyéndolas en listas de Backlog, Technical Stories, Sprint Backlog y Done. Durante el sprint, las tareas fueron monitoreadas y actualizadas continuamente, moviéndose a la columna Done una vez completadas según la Definición de Terminado. Este tablero permitió mantener una visión clara del progreso del equipo, facilitando la priorización, asignación y control del avance de cada historia.
+
+<img src="img/commons/Trello-sprint4.png"  >
+
+_**Figura 30.** Product Backlog y Sprint Backlog gestionados en Trello_  <br> _**Fuente:** elaboración propia._
+
+Enlace de Trello: <https://trello.com/b/MhxlfsAK>
+<br><br>
+
+
 ## 3.4. Impact Mapping.
+
+El Impact Mapping permite conectar los objetivos del negocio con los actores principales, los cambios esperados en su comportamiento y los entregables del sistema que harán posible esos impactos. A continuación, se presentan los mapas desarrollados para los dos segmentos principales: pasajeros y empresas de transporte.
+
+### Segmento Pasajeros
+
+**Descripción:** Este mapa muestra cómo los objetivos de negocio orientados a reducir el tiempo de espera y aumentar el uso activo de la aplicación se conectan con los dos principales perfiles de pasajeros. El impacto esperado es que los usuarios consulten BusTrack antes de salir de casa para elegir su ruta y horario. Para lograrlo, los deliverables clave son el *buscador de rutas* y el *gestor de rutas favoritas*, de los cuales se derivan las User Stories asociadas a la búsqueda de rutas, visualización de horarios y guardado de rutas frecuentes.
+
+![Impact Map Pasajeros](img/commons/impact-map-pasajeros.png)
+
+<br> _**Figura 28.** Impact Map del segmento de pasajeros, que conecta los objetivos de negocio de BusTrack con los cambios de comportamiento esperados en estudiantes y trabajadores, y los deliverables asociados (buscador de rutas, rutas favoritas)._  <br> _**Fuente:** elaboración propia._
+
+
+___
+
+### Segmento Empresas de transporte
+
+**Descripción:** Este mapa relaciona los objetivos de negocio orientados a la adopción del sistema por empresas de transporte y la reducción de quejas operativas. Los actores principales son el administrador de flota y el supervisor de rutas, cuyo impacto deseado es que monitoreen buses en tiempo real y ajusten rutas usando datos de operación. 
+
+![Impact Map Empresas](img/commons/impact-map-empresas.png)
+
+<br> _**Figura 29.** Impact Map del segmento de empresas de transporte, que relaciona los objetivos de adopción del sistema con los impactos deseados en administradores y supervisores de flota._  _**Fuente:** elaboración propia._
+
 
 # Capítulo IV: Product Design
 ## 4.1. Style Guidelines.

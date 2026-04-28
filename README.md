@@ -956,7 +956,11 @@ _**Fuente:** elaboración propia._
 ---
 
 ### 5.2.7. Team Collaboration Insights
+
+<img src="img/miembros.png" width="700">
+
 ## 5.3. Video About-the-Product.
+[Ver Landing Page](https://2025-2-aplicacionesweb-dalcomp.github.io/Landing-page/)
 
 # Part II: Verification, Validation & Pipeline
 # Capítulo VI: Product Verification & Validation

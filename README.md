@@ -1358,8 +1358,168 @@ _**Figura 115.** Leyenda del Módulo de Ingesta de Datos de Flota._ <br> _**Fuen
 <br>
 
 ## 4.9. Software Object-Oriented Design.
+
+El diseño orientado a objetos de BusTrack define la estructura interna del sistema mediante clases, atributos, métodos y relaciones esenciales para representar usuarios, rutas, buses, viajes, notificaciones y entidades operativas del transporte público. Este diseño permite mantener un modelo extensible, modular y alineado con patrones como encapsulación, asociación, composición y herencia, facilitando la implementación en el código final.
+
 ### 4.9.1. Class Diagrams.
+
+El siguiente diagrama de clases representa los principales objetos del dominio de BusTrack y sus interacciones. Incluye entidades como User, Passenger, Driver, Bus, Route, Stop, Travel y Notification, junto a sus atributos, métodos y relaciones (asociaciones, composiciones y herencia).
+Este modelo sirve como base para la implementación de los módulos funcionales del sistema.
+
+Descripción: El diagrama muestra la estructura del dominio de BusTrack, detallando las clases principales, sus atributos, métodos clave y la forma en que se relacionan entre sí mediante asociaciones y composiciones.
+
+<img src="img/commons/classDiagram.png" style="width: 900px; margin-right: 900px;"/>
+
+_**Figura 116.** Diagrama de clases del sistema BusTrack._ <br> _**Fuente:** elaboración propia._
+
 ### 4.9.2. Class Dictionary.
+
+A continuación se presenta el diccionario de clases correspondiente al modelo orientado a objetos de BusTrack. Se detallan atributos, descripciones, tipos de datos y métodos principales para cada entidad definida en el diagrama de clases.
+
+
+## Clase: **User** *(Abstracta)*  
+**Descripción:** Representa al usuario base del sistema.
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato     |
+|--------------------|------------------------------|------------------|
+| id                 | Identificador único          | UUID             |
+| name               | Nombre completo              | String           |
+| email              | Correo electrónico           | String           |
+| password           | Contraseña encriptada        | String           |
+| role               | Tipo de usuario              | enum (UserRole)  |
+| profilePhoto       | Foto de perfil               | String (URL)     |
+
+**Métodos**  
+- `login()` — Autentica al usuario en el sistema  
+- `logout()` — Cierra la sesión del usuario  
+- `updateProfile()` — Actualiza información del perfil  
+
+---
+
+## Clase: **Passenger** *(Hereda de User)*  
+**Descripción:** Usuario que utiliza el transporte público  
+
+| Nombre de Atributo | Descripción                   | Tipo de Dato     |
+|--------------------|-------------------------------|------------------|
+| favoriteRoutes     | Rutas guardadas como favoritas | List<Route>      |
+| travelHistory      | Historial de viajes realizados | List<Travel>     |
+| currentTravel      | Viaje en curso                 | Travel           |
+
+**Métodos**  
+- `searchRoute(origin, destination)` — Busca rutas disponibles  
+- `saveFavoriteRoute(route)` — Guarda una ruta como favorita  
+- `startTravel(route)` — Inicia un viaje  
+- `receiveNotification()` — Recibe notificaciones  
+
+---
+
+## Clase: **Driver** *(Hereda de User)*  
+**Descripción:** Conductor asignado a un bus dentro del sistema.
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato       |
+|--------------------|------------------------------|--------------------|
+| licenseNumber      | Número de licencia de conducir | String            |
+| assignedBus        | Bus asignado                 | Bus                |
+| shiftStatus        | Estado del turno laboral     | enum (ShiftStatus) |
+
+**Métodos**  
+- `startShift()` — Inicia turno de trabajo  
+- `endShift()` — Finaliza turno de trabajo  
+- `updateLocation()` — Actualiza ubicación en tiempo real  
+- `reportIncident()` — Reporta incidentes en la ruta  
+
+---
+
+## Clase: **Bus**  
+**Descripción:** Vehículo de transporte público registrado en el sistema.
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato      |
+|--------------------|------------------------------|-------------------|
+| id                 | Identificador único          | UUID              |
+| licensePlate       | Placa del vehículo           | String            |
+| capacity           | Capacidad de pasajeros       | int               |
+| currentLocation    | Ubicación actual             | Location          |
+| status             | Estado operativo             | enum (BusStatus)  |
+| currentRoute       | Ruta actual                  | Route             |
+
+**Métodos**  
+- `updateLocation()` — Actualiza posición GPS  
+- `changeStatus()` — Cambia estado del bus  
+- `getArrivalTime(stop)` — Calcula tiempo de llegada  
+
+---
+
+## Clase: **Route**  
+**Descripción:** Ruta de transporte con paradas definidas  
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato   |
+|--------------------|------------------------------|----------------|
+| id                 | Identificador único          | UUID           |
+| name               | Nombre de la ruta            | String         |
+| stops              | Lista de paradas             | List<Stop>     |
+| estimatedTime      | Tiempo estimado de recorrido | int            |
+| frequency          | Frecuencia de paso           | int            |
+
+**Métodos**  
+- `calculateArrivalTime()` — Calcula tiempo de llegada  
+- `addStop()` — Agrega nueva parada  
+- `removeStop()` — Elimina parada  
+
+---
+
+## Clase: **Stop**  
+**Descripción:** Paradero o punto de parada  
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato   |
+|--------------------|------------------------------|----------------|
+| id                 | Identificador único          | UUID           |
+| name               | Nombre del paradero          | String         |
+| location           | Coordenadas GPS              | Location       |
+| buses              | Buses que pasan por aquí     | List<Bus>      |
+
+**Métodos**  
+- `getNextBuses()` — Obtiene próximos buses  
+- `updateBusArrival()` — Actualiza llegada de buses  
+
+---
+
+## Clase: **Travel**  
+**Descripción:** Registro de un viaje realizado  
+
+| Nombre de Atributo | Descripción                  | Tipo de Dato   |
+|--------------------|------------------------------|----------------|
+| id                 | Identificador único          | UUID           |
+| passenger          | Pasajero que realiza el viaje | Passenger      |
+| route              | Ruta utilizada               | Route          |
+| startTime          | Hora de inicio               | DateTime       |
+| endTime            | Hora de fin                  | DateTime       |
+| duration           | Duración del viaje           | int            |
+
+**Métodos**  
+- `startTravel()` — Inicia el viaje  
+- `endTravel()` — Finaliza el viaje  
+- `calculateDuration()` — Calcula duración  
+
+---
+
+## Clase: **Notification**  
+**Descripción:** Sistema de notificaciones  
+
+| Nombre de Atributo | Descripción                     | Tipo de Dato                    |
+|--------------------|---------------------------------|---------------------------------|
+| id                 | Identificador único             | UUID                            |
+| recipient          | Usuario destinatario            | User                            |
+| message            | Contenido del mensaje           | String                          |
+| sentAt             | Fecha y hora de envío           | DateTime                        |
+| type               | Tipo de notificación            | enum (NotificationType)         |
+| status             | Estado de la notificación       | enum (NotificationStatus)       |
+F
+**Métodos**  
+- `send()` — Envía la notificación  
+- `markAsRead()` — Marca como leída
+
+<br>
+
 ## 4.10. Database Design.
 ### 4.10.1. Relational/Non-Relational Database Diagram.
 

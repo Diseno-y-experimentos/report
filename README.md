@@ -3131,7 +3131,7 @@ Esto permite a los desarrolladores consultar y probar de forma interactiva los e
 ###### GET `/api/v1/notifications`
 Esta captura muestra la interfaz del endpoint encargado de listar las notificaciones de un usuario, permitiendo ingresar el parámetro `userId` y visualizar la estructura de la respuesta.
 
-<img src="/img/commons/cap1.png">
+<img src="img/commons/cap1.png">
 
 _**Figura 148.** Vista del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y el ejemplo de respuesta estructurada._  
 _**Fuente:** elaboración propia._
@@ -3141,7 +3141,7 @@ _**Fuente:** elaboración propia._
 ###### POST `/api/v1/notifications/delays`
 La imagen evidencia el formulario del endpoint para registrar notificaciones de retraso, donde se ingresan los valores `userId`, `routeId`, `delayMinutes` y `message` antes de ejecutar la solicitud.
 
-<img src="/img/commons/cap2.png">
+<img src="img/commons/cap2.png">
 
 _**Figura 149.** Endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del cuerpo de la solicitud para registrar una notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3151,7 +3151,7 @@ _**Fuente:** elaboración propia._
 ###### PUT `/api/v1/notifications/{id}/read`
 Esta captura muestra la sección del endpoint que permite marcar una notificación como leída mediante el envío del parámetro `id` en la ruta.
 
-<img src="/img/commons/cap3.png">
+<img src="img/commons/cap3.png">
 
 _**Figura 150.** Endpoint PUT `/api/v1/notifications/{id}/read`, que permite actualizar el estado de lectura de una notificación específica._  
 _**Fuente:** elaboración propia._
@@ -3161,7 +3161,7 @@ _**Fuente:** elaboración propia._
 ###### POST `/api/v1/notifications/delays` (ejecución)
 La imagen presenta la ejecución real del registro de una notificación, mostrando el cuerpo enviado y la respuesta procesada correctamente por el servidor.
 
-<img src="/img/commons/cap5.png">
+<img src="img/commons/cap5.png">
 
 _**Figura 151.** Ejecución del endpoint POST `/api/v1/notifications/delays`, evidenciando el registro exitoso de una notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3171,7 +3171,7 @@ _**Fuente:** elaboración propia._
 ###### GET `/api/v1/notifications` (ejecución)
 La captura refleja la ejecución del listado de notificaciones filtradas por usuario, mostrando el cuerpo JSON retornado por el servidor con datos persistidos.
 
-<img src="/img/commons/cap6.png">
+<img src="img/commons/cap6.png">
 
 _**Figura 152.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con notificaciones almacenadas en el sistema._  
 _**Fuente:** elaboración propia._
@@ -3181,7 +3181,7 @@ _**Fuente:** elaboración propia._
 ###### PUT `/api/v1/notifications/{id}/read` (ejecución)
 Finalmente, esta captura muestra la ejecución del proceso para marcar una notificación como leída, con el código de respuesta del servidor que confirma la actualización.
 
-<img src="/img/commons/cap7.png">
+<img src="img/commons/cap7.png">
 
 _**Figura 153.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando la actualización del estado de lectura._  
 _**Fuente:** elaboración propia._
@@ -3190,7 +3190,7 @@ _**Fuente:** elaboración propia._
 
 La siguiente captura muestra la estructura del endpoint encargado de obtener todas las notificaciones asociadas a un usuario, permitiendo ingresar el parámetro `userId` mediante query string.
 
-<img src="/img/commons/cap1.png">
+<img src="img/commons/cap1.png">
 
 _**Figura 154.** Documentación del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y un ejemplo de respuesta JSON._  
 _**Fuente:** elaboración propia._
@@ -3201,7 +3201,7 @@ _**Fuente:** elaboración propia._
 
 En esta evidencia se observa el formulario del cuerpo de la solicitud, donde se envían los campos necesarios para registrar una nueva notificación de retraso: `userId`, `routeId`, `delayMinutes` y `message`.
 
-<img src="/img/commons/cap2.png">
+<img src="img/commons/cap2.png">
 
 _**Figura 155.** Documentación del endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del request body requerido._  
 _**Fuente:** elaboración propia._
@@ -3212,7 +3212,7 @@ _**Fuente:** elaboración propia._
 
 La siguiente captura muestra la ejecución del endpoint, incluyendo el JSON enviado y la respuesta generada por el servidor, que retorna la notificación registrada correctamente.
 
-<img src="/img/commons/cap5.png">
+<img src="img/commons/cap5.png">
 
 _**Figura 156.** Ejecución del endpoint POST `/api/v1/notifications/delays`, registrando exitosamente una nueva notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3223,7 +3223,7 @@ _**Fuente:** elaboración propia._
 
 Esta evidencia muestra la consulta real al endpoint, retornando una lista de notificaciones efectivamente almacenadas para el usuario especificado.
 
-<img src="/img/commons/cap6.png">
+<img src="img/commons/cap6.png">
 
 _**Figura 157.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con las notificaciones persistidas para el usuario._  
 _**Fuente:** elaboración propia._
@@ -3234,7 +3234,7 @@ _**Fuente:** elaboración propia._
 
 El siguiente endpoint permite actualizar el estado de lectura de una notificación específica enviando su identificador mediante la ruta.
 
-<img src="/img/commons/cap3.png">
+<img src="img/commons/cap3.png">
 
 _**Figura 158.** Documentación del endpoint PUT `/api/v1/notifications/{id}/read`, mostrando el parámetro de ruta y el código de respuesta esperado._  
 _**Fuente:** elaboración propia._
@@ -3245,7 +3245,7 @@ _**Fuente:** elaboración propia._
 
 Finalmente, se presenta la ejecución real del endpoint, donde el servidor confirma la actualización del estado de la notificación mediante el código HTTP **204 – No Content**.
 
-<img src="/img/commons/cap7.png">
+<img src="img/commons/cap7.png">
 
 _**Figura 159.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando el cambio de estado de la notificación._  
 _**Fuente:** elaboración propia._

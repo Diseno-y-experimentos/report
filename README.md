@@ -296,6 +296,145 @@ RedBus está enfocado principalmente en la venta de pasajes interprovinciales. E
 - **Debilidad:** orientado a viajes de larga distancia, no a transporte urbano.
 
 ### 2.1.1. Análisis competitivo.
+
+El análisis competitivo permite comparar a **BusTrack** con los principales actores del mercado de movilidad urbana en Lima Metropolitana. Esta comparación facilita identificar ventajas diferenciales, brechas del mercado y oportunidades para fortalecer la propuesta de valor.
+
+<table>
+<thead>
+  <tr>
+    <th colspan="6">Competitive Analysis Landscape</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2"><strong>¿Por qué realizar este análisis?</strong></td>
+    <td colspan="4">
+      Este análisis permite investigar, evaluar y comparar el comportamiento de los competidores directos e indirectos en el mercado de movilidad urbana, con el fin de identificar oportunidades estratégicas para el posicionamiento de BusTrack
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><strong>Nombre</strong></div></td>
+    <td align="center"><strong>Moovit</strong></td>
+    <td align="center"><strong>Google Maps</strong></td>
+    <td align="center"><strong>TuRuta</strong></td>
+    <td align="center"><strong>RedBus</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><strong>Logo</strong></div></td>
+    <td align="center"><img src="img/commons/moovit.png" width="90"/></td>
+    <td align="center"><img src="img/commons/googlemaps.png" width="90"/></td>
+    <td align="center"><img src="img/commons/turuta.webp" width="90"/></td>
+    <td align="center"><img src="img/commons/redbus.png" width="90"/></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Perfil</strong></td>
+    <td><strong>Overview</strong></td>
+    <td>
+      Aplicación internacional de movilidad urbana con cobertura global. Ofrece rutas, horarios y planificación multimodal (bus, tren, bicicleta). Opera en Lima con datos colaborativos
+    </td>
+    <td>
+      Servicio global de mapas y tráfico en tiempo real. Incluye opciones de transporte público, aunque con detalle limitado para buses limeños
+    </td>
+    <td>
+      App peruana enfocada en transporte público limeño, basada en información colaborativa sobre rutas de buses y colectivos
+    </td>
+    <td>
+      Plataforma especializada en venta de pasajes interprovinciales. No opera rutas urbanas, pero es referente en digitalización del transporte
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Ventaja Competitiva<br>¿Qué valor ofrece?</strong></td>
+    <td>
+      Precisión global, experiencia en movilidad urbana y amplia integración multimodal
+    </td>
+    <td>
+      Cartografía precisa, navegación confiable y datos de tráfico actualizados
+    </td>
+    <td>
+      Conocimiento local del transporte limeño y fácil uso para usuarios cotidianos
+    </td>
+    <td>
+      Compra segura de pasajes, métodos de pago confiables y reputación consolidada
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Perfiles de Marketing</strong></td>
+    <td><strong>Mercado objetivo</strong></td>
+    <td>Usuarios urbanos que buscan planificar rutas multimodales</td>
+    <td>Usuarios globales que necesitan mapas, navegación y tráfico</td>
+    <td>Pasajeros limeños frecuentes que usan buses o colectivos</td>
+    <td>Viajeros que realizan desplazamientos interprovinciales</td>
+  </tr>
+  <tr>
+    <td><strong>Estrategias de marketing</strong></td>
+    <td>Publicidad global, alianzas con gobiernos y operadores</td>
+    <td>Integración con Android y ecosistema Google; marketing masivo</td>
+    <td>Redes sociales, enfoque local y participación comunitaria</td>
+    <td>Marketing digital, alianzas con empresas de transporte</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><strong>Perfil de Producto</strong></td>
+    <td><strong>Productos y Servicios</strong></td>
+    <td>Rutas, horarios, planificación multimodal, notificaciones básicas</td>
+    <td>Mapas, tráfico, transporte público, navegación y GPS</td>
+    <td>Rutas de buses y colectivos en Lima; colaboración ciudadana</td>
+    <td>Venta de pasajes, reservas y métodos de pago seguros</td>
+  </tr>
+  <tr>
+    <td><strong>Precios y Costos</strong></td>
+    <td>Gratuito</td>
+    <td>Gratuito</td>
+    <td>Gratuito</td>
+    <td>Comisiones y precios de pasajes</td>
+  </tr>
+  <tr>
+    <td><strong>Canales de Distribución</strong><br>(Web y/o Móvil)</td>
+    <td>Web y móvil</td>
+    <td>Web y móvil</td>
+    <td>Móvil</td>
+    <td>Web y móvil</td>
+  </tr>
+  <tr>
+    <td rowspan="4"><strong>Análisis SWOT</strong></td>
+    <td><strong>Fortalezas</strong></td>
+    <td>- Amplia cobertura global <br><br> - Integración multimodal <br><br> - Datos colaborativos amplios</td>
+    <td>- Cartografía precisa <br><br> - Tráfico en tiempo real <br><br> - Ecosistema digital fuerte</td>
+    <td>- Conocimiento local <br><br> - Interfaz sencilla <br><br> - Enfoque en transporte limeño</td>
+    <td>- Confianza en pagos <br><br> - Amplia cobertura interprovincial <br><br> -Marca consolidada</td>
+  </tr>
+  <tr>
+    <td><strong>Debilidades</strong></td>
+    <td>- Datos poco precisos en Lima <br><br> -Baja personalización local</td>
+    <td>- No especializado en transporte urbano limeño</td>
+    <td>- Datos desactualizados <br><br> - Dependencia de la comunidad <br><br> -Sin tiempo real</td>
+    <td>- No cubre transporte urbano <br><br> - Funcionalidad limitada para rutas limeñas</td>
+  </tr>
+  <tr>
+    <td><strong>Oportunidades</strong></td>
+    <td>Integrarse con operadores locales y mejorar datos en tiempo real</td>
+    <td>Expandir detalle de transporte urbano en ciudades emergentes</td>
+    <td>Incorporar APIs oficiales y mayor precisión en rutas y horarios</td>
+    <td>Ampliar servicios hacia transporte urbano</td>
+  </tr>
+  <tr>
+    <td><strong>Amenazas</strong></td>
+    <td>Mejoras locales podrían desplazar a apps especializadas</td>
+    <td>Regulaciones de datos y competencia global</td>
+    <td>Competidores con información más precisa y tiempo real</td>
+    <td>Competidores con ecosistemas más robustos</td>
+  </tr>
+</tbody>
+</table>
+
+_**Figura 6.** Logotipos de los principales competidores analizados: Moovit, Google Maps, TuRuta y RedBus._ <br> _**Fuente:** elaboración propia a partir de material público de cada marca._
+
+<br>
+
+
+BusTrack puede diferenciarse mediante información confiable en tiempo real, un enfoque exclusivamente local y la integración de APIs oficiales para ofrecer datos verificados sobre buses y rutas urbanas. Esto cubre vacíos que los competidores actuales aún no resuelven completamente.
+
+<br>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 ## 2.2. Entrevistas.
 ### 2.2.1. Diseño de entrevistas.

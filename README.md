@@ -318,6 +318,49 @@ Por otro lado, los administradores y supervisores de flota carecen de herramient
 BusTrack tiene como objetivo conectar a ambos grupos a través de una plataforma que proporcione información en tiempo real, paneles de gestión y notificaciones inteligentes, promoviendo así viajes más seguros, eficientes y puntuales.
 
 #### 1.2.2.2. Lean UX Assumptions.
+
+#### Supuestos principales para BusTrack
+
+- Creemos que los pasajeros usarán la app de manera recurrente si la información de tiempos y rutas es precisa y confiable.
+
+- Creemos que los operadores de transporte adoptarán la plataforma si esta les permite monitorear flotas y mejorar la satisfacción del cliente.
+
+- Creemos que la confianza de los usuarios se fortalecerá mediante transparencia en los datos y notificaciones claras sobre retrasos o cambios de ruta.
+
+- Suponemos que la falta de información confiable es la principal causa de insatisfacción con el transporte público.
+
+- Asumimos que la implementación de herramientas tecnológicas puede contribuir a reducir la percepción de inseguridad al brindar alternativas claras y ordenadas de movilidad.
+
+---
+
+#### ¿Quién es el usuario?
+
+**Primarios:**  
+Pasajeros frecuentes (estudiantes, trabajadores).  
+
+**Secundarios:**  
+Empresas de transporte que necesitan gestionar sus unidades.
+
+---
+
+#### Business Outcomes esperados
+
+- Conseguir **50 000 usuarios activos** en el primer año.
+
+- Reducir en un **30% la percepción de incertidumbre** en los tiempos de espera.
+
+- Lograr que el **70% de las rutas principales** estén integradas en la app.
+
+- Aumentar en un **20% la satisfacción general de los pasajeros** en encuestas de movilidad urbana.
+
+---
+
+#### User Outcomes esperados
+
+- Los pasajeros planifican sus viajes con mayor confianza y menos estrés.
+
+- Los operadores optimizan el control de sus flotas y mejoran su reputación.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 #### 1.2.2.4. Lean UX Canvas.
 ## 1.3. Segmentos objetivo.

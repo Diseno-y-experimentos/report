@@ -892,7 +892,25 @@ A continuación se presentan los mapas de empatía elaborados para cada uno de l
 <br>
 
 ### 2.3.5. As-is Scenario Mapping.
+
+
 ## 2.4. Ubiquitous Language.
+
+| **Término**                          | **Definición**                                                                                       |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Pasajero**                         | Usuario final de BusTrack que consulta rutas, horarios y viaja en transporte público.                |
+| **Empresa de transporte**            | Entidad que gestiona los buses, rutas y horarios registrados en la aplicación.                       |
+| **Ruta**                             | Trayecto definido entre un origen y un destino que sigue un bus.                                     |
+| **Horario**                          | Horas establecidas para salidas y llegadas de buses en una ruta.                                     |
+| **Bus**                              | Vehículo de transporte público registrado en BusTrack con identificación y ubicación GPS.            |
+| **Notificación**                     | Alerta enviada al pasajero sobre retrasos, desvíos o llegada próxima del bus.                        |
+| **Reporte**                          | Resumen básico de alertas o estados operativos visibles en el panel web, limitado a la información disponible en el monitoreo de buses y en la gestión simple de alertas. En la versión actual del proyecto, no incluye reportes automáticos ni análisis avanzados; dichos elementos corresponden a funcionalidades previstas como trabajo futuro. |
+| **Favoritos**                        | Rutas que el pasajero guarda para consultarlas rápidamente en futuros viajes.                        |
+| **Panel de control**                 | Interfaz usada por la empresa de transporte para monitorear la flota y generar reportes.             |
+| **Tiempo estimado de llegada (ETA)** | Predicción calculada por el sistema sobre el tiempo que falta para que un bus llegue a la parada.    |
+
+
+<br><br>
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping.

@@ -522,6 +522,85 @@ Como parte del proceso de validación del modelo de negocio de BusTrack, se plan
 - ¿Qué barreras internas o externas ven para adoptar una aplicación digital de gestión de transporte?
 
 ### 2.2.2. Registro de entrevistas.
+
+### Segmento 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)  
+
+
+| **Entrevista 1** |
+|--------|
+| **Entrevistado:** Mariana Rafael |
+| **Sexo:** Femenino |
+| **Edad:** 20 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia1.png" width="200"/> <br> _**Figura 7.** Evidencia de entrevista 1 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/fcO25GbbaRY> |
+| **Resumen de entrevista:** La entrevistada utiliza principalmente corredores de la ATU y el Metropolitano para ir a la universidad o salir con amigos. Sus principales preocupaciones son la inseguridad, los desvíos inesperados y los costos del transporte. Considera esencial contar con información en tiempo real y notificaciones confiables para optimizar su tiempo y aumentar la confianza en el transporte público. |
+
+
+| **Entrevista 2** |
+|-----------|
+| **Entrevistado:** Alessandro Bravo |
+| **Sexo:** Masculino |
+| **Edad:** 20 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia2.png" width="200"/> <br> _**Figura 8.** Evidencia de entrevista 2 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://www.youtube.com/watch?v=5rFwJUM-JS4> | 
+| **Resumen de entrevista:** El entrevistado viaja diariamente en buses y combis, tomando hasta tres por día desde San Martín de Porres. Sus principales preocupaciones son el tiempo de espera, la inseguridad y la falta de información confiable. Usa aplicaciones como Moovit, aunque señala que no siempre están actualizadas. Valora recibir notificaciones en tiempo real sobre ubicación, desvíos y precios para llegar a tiempo a clases y optimizar sus traslados. |
+
+| **Entrevista 3** |
+|-----------|
+| **Entrevistado:**  Melisa Sulca  |
+| **Sexo:** Femenino |
+| **Edad:** 23 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia3.png" width="200"/> <br> _**Figura 9.** Evidencia de entrevista 3 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQAizEwhwgVIRoDGZdlA-3UtAZTDcAPxf_lPHyIuvhfMD2w?e=b4WJu9> | 
+| **Resumen de entrevista:** La entrevistada suele tomar buses de transporte público rutinariamente para movilizarse a la universidad o a algún otro punto de la ciudad. Ella explica que no tiene mucho conocimiento acerca de rutas de transporte, por lo que siempre suele consultar con su mamá que está más informada del tema. Este es motivo por el cual una aplicación como BusTrack sería de gran ayuda para ella, por la información en tiempo real de los buses que toma que podrían estar al alcance de su mano.  |
+ 
+<br>
+
+### Segmento 2: Empresas de Transporte Urbano
+
+| **Entrevista 4** |
+|-----------|
+| **Entrevistado:** Octavio |
+| **Sexo:** Masculino |
+| **Edad:** 35 |
+| **Ocupación:** Supervisor de rutas |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia4.png" width="200"/> <br> _**Figura 10.** Evidencia de entrevista 4 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/MOjHcLv6YDY> |
+| **Resumen de entrevista:** El entrevistado gestiona la flota mediante llamadas a los choferes y el uso de Excel y hojas de ruta, recibiendo solo información básica sobre tráfico y fallas mecánicas. Considera valiosos los reportes automáticos y la ubicación exacta de buses para mejorar la operación. Reconoce que una plataforma como BusTrack podría incrementar la confianza de los pasajeros, aunque identifica barreras como el costo y la resistencia de algunos conductores a adoptar tecnología. |
+
+
+| **Entrevista 5** |
+|-----------|
+| **Entrevistado:** Jean Paul Condori |
+| **Sexo:** Masculino |
+| **Edad:** 40 |
+| **Ocupación:** Administrador de flota |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia5.png" width="200"/> <br> _**Figura 11.** Evidencia de entrevista 5 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/JAEwGB9mBGk> |
+| **Resumen de entrevista:** El entrevistado gestiona las unidades mediante grupos de WhatsApp y cuadernos físicos, recibiendo información de los conductores sobre retrasos, cambios de ruta y controles policiales. Identifica retos como tráfico, bloqueos y falta de procesos modernos. Considera útil contar con reportes sobre rutas, horarios y cantidad de pasajeros. Percibe a BusTrack como una oportunidad para implementar monitoreo en tiempo real, aunque también identifica barreras relacionadas con la confianza y la adaptación tecnológica de los conductores. |
+
+
+| **Entrevista 6** |
+|-----------|
+| **Entrevistado:** Walter Fajardo |
+| **Sexo:** Masculino |
+| **Edad:** 30 |
+| **Ocupación:** Gerente de empresa de transportes |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia6.png" width="200"/> <br> _**Figura 12.** Evidencia de entrevista 6 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://upcedupe-my.sharepoint.com/personal/u20201f788_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20201f788%5Fupc%5Fedu%5Fpe%2FDocuments%2FSegemento%20objetivo%202%20%2D%20Walter%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E271d57e2%2D0088%2D4def%2Da3c3%2D2723d93114b8> | 
+| **Resumen de entrevista:**  El entrevistado muestra atracción por una aplicación que ayude a mejorar la supervisición sobre los conductores de la empresa, ya que por el momento, solo tienen un control al incio y final de iniciada una ruta. Considera que una supervisión en tiempo real podría mejorar la confianza generada en los pasajeros y muestra su interes porque BusTrack sea una aplicación sencialla de uso para agilizar tiempos. |
+
+<br>
+
 ### 2.2.3. Análisis de entrevistas.
 ## 2.3. Needfinding.
 ### 2.3.1. User Personas.

@@ -279,9 +279,57 @@
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping.
+
+### To-Be Scenario Map – Pasajeros
+
+**Descripción:**  
+El mapa muestra la experiencia futura del pasajero al utilizar BusTrack. Se observa cómo, en cada fase (abrir la app, buscar ruta, revisar ubicación, monitorear el viaje), el usuario realiza acciones guiadas por la información en tiempo real, reduciendo incertidumbre y mejorando su percepción de control. A nivel emocional, el usuario pasa de la ansiedad típica del transporte público a la tranquilidad, confianza y satisfacción gracias a las funcionalidades de la aplicación.
+
+<img src="img/commons/to-be-bustrack-pasajeros.png" width="850">
+
+<br> _**Figura 26.** To-Be Scenario Map del pasajero de BusTrack, que muestra la experiencia futura deseada desde la planificación del viaje hasta la calificación del servicio, reduciendo la ansiedad y aumentando la confianza gracias a la información en tiempo real._ <br>  _**Fuente:** elaboración propia._
+
+
+---
+
+### To-Be Scenario Map – Empresa de Transporte
+
+**Descripción:**  
+El mapa presenta la experiencia futura de una empresa de transporte utilizando el panel web de BusTrack. A lo largo de las fases (ingreso al panel, revisión de buses y gestión de alertas), se observa un flujo operativo más eficiente, basado en datos en tiempo real y reportes automáticos. Emocionalmente, el usuario empresarial pasa de la incertidumbre operativa a una sensación de control, seguridad y optimización continua.
+
+<img src="img/commons/to-be-bustrack-empresa.png" width="850">
+
+<br> _**Figura 27.** To-Be Scenario Map de la empresa de transporte, donde se representa el uso del panel web de BusTrack._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
+Enlace de miro: https://miro.com/app/board/uXjVJhIqCHk=/?share_link_id=990352521858
+
 ## 3.2. User Stories.
 ## 3.3. Product Backlog.
 ## 3.4. Impact Mapping.
+
+El Impact Mapping permite conectar los objetivos del negocio con los actores principales, los cambios esperados en su comportamiento y los entregables del sistema que harán posible esos impactos. A continuación, se presentan los mapas desarrollados para los dos segmentos principales: pasajeros y empresas de transporte.
+
+### Segmento Pasajeros
+
+**Descripción:** Este mapa muestra cómo los objetivos de negocio orientados a reducir el tiempo de espera y aumentar el uso activo de la aplicación se conectan con los dos principales perfiles de pasajeros. El impacto esperado es que los usuarios consulten BusTrack antes de salir de casa para elegir su ruta y horario. Para lograrlo, los deliverables clave son el *buscador de rutas* y el *gestor de rutas favoritas*, de los cuales se derivan las User Stories asociadas a la búsqueda de rutas, visualización de horarios y guardado de rutas frecuentes.
+
+![Impact Map Pasajeros](img/commons/impact-map-pasajeros.png)
+
+<br> _**Figura 28.** Impact Map del segmento de pasajeros, que conecta los objetivos de negocio de BusTrack con los cambios de comportamiento esperados en estudiantes y trabajadores, y los deliverables asociados (buscador de rutas, rutas favoritas)._  <br> _**Fuente:** elaboración propia._
+
+
+___
+
+### Segmento Empresas de transporte
+
+**Descripción:** Este mapa relaciona los objetivos de negocio orientados a la adopción del sistema por empresas de transporte y la reducción de quejas operativas. Los actores principales son el administrador de flota y el supervisor de rutas, cuyo impacto deseado es que monitoreen buses en tiempo real y ajusten rutas usando datos de operación. 
+
+![Impact Map Empresas](img/commons/impact-map-empresas.png)
+
+<br> _**Figura 29.** Impact Map del segmento de empresas de transporte, que relaciona los objetivos de adopción del sistema con los impactos deseados en administradores y supervisores de flota._  _**Fuente:** elaboración propia._
+
 
 # Capítulo IV: Product Design
 ## 4.1. Style Guidelines.

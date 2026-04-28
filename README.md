@@ -790,6 +790,60 @@ En el User Task Matrix del Segmento 2 se observa que el supervisor de rutas y el
 <br>
 
 ### 2.3.3. User Journey Mapping.
+
+A continuación se presentan los User Journey Maps desarrollados para los dos segmentos objetivo de BusTrack: Pasajeros y Empresas de transporte. Cada mapa describe el flujo actual del usuario, destacando acciones, emociones, problemas y oportunidades de mejora que BusTrack busca resolver.
+
+### Segmento 1: Pasajeros
+
+#### User Persona 1 – Manuel Suárez (Estudiante Universitario)
+
+**Descripción breve:** Este mapa muestra cómo un estudiante organiza su viaje diario utilizando BusTrack, centrado en la precisión del tiempo estimado de llegada, la ansiedad por retrasos y la necesidad de información confiable en tiempo real.
+
+![Journey Map Estudiante](img/commons/journey-estudiante.png)
+
+<br>
+
+_**Figura 17.** User Journey Map de Manuel Suárez (estudiante universitario), que muestra su flujo de viaje diario y las oportunidades de mejora que aborda BusTrack._  <br> _**Fuente:** elaboración propia._
+
+
+___
+
+#### User Persona 2 – Alejandro Medina (Trabajador)
+
+**Descripción breve:** Este mapa visualiza cómo un trabajador depende de la aplicación para adaptarse a condiciones de tráfico variables y evitar retrasos, destacando su necesidad de alertas inmediatas y estimaciones precisas.
+
+![Journey Map Trabajador](img/commons/journey-trabajador.png)
+
+<br> _**Figura 18.** User Journey Map de Alejandro Medina (trabajador administrativo), ilustrando sus interacciones con el transporte público y el uso de BusTrack para reducir retrasos._ <br> _**Fuente:** elaboración propia._
+
+<br>
+
+___
+
+<br>
+
+### Segmento 2: Empresas de transporte
+
+#### User Persona 3 – Luis Palacios (Administrador de Flota)
+
+**Descripción breve:** El mapa muestra cómo el administrador enfrenta procesos manuales, comunicación dispersa y falta de datos centralizados para la toma de decisiones, resaltando la oportunidad de automatización y monitoreo en tiempo real que ofrece BusTrack.
+
+![Journey Map Administrador](img/commons/journey-administrador.png)
+
+<br> _**Figura 19.** User Journey Map de Luis Palacios (administrador de flota), que detalla sus tareas operativas y cómo BusTrack mejora el monitoreo de buses._  <br> _**Fuente:** elaboración propia._
+
+___
+
+#### User Persona 4 – José Ramírez (Supervisor de Rutas)
+
+**Descripción breve:** Este Journey Map refleja la complejidad del monitoreo de múltiples unidades en tiempo real, la presión operativa y los errores causados por la comunicación manual, destacando la necesidad de alertas automáticas y paneles centralizados.
+
+![Journey Map Supervisor](img/commons/journey-supervisor.png)
+
+<br> _**Figura 20.** User Journey Map de José Ramírez (supervisor de rutas), representando la coordinación de unidades y la necesidad de alertas en tiempo real._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
 ### 2.3.4. Empathy Mapping.
 ### 2.3.5. As-is Scenario Mapping.
 ## 2.4. Ubiquitous Language.

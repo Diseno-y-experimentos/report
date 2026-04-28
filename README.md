@@ -422,6 +422,40 @@ Empresas de transporte que necesitan gestionar sus unidades.
 
 ## 1.3. Segmentos objetivo.
 
+### Segmento objetivo Nº 1: Pasajeros de transporte público (estudiantes y trabajadores)
+
+### Aspectos demográficos
+- Sexo: masculino y femenino.  
+- Edad: jóvenes y adultos entre 18 y 50 años.  
+
+### Aspectos geográficos
+- Nacionalidad: peruana.  
+- Zona geográfica: principalmente Lima Metropolitana y Callao, donde se concentra el 87% de los viajes en transporte convencional.  
+- También tienen potencial en ciudades intermedias como Arequipa, Trujillo y Chiclayo.  
+
+### Aspectos psicográficos
+- Personas que dependen del transporte público como su principal medio de movilidad.  
+- Buscan reducir la incertidumbre, los tiempos de espera y la inseguridad en sus trayectos diarios.  
+- Valoran aplicaciones fáciles de usar, con información confiable y en tiempo real.  
+- Su motivación principal es la puntualidad y la eficiencia para llegar a sus destinos, ya sea a clases o a centros laborales.  
+
+---
+
+### Segmento objetivo Nº 2: Empresas de transporte urbano (operadores y administradores de flota)
+
+### Aspectos demográficos
+- Tipo de entidad: empresas medianas y grandes que operan buses, coasters o combis.  
+- Personal involucrado: administradores de rutas, supervisores y propietarios de líneas.  
+
+### Aspectos geográficos
+- Ubicación: Lima Metropolitana y Callao, con posibilidad de expansión a otras ciudades de alta demanda.  
+
+### Aspectos psicográficos
+- Buscan herramientas tecnológicas que permitan optimizar la gestión de flotas y mejorar la eficiencia operativa.  
+- Necesitan fortalecer la confianza de los pasajeros mediante transparencia en horarios, puntualidad y seguridad.  
+- Están interesados en soluciones que integren datos de movilidad y faciliten la toma de decisiones.  
+- Su motivación principal es mejorar la reputación, competitividad y rentabilidad en un mercado dominado por el transporte informal.  
+
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores.
 ### 2.1.1. Análisis competitivo.

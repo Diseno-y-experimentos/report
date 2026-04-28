@@ -285,11 +285,126 @@
 
 # Capítulo IV: Product Design
 ## 4.1. Style Guidelines.
+
+La presente sección define las pautas visuales y de identidad gráfica empleadas en BusTrack. Su objetivo es garantizar coherencia, claridad y accesibilidad en todos los elementos de la interfaz, alineando la experiencia del usuario con la propuesta de valor y el enfoque profesional de la plataforma web.
+
 ### 4.1.1. General Style Guidelines.
+
+- **Branding**  
+  Las directrices generales de estilo de BusTrack se definen a partir de la identidad visual reflejada en la landing page desarrollada. El objetivo es asegurar coherencia, legibilidad y accesibilidad en todas las plataformas. La marca está representada por un logo que combina un ícono de bus y un marcador de ubicación, acompañado por el nombre de la startup en tipografía sans-serif bold. Este diseño transmite movilidad, confianza y simplicidad.
+<p align="center">
+  <img src="img/commons/BusTrackLogo.jpg" alt="Logo BusTrack" width="200" height="200">
+</p>
+
+ -**Figura 31.** Logo de BusTrack, que combina un ícono de bus y un marcador de ubicación para representar el transporte urbano geolocalizado._  
+<br>
+ _**Fuente:** elaboración propia._
+
+<br>
+
+- **Paleta de colores**  
+  La paleta refuerza valores de sostenibilidad, frescura y accesibilidad.  <br><br>
+  * **Verde principal** (#4D7B2D aprox.): utilizado en encabezados, títulos, botones y barra de navegación. Representa sostenibilidad, confianza y movilidad. <br>
+    ![Verde Principal](img/commons/VerdePrincipial.png)
+    
+  * **Verde claro** (#EAF4E0 aprox.): empleado en fondos de secciones secundarias (Beneficios, Misión, Visión). Aporta frescura y ligereza.  <br>
+    ![Verde Claro](img/commons/VerdeClaro.png)
+    
+  * **Blanco** (#FFFFFF): color de fondo predominante para dar limpieza y contraste.  <br>
+  
+    ![Blanco](img/commons/Blanco.png)
+    
+  * **Gris oscuro / Negro** (#212121 aprox.): utilizado en textos secundarios y párrafos para la legibilidad.<br>
+    ![Gris Oscuro](img/commons/GrisOscuro.png)
+
+  * **Rojo de alerta** `#D90000`: reservado para acciones destructivas o críticas, como botones de “Cerrar sesión” en la página de empresas y “Borrar historial” en la página de pasajeros.<br>
+  <img src="img/commons/RectanguloRojo.png" alt="Rojo de alerta" width="180">
+
+  * **Amarillo de advertencia** `#F9FAB6`: se usa en la página de empresa para resaltar buses en **mantenimiento**, buses con **retraso de X minutos**, alertas de **gravedad media** y problemas **pendientes** aún no resueltos.<br>
+  <img src="img/commons/RectanguloAmarillo.png" alt="Amarillo de advertencia" width="180">
+
+  * **Rojo suave de error** `#FFC9C9`: empleado para indicar estados críticos en la página de empresa, como buses **inactivos** o **fuera de servicio**, así como alertas de **gravedad alta**.<br>
+  <img src="img/commons/RectanguloRosa.png" alt="Rojo suave de error" width="180">
+
+  * **Verde de estado OK** `#EBFAB6`: se utiliza para señalar buses **activos** y **en horario**, así como alertas de **gravedad baja** en la página de empresa.<br>
+  <img src="img/commons/RectanguloLime.png" alt="Verde de estado OK" width="180">
+
+  * **Azul de acción para pasajeros** `#2479E8`: color principal de botones en las pantallas de pasajeros (por ejemplo, “Buscar ruta” o “Guardar ruta”), asociado a acciones de exploración y planificación del viaje.<br>
+  <img src="img/commons/RectanguloAzul.png" alt="Azul de acción para pasajeros" width="180">
+
+  * **Verde corporativo oscuro** `#255000`: aplicado a botones y elementos de acción en la página de empresas, otorgando un tono más serio y profesional para operaciones de gestión de flota.<br>
+  <img src="img/commons/RectanguloVerde.png" alt="Verde corporativo oscuro" width="180">
+
+- **Tipografía**  
+  Se utiliza una tipografía sans-serif, principalmente **Montserrat** en sus variantes regular y bold. La combinación busca transmitir modernidad, claridad y confianza, manteniendo legibilidad en distintos tamaños y dispositivos.
+<p align="center">
+  <img src="img/commons/Montserrat.webp" alt="Tipografía Montserrat" width="400" height="700">
+</p>
+
+_**Figura 32.** Muestra de la tipografía Montserrat utilizada como base para los textos de BusTrack._  <br> _**Fuente:** elaboración propia._
+
+- **Spacing**  
+  * Alrededor del logo: dejar un margen libre equivalente al alto de la letra **B** de “BusTrack”.  
+  * Botones: padding interno mínimo de 12–16 px para asegurar comodidad en la interacción.  
+  * Textos: interlineado de 1.5 para mejorar la lectura en pantallas.  
+  * Secciones web: separar bloques de contenido con márgenes verticales de 48–64 px para evitar saturación visual y garantizar orden.
+
 ### 4.1.2. Web Style Guidelines.
+
+Las directrices específicas para la versión web de BusTrack buscan garantizar consistencia visual, accesibilidad y adaptabilidad en distintos dispositivos.
+
+* **Diseño responsive**
+  - Estructura modular con secciones claramente diferenciadas (Hero, Cómo usar, Beneficios, Sobre Nosotros).  
+  - Uso de grillas en desktop (por ejemplo, tres columnas en Beneficios y Cómo usar) y reordenamiento en formato vertical en mobile.
+
+* **Botones y elementos interactivos**
+  - Botón primario (ejemplo: “Iniciar Sesión”) en fondo blanco con borde verde, que se rellena en verde al pasar el cursor (*hover*).  
+  - Tamaño mínimo de 44 px para accesibilidad en pantallas táctiles.  
+  - Estados definidos: normal, hover, activo y deshabilitado.
+
+* **Jerarquía de textos**
+  - Encabezados en tipografía sans-serif (Montserrat) en negrita (H1 y H2) para lograr impacto visual.  
+  - Párrafos y descripciones en sans-serif regular para asegurar legibilidad en pantalla.  
+  - Colores de texto adaptados al fondo: verde sobre blanco y negro/gris sobre verde claro.
+
+* **Imágenes y multimedia**
+  - Iconografía simple en formato SVG para garantizar escalabilidad.  
+  - Imágenes optimizadas con bordes redondeados para mantener coherencia visual.
+
+<br>
+
 ### 4.1.3. Mobile Style Guidelines.
+
+Las directrices de estilo móvil de BusTrack buscan asegurar una experiencia clara, rápida y accesible desde smartphones, enfocándose en usuarios que necesitan consultar rutas, ubicación de buses, paraderos cercanos y recibir notificaciones relevantes.
+
+El diseño móvil debe mantener la identidad visual de la marca. Esto incluye el uso del verde principal como color representativo, el verde claro para fondos suaves, el blanco para mantener limpieza visual, y el azul de acción para botones dirigidos a los pasajeros. La tipografía utilizada será Montserrat, garantizando legibilidad en pantallas pequeñas. Además, la estructura debe organizarse en una sola columna, con tarjetas verticales, botones amplios y navegación simple para evitar saturación visual.
+
+**Características generales del diseño móvil:**
+- **Tamaño mínimo adecuado para elementos interactivos**: especialmente botones como “Buscar ruta”, “Guardar ruta”, “Ver en Google Maps”, “Notificar llegada” y “Guardar cambios”.
+- **Estados de alerta**: deben diferenciarse por color (verde para correcto, amarillo para advertencias y rojo para situaciones críticas).
+
 #### 4.1.3.1. iOS Mobile Style Guidelines.
+
+Para la versión iOS, el objetivo es mantener una interfaz limpia, ordenada y visualmente ligera, respetando la navegación natural del sistema operativo.
+
+- Las pantallas deben **priorizar el contenido principal** en la parte superior, utilizando un **desplazamiento vertical fluido** para revisar rutas, paraderos y notificaciones.
+- **Botones principales** deben ubicarse en zonas de fácil alcance, preferentemente en la parte inferior o central de la pantalla. Estos botones deben tener **alto contraste** y un **tamaño adecuado** para facilitar la interacción táctil, como “Buscar ruta” o “Guardar cambios”.
+- La navegación debe ser **sencilla y directa**. Es recomendable usar un **botón de retorno visible** para secciones como perfil, historial, rutas favoritas o configuración.
+
+En cuanto al **diseño visual**, la estética debe ser **minimalista**, con **fondos claros**, **tarjetas suaves** y **textos breves**. La jerarquía tipográfica debe ser clara, usando **tipografía sans-serif** en negrita para los títulos y un estilo regular para las descripciones.
+
 #### 4.1.3.2. Android Mobile Style Guidelines.
+
+La versión de Android se enfoca en una **estructura visual práctica y funcional**.
+
+- Se pueden utilizar **tarjetas**, **botones flotantes** y **barras de navegación simples** para proporcionar una experiencia de usuario fluida.
+- La **navegación debe ser sencilla**, con opciones como **barra inferior** o **menú hamburguesa** para acceder a secciones como Inicio, Rutas, Paraderos, Notificaciones y Perfil.
+- Los **botones** deben tener **alto contraste** y sus estados (normal, presionado, deshabilitado, activo) deben ser visualmente diferenciados para mayor claridad.
+
+Las **tarjetas** deben mostrar información **resumida** y **organizada**. Por ejemplo, una tarjeta de paradero puede incluir el nombre, la dirección, la distancia y las rutas disponibles. Las tarjetas de notificación deben mostrar el tipo de alerta, el mensaje y la hora.
+
+En cuanto al **diseño visual**, la versión Android debe seguir la misma **identidad visual** de BusTrack, respetando los colores, la tipografía Montserrat y el diseño responsive.
+
 ## 4.2. Information Architecture.
 ### 4.2.1. Organization Systems.
 ### 4.2.2. Labeling Systems.

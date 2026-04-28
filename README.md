@@ -651,6 +651,9 @@ Se observó además una resistencia cultural hacia la adopción tecnológica, es
 <br>
 
 ## 2.3. Needfinding.
+
+En esta etapa se identifican y analizan las necesidades reales de los usuarios para asegurar que BusTrack responda a las expectativas y problemas detectados durante la investigación. Para ello, se desarrollan los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps, permitiendo comprender profundamente los comportamientos, motivaciones y frustraciones de cada segmento objetivo.
+
 ### 2.3.1. User Personas.
 ### 2.3.2. User Task Matrix.
 ### 2.3.3. User Journey Mapping.

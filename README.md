@@ -406,11 +406,57 @@ Las **tarjetas** deben mostrar información **resumida** y **organizada**. Por e
 En cuanto al **diseño visual**, la versión Android debe seguir la misma **identidad visual** de BusTrack, respetando los colores, la tipografía Montserrat y el diseño responsive.
 
 ## 4.2. Information Architecture.
+
+Esta sección describe la arquitectura de información de BusTrack, detallando la organización, etiquetado, navegación y sistemas de búsqueda utilizados. Su propósito es asegurar que los usuarios puedan acceder de manera rápida e intuitiva a las funcionalidades principales de la plataforma.
+
 ### 4.2.1. Organization Systems.
+
+La información en BusTrack se organiza en una estructura jerárquica y modular que facilita la navegación del usuario, tanto en la landing page como en la aplicación web.
+
+El siguiente organigrama de contenidos representa visualmente la estructura jerárquica del sitio. El diagrama inicia con la sección principal **Hero Section**, que agrupa el mensaje introductorio y el botón de acceso. Luego se despliega en tres bloques informativos: **“Cómo usar BusTrack”**, **“Beneficios”** y **“Sobre Nosotros”**. Cada bloque se descompone en subapartados que detallan las funciones básicas del sistema, tales como buscar rutas, recibir alertas, consultar información en tiempo real, guardar rutas favoritas y acceder a la misión y visión de la startup.
+
+
+<p align="center">
+  <img src="img/commons/Arbol.png" alt="Árbol de contenidos de BusTrack" width="700" height="600">
+</p>
+
+_**Figura 33.** Árbol de contenidos de BusTrack utilizado para representar la organización jerárquica de la información en la landing page._   <br> _**Fuente:** elaboración propia._
+
 ### 4.2.2. Labeling Systems.
+
+Los sistemas de etiquetado emplean un lenguaje claro, breve y orientado a la acción:
+
+* Menú de navegación: “Cómo usar”, “Beneficios”, “Sobre Nosotros”.  
+* Botón principal: “Iniciar Sesión”.  
+* Secciones informativas: “Misión”, “Visión”.  
+* Mensajes claros que transmiten utilidad inmediata, evitando tecnicismos.
+
 ### 4.2.3. SEO Tags and Meta Tags
+
+Se emplearán etiquetas optimizadas para mejorar el posicionamiento en buscadores:
+
+* **Meta Title:** *BusTrack – Encuentra tu bus en tiempo real*.  
+* **Meta Description:** Aplicación web que muestra ubicación de buses, horarios en vivo y alertas para viajar más seguro y sin esperas innecesarias.  
+* **Keywords:** transporte público, buses en tiempo real, rutas de bus, movilidad urbana, BusTrack Perú.  
+* **Etiquetas alt en imágenes:** descripciones breves y precisas que indiquen el contenido visual y su propósito.
+
 ### 4.2.4. Searching Systems.
+
+BusTrack incorporará un sistema de búsqueda interno enfocado en la funcionalidad clave:
+
+* **Búsqueda de rutas:** el usuario podrá ingresar su punto de origen y destino para obtener información de buses disponibles.  
+* **Acceso a rutas favoritas:** opción para guardar y consultar rápidamente rutas frecuentes.  
+* **Resultados en tiempo real:** tiempos estimados de llegada (ETA) y alertas sobre tráfico o desvíos en las rutas seleccionadas.
+
 ### 4.2.5. Navigation Systems.
+
+El sistema de navegación busca ser intuitivo y accesible:
+
+* **Navegación principal (top bar):** Inicio, Cómo usar, Beneficios, Sobre Nosotros, Iniciar Sesión.  
+* **Navegación secundaria:** botones de acción dentro de cada sección (por ejemplo, “Guardar rutas favoritas”).  
+* **Estructura responsive:** en dispositivos móviles, el menú se transforma en un ícono de hamburguesa para ahorrar espacio.  
+* **Flujo del usuario:** el recorrido esperado es Inicio → Conocer cómo funciona → Revisar beneficios → Iniciar sesión → Usar BusTrack.
+
 ## 4.3. Landing Page UI Design.
 ### 4.3.1. Landing Page Wireframe.
 ### 4.3.2. Landing Page Mock-up.

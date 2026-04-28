@@ -464,6 +464,9 @@ Para destacar frente a las aplicaciones presentes en el mercado, **BusTrack** ap
 Con estas estrategias, **BusTrack** busca convertirse en una opción confiable y útil para los ciudadanos de Lima Metropolitana, apostando por la innovación tecnológica y por brindar información clara y en tiempo real que facilite la movilidad diaria de estudiantes, trabajadores y usuarios frecuentes del transporte público.
 
 ## 2.2. Entrevistas.
+
+Como parte del proceso de validación del modelo de negocio de BusTrack, se plantean entrevistas semiestructuradas dirigidas a los dos segmentos objetivos: pasajeros de transporte público y empresas de transporte urbano. El propósito es identificar sus motivaciones, comportamientos, expectativas y principales frustraciones en relación con la movilidad urbana, así como validar la propuesta de valor de la plataforma.
+
 ### 2.2.1. Diseño de entrevistas.
 ### 2.2.2. Registro de entrevistas.
 ### 2.2.3. Análisis de entrevistas.

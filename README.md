@@ -655,6 +655,103 @@ Se observó además una resistencia cultural hacia la adopción tecnológica, es
 En esta etapa se identifican y analizan las necesidades reales de los usuarios para asegurar que BusTrack responda a las expectativas y problemas detectados durante la investigación. Para ello, se desarrollan los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps, permitiendo comprender profundamente los comportamientos, motivaciones y frustraciones de cada segmento objetivo.
 
 ### 2.3.1. User Personas.
+
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+### Estudiante universitario
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Manuel Suarez |
+| **Age**          | 24 años |
+| **Occupation**   | Estudiante universitario |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Pasajero frecuente |
+| **Archetype**    | Usuario Pragmático |
+| **Image**        | <img src="img/commons/manuelSuarez.png" alt="Manuel Suarez" width="200"/> <br><br> _**Figura 13.** Imagen representativa del User Persona “Manuel Suárez”, estudiante universitario usuario frecuente de transporte público._ <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Lo que más necesito es saber con certeza cuándo llegará el bus para no perder tiempo ni arriesgarme en el paradero." |
+| **Motivations**  | Incentive: 80/100<br>Fear: 75/100<br>Achievement: 80/100<br>Growth: 65/100<br>Power: 40/100<br>Social: 85/100 |
+| **Goals**        | - Llegar puntual a clases sin depender de información incierta.<br>- Optimizar su tiempo para estudiar y evitar esperas innecesarias.<br>- Sentirse seguro en trayectos diarios, especialmente en paraderos con poca iluminación o vigilancia. |
+| **Frustrations** | - No saber con exactitud cuándo pasará el bus.<br>- Perder tiempo en paraderos inseguros o llenos.<br>- Apps como Moovit no siempre muestran retrasos reales ni desvíos de ruta.<br> - Estrés cuando llega tarde por demoras inesperadas.|
+| **Biography**    | Manuel estudia en una universidad en el centro de Lima y vive en un distrito alejado. Sale temprano todos los días y realiza entre dos y tres transbordos para llegar a clases. Antes de salir, revisa aplicaciones como Moovit o Google Maps para planificar su ruta, pero muchas veces la información no es confiable, ya que los buses se retrasan, no aparecen en el mapa o toman desvíos sin aviso. Esto lo obliga a esperar largos minutos en paraderos inseguros, lo que le genera ansiedad y pérdida de tiempo valioso. En días de evaluación, su principal preocupación es llegar puntual. Usa activamente redes sociales y confía en aplicaciones cuando le brindan datos claros y en tiempo real.|
+| **Personality**  | Extrovert: 60/100<br>Thinking: 80/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 85/100<br>Software: 70/100<br>Mobile Apps: 90/100<br>Social Networks: 95/100 |
+| **Brands**       | WhatsApp, Google Maps, TikTok, Moovit, TuRuta |
+
+<br>
+
+## Trabajador
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Alejandro Medina |
+| **Age**          | 32 años |
+| **Occupation**   | Empleado administrativo |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Pasajero frecuente |
+| **Archetype**    | Viajero Organizado |
+| **Image**        | <img src="img/commons/alejandroMedina.jpg" alt="Alejandro Medina" width="200"/> <br><br> _**Figura 14.** Imagen representativa del User Persona “Alejandro Medina”, trabajador administrativo que usa transporte público a diario._  <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Necesito que el transporte sea puntual porque llegar tarde al trabajo no es una opción." |
+| **Motivations**  | Incentive: 80/100<br>Fear: 75/100<br>Achievement: 85/100<br>Growth: 65/100<br>Power: 50/100<br>Social: 70/100 |
+| **Goals**        | - Llegar puntual al trabajo evitando esperas innecesarias.<br>- Optimizar su tiempo de traslado para tener más tiempo libre al final del día.<br>- Usar una app confiable que proporcione información precisa sobre buses y tráfico en tiempo real.<br> - Reducir el estrés diario asociado al transporte público. |
+| **Frustrations** | - Largas esperas sin información clara sobre la llegada del bus.<br>- Aplicaciones desactualizadas que no muestran desvíos o retrasos reales.<br>- Perder tiempo en trayectos mal planificados.<br> - Inseguridad en paraderos, sobre todo en horarios nocturnos. |
+| **Biography**    | Alejandro trabaja en una oficina en el centro de Lima y vive en un distrito periférico. Sale muy temprano todos los días para evitar el tráfico, pero aun así pasa más de dos horas en transporte público entre ida y vuelta. Usa Moovit para revisar rutas antes de salir, aunque con frecuencia se frustra cuando los buses no llegan a la hora estimada o toman desvíos sin aviso. La puntualidad es crucial en su trabajo, por lo que la falta de información confiable le genera ansiedad. Una aplicación que le brinde datos en tiempo real y alertas claras significaría más control sobre su tiempo y menos estrés.|
+| **Personality**  | Extrovert: 55/100<br>Thinking: 85/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 85/100<br>Software: 65/100<br>Mobile Apps: 80/100<br>Social Networks: 85/100 |
+| **Brands**       | WhatsApp, Moovit, Facebook, TikTok |
+
+<br>
+
+## Segmento Objetivo 2: Empresas de Transporte Urbano
+
+##  Administrador de flota
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Luis Palacios |
+| **Age**          | 38 años |
+| **Occupation**   | Administrador de flota en empresa de transporte urbano |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Empresa de transporte urbano |
+| **Archetype**    | Gestor Eficiente |
+| **Image**        | <img src="img/commons/luisPalacios.jpg" alt="Luis Palacios" width="200"/> <br><br> _**Figura 15.** Imagen representativa del User Persona “Luis Palacios”, administrador de flota en una empresa de transporte urbano._  <br> _**Fuente:** elaboración propia._|
+| **Quote**        | "Si puedo monitorear mis buses en tiempo real, puedo ofrecer un mejor servicio y ganar más pasajeros." |
+| **Motivations**  | Incentive: 85/100<br>Fear: 65/100<br>Achievement: 90/100<br>Growth: 70/100<br>Power: 75/100<br>Social: 70/100 |
+| **Goals**        | - Monitorear en tiempo real la ubicación y estado de todas las unidades.<br>- Detectar y resolver incidencias operativas rápidamente.<br>- Mejorar la puntualidad general y reducir reclamos de usuarios.<br>- Digitalizar procesos manuales para optimizar tiempos y costos.<br>- Usar herramientas que faciliten decisiones estratégicas. |
+| **Frustrations** | - Depender de llamadas, WhatsApp y cuadernos para coordinar.<br>- No tener visibilidad clara del estado de las rutas en tiempo real.<br>- Dificultad para anticipar retrasos o desvíos.<br>- Perder tiempo consolidando datos manualmente en Excel. |
+| **Biography**    | Luis es administrador en una empresa de transporte urbano que opera 18 buses en Lima Metropolitana. Su día comienza muy temprano revisando reportes manuales y coordinando con supervisores mediante llamadas y mensajes. Debe responder rápidamente a incidencias como desvíos o congestión, pero la falta de información centralizada dificulta la toma de decisiones oportunas. Además, debe presentar reportes detallados a la gerencia, lo que implica un gran esfuerzo manual. Busca una plataforma que brinde control total en tiempo real, reduzca errores y modernice la gestión de flota para competir con el transporte informal. |
+| **Personality**  | Extrovert: 65/100<br>Thinking: 85/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 75/100<br>Software: 60/100<br>Mobile Apps: 65/100<br>Social Networks: 60/100 |
+| **Brands**       | WhatsApp, Excel, Facebook |
+
+<br>
+
+##  Supervisor de Rutas
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | José Ramírez |
+| **Age**          | 40 años |
+| **Occupation**   | Supervisor de rutas en empresa de transporte urbano |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Empresa de transporte urbano |
+| **Archetype**    | Supervisor Operativo |
+| **Image**        | <img src="img/commons/joseRamirez.jpg" alt="José Ramírez" width="200"/> <br><br> _**Figura 16.** Imagen representativa del User Persona “José Ramírez”, supervisor de rutas en una empresa de transporte urbano._  <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Lo más difícil es coordinar con los choferes en medio del tráfico y asegurar que los buses lleguen a tiempo." |
+| **Motivations**  | Incentive: 70/100<br>Fear: 60/100<br>Achievement: 80/100<br>Growth: 60/100<br>Power: 65/100<br>Social: 70/100 |
+| **Goals**        | - Coordinar eficientemente la operación diaria de múltiples rutas.<br>- Anticipar problemas de tráfico o desvíos antes de que afecten a los pasajeros.<br>- Reducir reclamos por incumplimiento de horarios.<br>- Estandarizar reportes e incidencias.<br>- Recibir alertas automáticas para actuar más rápido. |
+| **Frustrations** | - Depender de WhatsApp y llamadas individuales.<br>- No contar con un panel centralizado para incidencias en tiempo real.<br>- Perder tiempo obteniendo información fragmentada.<br>- No poder anticipar bloqueos o retrasos.<br>- Dificultad para demostrar su desempeño ante la administración. |
+| **Biography**    | José supervisa varias rutas de transporte urbano en Lima Metropolitana. Su jornada comienza antes de las seis de la mañana y consiste en coordinar con conductores, verificar operaciones y reaccionar rápidamente a incidencias en el tránsito. Su principal herramienta son grupos de WhatsApp, llamadas y cuadernos físicos, lo que ocasiona retrasos y decisiones tardías. A menudo se entera tarde de bloqueos o accidentes, generando retrasos acumulados. Además, debe entregar reportes diarios elaborados manualmente. Una plataforma que centralice la información, envíe alertas automáticas y permita monitoreo en tiempo real transformaría su trabajo y reduciría la presión operativa. |
+| **Personality**  | Extrovert: 65/100<br>Thinking: 75/100<br>Judging: 80/100 |
+| **Technology**   | IT and Internet: 65/100<br>Software: 50/100<br>Mobile Apps: 75/100<br>Social Networks: 60/100 |
+| **Brands**       | WhatsApp, Excel, Facebook |
+
+<br>
+
 ### 2.3.2. User Task Matrix.
 ### 2.3.3. User Journey Mapping.
 ### 2.3.4. Empathy Mapping.

@@ -602,6 +602,54 @@ Como parte del proceso de validación del modelo de negocio de BusTrack, se plan
 <br>
 
 ### 2.2.3. Análisis de entrevistas.
+
+A partir de las entrevistas realizadas, se agruparon las respuestas más representativas de cada segmento para identificar patrones comunes, necesidades y oportunidades de mejora.
+
+### Segmento 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)  
+
+| **Preguntas** | **Respuestas Generales** |
+|---|---|
+| ¿Qué medio de transporte público usas con más frecuencia (bus, coaster, combi, Metropolitano, Metro)? | Los más utilizados son buses y combis para recorridos diarios, además de corredores de la ATU y el Metropolitano para trayectos largos o frecuentes. |
+| ¿Qué situaciones específicas te generan más preocupación al viajar? | Principalmente la inseguridad (robos durante los trayectos) y la incertidumbre por desvíos de ruta o cambios inesperados. |
+| ¿Qué pasos sigues normalmente antes de salir de casa para tomar el bus? | Consultan previamente rutas y paraderos en el celular, investigan precios y tiempos estimados. Algunos usan apps como “TuRuta” o Moovit, aunque no siempre confían en su precisión. |
+| ¿Has usado alguna aplicación para movilizarte en la ciudad (Waze, Google Maps, Moovit, etc.)? ¿Cómo fue tu experiencia? | Sí, principalmente Moovit. Sin embargo, señalan que no siempre está actualizada, lo que genera retrasos y confusión en la planificación de viajes. |
+| ¿Qué importancia le das a recibir información en tiempo real sobre la llegada de buses? | Se considera muy importante, ya que permite organizar mejor el tiempo y evitar esperas innecesarias. |
+| ¿Qué problemas enfrentas con mayor frecuencia en tus traslados (tiempo de espera, congestión, inseguridad, falta de información)? | Las largas esperas sin información, congestión en horas punta e inseguridad dentro de buses y paraderos. |
+| ¿Qué haría que confíes en una aplicación como BusTrack para planificar tus viajes? | Que muestre información actualizada y verificada sobre ubicación de buses, precios y posibles desvíos. También que garantice seguridad validando a los conductores. |
+| ¿Te gustaría recibir notificaciones sobre la llegada del bus, retrasos o desvíos de ruta? | Sí, especialmente sobre retrasos y desvíos, ya que afectan la puntualidad en clases y el trabajo. |
+| ¿Qué redes sociales o aplicaciones móviles usas más para informarte en tu día a día? | Principalmente TikTok, Instagram, X (Twitter) y canales de noticias digitales. |
+| ¿Cómo medirías que una aplicación realmente mejora tu experiencia de viaje? | En la práctica, comprobando que reduce tiempos de espera, brinda información confiable y hace el viaje más seguro y eficiente. |
+
+**Insights:**
+
+Se identificó una fuerte necesidad de control en los pasajeros, quienes experimentan ansiedad e inseguridad ante la falta de información sobre los tiempos de llegada de los buses. La inmediatez es un valor clave, ya que los usuarios prefieren aplicaciones que proporcionen datos actualizados en tiempo real sobre rutas y horarios.
+
+La confianza está estrechamente relacionada con la seguridad, por lo que esperan validación de conductores, monitoreo de unidades y rutas verificadas. Finalmente, su motivación principal es de carácter práctico, pues buscan optimizar el tiempo de viaje y reducir la incertidumbre más que explorar aplicaciones por simple novedad. 
+
+<br>
+
+### Segmento 2: Empresas de Transporte Urbano
+| **Preguntas** | **Respuestas Generales** |
+|---|---|
+| ¿Cómo gestionan actualmente la ubicación y monitoreo de sus buses? | No cuentan con un sistema especializado, dependen de llamadas rápidas a los choferes y grupos de WhatsApp para reportar ubicación en ruta. |
+| ¿Qué herramientas usan para controlar sus buses y qué limitaciones encuentran en ellas? | Usan cuadernos, hojas de ruta y, en algunos casos, Excel para registrar salidas, llegadas y control básico de operaciones. |
+| ¿Qué información reciben de los conductores y cómo la gestionan? | Se reportan retrasos, tráfico, problemas mecánicos e incidentes en ruta (como policías o semáforos dañados) mediante mensajes o llamadas, y se gestionan manualmente. |
+| ⁠¿Han utilizado aplicaciones para comunicarse con pasajeros? Si ese es el caso, ¿les fue útil y qué problemas encontraron? | No cuentan con un canal digital para pasajeros; algunos han considerado apps, pero aún no las aplican. |
+| ¿Cuáles son los mayores retos para mantener la puntualidad y la seguridad de los viajes? | El tráfico, bloqueos, obras en las vías y la falta de información en tiempo real. Además, la limpieza de buses y la coordinación con choferes a distancia dificultan la operación. |
+| ¿Qué tipo de datos o reportes serían más valiosos para su gestión diaria (tiempos de llegada, cantidad de pasajeros, retrasos)? | Horarios exactos de salida y llegada, ubicación en tiempo real, retrasos por incidentes y cantidad de pasajeros transportados por vuelta. |
+| ¿Qué funcionalidades de una aplicación como BusTrack les motivarían a adoptarla? | Monitoreo en tiempo real de las unidades, reportes automáticos y alertas inmediatas de incidencias o desvíos. |
+| ¿Cómo creen que una plataforma de información en tiempo real podría mejorar la confianza de los pasajeros? | Brindando horarios verificados de salida y llegada para que los pasajeros planifiquen mejor su tiempo y perciban mayor confiabilidad. |
+| ¿Qué beneficios esperan obtener al implementar una solución tecnológica (mayor satisfacción, competitividad, reducción de costos)? | Mayor satisfacción de los pasajeros, incremento de usuarios, reducción de quejas y mayor control interno de la operación. |
+| ¿Qué barreras internas o externas ven para adoptar una aplicación digital de gestión de transporte? | Los costos de implementación, la resistencia de los choferes a adaptarse y la desconfianza inicial hacia nuevas tecnologías. |
+
+**Insights:**
+
+Las empresas de transporte urbano presentan una gestión operativa manual y poco eficiente, sustentada en llamadas telefónicas, registros en papel o en hojas de cálculo, lo que limita la trazabilidad y control de la flota. La falta de visibilidad en tiempo real impide tomar decisiones oportunas y afecta la puntualidad de los servicios.
+
+Se observó además una resistencia cultural hacia la adopción tecnológica, especialmente entre conductores con menor experiencia digital. Aun así, los entrevistados expresaron alto interés en obtener reportes automáticos y datos analíticos para mejorar la gestión. Las barreras económicas y de capacitación continúan siendo los principales obstáculos para la implementación de soluciones tecnológicas como BusTrack.
+
+<br>
+
 ## 2.3. Needfinding.
 ### 2.3.1. User Personas.
 ### 2.3.2. User Task Matrix.

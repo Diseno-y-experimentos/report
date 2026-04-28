@@ -10,7 +10,7 @@
 
 <h1 align="center"> Periodo 2026 - 1 </h1>
 
-<h1 align="center"> Código de curso: 1ASI0730</h1>
+<h1 align="center"> Código de curso: 1ASI0732</h1>
 
 <h1 align="center"> Nombre del curso: Diseño de Experimentos de Ingeniería de Software</h1>
 

@@ -324,9 +324,53 @@
 ### 4.10.1. Relational/Non-Relational Database Diagram.
 
 # Capítulo V: Product Implementation
+
 ## 5.1. Software Configuration Management.
+A continuación, se describe el proceso mediante el cual organizamos, gestionamos y controlamos los cambios realizados en el desarrollo de BusTrack.
+
 ### 5.1.1. Software Development Environment Configuration.
+En esta sección se describen las herramientas utilizadas en el desarrollo del proyecto BusTrack y su propósito dentro del ciclo de vida del software.
+
+Para el desarrollo del sistema, se utiliza Vue.js con Vite en el frontend, .NET 8 con C# para la API REST, y HTML, CSS y JavaScript para la landing page. Además, se emplea JSON Server como Fake API para simular la comunicación con la base de datos durante las primeras etapas del desarrollo.
+
 ### 5.1.2. Source Code Management.
+Usuarios de Github
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Usuario de GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cuentas Peña, Joaquin Alberto</td>
+      <td>JoaCUPE</td>
+    </tr>
+    <tr>
+      <td>Meza Camayo, Lynn Jeeferzon</td>
+      <td>LynnJeefer</td>
+    </tr>
+    <tr>
+      <td>Fajardo Monroy, Walter Luis</td>
+      <td>WalterFajardo</td>
+    </tr>
+    <tr>
+      <td>Santur Tello, Andrea Elizabeth</td>
+      <td>andreli-star</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**GitFlow Workflow y Convenciones de Commits**
+Para la gestión del código fuente, el equipo implementó el modelo GitFlow, basado en la propuesta de Vincent Driessen en “A successful Git branching model”. Este enfoque permite organizar el desarrollo de manera estructurada, facilitando la colaboración y el control de versiones.
+
+
+
+
 ### 5.1.3. Source Code Style Guide & Conventions.
 ### 5.1.4. Software Deployment Configuration.
 ## 5.2. Product Implementation & Deployment.
@@ -334,6 +378,35 @@
 ### 5.2.2. Implemented Landing Page Evidence
 ### 5.2.3. Implemented Frontend-Web Application Evidence
 ### 5.2.4. Acuerdo de Servicio - SaaS
+<br>
+
+El Acuerdo de Servicio SaaS define las condiciones bajo las cuales los usuarios acceden y utilizan la plataforma BusTrack, asegurando transparencia, seguridad y cumplimiento normativo.
+
+a) Objetivo del acuerdo
+
+Establecer un marco de uso claro para los usuarios de la plataforma BusTrack, garantizando un servicio confiable, seguro y alineado a las normativas de protección de datos.
+
+b) Alcance
+
+El acuerdo aplica a todos los componentes del sistema:
+
+Landing Page: Difusión del servicio y captación de usuarios.
+Frontend Web Application: Interacción del usuario con el sistema y visualización de la información.
+Backend (API REST): Procesamiento de datos y lógica del sistema.
+
+c) Principales disposiciones
+
+Licencia de uso: El usuario accede a una licencia limitada, no exclusiva y revocable del servicio.
+Propiedad intelectual: Todo el sistema pertenece al equipo desarrollador de BusTrack.
+Protección de datos: Se garantiza la confidencialidad de la información conforme a la normativa vigente (Ley N.º 29733 – Perú).
+Responsabilidad del usuario: El usuario debe proporcionar información verídica y proteger sus credenciales.
+Disponibilidad del servicio: El sistema puede ser suspendido temporalmente por mantenimiento.
+Limitación de responsabilidad: No se garantiza disponibilidad absoluta ante fallas externas.
+
+d) Publicación
+
+El acuerdo será publicado dentro de la landing page en la sección “Términos y Condiciones”, accesible para todos los usuarios.
+
 ### 5.2.5. Implemented Native-Mobile Application Evidence
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 ### 5.2.7. RESTful API documentation

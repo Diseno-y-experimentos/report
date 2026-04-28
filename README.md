@@ -362,6 +362,51 @@ Empresas de transporte que necesitan gestionar sus unidades.
 - Los operadores optimizan el control de sus flotas y mejoran su reputación.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
+
+#### Hipótesis y criterios de validación para BusTrack
+
+#### 1. Geolocalización en tiempo real
+- **Hipótesis:** Creemos que implementar un sistema de geolocalización en tiempo real de las unidades de transporte aumentará la confianza de los usuarios (estudiantes y trabajadores) al reducir la incertidumbre en los tiempos de espera.
+- **Validación:** Sabremos que esto es cierto cuando observemos un incremento en el uso recurrente de la aplicación dentro del primer mes de lanzamiento.
+
+---
+
+#### 2. Notificaciones de llegada
+- **Hipótesis:** Creemos que ofrecer notificaciones sobre la llegada de los buses reducirá el tiempo de espera percibido por los pasajeros y disminuirá su frustración.
+- **Validación:** Sabremos que esto es cierto cuando al menos el 60% de los usuarios reporten una disminución en su frustración relacionada con los tiempos de espera.  
+
+---
+
+#### 3. Interfaz intuitiva y accesible
+- **Hipótesis:** Creemos que una interfaz intuitiva, simple y accesible facilitará la adopción tecnológica en distintos grupos de edad y niveles de experiencia digital.
+- **Validación:** Sabremos que esto es cierto cuando el 70% de los usuarios, independientemente de su rango etario, puedan completar las funciones principales sin necesidad de soporte.
+
+---
+
+#### 4. Calificaciones de rutas y unidades
+- **Hipótesis:** Creemos que permitir a los usuarios calificar rutas y unidades fomentará la mejora del servicio por parte de las empresas de transporte.
+- **Validación:** Sabremos que esto es cierto cuando se registren al menos 200 calificaciones en el primer trimestre y las empresas implementen mejoras a partir de esos datos.  
+
+---
+
+#### 5. Historial de rutas frecuentes
+- **Hipótesis:** Creemos que integrar un sistema de historial de rutas frecuentes aumentará la retención de usuarios, especialmente pasajeros frecuentes que repiten trayectos.
+- **Validación:** Sabremos que esto es cierto cuando el 50% de los usuarios registrados utilicen esta funcionalidad al menos una vez por semana.
+
+---
+
+#### 6. Panel de monitoreo en tiempo real
+- **Hipótesis:** Creemos que si los supervisores tienen acceso a un panel de monitoreo en tiempo real, se reducirá el número de incidentes no atendidos y aumentará la puntualidad de las unidades.
+- **Validación:** Sabremos que esto es cierto cuando el 70% de los supervisores reporten una disminución en los tiempos de respuesta ante retrasos o fallas.
+
+---
+
+#### 7. Información operativa básica
+- **Hipótesis:** Creemos que proporcionar información operativa básica (como la ubicación del bus en tiempo real) ayudará a mejorar la toma de decisiones de los administradores.
+- **Validación:** Sabremos que esto es cierto cuando al menos el 60% de supervisores y administradores utilicen de forma recurrente el módulo básico de monitoreo.
+
+---
+
 #### 1.2.2.4. Lean UX Canvas.
 ## 1.3. Segmentos objetivo.
 

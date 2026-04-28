@@ -105,7 +105,7 @@
 |Lynn Meza| Chapter 4 |
 |Andrea Santur | Chapter 5|
 
-
+![tb1-contribution](img/contribution-tb1.png)
 
 
 <br><br>

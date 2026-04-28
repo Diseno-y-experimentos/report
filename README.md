@@ -1196,6 +1196,15 @@ _**Figura 99.** Diagrama general de User Flows para los usuarios Pasajero y Empr
 
 
 ## 4.7. Web Applications Prototyping.
+
+La imagen muestra una captura del prototipo navegable desarrollado para la plataforma web de BusTrack, correspondiente a la sección de Ubicación Actual dentro del flujo de búsqueda de rutas. Este prototipo permite simular la interacción real del usuario, incluyendo navegación por el menú principal, visualización de la ubicación en el mapa y respuesta del sistema según los flujos definidos previamente. La evidencia confirma la implementación funcional de los diseños de alta fidelidad elaborados en la etapa anterior.
+
+<img src="img/commons/WebApplicationsPrototypingNew.png" alt="Web Applications Prototyping" style="width: 700px; margin-right: 700px;"/>
+
+_**Figura 100.** Vista del prototipo navegable de la aplicación web BusTrack_ <br> _**Fuente:** elaboración propia._
+
+link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201c320_upc_edu_pe/IQDEh4kh9m4GTYvmkBirzUVHAWfUxDtmc2BYFpkju5ztdkI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=kYehgP
+
 ## 4.8. Domain-Driven Software Architecture.
 
 La arquitectura de software orientada al dominio (Domain-Driven Design, DDD) permite estructurar el sistema en función de los conceptos principales asociados al transporte urbano y a los distintos tipos de usuarios de la plataforma. Esta aproximación facilita que la lógica de negocio represente con precisión las necesidades reales de cada segmento y asegura que las funcionalidades clave se organicen dentro de bounded contexts bien definidos.

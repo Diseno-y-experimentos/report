@@ -753,6 +753,42 @@ En esta etapa se identifican y analizan las necesidades reales de los usuarios p
 <br>
 
 ### 2.3.2. User Task Matrix.
+
+### Segmento Objetivo 1
+      
+| Tarea / Funcionalidad                | Manuel Suarez (Estudiante Universitario) | Alejandro Medina (Trabajador) | Adulto mayor | Turista |
+|--------------------------------------|------------|------------|--------------|---------|
+| Consultar rutas y horarios           | Alta       | Alta       | Alta         | Alta    |
+| Recibir notificaciones en tiempo real| Alta       | Alta       | Media        | Media   |
+| Guardar trayectos frecuentes         | Alta       | Alta       | Media        | Baja    |
+| Revisar estimaciones según tráfico   | Media      | Alta       | Baja         | Media   |
+| Identificar paraderos cercanos       | Media      | Media      | Alta         | Alta    |
+| Alertas de seguridad en paraderos    | Media      | Media      | Alta         | Media   |
+| Consultar rutas hacia puntos turísticos | Baja    | Baja       | Baja         | Alta    |
+| Administración de datos (rol admin)  | Baja       | Baja       | Baja         | Baja    |
+
+En el User Task Matrix del Segmento 1 se observa que cada grupo de usuarios tiene prioridades distintas: los estudiantes y trabajadores buscan principalmente rapidez e información en tiempo real; los adultos mayores se enfocan en la seguridad y en identificar paraderos cercanos; y los turistas necesitan rutas claras hacia lugares de interés. Aunque las tareas administrativas no se perciben directamente, son clave para mantener la información confiable. En general, BusTrack debe centrarse en ofrecer datos precisos, opciones personalizadas y una experiencia segura para todos.
+
+<br>
+
+### Segmento Objetivo 2
+
+| Tarea / Funcionalidad                | Luis Palacios (Administrador de Flota) | José Ramírez (Supervisor de Rutas) | Propietario |
+|--------------------------------------|------------|------------|--------------|
+| Monitorear buses en tiempo real      | Alta       | Alta       | Media        |
+| Generar reportes automáticos         | Alta       | Media      | Alta         |
+| Gestionar incidencias y alertas en ruta  | Alta       | Alta       | Media        |
+| Comunicar cambios de ruta a choferes | Alta       | Alta       | Baja         |
+| Analizar costos operativos y optimizarlos | Media    | Baja      | Alta         |
+| Mejorar puntualidad y satisfacción del pasajero | Alta | Alta | Alta |
+| Planificar mantenimiento preventivo de buses | Media | Alta | Media |
+| Decidir adopción de nuevas tecnologías | Media | Baja | Alta |
+| Administrar permisos y accesos en la plataforma | Alta | Media | Baja |
+
+En el User Task Matrix del Segmento 2 se observa que el supervisor de rutas y el administrador de flota priorizan tareas operativas como el monitoreo en tiempo real, la generación de reportes y la gestión de incidencias, mientras que los propietarios se enfocan en aspectos estratégicos como la reducción de costos y la adopción de nuevas tecnologías. Esto evidencia que las empresas necesitan una solución que combine eficiencia operativa y capacidad estratégica, garantizando puntualidad, satisfacción del pasajero y modernización de procesos.
+
+<br>
+
 ### 2.3.3. User Journey Mapping.
 ### 2.3.4. Empathy Mapping.
 ### 2.3.5. As-is Scenario Mapping.

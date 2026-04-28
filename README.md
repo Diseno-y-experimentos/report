@@ -436,6 +436,33 @@ BusTrack puede diferenciarse mediante información confiable en tiempo real, un 
 <br>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
+
+Para destacar frente a las aplicaciones presentes en el mercado, **BusTrack** aplicará una estrategia basada en la personalización local y la diferenciación tecnológica, con un enfoque progresivo en innovación y calidad de datos.
+
+### 1. Enfoque en la realidad limeña
+- Integrar información de buses y paraderos tanto formales como informales.  
+- Incorporar APIs y datos oficiales de municipalidades para aumentar la confiabilidad del servicio.  
+
+### 2. Alianzas estratégicas
+- Establecer colaboración con operadores de transporte urbano y universidades para captar usuarios frecuentes.  
+- Explorar acuerdos con entidades públicas de transporte para mejorar la base de datos y validar rutas en tiempo real.  
+
+### 3. Valor agregado para el usuario
+- Ofrecer notificaciones en tiempo real sobre la llegada de buses.  
+- Permitir guardar rutas frecuentes y mostrar estimaciones basadas en el tráfico local.  
+- Incluir alertas de seguridad, como sugerencias de paraderos recomendados o zonas de riesgo.  
+
+### 4. Campañas de posicionamiento digital
+- Mantener una presencia activa en redes sociales para atraer principalmente a estudiantes y trabajadores.  
+- Desarrollar estrategias de marketing enfocadas en el ahorro de tiempo, la seguridad y la eficiencia del transporte urbano.  
+- Fomentar la construcción de una comunidad de usuarios que compartan información dentro de la plataforma.  
+
+### 5. Innovación tecnológica gradual
+- Desarrollar una futura aplicación móvil con geolocalización más precisa.  
+- Implementar funciones predictivas que estimen tiempos de llegada basados en patrones históricos de tráfico.  
+
+Con estas estrategias, **BusTrack** busca convertirse en una opción confiable y útil para los ciudadanos de Lima Metropolitana, apostando por la innovación tecnológica y por brindar información clara y en tiempo real que facilite la movilidad diaria de estudiantes, trabajadores y usuarios frecuentes del transporte público.
+
 ## 2.2. Entrevistas.
 ### 2.2.1. Diseño de entrevistas.
 ### 2.2.2. Registro de entrevistas.

@@ -263,6 +263,38 @@
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores.
+
+El mercado de aplicaciones de transporte en Lima Metropolitana está en proceso de crecimiento, con actores internacionales y locales que buscan resolver los problemas de movilidad de los ciudadanos. Algunos priorizan la geolocalización, otros la venta de pasajes o la planificación de rutas, pero en conjunto conforman un ecosistema en el que **BusTrack** debe posicionarse con un enfoque diferencial en buses y transporte urbano en tiempo real.
+
+## Principales Competidores
+
+#### Moovit (Internacional)
+
+Moovit es una de las aplicaciones de movilidad urbana más reconocidas a nivel mundial. En Lima ofrece información sobre rutas de buses, trenes, corredores y otros medios de transporte público. Es una aplicación con presencia global y disponible en la ciudad, que permite planificar viajes en transporte público y muestra opciones intermodales (bus, tren, bicicleta, etc.). Además, usa datos compartidos por la comunidad para estimar tiempos de llegada.
+
+- **Fortaleza:** escala internacional e integración con múltiples ciudades.
+
+#### Google Maps (Internacional)
+
+Google Maps es un servicio masivo y gratuito utilizado en todo el mundo. Ofrece mapas, rutas y tráfico en tiempo real. Integra opciones de transporte público, aunque en Lima su nivel de detalle en buses y colectivos es limitado.
+
+- **Fortaleza:** precisión cartográfica.  
+- **Debilidad:** falta de especialización en transporte urbano limeño.
+
+#### TuRuta (Perú)
+
+TuRuta es una aplicación peruana creada para ayudar a los limeños a encontrar rutas de transporte público. Es un competidor directo al enfocarse en la experiencia de buses y colectivos. Se trata de un proyecto local pensado específicamente para Lima Metropolitana, que se alimenta en gran medida de la colaboración de la comunidad.
+
+- **Fortaleza:** cercanía al público limeño.  
+- **Debilidad:** dificultad para mantener datos actualizados y confiables.
+
+#### RedBus (Perú – Interprovincial)
+
+RedBus está enfocado principalmente en la venta de pasajes interprovinciales. Es un competidor indirecto, ya que digitaliza el acceso a información y reservas de transporte. No compite en transporte urbano, pero es un referente en movilidad digitalizada en el país.
+
+- **Fortalezas:** confianza en métodos de pago y amplia cobertura en el país.  
+- **Debilidad:** orientado a viajes de larga distancia, no a transporte urbano.
+
 ### 2.1.1. Análisis competitivo.
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 ## 2.2. Entrevistas.

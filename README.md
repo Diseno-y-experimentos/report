@@ -458,19 +458,665 @@ Empresas de transporte que necesitan gestionar sus unidades.
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores.
+
+El mercado de aplicaciones de transporte en Lima Metropolitana está en proceso de crecimiento, con actores internacionales y locales que buscan resolver los problemas de movilidad de los ciudadanos. Algunos priorizan la geolocalización, otros la venta de pasajes o la planificación de rutas, pero en conjunto conforman un ecosistema en el que **BusTrack** debe posicionarse con un enfoque diferencial en buses y transporte urbano en tiempo real.
+
+## Principales Competidores
+
+#### Moovit (Internacional)
+
+Moovit es una de las aplicaciones de movilidad urbana más reconocidas a nivel mundial. En Lima ofrece información sobre rutas de buses, trenes, corredores y otros medios de transporte público. Es una aplicación con presencia global y disponible en la ciudad, que permite planificar viajes en transporte público y muestra opciones intermodales (bus, tren, bicicleta, etc.). Además, usa datos compartidos por la comunidad para estimar tiempos de llegada.
+
+- **Fortaleza:** escala internacional e integración con múltiples ciudades.
+
+#### Google Maps (Internacional)
+
+Google Maps es un servicio masivo y gratuito utilizado en todo el mundo. Ofrece mapas, rutas y tráfico en tiempo real. Integra opciones de transporte público, aunque en Lima su nivel de detalle en buses y colectivos es limitado.
+
+- **Fortaleza:** precisión cartográfica.  
+- **Debilidad:** falta de especialización en transporte urbano limeño.
+
+#### TuRuta (Perú)
+
+TuRuta es una aplicación peruana creada para ayudar a los limeños a encontrar rutas de transporte público. Es un competidor directo al enfocarse en la experiencia de buses y colectivos. Se trata de un proyecto local pensado específicamente para Lima Metropolitana, que se alimenta en gran medida de la colaboración de la comunidad.
+
+- **Fortaleza:** cercanía al público limeño.  
+- **Debilidad:** dificultad para mantener datos actualizados y confiables.
+
+#### RedBus (Perú – Interprovincial)
+
+RedBus está enfocado principalmente en la venta de pasajes interprovinciales. Es un competidor indirecto, ya que digitaliza el acceso a información y reservas de transporte. No compite en transporte urbano, pero es un referente en movilidad digitalizada en el país.
+
+- **Fortalezas:** confianza en métodos de pago y amplia cobertura en el país.  
+- **Debilidad:** orientado a viajes de larga distancia, no a transporte urbano.
+
 ### 2.1.1. Análisis competitivo.
+
+El análisis competitivo permite comparar a **BusTrack** con los principales actores del mercado de movilidad urbana en Lima Metropolitana. Esta comparación facilita identificar ventajas diferenciales, brechas del mercado y oportunidades para fortalecer la propuesta de valor.
+
+<table>
+<thead>
+  <tr>
+    <th colspan="6">Competitive Analysis Landscape</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2"><strong>¿Por qué realizar este análisis?</strong></td>
+    <td colspan="4">
+      Este análisis permite investigar, evaluar y comparar el comportamiento de los competidores directos e indirectos en el mercado de movilidad urbana, con el fin de identificar oportunidades estratégicas para el posicionamiento de BusTrack
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><strong>Nombre</strong></div></td>
+    <td align="center"><strong>Moovit</strong></td>
+    <td align="center"><strong>Google Maps</strong></td>
+    <td align="center"><strong>TuRuta</strong></td>
+    <td align="center"><strong>RedBus</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><strong>Logo</strong></div></td>
+    <td align="center"><img src="img/commons/moovit.png" width="90"/></td>
+    <td align="center"><img src="img/commons/googlemaps.png" width="90"/></td>
+    <td align="center"><img src="img/commons/turuta.webp" width="90"/></td>
+    <td align="center"><img src="img/commons/redbus.png" width="90"/></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Perfil</strong></td>
+    <td><strong>Overview</strong></td>
+    <td>
+      Aplicación internacional de movilidad urbana con cobertura global. Ofrece rutas, horarios y planificación multimodal (bus, tren, bicicleta). Opera en Lima con datos colaborativos
+    </td>
+    <td>
+      Servicio global de mapas y tráfico en tiempo real. Incluye opciones de transporte público, aunque con detalle limitado para buses limeños
+    </td>
+    <td>
+      App peruana enfocada en transporte público limeño, basada en información colaborativa sobre rutas de buses y colectivos
+    </td>
+    <td>
+      Plataforma especializada en venta de pasajes interprovinciales. No opera rutas urbanas, pero es referente en digitalización del transporte
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Ventaja Competitiva<br>¿Qué valor ofrece?</strong></td>
+    <td>
+      Precisión global, experiencia en movilidad urbana y amplia integración multimodal
+    </td>
+    <td>
+      Cartografía precisa, navegación confiable y datos de tráfico actualizados
+    </td>
+    <td>
+      Conocimiento local del transporte limeño y fácil uso para usuarios cotidianos
+    </td>
+    <td>
+      Compra segura de pasajes, métodos de pago confiables y reputación consolidada
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2"><strong>Perfiles de Marketing</strong></td>
+    <td><strong>Mercado objetivo</strong></td>
+    <td>Usuarios urbanos que buscan planificar rutas multimodales</td>
+    <td>Usuarios globales que necesitan mapas, navegación y tráfico</td>
+    <td>Pasajeros limeños frecuentes que usan buses o colectivos</td>
+    <td>Viajeros que realizan desplazamientos interprovinciales</td>
+  </tr>
+  <tr>
+    <td><strong>Estrategias de marketing</strong></td>
+    <td>Publicidad global, alianzas con gobiernos y operadores</td>
+    <td>Integración con Android y ecosistema Google; marketing masivo</td>
+    <td>Redes sociales, enfoque local y participación comunitaria</td>
+    <td>Marketing digital, alianzas con empresas de transporte</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><strong>Perfil de Producto</strong></td>
+    <td><strong>Productos y Servicios</strong></td>
+    <td>Rutas, horarios, planificación multimodal, notificaciones básicas</td>
+    <td>Mapas, tráfico, transporte público, navegación y GPS</td>
+    <td>Rutas de buses y colectivos en Lima; colaboración ciudadana</td>
+    <td>Venta de pasajes, reservas y métodos de pago seguros</td>
+  </tr>
+  <tr>
+    <td><strong>Precios y Costos</strong></td>
+    <td>Gratuito</td>
+    <td>Gratuito</td>
+    <td>Gratuito</td>
+    <td>Comisiones y precios de pasajes</td>
+  </tr>
+  <tr>
+    <td><strong>Canales de Distribución</strong><br>(Web y/o Móvil)</td>
+    <td>Web y móvil</td>
+    <td>Web y móvil</td>
+    <td>Móvil</td>
+    <td>Web y móvil</td>
+  </tr>
+  <tr>
+    <td rowspan="4"><strong>Análisis SWOT</strong></td>
+    <td><strong>Fortalezas</strong></td>
+    <td>- Amplia cobertura global <br><br> - Integración multimodal <br><br> - Datos colaborativos amplios</td>
+    <td>- Cartografía precisa <br><br> - Tráfico en tiempo real <br><br> - Ecosistema digital fuerte</td>
+    <td>- Conocimiento local <br><br> - Interfaz sencilla <br><br> - Enfoque en transporte limeño</td>
+    <td>- Confianza en pagos <br><br> - Amplia cobertura interprovincial <br><br> -Marca consolidada</td>
+  </tr>
+  <tr>
+    <td><strong>Debilidades</strong></td>
+    <td>- Datos poco precisos en Lima <br><br> -Baja personalización local</td>
+    <td>- No especializado en transporte urbano limeño</td>
+    <td>- Datos desactualizados <br><br> - Dependencia de la comunidad <br><br> -Sin tiempo real</td>
+    <td>- No cubre transporte urbano <br><br> - Funcionalidad limitada para rutas limeñas</td>
+  </tr>
+  <tr>
+    <td><strong>Oportunidades</strong></td>
+    <td>Integrarse con operadores locales y mejorar datos en tiempo real</td>
+    <td>Expandir detalle de transporte urbano en ciudades emergentes</td>
+    <td>Incorporar APIs oficiales y mayor precisión en rutas y horarios</td>
+    <td>Ampliar servicios hacia transporte urbano</td>
+  </tr>
+  <tr>
+    <td><strong>Amenazas</strong></td>
+    <td>Mejoras locales podrían desplazar a apps especializadas</td>
+    <td>Regulaciones de datos y competencia global</td>
+    <td>Competidores con información más precisa y tiempo real</td>
+    <td>Competidores con ecosistemas más robustos</td>
+  </tr>
+</tbody>
+</table>
+
+_**Figura 6.** Logotipos de los principales competidores analizados: Moovit, Google Maps, TuRuta y RedBus._ <br> _**Fuente:** elaboración propia a partir de material público de cada marca._
+
+<br>
+
+
+BusTrack puede diferenciarse mediante información confiable en tiempo real, un enfoque exclusivamente local y la integración de APIs oficiales para ofrecer datos verificados sobre buses y rutas urbanas. Esto cubre vacíos que los competidores actuales aún no resuelven completamente.
+
+<br>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores.
+
+Para destacar frente a las aplicaciones presentes en el mercado, **BusTrack** aplicará una estrategia basada en la personalización local y la diferenciación tecnológica, con un enfoque progresivo en innovación y calidad de datos.
+
+### 1. Enfoque en la realidad limeña
+- Integrar información de buses y paraderos tanto formales como informales.  
+- Incorporar APIs y datos oficiales de municipalidades para aumentar la confiabilidad del servicio.  
+
+### 2. Alianzas estratégicas
+- Establecer colaboración con operadores de transporte urbano y universidades para captar usuarios frecuentes.  
+- Explorar acuerdos con entidades públicas de transporte para mejorar la base de datos y validar rutas en tiempo real.  
+
+### 3. Valor agregado para el usuario
+- Ofrecer notificaciones en tiempo real sobre la llegada de buses.  
+- Permitir guardar rutas frecuentes y mostrar estimaciones basadas en el tráfico local.  
+- Incluir alertas de seguridad, como sugerencias de paraderos recomendados o zonas de riesgo.  
+
+### 4. Campañas de posicionamiento digital
+- Mantener una presencia activa en redes sociales para atraer principalmente a estudiantes y trabajadores.  
+- Desarrollar estrategias de marketing enfocadas en el ahorro de tiempo, la seguridad y la eficiencia del transporte urbano.  
+- Fomentar la construcción de una comunidad de usuarios que compartan información dentro de la plataforma.  
+
+### 5. Innovación tecnológica gradual
+- Desarrollar una futura aplicación móvil con geolocalización más precisa.  
+- Implementar funciones predictivas que estimen tiempos de llegada basados en patrones históricos de tráfico.  
+
+Con estas estrategias, **BusTrack** busca convertirse en una opción confiable y útil para los ciudadanos de Lima Metropolitana, apostando por la innovación tecnológica y por brindar información clara y en tiempo real que facilite la movilidad diaria de estudiantes, trabajadores y usuarios frecuentes del transporte público.
+
 ## 2.2. Entrevistas.
+
+Como parte del proceso de validación del modelo de negocio de BusTrack, se plantean entrevistas semiestructuradas dirigidas a los dos segmentos objetivos: pasajeros de transporte público y empresas de transporte urbano. El propósito es identificar sus motivaciones, comportamientos, expectativas y principales frustraciones en relación con la movilidad urbana, así como validar la propuesta de valor de la plataforma.
+
 ### 2.2.1. Diseño de entrevistas.
+
+## Segmento 1: Pasajeros de Transporte Público
+
+**Objetivo:** Entender las frustraciones en el uso del transporte diario
+
+### Datos generales
+- Nombre  
+- Edad  
+- Distrito de residencia  
+- Ocupación (estudiante, trabajador, etc.)  
+- Frecuencia de uso del transporte público (diaria, varias veces por semana, esporádica)  
+
+### Motivaciones y comportamientos
+- ¿Qué medio de transporte público usas con más frecuencia (bus, coaster, combi, Metropolitano, Metro)?  
+- ¿Qué situaciones específicas te generan más preocupación al viajar?
+- ¿Qué pasos sigues normalmente antes de salir de casa para tomar el bus?
+- ¿Has usado alguna aplicación para movilizarte en la ciudad (Waze, Google Maps, Moovit, etc.)? ¿Cómo fue tu experiencia?  
+- ¿Qué importancia le das a recibir información en tiempo real sobre la llegada de buses?  
+
+### Miedos, expectativas y canales
+- ¿Qué problemas enfrentas con mayor frecuencia en tus traslados (tiempo de espera, congestión, inseguridad, falta de información)?  
+- ¿Qué haría que confíes en una aplicación como BusTrack para planificar tus viajes?  
+- ¿Te gustaría recibir notificaciones sobre la llegada del bus, retrasos o desvíos de ruta? 
+- ¿Qué redes sociales o aplicaciones móviles usas más para informarte en tu día a día?  
+- ¿Cómo medirías que una aplicación realmente mejora tu experiencia de viaje?  
+
+---
+
+## Segmento 2: Empresas de Transporte Urbano
+
+**Objetivo:** Comprender los procesos operativos de las empresas de transporte urbano
+
+### Datos generales
+- Nombre del entrevistado  
+- Cargo (administrador, supervisor de rutas, propietario)  
+- Empresa / línea de transporte  
+- Número de unidades en operación  
+- Zonas o rutas que cubren  
+
+### Operaciones y herramientas
+- ¿Cómo gestionan actualmente la ubicación y monitoreo de sus buses?  
+- ¿Qué herramientas usan para controlar sus buses y qué limitaciones encuentran en ellas?
+- ¿Qué información reciben de los conductores y cómo la gestionan?  
+- ¿Han utilizado aplicaciones para comunicarse con pasajeros? Si ese es el caso, ¿les fue útil? y qué problemas encontraron?
+- ¿Cuáles son los mayores retos para mantener la puntualidad y la seguridad de los viajes?  
+
+### Expectativas y valor esperado
+- ¿Qué tipo de datos o reportes serían más valiosos para su gestión diaria (tiempos de llegada, cantidad de pasajeros, retrasos)?  
+- ¿Qué funcionalidades de una aplicación como BusTrack les motivarían a adoptarla?  
+- ¿Cómo creen que una plataforma de información en tiempo real podría mejorar la confianza de los pasajeros?  
+- ¿Qué beneficios esperan obtener al implementar una solución tecnológica (mayor satisfacción, competitividad, reducción de costos)?  
+- ¿Qué barreras internas o externas ven para adoptar una aplicación digital de gestión de transporte?
+
 ### 2.2.2. Registro de entrevistas.
+
+### Segmento 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)  
+
+
+| **Entrevista 1** |
+|--------|
+| **Entrevistado:** Mariana Rafael |
+| **Sexo:** Femenino |
+| **Edad:** 20 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia1.png" width="200"/> <br> _**Figura 7.** Evidencia de entrevista 1 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/fcO25GbbaRY> |
+| **Resumen de entrevista:** La entrevistada utiliza principalmente corredores de la ATU y el Metropolitano para ir a la universidad o salir con amigos. Sus principales preocupaciones son la inseguridad, los desvíos inesperados y los costos del transporte. Considera esencial contar con información en tiempo real y notificaciones confiables para optimizar su tiempo y aumentar la confianza en el transporte público. |
+
+
+| **Entrevista 2** |
+|-----------|
+| **Entrevistado:** Alessandro Bravo |
+| **Sexo:** Masculino |
+| **Edad:** 20 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia2.png" width="200"/> <br> _**Figura 8.** Evidencia de entrevista 2 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://www.youtube.com/watch?v=5rFwJUM-JS4> | 
+| **Resumen de entrevista:** El entrevistado viaja diariamente en buses y combis, tomando hasta tres por día desde San Martín de Porres. Sus principales preocupaciones son el tiempo de espera, la inseguridad y la falta de información confiable. Usa aplicaciones como Moovit, aunque señala que no siempre están actualizadas. Valora recibir notificaciones en tiempo real sobre ubicación, desvíos y precios para llegar a tiempo a clases y optimizar sus traslados. |
+
+| **Entrevista 3** |
+|-----------|
+| **Entrevistado:**  Melisa Sulca  |
+| **Sexo:** Femenino |
+| **Edad:** 23 |
+| **Ocupación:** Estudiante universitario |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia3.png" width="200"/> <br> _**Figura 9.** Evidencia de entrevista 3 - Segmento 1._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQAizEwhwgVIRoDGZdlA-3UtAZTDcAPxf_lPHyIuvhfMD2w?e=b4WJu9> | 
+| **Resumen de entrevista:** La entrevistada suele tomar buses de transporte público rutinariamente para movilizarse a la universidad o a algún otro punto de la ciudad. Ella explica que no tiene mucho conocimiento acerca de rutas de transporte, por lo que siempre suele consultar con su mamá que está más informada del tema. Este es motivo por el cual una aplicación como BusTrack sería de gran ayuda para ella, por la información en tiempo real de los buses que toma que podrían estar al alcance de su mano.  |
+ 
+<br>
+
+### Segmento 2: Empresas de Transporte Urbano
+
+| **Entrevista 4** |
+|-----------|
+| **Entrevistado:** Octavio |
+| **Sexo:** Masculino |
+| **Edad:** 35 |
+| **Ocupación:** Supervisor de rutas |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia4.png" width="200"/> <br> _**Figura 10.** Evidencia de entrevista 4 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/MOjHcLv6YDY> |
+| **Resumen de entrevista:** El entrevistado gestiona la flota mediante llamadas a los choferes y el uso de Excel y hojas de ruta, recibiendo solo información básica sobre tráfico y fallas mecánicas. Considera valiosos los reportes automáticos y la ubicación exacta de buses para mejorar la operación. Reconoce que una plataforma como BusTrack podría incrementar la confianza de los pasajeros, aunque identifica barreras como el costo y la resistencia de algunos conductores a adoptar tecnología. |
+
+
+| **Entrevista 5** |
+|-----------|
+| **Entrevistado:** Jean Paul Condori |
+| **Sexo:** Masculino |
+| **Edad:** 40 |
+| **Ocupación:** Administrador de flota |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia5.png" width="200"/> <br> _**Figura 11.** Evidencia de entrevista 5 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://youtu.be/JAEwGB9mBGk> |
+| **Resumen de entrevista:** El entrevistado gestiona las unidades mediante grupos de WhatsApp y cuadernos físicos, recibiendo información de los conductores sobre retrasos, cambios de ruta y controles policiales. Identifica retos como tráfico, bloqueos y falta de procesos modernos. Considera útil contar con reportes sobre rutas, horarios y cantidad de pasajeros. Percibe a BusTrack como una oportunidad para implementar monitoreo en tiempo real, aunque también identifica barreras relacionadas con la confianza y la adaptación tecnológica de los conductores. |
+
+
+| **Entrevista 6** |
+|-----------|
+| **Entrevistado:** Walter Fajardo |
+| **Sexo:** Masculino |
+| **Edad:** 30 |
+| **Ocupación:** Gerente de empresa de transportes |
+| **Medio utilizado:** Zoom |
+| **Evidencia:**  <img src="img/commons/evidencia6.png" width="200"/> <br> _**Figura 12.** Evidencia de entrevista 6 - Segmento 2._ <br> _**Fuente:** elaboración propia._|
+| **Link de entrevista:** <https://upcedupe-my.sharepoint.com/personal/u20201f788_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20201f788%5Fupc%5Fedu%5Fpe%2FDocuments%2FSegemento%20objetivo%202%20%2D%20Walter%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E271d57e2%2D0088%2D4def%2Da3c3%2D2723d93114b8> | 
+| **Resumen de entrevista:**  El entrevistado muestra atracción por una aplicación que ayude a mejorar la supervisición sobre los conductores de la empresa, ya que por el momento, solo tienen un control al incio y final de iniciada una ruta. Considera que una supervisión en tiempo real podría mejorar la confianza generada en los pasajeros y muestra su interes porque BusTrack sea una aplicación sencialla de uso para agilizar tiempos. |
+
+<br>
+
 ### 2.2.3. Análisis de entrevistas.
+
+A partir de las entrevistas realizadas, se agruparon las respuestas más representativas de cada segmento para identificar patrones comunes, necesidades y oportunidades de mejora.
+
+### Segmento 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)  
+
+| **Preguntas** | **Respuestas Generales** |
+|---|---|
+| ¿Qué medio de transporte público usas con más frecuencia (bus, coaster, combi, Metropolitano, Metro)? | Los más utilizados son buses y combis para recorridos diarios, además de corredores de la ATU y el Metropolitano para trayectos largos o frecuentes. |
+| ¿Qué situaciones específicas te generan más preocupación al viajar? | Principalmente la inseguridad (robos durante los trayectos) y la incertidumbre por desvíos de ruta o cambios inesperados. |
+| ¿Qué pasos sigues normalmente antes de salir de casa para tomar el bus? | Consultan previamente rutas y paraderos en el celular, investigan precios y tiempos estimados. Algunos usan apps como “TuRuta” o Moovit, aunque no siempre confían en su precisión. |
+| ¿Has usado alguna aplicación para movilizarte en la ciudad (Waze, Google Maps, Moovit, etc.)? ¿Cómo fue tu experiencia? | Sí, principalmente Moovit. Sin embargo, señalan que no siempre está actualizada, lo que genera retrasos y confusión en la planificación de viajes. |
+| ¿Qué importancia le das a recibir información en tiempo real sobre la llegada de buses? | Se considera muy importante, ya que permite organizar mejor el tiempo y evitar esperas innecesarias. |
+| ¿Qué problemas enfrentas con mayor frecuencia en tus traslados (tiempo de espera, congestión, inseguridad, falta de información)? | Las largas esperas sin información, congestión en horas punta e inseguridad dentro de buses y paraderos. |
+| ¿Qué haría que confíes en una aplicación como BusTrack para planificar tus viajes? | Que muestre información actualizada y verificada sobre ubicación de buses, precios y posibles desvíos. También que garantice seguridad validando a los conductores. |
+| ¿Te gustaría recibir notificaciones sobre la llegada del bus, retrasos o desvíos de ruta? | Sí, especialmente sobre retrasos y desvíos, ya que afectan la puntualidad en clases y el trabajo. |
+| ¿Qué redes sociales o aplicaciones móviles usas más para informarte en tu día a día? | Principalmente TikTok, Instagram, X (Twitter) y canales de noticias digitales. |
+| ¿Cómo medirías que una aplicación realmente mejora tu experiencia de viaje? | En la práctica, comprobando que reduce tiempos de espera, brinda información confiable y hace el viaje más seguro y eficiente. |
+
+**Insights:**
+
+Se identificó una fuerte necesidad de control en los pasajeros, quienes experimentan ansiedad e inseguridad ante la falta de información sobre los tiempos de llegada de los buses. La inmediatez es un valor clave, ya que los usuarios prefieren aplicaciones que proporcionen datos actualizados en tiempo real sobre rutas y horarios.
+
+La confianza está estrechamente relacionada con la seguridad, por lo que esperan validación de conductores, monitoreo de unidades y rutas verificadas. Finalmente, su motivación principal es de carácter práctico, pues buscan optimizar el tiempo de viaje y reducir la incertidumbre más que explorar aplicaciones por simple novedad. 
+
+<br>
+
+### Segmento 2: Empresas de Transporte Urbano
+| **Preguntas** | **Respuestas Generales** |
+|---|---|
+| ¿Cómo gestionan actualmente la ubicación y monitoreo de sus buses? | No cuentan con un sistema especializado, dependen de llamadas rápidas a los choferes y grupos de WhatsApp para reportar ubicación en ruta. |
+| ¿Qué herramientas usan para controlar sus buses y qué limitaciones encuentran en ellas? | Usan cuadernos, hojas de ruta y, en algunos casos, Excel para registrar salidas, llegadas y control básico de operaciones. |
+| ¿Qué información reciben de los conductores y cómo la gestionan? | Se reportan retrasos, tráfico, problemas mecánicos e incidentes en ruta (como policías o semáforos dañados) mediante mensajes o llamadas, y se gestionan manualmente. |
+| ⁠¿Han utilizado aplicaciones para comunicarse con pasajeros? Si ese es el caso, ¿les fue útil y qué problemas encontraron? | No cuentan con un canal digital para pasajeros; algunos han considerado apps, pero aún no las aplican. |
+| ¿Cuáles son los mayores retos para mantener la puntualidad y la seguridad de los viajes? | El tráfico, bloqueos, obras en las vías y la falta de información en tiempo real. Además, la limpieza de buses y la coordinación con choferes a distancia dificultan la operación. |
+| ¿Qué tipo de datos o reportes serían más valiosos para su gestión diaria (tiempos de llegada, cantidad de pasajeros, retrasos)? | Horarios exactos de salida y llegada, ubicación en tiempo real, retrasos por incidentes y cantidad de pasajeros transportados por vuelta. |
+| ¿Qué funcionalidades de una aplicación como BusTrack les motivarían a adoptarla? | Monitoreo en tiempo real de las unidades, reportes automáticos y alertas inmediatas de incidencias o desvíos. |
+| ¿Cómo creen que una plataforma de información en tiempo real podría mejorar la confianza de los pasajeros? | Brindando horarios verificados de salida y llegada para que los pasajeros planifiquen mejor su tiempo y perciban mayor confiabilidad. |
+| ¿Qué beneficios esperan obtener al implementar una solución tecnológica (mayor satisfacción, competitividad, reducción de costos)? | Mayor satisfacción de los pasajeros, incremento de usuarios, reducción de quejas y mayor control interno de la operación. |
+| ¿Qué barreras internas o externas ven para adoptar una aplicación digital de gestión de transporte? | Los costos de implementación, la resistencia de los choferes a adaptarse y la desconfianza inicial hacia nuevas tecnologías. |
+
+**Insights:**
+
+Las empresas de transporte urbano presentan una gestión operativa manual y poco eficiente, sustentada en llamadas telefónicas, registros en papel o en hojas de cálculo, lo que limita la trazabilidad y control de la flota. La falta de visibilidad en tiempo real impide tomar decisiones oportunas y afecta la puntualidad de los servicios.
+
+Se observó además una resistencia cultural hacia la adopción tecnológica, especialmente entre conductores con menor experiencia digital. Aun así, los entrevistados expresaron alto interés en obtener reportes automáticos y datos analíticos para mejorar la gestión. Las barreras económicas y de capacitación continúan siendo los principales obstáculos para la implementación de soluciones tecnológicas como BusTrack.
+
+<br>
+
 ## 2.3. Needfinding.
+
+En esta etapa se identifican y analizan las necesidades reales de los usuarios para asegurar que BusTrack responda a las expectativas y problemas detectados durante la investigación. Para ello, se desarrollan los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps, permitiendo comprender profundamente los comportamientos, motivaciones y frustraciones de cada segmento objetivo.
+
 ### 2.3.1. User Personas.
+
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+### Estudiante universitario
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Manuel Suarez |
+| **Age**          | 24 años |
+| **Occupation**   | Estudiante universitario |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Pasajero frecuente |
+| **Archetype**    | Usuario Pragmático |
+| **Image**        | <img src="img/commons/manuelSuarez.png" alt="Manuel Suarez" width="200"/> <br><br> _**Figura 13.** Imagen representativa del User Persona “Manuel Suárez”, estudiante universitario usuario frecuente de transporte público._ <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Lo que más necesito es saber con certeza cuándo llegará el bus para no perder tiempo ni arriesgarme en el paradero." |
+| **Motivations**  | Incentive: 80/100<br>Fear: 75/100<br>Achievement: 80/100<br>Growth: 65/100<br>Power: 40/100<br>Social: 85/100 |
+| **Goals**        | - Llegar puntual a clases sin depender de información incierta.<br>- Optimizar su tiempo para estudiar y evitar esperas innecesarias.<br>- Sentirse seguro en trayectos diarios, especialmente en paraderos con poca iluminación o vigilancia. |
+| **Frustrations** | - No saber con exactitud cuándo pasará el bus.<br>- Perder tiempo en paraderos inseguros o llenos.<br>- Apps como Moovit no siempre muestran retrasos reales ni desvíos de ruta.<br> - Estrés cuando llega tarde por demoras inesperadas.|
+| **Biography**    | Manuel estudia en una universidad en el centro de Lima y vive en un distrito alejado. Sale temprano todos los días y realiza entre dos y tres transbordos para llegar a clases. Antes de salir, revisa aplicaciones como Moovit o Google Maps para planificar su ruta, pero muchas veces la información no es confiable, ya que los buses se retrasan, no aparecen en el mapa o toman desvíos sin aviso. Esto lo obliga a esperar largos minutos en paraderos inseguros, lo que le genera ansiedad y pérdida de tiempo valioso. En días de evaluación, su principal preocupación es llegar puntual. Usa activamente redes sociales y confía en aplicaciones cuando le brindan datos claros y en tiempo real.|
+| **Personality**  | Extrovert: 60/100<br>Thinking: 80/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 85/100<br>Software: 70/100<br>Mobile Apps: 90/100<br>Social Networks: 95/100 |
+| **Brands**       | WhatsApp, Google Maps, TikTok, Moovit, TuRuta |
+
+<br>
+
+## Trabajador
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Alejandro Medina |
+| **Age**          | 32 años |
+| **Occupation**   | Empleado administrativo |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Pasajero frecuente |
+| **Archetype**    | Viajero Organizado |
+| **Image**        | <img src="img/commons/alejandroMedina.jpg" alt="Alejandro Medina" width="200"/> <br><br> _**Figura 14.** Imagen representativa del User Persona “Alejandro Medina”, trabajador administrativo que usa transporte público a diario._  <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Necesito que el transporte sea puntual porque llegar tarde al trabajo no es una opción." |
+| **Motivations**  | Incentive: 80/100<br>Fear: 75/100<br>Achievement: 85/100<br>Growth: 65/100<br>Power: 50/100<br>Social: 70/100 |
+| **Goals**        | - Llegar puntual al trabajo evitando esperas innecesarias.<br>- Optimizar su tiempo de traslado para tener más tiempo libre al final del día.<br>- Usar una app confiable que proporcione información precisa sobre buses y tráfico en tiempo real.<br> - Reducir el estrés diario asociado al transporte público. |
+| **Frustrations** | - Largas esperas sin información clara sobre la llegada del bus.<br>- Aplicaciones desactualizadas que no muestran desvíos o retrasos reales.<br>- Perder tiempo en trayectos mal planificados.<br> - Inseguridad en paraderos, sobre todo en horarios nocturnos. |
+| **Biography**    | Alejandro trabaja en una oficina en el centro de Lima y vive en un distrito periférico. Sale muy temprano todos los días para evitar el tráfico, pero aun así pasa más de dos horas en transporte público entre ida y vuelta. Usa Moovit para revisar rutas antes de salir, aunque con frecuencia se frustra cuando los buses no llegan a la hora estimada o toman desvíos sin aviso. La puntualidad es crucial en su trabajo, por lo que la falta de información confiable le genera ansiedad. Una aplicación que le brinde datos en tiempo real y alertas claras significaría más control sobre su tiempo y menos estrés.|
+| **Personality**  | Extrovert: 55/100<br>Thinking: 85/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 85/100<br>Software: 65/100<br>Mobile Apps: 80/100<br>Social Networks: 85/100 |
+| **Brands**       | WhatsApp, Moovit, Facebook, TikTok |
+
+<br>
+
+## Segmento Objetivo 2: Empresas de Transporte Urbano
+
+##  Administrador de flota
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | Luis Palacios |
+| **Age**          | 38 años |
+| **Occupation**   | Administrador de flota en empresa de transporte urbano |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Empresa de transporte urbano |
+| **Archetype**    | Gestor Eficiente |
+| **Image**        | <img src="img/commons/luisPalacios.jpg" alt="Luis Palacios" width="200"/> <br><br> _**Figura 15.** Imagen representativa del User Persona “Luis Palacios”, administrador de flota en una empresa de transporte urbano._  <br> _**Fuente:** elaboración propia._|
+| **Quote**        | "Si puedo monitorear mis buses en tiempo real, puedo ofrecer un mejor servicio y ganar más pasajeros." |
+| **Motivations**  | Incentive: 85/100<br>Fear: 65/100<br>Achievement: 90/100<br>Growth: 70/100<br>Power: 75/100<br>Social: 70/100 |
+| **Goals**        | - Monitorear en tiempo real la ubicación y estado de todas las unidades.<br>- Detectar y resolver incidencias operativas rápidamente.<br>- Mejorar la puntualidad general y reducir reclamos de usuarios.<br>- Digitalizar procesos manuales para optimizar tiempos y costos.<br>- Usar herramientas que faciliten decisiones estratégicas. |
+| **Frustrations** | - Depender de llamadas, WhatsApp y cuadernos para coordinar.<br>- No tener visibilidad clara del estado de las rutas en tiempo real.<br>- Dificultad para anticipar retrasos o desvíos.<br>- Perder tiempo consolidando datos manualmente en Excel. |
+| **Biography**    | Luis es administrador en una empresa de transporte urbano que opera 18 buses en Lima Metropolitana. Su día comienza muy temprano revisando reportes manuales y coordinando con supervisores mediante llamadas y mensajes. Debe responder rápidamente a incidencias como desvíos o congestión, pero la falta de información centralizada dificulta la toma de decisiones oportunas. Además, debe presentar reportes detallados a la gerencia, lo que implica un gran esfuerzo manual. Busca una plataforma que brinde control total en tiempo real, reduzca errores y modernice la gestión de flota para competir con el transporte informal. |
+| **Personality**  | Extrovert: 65/100<br>Thinking: 85/100<br>Judging: 70/100 |
+| **Technology**   | IT and Internet: 75/100<br>Software: 60/100<br>Mobile Apps: 65/100<br>Social Networks: 60/100 |
+| **Brands**       | WhatsApp, Excel, Facebook |
+
+<br>
+
+##  Supervisor de Rutas
+
+| **Atributo**     | **Valor** |
+|------------------|-----------|
+| **Name**         | José Ramírez |
+| **Age**          | 40 años |
+| **Occupation**   | Supervisor de rutas en empresa de transporte urbano |
+| **Status**       | Soltero |
+| **Location**     | Lima, Perú |
+| **Tier**         | Empresa de transporte urbano |
+| **Archetype**    | Supervisor Operativo |
+| **Image**        | <img src="img/commons/joseRamirez.jpg" alt="José Ramírez" width="200"/> <br><br> _**Figura 16.** Imagen representativa del User Persona “José Ramírez”, supervisor de rutas en una empresa de transporte urbano._  <br> _**Fuente:** elaboración propia._ |
+| **Quote**        | "Lo más difícil es coordinar con los choferes en medio del tráfico y asegurar que los buses lleguen a tiempo." |
+| **Motivations**  | Incentive: 70/100<br>Fear: 60/100<br>Achievement: 80/100<br>Growth: 60/100<br>Power: 65/100<br>Social: 70/100 |
+| **Goals**        | - Coordinar eficientemente la operación diaria de múltiples rutas.<br>- Anticipar problemas de tráfico o desvíos antes de que afecten a los pasajeros.<br>- Reducir reclamos por incumplimiento de horarios.<br>- Estandarizar reportes e incidencias.<br>- Recibir alertas automáticas para actuar más rápido. |
+| **Frustrations** | - Depender de WhatsApp y llamadas individuales.<br>- No contar con un panel centralizado para incidencias en tiempo real.<br>- Perder tiempo obteniendo información fragmentada.<br>- No poder anticipar bloqueos o retrasos.<br>- Dificultad para demostrar su desempeño ante la administración. |
+| **Biography**    | José supervisa varias rutas de transporte urbano en Lima Metropolitana. Su jornada comienza antes de las seis de la mañana y consiste en coordinar con conductores, verificar operaciones y reaccionar rápidamente a incidencias en el tránsito. Su principal herramienta son grupos de WhatsApp, llamadas y cuadernos físicos, lo que ocasiona retrasos y decisiones tardías. A menudo se entera tarde de bloqueos o accidentes, generando retrasos acumulados. Además, debe entregar reportes diarios elaborados manualmente. Una plataforma que centralice la información, envíe alertas automáticas y permita monitoreo en tiempo real transformaría su trabajo y reduciría la presión operativa. |
+| **Personality**  | Extrovert: 65/100<br>Thinking: 75/100<br>Judging: 80/100 |
+| **Technology**   | IT and Internet: 65/100<br>Software: 50/100<br>Mobile Apps: 75/100<br>Social Networks: 60/100 |
+| **Brands**       | WhatsApp, Excel, Facebook |
+
+<br>
+
 ### 2.3.2. User Task Matrix.
+
+### Segmento Objetivo 1
+      
+| Tarea / Funcionalidad                | Manuel Suarez (Estudiante Universitario) | Alejandro Medina (Trabajador) | Adulto mayor | Turista |
+|--------------------------------------|------------|------------|--------------|---------|
+| Consultar rutas y horarios           | Alta       | Alta       | Alta         | Alta    |
+| Recibir notificaciones en tiempo real| Alta       | Alta       | Media        | Media   |
+| Guardar trayectos frecuentes         | Alta       | Alta       | Media        | Baja    |
+| Revisar estimaciones según tráfico   | Media      | Alta       | Baja         | Media   |
+| Identificar paraderos cercanos       | Media      | Media      | Alta         | Alta    |
+| Alertas de seguridad en paraderos    | Media      | Media      | Alta         | Media   |
+| Consultar rutas hacia puntos turísticos | Baja    | Baja       | Baja         | Alta    |
+| Administración de datos (rol admin)  | Baja       | Baja       | Baja         | Baja    |
+
+En el User Task Matrix del Segmento 1 se observa que cada grupo de usuarios tiene prioridades distintas: los estudiantes y trabajadores buscan principalmente rapidez e información en tiempo real; los adultos mayores se enfocan en la seguridad y en identificar paraderos cercanos; y los turistas necesitan rutas claras hacia lugares de interés. Aunque las tareas administrativas no se perciben directamente, son clave para mantener la información confiable. En general, BusTrack debe centrarse en ofrecer datos precisos, opciones personalizadas y una experiencia segura para todos.
+
+<br>
+
+### Segmento Objetivo 2
+
+| Tarea / Funcionalidad                | Luis Palacios (Administrador de Flota) | José Ramírez (Supervisor de Rutas) | Propietario |
+|--------------------------------------|------------|------------|--------------|
+| Monitorear buses en tiempo real      | Alta       | Alta       | Media        |
+| Generar reportes automáticos         | Alta       | Media      | Alta         |
+| Gestionar incidencias y alertas en ruta  | Alta       | Alta       | Media        |
+| Comunicar cambios de ruta a choferes | Alta       | Alta       | Baja         |
+| Analizar costos operativos y optimizarlos | Media    | Baja      | Alta         |
+| Mejorar puntualidad y satisfacción del pasajero | Alta | Alta | Alta |
+| Planificar mantenimiento preventivo de buses | Media | Alta | Media |
+| Decidir adopción de nuevas tecnologías | Media | Baja | Alta |
+| Administrar permisos y accesos en la plataforma | Alta | Media | Baja |
+
+En el User Task Matrix del Segmento 2 se observa que el supervisor de rutas y el administrador de flota priorizan tareas operativas como el monitoreo en tiempo real, la generación de reportes y la gestión de incidencias, mientras que los propietarios se enfocan en aspectos estratégicos como la reducción de costos y la adopción de nuevas tecnologías. Esto evidencia que las empresas necesitan una solución que combine eficiencia operativa y capacidad estratégica, garantizando puntualidad, satisfacción del pasajero y modernización de procesos.
+
+<br>
+
 ### 2.3.3. User Journey Mapping.
+
+A continuación se presentan los User Journey Maps desarrollados para los dos segmentos objetivo de BusTrack: Pasajeros y Empresas de transporte. Cada mapa describe el flujo actual del usuario, destacando acciones, emociones, problemas y oportunidades de mejora que BusTrack busca resolver.
+
+### Segmento 1: Pasajeros
+
+#### User Persona 1 – Manuel Suárez (Estudiante Universitario)
+
+**Descripción breve:** Este mapa muestra cómo un estudiante organiza su viaje diario utilizando BusTrack, centrado en la precisión del tiempo estimado de llegada, la ansiedad por retrasos y la necesidad de información confiable en tiempo real.
+
+![Journey Map Estudiante](img/commons/journey-estudiante.png)
+
+<br>
+
+_**Figura 17.** User Journey Map de Manuel Suárez (estudiante universitario), que muestra su flujo de viaje diario y las oportunidades de mejora que aborda BusTrack._  <br> _**Fuente:** elaboración propia._
+
+
+___
+
+#### User Persona 2 – Alejandro Medina (Trabajador)
+
+**Descripción breve:** Este mapa visualiza cómo un trabajador depende de la aplicación para adaptarse a condiciones de tráfico variables y evitar retrasos, destacando su necesidad de alertas inmediatas y estimaciones precisas.
+
+![Journey Map Trabajador](img/commons/journey-trabajador.png)
+
+<br> _**Figura 18.** User Journey Map de Alejandro Medina (trabajador administrativo), ilustrando sus interacciones con el transporte público y el uso de BusTrack para reducir retrasos._ <br> _**Fuente:** elaboración propia._
+
+<br>
+
+___
+
+<br>
+
+### Segmento 2: Empresas de transporte
+
+#### User Persona 3 – Luis Palacios (Administrador de Flota)
+
+**Descripción breve:** El mapa muestra cómo el administrador enfrenta procesos manuales, comunicación dispersa y falta de datos centralizados para la toma de decisiones, resaltando la oportunidad de automatización y monitoreo en tiempo real que ofrece BusTrack.
+
+![Journey Map Administrador](img/commons/journey-administrador.png)
+
+<br> _**Figura 19.** User Journey Map de Luis Palacios (administrador de flota), que detalla sus tareas operativas y cómo BusTrack mejora el monitoreo de buses._  <br> _**Fuente:** elaboración propia._
+
+___
+
+#### User Persona 4 – José Ramírez (Supervisor de Rutas)
+
+**Descripción breve:** Este Journey Map refleja la complejidad del monitoreo de múltiples unidades en tiempo real, la presión operativa y los errores causados por la comunicación manual, destacando la necesidad de alertas automáticas y paneles centralizados.
+
+![Journey Map Supervisor](img/commons/journey-supervisor.png)
+
+<br> _**Figura 20.** User Journey Map de José Ramírez (supervisor de rutas), representando la coordinación de unidades y la necesidad de alertas en tiempo real._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
 ### 2.3.4. Empathy Mapping.
+
+A continuación se presentan los mapas de empatía elaborados para cada uno de los perfiles de usuario identificados. Cada imagen incluye su respectiva descripción, tal como fue solicitado.
+
+<br>
+
+**Segmento 1: Estudiante universitario (Ejemplo: Manuel Suárez)**
+
+**Descripción:** Mapa de empatía del estudiante universitario Manuel Suárez, donde se detallan sus emociones, pensamientos, dolores, motivaciones y percepciones relacionadas con su experiencia usando el transporte público en Lima.
+
+![Empathy Map Segment 1](img/commons/empathyMapSegmet1ManuelSuarez.png)
+
+<br> _**Figura 21.** Mapa de empatía del estudiante universitario Manuel Suárez, donde se resumen lo que ve, piensa, siente y hace en relación con su experiencia usando el transporte público en Lima._  <br> _**Fuente:** elaboración propia._
+
+
+---
+
+**Segmento 1: Empleado administrativo (Ejemplo: Alejandro Medina)**
+
+**Descripción:** Mapa de empatía del trabajador administrativo Alejandro Medina, mostrando su comportamiento, frustraciones, expectativas y necesidades al movilizarse diariamente hacia su centro laboral.
+
+![Empathy Map Segment 1](img/commons/empathyMapSegmet1AlejandroMedina.png)
+
+<br> _**Figura 22.** Mapa de empatía de Alejandro Medina, trabajador administrativo, que refleja sus frustraciones, expectativas y necesidades frente a los retrasos y la inseguridad en el transporte urbano._ <br> _**Fuente:** elaboración propia._
+
+---
+
+**Segmento 2: Administrador de flota en empresa de transporte urbano (Ejemplo: Luis Palacios)**
+
+**Descripción:** Mapa de empatía del administrador de flota Luis Palacios, donde se analizan sus preocupaciones, necesidades operativas, puntos de dolor y objetivos relacionados con la gestión de buses y supervisión de rutas.
+
+![Empathy Map Segment 2](img/commons/empathyMapSegmet2LuisPalacios.png)
+
+<br> _**Figura 23.** Mapa de empatía de Luis Palacios, administrador de flota, donde se analizan sus preocupaciones operativas, puntos de dolor y objetivos de gestión de buses._  <br> _**Fuente:** elaboración propia._
+
+---
+
+**Segmento 2: Supervisor de rutas en empresa de transporte urbano (Ejemplo: José Ramírez)**
+
+**Descripción:** Mapa de empatía del supervisor de rutas José Ramírez, que refleja sus dificultades diarias, retos operativos, motivaciones y oportunidades de mejora en la coordinación del transporte urbano.
+
+![Empathy Map Segment 2](img/commons/empathyMapSegmet2JoseRamirez.png)
+
+<br> _**Figura 24.** Mapa de empatía de José Ramírez, supervisor de rutas, que muestra sus retos diarios en la coordinación de unidades y su percepción sobre soluciones tecnológicas como BusTrack._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
 ### 2.3.5. As-is Scenario Mapping.
+
+El As-Is Scenario Mapping nos permite visualizar el flujo de trabajo y la experiencia actual de nuestros usuarios antes de la implementación de BusTrack. A partir del análisis de las entrevistas y los Journey Maps previos, se han mapeado los escenarios actuales para ambos segmentos objetivo, evidenciando los puntos críticos donde la experiencia se degrada.
+
+#### Segmento 1: Pasajeros de Transporte Público (Estudiante / Trabajador)
+Escenario: El usuario necesita viajar desde su casa hacia la universidad o el trabajo en hora punta, utilizando rutas de buses urbanos.
+
+![as-is segmento 1 ](img/developers/as-is%20segmento1.png)
+
+#### Segmento 2: Empresas de Transporte Urbano (Administrador / Supervisor)
+Escenario: El supervisor necesita monitorear que todas las unidades cumplan con su ruta y horario establecido durante la jornada operativa.
+
+![as-is segmento 2 ](img/developers/as-is%20segmento%202.png)
+
 ## 2.4. Ubiquitous Language.
+
+| **Término**                          | **Definición**                                                                                       |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Pasajero**                         | Usuario final de BusTrack que consulta rutas, horarios y viaja en transporte público.                |
+| **Empresa de transporte**            | Entidad que gestiona los buses, rutas y horarios registrados en la aplicación.                       |
+| **Ruta**                             | Trayecto definido entre un origen y un destino que sigue un bus.                                     |
+| **Horario**                          | Horas establecidas para salidas y llegadas de buses en una ruta.                                     |
+| **Bus**                              | Vehículo de transporte público registrado en BusTrack con identificación y ubicación GPS.            |
+| **Notificación**                     | Alerta enviada al pasajero sobre retrasos, desvíos o llegada próxima del bus.                        |
+| **Reporte**                          | Resumen básico de alertas o estados operativos visibles en el panel web, limitado a la información disponible en el monitoreo de buses y en la gestión simple de alertas. En la versión actual del proyecto, no incluye reportes automáticos ni análisis avanzados; dichos elementos corresponden a funcionalidades previstas como trabajo futuro. |
+| **Favoritos**                        | Rutas que el pasajero guarda para consultarlas rápidamente en futuros viajes.                        |
+| **Panel de control**                 | Interfaz usada por la empresa de transporte para monitorear la flota y generar reportes.             |
+| **Tiempo estimado de llegada (ETA)** | Predicción calculada por el sistema sobre el tiempo que falta para que un bus llegue a la parada.    |
+
+
+<br><br>
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping.

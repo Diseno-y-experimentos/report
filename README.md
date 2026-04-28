@@ -468,6 +468,59 @@ Con estas estrategias, **BusTrack** busca convertirse en una opción confiable y
 Como parte del proceso de validación del modelo de negocio de BusTrack, se plantean entrevistas semiestructuradas dirigidas a los dos segmentos objetivos: pasajeros de transporte público y empresas de transporte urbano. El propósito es identificar sus motivaciones, comportamientos, expectativas y principales frustraciones en relación con la movilidad urbana, así como validar la propuesta de valor de la plataforma.
 
 ### 2.2.1. Diseño de entrevistas.
+
+## Segmento 1: Pasajeros de Transporte Público
+
+**Objetivo:** Entender las frustraciones en el uso del transporte diario
+
+### Datos generales
+- Nombre  
+- Edad  
+- Distrito de residencia  
+- Ocupación (estudiante, trabajador, etc.)  
+- Frecuencia de uso del transporte público (diaria, varias veces por semana, esporádica)  
+
+### Motivaciones y comportamientos
+- ¿Qué medio de transporte público usas con más frecuencia (bus, coaster, combi, Metropolitano, Metro)?  
+- ¿Qué situaciones específicas te generan más preocupación al viajar?
+- ¿Qué pasos sigues normalmente antes de salir de casa para tomar el bus?
+- ¿Has usado alguna aplicación para movilizarte en la ciudad (Waze, Google Maps, Moovit, etc.)? ¿Cómo fue tu experiencia?  
+- ¿Qué importancia le das a recibir información en tiempo real sobre la llegada de buses?  
+
+### Miedos, expectativas y canales
+- ¿Qué problemas enfrentas con mayor frecuencia en tus traslados (tiempo de espera, congestión, inseguridad, falta de información)?  
+- ¿Qué haría que confíes en una aplicación como BusTrack para planificar tus viajes?  
+- ¿Te gustaría recibir notificaciones sobre la llegada del bus, retrasos o desvíos de ruta? 
+- ¿Qué redes sociales o aplicaciones móviles usas más para informarte en tu día a día?  
+- ¿Cómo medirías que una aplicación realmente mejora tu experiencia de viaje?  
+
+---
+
+## Segmento 2: Empresas de Transporte Urbano
+
+**Objetivo:** Comprender los procesos operativos de las empresas de transporte urbano
+
+### Datos generales
+- Nombre del entrevistado  
+- Cargo (administrador, supervisor de rutas, propietario)  
+- Empresa / línea de transporte  
+- Número de unidades en operación  
+- Zonas o rutas que cubren  
+
+### Operaciones y herramientas
+- ¿Cómo gestionan actualmente la ubicación y monitoreo de sus buses?  
+- ¿Qué herramientas usan para controlar sus buses y qué limitaciones encuentran en ellas?
+- ¿Qué información reciben de los conductores y cómo la gestionan?  
+- ¿Han utilizado aplicaciones para comunicarse con pasajeros? Si ese es el caso, ¿les fue útil? y qué problemas encontraron?
+- ¿Cuáles son los mayores retos para mantener la puntualidad y la seguridad de los viajes?  
+
+### Expectativas y valor esperado
+- ¿Qué tipo de datos o reportes serían más valiosos para su gestión diaria (tiempos de llegada, cantidad de pasajeros, retrasos)?  
+- ¿Qué funcionalidades de una aplicación como BusTrack les motivarían a adoptarla?  
+- ¿Cómo creen que una plataforma de información en tiempo real podría mejorar la confianza de los pasajeros?  
+- ¿Qué beneficios esperan obtener al implementar una solución tecnológica (mayor satisfacción, competitividad, reducción de costos)?  
+- ¿Qué barreras internas o externas ven para adoptar una aplicación digital de gestión de transporte?
+
 ### 2.2.2. Registro de entrevistas.
 ### 2.2.3. Análisis de entrevistas.
 ## 2.3. Needfinding.

@@ -893,6 +893,17 @@ A continuación se presentan los mapas de empatía elaborados para cada uno de l
 
 ### 2.3.5. As-is Scenario Mapping.
 
+El As-Is Scenario Mapping nos permite visualizar el flujo de trabajo y la experiencia actual de nuestros usuarios antes de la implementación de BusTrack. A partir del análisis de las entrevistas y los Journey Maps previos, se han mapeado los escenarios actuales para ambos segmentos objetivo, evidenciando los puntos críticos donde la experiencia se degrada.
+
+#### Segmento 1: Pasajeros de Transporte Público (Estudiante / Trabajador)
+Escenario: El usuario necesita viajar desde su casa hacia la universidad o el trabajo en hora punta, utilizando rutas de buses urbanos.
+
+![as-is segmento 1 ](img/developers/as-is%20segmento1.png)
+
+#### Segmento 2: Empresas de Transporte Urbano (Administrador / Supervisor)
+Escenario: El supervisor necesita monitorear que todas las unidades cumplan con su ruta y horario establecido durante la jornada operativa.
+
+![as-is segmento 2 ](img/developers/as-is%20segmento%202.png)
 
 ## 2.4. Ubiquitous Language.
 

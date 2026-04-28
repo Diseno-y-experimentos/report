@@ -2644,21 +2644,643 @@ Registra los viajes realizados por los pasajeros.
 <br><br>
 
 # Capítulo V: Product Implementation
+
 ## 5.1. Software Configuration Management.
+A continuación, se describe el proceso mediante el cual organizamos, gestionamos y controlamos los cambios realizados en el desarrollo de BusTrack.
+
 ### 5.1.1. Software Development Environment Configuration.
+En esta sección se describen las herramientas utilizadas en el desarrollo del proyecto BusTrack y su propósito dentro del ciclo de vida del software.
+
+Para el desarrollo del sistema, se utiliza Vue.js con Vite en el frontend, .NET 8 con C# para la API REST, y HTML, CSS y JavaScript para la landing page. Además, se emplea JSON Server como Fake API para simular la comunicación con la base de datos durante las primeras etapas del desarrollo.
+
+#### Gestión de las necesidades
+
+| Plataforma | Descripción | Enlace |
+|------------|-------------|--------|
+| Trello | Plataforma de gestión de proyectos que permite realizar el seguimiento detallado del progreso (user stories) | <https://trello.com> |
+| Uxpressia | Herramienta en línea para la elaboración de artefactos de UX, como User Personas y Journey Maps. | <https://uxpressia.com> |
+| Canva | Aplicación web de diseño y comunicación visual utilizada para crear piezas gráficas del proyecto. | <https://www.canva.com> |
+| Lucidchart | Herramienta visual para representar información estructurada, diagramas y procesos del sistema. | <https://www.lucidchart.com> |
+
+___
+
+#### Diseño UX/UI
+
+| Plataforma | Descripción | Enlace |
+|------------|-------------|--------|
+| Figma | Herramienta para el diseño colaborativo de interfaces digitales, permitiendo prototipado y trabajo en equipo. | <https://www.figma.com> |
+
+___
+
+#### Desarrollo de software
+
+| Plataforma           | Descripción                                                                                              | Link |
+|----------------------|----------------------------------------------------------------------------------------------------------|------|
+| HTML                 | Define la estructura y contenido de las páginas web.                                       | <https://www.w3schools.com/html/> |
+| CSS                  | Se encarga del estilo y presentación visual de las interfaces.                                       | <https://www.w3schools.com/css/> |
+| JS                   | Añade interactividad y dinamismo a la aplicación web.                                                        | <https://www.w3schools.com/js/> |
+| Visual Studio Code   | Entorno de desarrollo para la edición, depuración y gestión de código. | <https://code.visualstudio.com/> |
+
+____
+
+#### Implementación de software
+
+| Plataforma | Descripción                                                                 | Link |
+|------------|-----------------------------------------------------------------------------|------|
+| GitHub     | Plataforma para la gestión de repositorios y control de versiones del código del proyecto.    | <https://github.com> |
+| Markdown   | Lenguaje de marcado utilizado para la documentación del informe.            | [<https://markdown.es/> |
+| Git        |Sistema de control de versiones para registrar, gestionar y colaborar en el desarrollo del software. | <https://git-scm.com/> |
+
+<br>
+
 ### 5.1.2. Source Code Management.
+Usuarios de Github
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Usuario de GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cuentas Peña, Joaquin Alberto</td>
+      <td>JoaCUPE</td>
+    </tr>
+    <tr>
+      <td>Meza Camayo, Lynn Jeeferzon</td>
+      <td>LynnJeefer</td>
+    </tr>
+    <tr>
+      <td>Fajardo Monroy, Walter Luis</td>
+      <td>WalterFajardo</td>
+    </tr>
+    <tr>
+      <td>Santur Tello, Andrea Elizabeth</td>
+      <td>andreli-star</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**GitFlow Workflow y Convenciones de Commits**
+Para la gestión del código fuente, el equipo implementó el modelo GitFlow, basado en la propuesta de Vincent Driessen en “A successful Git branching model”. Este enfoque permite organizar el desarrollo de manera estructurada, facilitando la colaboración y el control de versiones.
+
+#### Flujo de trabajo y control de versiones
+
+El proyecto sigue el flujo de trabajo GitFlow para el control de versiones, utilizando GitHub como plataforma de alojamiento y gestión del código. A continuación, se detalla la implementación de este modelo.
+
+---
+
+## Organización en GitHub
+Se creó una organización para el equipo de trabajo:  
+🔗 <https://github.com/2025-2-AplicacionesWeb-DalComp/Project-report-BusTrack->
+
+---
+
+## Repositorios
+- **Repositorio para el informe del trabajo**:  
+  🔗 <https://github.com/2025-2-AplicacionesWeb-DalComp/Project-report-BusTrack->  
+- **Repositorio para la landing page**:  
+  🔗 <https://github.com/2025-2-AplicacionesWeb-DalComp/Landing-page>
+
+---
+
+## Ramas principales
+
+- **main (principal):**  
+
+Contiene el código estable y listo para producción, correspondiente a las versiones oficiales de BusTrack. Cada release se marca con etiquetas semánticas (p. ej., v1.0.0) o con etiquetas referentes a cada entregable (p. ej., TB1, TP, TB2, TF), facilitando el rastreo y control de versiones.
+
+- **develop (rama de desarrollo):**  
+
+Contiene la versión más reciente en estado de preproducción, donde se integran todas las funcionalidades completadas. Funciona además como base para pruebas internas antes de fusionarse con la rama main.
+
+---
+
+## Ramas de soporte
+
+- **feature/** → ramas para el desarrollo de nuevas funcionalidades.
+- **release/** → ramas temporales para preparar una nueva versión estable.
+- **hotfix/** → ramas destinadas a la corrección rápida de errores en producción.
+
+---
+
+## Convención de mensajes de commits
+
+El equipo utiliza la convención Conventional Commits, para mantener claridad y trazabilidad.
+
+### Ejemplos:
+- `feat: agregar nuevo sistema de login`  
+- `fix: corregir validación en formulario de registro`  
+- `docs: actualizar README con instrucciones de despliegue`
+
+Descripción: La imagen muestra el flujo de trabajo GitFlow, utilizado para organizar el proceso de desarrollo de BusTrack. En el diagrama se observan las ramas principales (main y develop), así como las ramas de soporte (feature, release, hotfix) y la forma en que interactúan entre sí para gestionar versiones y actualizaciones del proyecto.
+
+<img src="img/commons/gitflow.jpg" style="width: 700px; margin-right: 700px;"/>
+
+_**Figura 119.** Flujo de trabajo GitFlow utilizado para la gestión del código fuente._ <br> _**Fuente:** elaboración propia._
+
+<br>
+
 ### 5.1.3. Source Code Style Guide & Conventions.
+
+#### Guía de Estilo de Desarrollo
+
+El equipo adoptará nomenclatura en inglés para variables, funciones, clases y archivos del proyecto, con el fin de mantener coherencia, escalabilidad y buenas prácticas.
+
+Para HTML y CSS, se sigue la guía Google HTML/CSS Style Guide. Se emplean etiquetas semánticas y nombres descriptivos para mejorar accesibilidad y mantenibilidad.
+
+---
+
+## Normas de Estilo
+
+## 1. HTML - Estructura básica
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+``` 
+
+
+# Reglas de Estilo
+
+## 1. Reglas Generales
+
+- Todos los elementos deben estar correctamente cerrados (ej: `<img />`, `<div></div>`).  
+- Usar comillas dobles (`" "`) en atributos que contengan espacios.  
+- Incluir atributos esenciales en imágenes.  
+
+---
+
+## 2. CSS - Formato
+
+- Sangría: 2 espacios (sin pestañas).  
+- Minúsculas en selectores, propiedades y valores.  
+- Evitar espacios en blanco innecesarios y líneas vacías redundantes.  
+
+---
+
+## 3. Frontend en Vue.js
+
+## Reglas clave:
+- **Nombres de componentes**: `PascalCase` (Ejemplo: `UserProfile.vue`).  
+- **Props**: Definir tipos y valores por defecto.  
+
+<br>
+
 ### 5.1.4. Software Deployment Configuration.
+En esta sección se presenta la implementación práctica del proyecto BusTrack, abarcando la construcción de la landing page, los servicios principales y las funcionalidades desarrolladas durante los sprints. Se detalla cómo cada entrega evoluciona desde los prototipos hasta el código final ejecutable, evidenciando el cumplimiento de los requisitos y flujos definidos previamente.
+# Despliegue en GitHub Pages
+
+Hemos seleccionado **GitHub Pages** como plataforma para alojar nuestro sitio web estático.  
+A continuación, se detalla el proceso realizado:
+
+---
+
+## Paso 1. Creación de un repositorio
+- Crear un nuevo repositorio y subir la **landing page** en él.  
+- Asegurarse de que el repositorio sea **público**.  
+
+---
+
+## Paso 2. Actualización de archivos
+- Subir todos los archivos del proyecto (HTML, CSS, JavaScript, etc.).  
+- Verificar que se encuentren en la **última versión de desarrollo**.  
+
+---
+
+## Paso 3. Configuración de GitHub Pages
+1. Dirigirse a la **configuración** del repositorio en GitHub.  
+2. Ir a la sección **Settings**.  
+3. Desplazarse hasta la sección **Pages**.  
+4. En el menú desplegable **Source**, seleccionar la rama `gh-pages` y la carpeta raíz (`/root`) o `docs/` si los archivos están organizados en esa carpeta.  
+
+> Una vez seleccionado, GitHub Pages generará una **URL pública** para acceder al sitio web.  
+
+---
+
+## Paso 4. Verificación del despliegue
+Se muestra a continuación la landing page desplegada en su primera versión:  
+
+🔗 <https://2025-2-aplicacionesweb-dalcomp.github.io/Landing-page/>
+
+<br>
+
 ## 5.2. Product Implementation & Deployment.
-### 5.2.1. Sprint Backlogs.
+### 5.2.1. Sprint Backlog 1
+
+### Sprint Backlog 1
+
+En esta sección se presenta el **Sprint Backlog 1**, que corresponde al primer ciclo de desarrollo del proyecto.  
+
+Este backlog contiene las **tareas priorizadas y estimadas** que el equipo debe ejecutar para alcanzar el **objetivo principal del sprint**.  
+
+El objetivo principal de este sprint es el **diseño y desarrollo de la landing page de BusTrack**, cuyo propósito es:
+
+- Comunicar de manera clara y atractiva el valor de la web.  
+- Generar confianza en los visitantes.  
+- Explicar el funcionamiento del servicio.  
+- Motivar a los usuarios a registrarse o explorar la plataforma.  
+
+### Sprint Backlog - User Stories y Tareas
+
+| **User Story** | **Title**                    | **Task ID** | **Task Title**                                       | **Description**                                                         | **Estimation (hours)** | **Assigned to**                         | **Status** |
+|----------------|------------------------------|-------------|------------------------------------------------------|-------------------------------------------------------------------------|-------------------------|------------------------------------------|-----------|
+| US01 | Buscar rutas | T09 | Diseñar interfaz de búsqueda de rutas | Crear la pantalla con los campos “Origen” y “Destino”, botón “Buscar ruta” y mensajes de ayuda para el usuario. | 3 | Joaquin Alberto Cuentas Peña | done |
+| US01 | Buscar rutas | T10 | Implementar resultado de búsqueda | Simular la lista de rutas disponibles (mock) mostrando nombre y tiempo estimado. | 3 | Walter Luis Fajardo Monroy | done |
+| US01 | Buscar rutas | T11 | Validar campos vacíos y deshabilitar botón | Deshabilitar botón si los campos están vacíos. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US02 | Ver paraderos cercanos | T12 | Diseñar pantalla de paraderos cercanos | Lista de paraderos cercanos con datos simulados. | 3 | Andrea Elizabeth Santur Tello | done |
+| US02 | Ver paraderos cercanos | T13 | Simular ubicación por defecto | Usar ubicación por defecto si no hay GPS. | 1 | Walter Luis Fajardo Monroy | done |
+| US03 | Guardar rutas frecuentes | T14 | Añadir botón “Guardar como favorita” | Simular guardado de rutas favoritas. | 2 | Lynn Jeeferzon Meza Camayo | done |
+| US03 | Guardar rutas frecuentes | T15 | Simular validación de ruta duplicada | Mostrar mensaje si la ruta ya existe. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US04 | Ver ruta en Google Maps | T16 | Agregar botón “Ver en Google Maps” | Botón en resultados de búsqueda. | 2 | Walter Luis Fajardo Monroy | done |
+| US04 | Ver ruta en Google Maps | T17 | Construir URL y apertura en nueva pestaña | Abrir ruta en Google Maps. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US05 | Notificaciones de retraso | T18 | Diseñar pantalla de notificaciones | Lista de notificaciones con tarjetas. | 2 | Andrea Elizabeth Santur Tello | done |
+| US05 | Notificaciones de retraso | T19 | Implementar toast y estado vacío | Toast y mensaje “sin notificaciones”. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US06 | Alertas de desvío | T20 | Maquetar UI para alertas | Reutilizar UI con iconos diferenciados. | 2 | Lynn Jeeferzon Meza Camayo | done |
+| US06 | Alertas de desvío | T21 | Eliminar alertas | Botón para eliminar alertas. | 1 | Andrea Elizabeth Santur Tello | done |
+| US11 | Información de la solución | T01 | Contenido de buscar ruta | Explicación de búsqueda de rutas. | 1 | Andrea Elizabeth Santur Tello | done |
+| US11 | Información de la solución | T02 | Contenido de recibir alertas | Explicación de alertas. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US11 | Información de la solución | T03 | Contenido de viajar más seguro | Explicación de seguridad. | 1 | Walter Luis Fajardo Monroy | done |
+| US12 | Beneficios de la aplicación | T04 | Información en tiempo real | Explicación de datos en tiempo real. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US12 | Beneficios de la aplicación | T05 | Guardar rutas favoritas | Explicación de favoritos. | 1 | Andrea Elizabeth Santur Tello | done |
+| US12 | Beneficios de la aplicación | T06 | Alertas y notificaciones | Explicación de notificaciones. | 1 | Lynn Jeeferzon Meza Camayo | done |
+| US13 | Misión y visión | T07 | Desarrollar misión | Definición de misión. | 1 | Joaquin Alberto Cuentas Peña | done |
+| US13 | Misión y visión | T08 | Desarrollar visión | Definición de visión. | 1 | Walter Luis Fajardo Monroy | done |
+
+
+
 ### 5.2.2. Implemented Landing Page Evidence
+
+En esta sección se presenta la evidencia de ejecución del Sprint 1 mediante capturas de la **landing page** de BusTrack desplegada.  
+Las imágenes muestran el estado real del producto al cierre del sprint y permiten validar que las historias de usuario priorizadas se reflejan en la interfaz implementada.
+
+### Avances en los Productos Desarrollados  
+
+**Producto desarrollado:** Landing Page (versión estática)  
+
+**Tecnologías utilizadas:** HTML, CSS  
+
+- Se implementó una estructura básica de navegación con menú fijo y enlaces a las secciones: **NavBar, Hero, Cómo usar, Beneficios y Sobre nosotros**.  
+- Se desarrolló una sección de **“Cómo usar”**, estructurada por pasos visuales.  
+- Se diseñó la **sección introductoria**, donde se explica brevemente la finalidad de la plataforma.  
+- Se creó una sección **“Beneficios de BusTrack”**, que presenta los beneficios diferenciales mediante listas e íconos decorativos.  
+- Se añadió una **sección “Sobre nosotros”**, en la que se expone la misión y visión de nuestra empresa y solución.  
+- Se construyó un **footer simple**, que cumple con los créditos del autor.  
+- Se aplicaron **estilos CSS** para lograr un diseño limpio, responsivo en pantallas móviles y legible.  
+
+La landing page **no incluye funcionalidades dinámicas**, ni conexión con base de datos o servicios web, ya que se trata de un desarrollo inicial con **HTML y CSS puro**, orientado a validar la estructura visual y de contenido.  
+
+---
+
+### Vista 1: Hero y mensaje principal  
+Esta imagen muestra la sección inicial de la landing page, donde se presenta la propuesta de valor y el mensaje introductorio para el usuario.
+
+![landing1](img/landing1.png)
+
+_**Figura 120.** Sección principal (hero) de la landing page de BusTrack._  
+_**Fuente:** elaboración propia._
+
+---
+
+### Vista 2: Sección “Cómo usar”  
+Aquí se visualizan los pasos que guía a los usuarios sobre cómo utilizar la plataforma BusTrack.
+
+![landing2](img/landing2.png)
+
+_**Figura 121.** Sección “Cómo usar” con los pasos explicativos del funcionamiento de la aplicación._  
+_**Fuente:** elaboración propia._
+
+---
+
+### Vista 3: Sección de beneficios  
+Esta captura presenta los beneficios clave ofrecidos por BusTrack, acompañados de texto descriptivo e íconos.
+
+![landing3](img/landing3.png)
+
+_**Figura 122.** Sección de beneficios que describe las ventajas principales de BusTrack._  
+_**Fuente:** elaboración propia._
+
+---
+
+### Vista 4: Sobre nosotros y footer  
+La imagen muestra la sección “About Us”, donde se comunica la misión y visión, junto con el pie de página del sitio.
+
+![landing4](img/landing4.png)
+
+_**Figura 123.** Sección “Sobre nosotros” y footer de la landing page de BusTrack._  
+_**Fuente:** elaboración propia._
+
+<br>
+
+### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante este sprint, el equipo se enfocó exclusivamente en el desarrollo de la **Landing Page de BusTrack**, por lo tanto, **no se ha implementado ni documentado ningún Web Service** hasta el momento.
+
+La **documentación e implementación de endpoints REST** está planificada para los siguientes sprints, en los cuales se abordará la creación de los servicios **frontend y backend** necesarios para funcionalidades como:
+
+- Login  
+- Registro de pasajeros y empresas  
+- Gestión de usuarios  
+- Gestión de rutas y buses  
+- Notificaciones y monitoreo en tiempo real  
+
+---
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence
+
+Durante este Sprint, nos enfocamos en el desarrollo del frontend del sistema web **BusTrack** utilizando **WebStorm** y siguiendo los principios de **Domain-Driven Design (DDD)** para organizar la estructura y responsabilidades del sistema. El objetivo principal fue implementar vistas funcionales que brinden a los usuarios una experiencia clara y amigable.
+
+---
+
+**Crear Cuenta**
+
+<img src="img/commons/CreateAccount.jpeg" alt="Pantalla de creación de cuenta en BusTrack" width="600">
+
+_**Figura 132.** Pantalla de creación de cuenta en BusTrack, donde el usuario registra sus datos para acceder al sistema._  
+_**Fuente:** elaboración propia._  
+
+---
+
+**Log In**
+
+<img src="img/commons/LogIn.jpeg" alt="Pantalla de inicio de sesión en BusTrack" width="600">
+
+_**Figura 133.** Pantalla de inicio de sesión de BusTrack, que permite a los usuarios autenticarse con sus credenciales._  
+_**Fuente:** elaboración propia._  
+
+---
+
+**Buscar Ruta**
+
+<img src="https://i.postimg.cc/DzNCGp8x/buscar-ruta-bustrack.jpg" alt="Vista de búsqueda de ruta en BusTrack" width="600">
+
+_**Figura 134.** Vista de búsqueda de ruta en BusTrack, con campos de origen y destino y resultados simulados de rutas disponibles._  
+_**Fuente:** elaboración propia._  
+
+---
+
+**Notificaciones**
+
+<img src="https://i.postimg.cc/0QmTZKMf/notificaciones-bustrack.jpg" alt="Listado de notificaciones en BusTrack" width="600">
+
+_**Figura 135.** Pantalla de notificaciones de BusTrack, donde se muestran mensajes de alerta y estados relevantes para el pasajero._  
+_**Fuente:** elaboración propia._  
+
+<img src="https://i.postimg.cc/gJRC4LXV/notificaciones2-bustrack.jpg" alt="Detalle de notificaciones en BusTrack" width="600">
+
+_**Figura 136.** Segunda vista de notificaciones en BusTrack, que muestra diferentes tipos de mensajes y su organización en la interfaz._  
+_**Fuente:** elaboración propia._  
+
+---
+
+**Paraderos Cercanos**
+
+<img src="https://i.postimg.cc/Pq76DVPF/paraderos-cercanos-bustrack.png" alt="Pantalla de paraderos cercanos en BusTrack" width="600">
+
+_**Figura 137.** Pantalla de paraderos cercanos en BusTrack, donde se listan paraderos con nombre, dirección, distancia y rutas asociadas._  
+_**Fuente:** elaboración propia._  
+
+---
+
+**Perfil de Usuario**
+
+<img src="https://i.postimg.cc/KYW9TpR7/perfil2-bustrack.jpg" alt="Vista de perfil de usuario en BusTrack" width="600">
+
+_**Figura 138.** Vista del perfil de usuario en BusTrack, donde se muestran los datos principales del pasajero._  
+_**Fuente:** elaboración propia._  
+
+<img src="https://i.postimg.cc/Pq76DVP2/perfil1-bustrack.jpg" alt="Edición de perfil de usuario en BusTrack" width="600">
+
+_**Figura 139.** Pantalla de edición de perfil de BusTrack, que permite actualizar la información personal del usuario._  
+_**Fuente:** elaboración propia._  
+
+<img src="https://i.postimg.cc/GpfMDgHz/peefil3-bustrack.jpg" alt="Vista adicional del perfil de usuario en BusTrack" width="600">
+
+_**Figura 140.** Vista adicional de la sección de perfil en BusTrack, donde se gestionan datos y preferencias del usuario._  
+_**Fuente:** elaboración propia._  
+
 ### 5.2.4. Acuerdo de Servicio - SaaS
-### 5.2.5. Implemented Native-Mobile Application Evidence
-### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
-### 5.2.7. RESTful API documentation
-### 5.2.8. Team Collaboration Insights
+<br>
+
+El Acuerdo de Servicio SaaS define las condiciones bajo las cuales los usuarios acceden y utilizan la plataforma BusTrack, asegurando transparencia, seguridad y cumplimiento normativo.
+
+a) Objetivo del acuerdo
+
+Establecer un marco de uso claro para los usuarios de la plataforma BusTrack, garantizando un servicio confiable, seguro y alineado a las normativas de protección de datos.
+
+b) Alcance
+
+El acuerdo aplica a todos los componentes del sistema:
+
+Landing Page: Difusión del servicio y captación de usuarios.
+Frontend Web Application: Interacción del usuario con el sistema y visualización de la información.
+Backend (API REST): Procesamiento de datos y lógica del sistema.
+
+c) Principales disposiciones
+
+Licencia de uso: El usuario accede a una licencia limitada, no exclusiva y revocable del servicio.
+Propiedad intelectual: Todo el sistema pertenece al equipo desarrollador de BusTrack.
+Protección de datos: Se garantiza la confidencialidad de la información conforme a la normativa vigente (Ley N.º 29733 – Perú).
+Responsabilidad del usuario: El usuario debe proporcionar información verídica y proteger sus credenciales.
+Disponibilidad del servicio: El sistema puede ser suspendido temporalmente por mantenimiento.
+Limitación de responsabilidad: No se garantiza disponibilidad absoluta ante fallas externas.
+
+d) Publicación
+
+El acuerdo será publicado dentro de la landing page en la sección “Términos y Condiciones”, accesible para todos los usuarios.
+
+### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+### 5.2.6. RESTful API documentation
+
+| Endpoint           | Acciones                        | Método HTTP | Sintaxis / URL                                   | Parámetros                               | Ejemplo de respuesta                                               | Documentación OpenAPI          |
+|--------------------|---------------------------------|------------|--------------------------------------------------|-------------------------------------------|---------------------------------------------------------------------|--------------------------------|
+| `/routes`          | Listar todas las rutas          | GET        | `/routes`                                        | Ninguno                                   | `{ "routes": [ { "id": 1, "name": "Ruta A" } ] }`                  | Sección de rutas en OpenAPI    |
+| `/routes/{id}`     | Obtener detalles de una ruta    | GET        | `/routes/{id}`                                   | `id` (ID de la ruta)                      | `{ "id": 1, "name": "Ruta A", "stops": [ ... ] }`                  | Sección de rutas en OpenAPI    |
+| `/notifications`   | Listar notificaciones de usuario| GET        | `/notifications?userId=1`                        | `userId` (obligatorio)                    | `[ { "id": 1, "message": "Retraso en Ruta A" } ]`                  | Sección de notificaciones      |
+| `/notifications`   | Crear notificación              | POST       | `/notifications`                                 | `userId`, `message`                       | `{ "id": 2, "message": "Nueva alerta" }`                           | Sección de notificaciones      |
+| `/stops/nearby`    | Obtener paraderos cercanos      | GET        | `/stops/nearby?lat=-12.0464&lng=-77.0428`        | `lat`, `lng`                              | `[ { "id": 1, "name": "Paradero A", "distance": 120 } ]`           | Sección de paraderos cercanos  |
+| `/users/{id}`      | Obtener perfil de usuario       | GET        | `/users/{id}`                                    | `id` (ID del usuario)                     | `{ "id": 1, "name": "Juan Pérez", "preferences": { ... } }`        | Sección de usuarios            |
+| `/users/{id}`      | Actualizar perfil de usuario    | PUT        | `/users/{id}`                                    | `id` (ID del usuario), body con campos    | `{ "id": 1, "name": "Juan Pérez Actualizado" }`                    | Sección de usuarios            |
+
+### Evidencia visual
+
+<img src="https://i.postimg.cc/3N7FjX1d/api-notificaciones-bustrack.png" alt="Evidencia de API de notificaciones en BusTrack" width="600">
+
+_**Figura 141.** Ejemplo de interacción con la API de notificaciones de BusTrack, mostrando datos de prueba y estructura de respuesta._  
+_**Fuente:** elaboración propia._  
+
+<img src="https://i.postimg.cc/mkRy3YjM/api-rutas-bustrack.png" alt="Evidencia de API de rutas en BusTrack" width="600">
+
+_**Figura 142.** Ejemplo de consulta al endpoint de rutas en BusTrack, donde se visualiza la lista de rutas disponibles._  
+_**Fuente:** elaboración propia._  
+
+<img src="https://i.postimg.cc/br890xgk/api-users-bustrack.png" alt="Evidencia de API de usuarios en BusTrack" width="600">
+
+_**Figura 143.** Ejemplo de respuesta del endpoint de usuarios en BusTrack, mostrando los datos principales de un usuario._  
+_**Fuente:** elaboración propia._  
+
+La documentación de la API se estructuró siguiendo el estándar OpenAPI 3.0 y se integró con Swagger.
+Esto permite a los desarrolladores consultar y probar de forma interactiva los endpoints implementados en el backend.
+
+##### Notifications Endpoint
+
+###### GET `/api/v1/notifications`
+Esta captura muestra la interfaz del endpoint encargado de listar las notificaciones de un usuario, permitiendo ingresar el parámetro `userId` y visualizar la estructura de la respuesta.
+
+<img src="/img/commons/cap1.png">
+
+_**Figura 148.** Vista del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y el ejemplo de respuesta estructurada._  
+_**Fuente:** elaboración propia._
+
+---
+
+###### POST `/api/v1/notifications/delays`
+La imagen evidencia el formulario del endpoint para registrar notificaciones de retraso, donde se ingresan los valores `userId`, `routeId`, `delayMinutes` y `message` antes de ejecutar la solicitud.
+
+<img src="/img/commons/cap2.png">
+
+_**Figura 149.** Endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del cuerpo de la solicitud para registrar una notificación de retraso._  
+_**Fuente:** elaboración propia._
+
+---
+
+###### PUT `/api/v1/notifications/{id}/read`
+Esta captura muestra la sección del endpoint que permite marcar una notificación como leída mediante el envío del parámetro `id` en la ruta.
+
+<img src="/img/commons/cap3.png">
+
+_**Figura 150.** Endpoint PUT `/api/v1/notifications/{id}/read`, que permite actualizar el estado de lectura de una notificación específica._  
+_**Fuente:** elaboración propia._
+
+---
+
+###### POST `/api/v1/notifications/delays` (ejecución)
+La imagen presenta la ejecución real del registro de una notificación, mostrando el cuerpo enviado y la respuesta procesada correctamente por el servidor.
+
+<img src="/img/commons/cap5.png">
+
+_**Figura 151.** Ejecución del endpoint POST `/api/v1/notifications/delays`, evidenciando el registro exitoso de una notificación de retraso._  
+_**Fuente:** elaboración propia._
+
+---
+
+###### GET `/api/v1/notifications` (ejecución)
+La captura refleja la ejecución del listado de notificaciones filtradas por usuario, mostrando el cuerpo JSON retornado por el servidor con datos persistidos.
+
+<img src="/img/commons/cap6.png">
+
+_**Figura 152.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con notificaciones almacenadas en el sistema._  
+_**Fuente:** elaboración propia._
+
+---
+
+###### PUT `/api/v1/notifications/{id}/read` (ejecución)
+Finalmente, esta captura muestra la ejecución del proceso para marcar una notificación como leída, con el código de respuesta del servidor que confirma la actualización.
+
+<img src="/img/commons/cap7.png">
+
+_**Figura 153.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando la actualización del estado de lectura._  
+_**Fuente:** elaboración propia._
+
+### **GET `/api/v1/notifications` – Listar notificaciones**
+
+La siguiente captura muestra la estructura del endpoint encargado de obtener todas las notificaciones asociadas a un usuario, permitiendo ingresar el parámetro `userId` mediante query string.
+
+<img src="/img/commons/cap1.png">
+
+_**Figura 154.** Documentación del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y un ejemplo de respuesta JSON._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **POST `/api/v1/notifications/delays` – Registrar notificación de retraso**
+
+En esta evidencia se observa el formulario del cuerpo de la solicitud, donde se envían los campos necesarios para registrar una nueva notificación de retraso: `userId`, `routeId`, `delayMinutes` y `message`.
+
+<img src="/img/commons/cap2.png">
+
+_**Figura 155.** Documentación del endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del request body requerido._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **Ejecución real de POST `/api/v1/notifications/delays`**
+
+La siguiente captura muestra la ejecución del endpoint, incluyendo el JSON enviado y la respuesta generada por el servidor, que retorna la notificación registrada correctamente.
+
+<img src="/img/commons/cap5.png">
+
+_**Figura 156.** Ejecución del endpoint POST `/api/v1/notifications/delays`, registrando exitosamente una nueva notificación de retraso._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **Ejecución real de GET `/api/v1/notifications`**
+
+Esta evidencia muestra la consulta real al endpoint, retornando una lista de notificaciones efectivamente almacenadas para el usuario especificado.
+
+<img src="/img/commons/cap6.png">
+
+_**Figura 157.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con las notificaciones persistidas para el usuario._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **PUT `/api/v1/notifications/{id}/read` – Marcar notificación como leída**
+
+El siguiente endpoint permite actualizar el estado de lectura de una notificación específica enviando su identificador mediante la ruta.
+
+<img src="/img/commons/cap3.png">
+
+_**Figura 158.** Documentación del endpoint PUT `/api/v1/notifications/{id}/read`, mostrando el parámetro de ruta y el código de respuesta esperado._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **Ejecución real de PUT `/api/v1/notifications/{id}/read`**
+
+Finalmente, se presenta la ejecución real del endpoint, donde el servidor confirma la actualización del estado de la notificación mediante el código HTTP **204 – No Content**.
+
+<img src="/img/commons/cap7.png">
+
+_**Figura 159.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando el cambio de estado de la notificación._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **Documentación del endpoint de empresas (POST / GET)**
+
+<img src="img/commons/backend3.png" width="700">
+
+_**Figura 167.** Documentación del endpoint `POST /api/v1/companies`, utilizado para registrar empresas de transporte público._  
+_**Fuente:** elaboración propia._
+
+<img src="img/commons/backend4.png" width="700">
+
+_**Figura 168.** Documentación del endpoint `GET /api/v1/companies`, que devuelve la lista de empresas registradas en el sistema._  
+_**Fuente:** elaboración propia._
+
+---
+
+### **Documentación del endpoint de rutas (GET)**
+
+<img src="img/commons/backend8.png" width="700">
+
+_**Figura 169.** Vista en Swagger del endpoint `GET /api/v1/routes`, que devuelve las rutas disponibles junto con sus paraderos asociados._  
+_**Fuente:** elaboración propia._
+
+---
+
+### 5.2.7. Team Collaboration Insights
+
+<img src="img/miembros.png" width="700">
+
 ## 5.3. Video About-the-Product.
+[Ver Landing Page](https://2025-2-aplicacionesweb-dalcomp.github.io/Landing-page/)
 
 # Part II: Verification, Validation & Pipeline
 # Capítulo VI: Product Verification & Validation

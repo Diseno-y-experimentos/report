@@ -310,6 +310,13 @@ BusTrack propone una solución que centraliza información en tiempo real sobre 
 ¿Cómo podemos desarrollar una plataforma que no solo brinde datos en tiempo real sobre el transporte público, sino que también aumente la confianza y reduzca la incertidumbre en los desplazamientos diarios?
 
 #### 1.2.2.1. Lean UX Problem Statements.
+
+Los pasajeros que viajan con frecuencia en Lima, especialmente estudiantes y trabajadores, enfrentan una constante incertidumbre al no saber con exactitud cuándo llegará su autobús ni cuánto tiempo tomará el trayecto. Esta falta de información genera estrés, pérdida de tiempo y exposición a paraderos inseguros.
+
+Por otro lado, los administradores y supervisores de flota carecen de herramientas digitales eficaces para supervisar unidades, coordinar incidentes y prever demoras, lo que afecta la puntualidad del servicio y el nivel de satisfacción de los pasajeros.
+
+BusTrack tiene como objetivo conectar a ambos grupos a través de una plataforma que proporcione información en tiempo real, paneles de gestión y notificaciones inteligentes, promoviendo así viajes más seguros, eficientes y puntuales.
+
 #### 1.2.2.2. Lean UX Assumptions.
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 #### 1.2.2.4. Lean UX Canvas.

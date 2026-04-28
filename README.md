@@ -845,6 +845,52 @@ ___
 <br>
 
 ### 2.3.4. Empathy Mapping.
+
+A continuación se presentan los mapas de empatía elaborados para cada uno de los perfiles de usuario identificados. Cada imagen incluye su respectiva descripción, tal como fue solicitado.
+
+<br>
+
+**Segmento 1: Estudiante universitario (Ejemplo: Manuel Suárez)**
+
+**Descripción:** Mapa de empatía del estudiante universitario Manuel Suárez, donde se detallan sus emociones, pensamientos, dolores, motivaciones y percepciones relacionadas con su experiencia usando el transporte público en Lima.
+
+![Empathy Map Segment 1](img/commons/empathyMapSegmet1ManuelSuarez.png)
+
+<br> _**Figura 21.** Mapa de empatía del estudiante universitario Manuel Suárez, donde se resumen lo que ve, piensa, siente y hace en relación con su experiencia usando el transporte público en Lima._  <br> _**Fuente:** elaboración propia._
+
+
+---
+
+**Segmento 1: Empleado administrativo (Ejemplo: Alejandro Medina)**
+
+**Descripción:** Mapa de empatía del trabajador administrativo Alejandro Medina, mostrando su comportamiento, frustraciones, expectativas y necesidades al movilizarse diariamente hacia su centro laboral.
+
+![Empathy Map Segment 1](img/commons/empathyMapSegmet1AlejandroMedina.png)
+
+<br> _**Figura 22.** Mapa de empatía de Alejandro Medina, trabajador administrativo, que refleja sus frustraciones, expectativas y necesidades frente a los retrasos y la inseguridad en el transporte urbano._ <br> _**Fuente:** elaboración propia._
+
+---
+
+**Segmento 2: Administrador de flota en empresa de transporte urbano (Ejemplo: Luis Palacios)**
+
+**Descripción:** Mapa de empatía del administrador de flota Luis Palacios, donde se analizan sus preocupaciones, necesidades operativas, puntos de dolor y objetivos relacionados con la gestión de buses y supervisión de rutas.
+
+![Empathy Map Segment 2](img/commons/empathyMapSegmet2LuisPalacios.png)
+
+<br> _**Figura 23.** Mapa de empatía de Luis Palacios, administrador de flota, donde se analizan sus preocupaciones operativas, puntos de dolor y objetivos de gestión de buses._  <br> _**Fuente:** elaboración propia._
+
+---
+
+**Segmento 2: Supervisor de rutas en empresa de transporte urbano (Ejemplo: José Ramírez)**
+
+**Descripción:** Mapa de empatía del supervisor de rutas José Ramírez, que refleja sus dificultades diarias, retos operativos, motivaciones y oportunidades de mejora en la coordinación del transporte urbano.
+
+![Empathy Map Segment 2](img/commons/empathyMapSegmet2JoseRamirez.png)
+
+<br> _**Figura 24.** Mapa de empatía de José Ramírez, supervisor de rutas, que muestra sus retos diarios en la coordinación de unidades y su percepción sobre soluciones tecnológicas como BusTrack._  <br> _**Fuente:** elaboración propia._
+
+<br>
+
 ### 2.3.5. As-is Scenario Mapping.
 ## 2.4. Ubiquitous Language.
 

@@ -3286,6 +3286,25 @@ _**Fuente:** elaboración propia._
 # Capítulo VI: Product Verification & Validation
 ## 6.1. Testing Suites & Validation
 ### 6.1.1. Core Entities Unit Tests.
+
+Las pruebas unitarias de las entidades principales son fundamentales en la ingeniería de software. Su propósito es asegurar que la lógica base del sistema opere sin fallos, lo que ayuda a evitar errores críticos y simplifica las actualizaciones futuras del código.
+
+**Bus Domain Test:**
+
+<img src="img/BusTest.jpeg" width="700">
+
+**Route Domain Test:**
+
+<img src="img/RouteTest.jpg" width="700">
+
+**Company Domain Test:**
+
+<img src="img/CompanyTest.jpg" width="700">
+
+**User Domain Test:**
+
+<img src="img/UserTest.jpg" width="700">
+
 ### 6.1.2. Core Integration Tests.
 ### 6.1.3. Core Behavior-Driven Development
 ### 6.1.4. Core System Tests.

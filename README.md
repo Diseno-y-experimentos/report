@@ -3306,6 +3306,25 @@ Las pruebas unitarias de las entidades principales son fundamentales en la ingen
 <img src="./img/UserTest.jpg" width="700">
 
 ### 6.1.2. Core Integration Tests.
+
+Las pruebas de integración (Core Integration Tests) son clave para validar la correcta comunicación entre los controladores y elementos externos, como la base de datos o los servicios. Al simular escenarios de fallo, comprueban que el backend gestione las excepciones de forma segura y devuelva los códigos HTTP adecuados. En consecuencia, esto optimiza la experiencia del usuario, agiliza la corrección de errores y garantiza la entrega de un software robusto.
+
+**Buses Controller Tests:**
+
+<img src="./img/BusesControllerTests.jpg" width="700">
+
+**Companies Controller Tests:**
+
+<img src="./img/CompaniesControllerTests.jpg" width="700">
+
+**Authentication Controller Tests:**
+
+<img src="./img/AuthenticationControllerTests.jpg" width="700">
+
+**Routes Controller Tests:**
+
+<img src="./img/RoutesControllerTests.jpg" width="700">
+
 ### 6.1.3. Core Behavior-Driven Development
 ### 6.1.4. Core System Tests.
 ## 6.2. Static testing & Verification

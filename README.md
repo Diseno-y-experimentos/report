@@ -3293,6 +3293,67 @@ En esta sección se aplicaron técnicas de Behavior-Driven Development (BDD) par
 ## Herramientas Integradas
 - Cucumber.js / Cypress: Utilizados para la automatización y ejecución de las pruebas sobre la aplicación web.
 - Gherkin Language: Empleado para la redacción de los archivos .feature, permitiendo una documentación viva y ejecutable.
+  
+  <img src="img/guerkincap.png" width="700">
+  
+## Escenarios de Comportamiento Definidos
+A continuación, se presentan los escenarios Gherkin que cubren las funcionalidades críticas de la plataforma:
+
+  <img src="img/escenario1.png" width="700">
+   <img src="img/escenario2.png" width="700">
+
+## Implementación (Step Definitions)
+Para validar la integración entre el frontend en Vue y la API RESTful, se implementaron definiciones de pasos (Step Definitions) que interceptan las peticiones de red:
+
+/* global Given, When, Then, cy */
+
+Given('que el frontend solicita la lista de favoritos mediante un GET al endpoint de favoritos del usuario.', () => {
+  cy.intercept('GET', '/api/users/*/favorites', {
+    statusCode: 200,
+    body: [
+      {
+        id: 1,
+        origin: 'Origen A',
+        destination: 'Destino B',
+        isFavorite: true,
+      },
+    ],
+  }).as('getFavorites');
+});
+
+When('la aplicación carga la sección de favoritos.', () => {
+  cy.visit('/');
+  cy.wait('@getFavorites');
+});
+
+Then('la respuesta debe tener estado 200.', () => {
+  cy.get('@getFavorites').its('response.statusCode').should('eq', 200);
+});
+
+Given('que se envía un POST al endpoint de alertas de empresa con datos de un incidente.', () => {
+  cy.intercept('POST', '/api/companies/*/alerts', {
+    statusCode: 201,
+    body: {
+      message: 'Alerta registrada correctamente',
+    },
+  }).as('postAlert');
+});
+
+When('la aplicación registra la alerta desde la interfaz corporativa.', () => {
+  cy.request({
+    method: 'POST',
+    url: '/api/companies/10/alerts',
+    body: {
+      type: 'incidente',
+      description: 'Unidad detenida en vía principal',
+    },
+  });
+});
+
+Then('la respuesta debe tener estado 201.', () => {
+  cy.wait('@postAlert').its('response.statusCode').should('eq', 201);
+});
+
 
 ### 6.1.4. Core System Tests.
 ## 6.2. Static testing & Verification

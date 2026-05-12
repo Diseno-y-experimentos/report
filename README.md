@@ -3288,6 +3288,12 @@ _**Fuente:** elaboración propia._
 ### 6.1.1. Core Entities Unit Tests.
 ### 6.1.2. Core Integration Tests.
 ### 6.1.3. Core Behavior-Driven Development
+En esta sección se aplicaron técnicas de Behavior-Driven Development (BDD) para definir y probar el comportamiento esperado del sistema BusTrack desde la perspectiva del usuario final. El objetivo es asegurar que las funcionalidades implementadas que  cumplan con los criterios de aceptación mediante un lenguaje natural y entendible
+
+## Herramientas Integradas
+- Cucumber.js / Cypress: Utilizados para la automatización y ejecución de las pruebas sobre la aplicación web.
+- Gherkin Language: Empleado para la redacción de los archivos .feature, permitiendo una documentación viva y ejecutable.
+
 ### 6.1.4. Core System Tests.
 ## 6.2. Static testing & Verification
 ### 6.2.1. Static Code Analysis

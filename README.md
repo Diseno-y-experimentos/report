@@ -3498,6 +3498,87 @@ Preparación para despliegue
 ### 7.3.2. Production Deployment Pipeline Components.
 
 En este apartado describe los componentes que forman parte del pipeline de despliegue a produccion y como se integra para automatizar todo el proceso
+
+# Componentes del Pipeline del Backend (Render para ASP.NET Core)
+
+## 1. Integración continua
+
+Al realizar un commit en la rama principal del repositorio de GitHub, Render detecta automáticamente los cambios realizados en el backend desarrollado en ASP.NET Core e inicia el proceso de integración continua. Esto permite mantener sincronizada la versión de producción con el código actualizado del proyecto.
+
+## 2. Compilación del backend
+
+Render ejecuta automáticamente el proceso de restauración de dependencias y compilación del backend, verificando que todos los paquetes y recursos necesarios para la ejecución de la API estén correctamente configurados antes del despliegue.
+
+## 3. Despliegue automático
+
+Una vez finalizada la compilación, Render implementa automáticamente la nueva versión del backend en el entorno de producción. Esto permite actualizar continuamente los servicios relacionados con rutas, monitoreo de buses y funcionalidades principales de BusTrack.
+
+## 4. Gestión de variables de entorno
+
+Las configuraciones sensibles, como cadenas de conexión y credenciales del sistema, son administradas mediante variables de entorno seguras configuradas directamente en Render. Esto evita exponer información crítica dentro del repositorio del proyecto.
+
+## 5. Monitoreo y alertas
+
+Después del despliegue, Render monitorea continuamente el estado de la aplicación. En caso de detectar fallos, interrupciones del servicio o problemas de rendimiento, la plataforma registra logs y permite identificar rápidamente posibles errores en producción.
+
+---
+
+# Componentes del Pipeline del Frontend (Vercel para Vue.js + Vite)
+
+## 1. Compilación del frontend
+
+Al detectar un nuevo commit en el repositorio del frontend, Vercel inicia automáticamente el proceso de construcción de la aplicación desarrollada con Vue.js y Vite en modo de producción.
+
+## 2. Ejecución de pruebas automatizadas
+
+Durante el pipeline se ejecutan pruebas automatizadas para validar el correcto funcionamiento de la interfaz web y asegurar que las funcionalidades principales del sistema operen correctamente antes del despliegue.
+
+## 3. Despliegue en Vercel
+
+Si el proceso de compilación y validación finaliza correctamente, Vercel despliega automáticamente la nueva versión de la aplicación web en producción. Además, la plataforma distribuye el frontend mediante una CDN global para mejorar el rendimiento y reducir los tiempos de carga.
+
+## 4. Actualización automática de contenido
+
+Vercel actualiza automáticamente la versión publicada del frontend, permitiendo que los usuarios accedan inmediatamente a los cambios más recientes implementados en BusTrack.
+
+## 5. Gestión de variables de entorno
+
+Las configuraciones necesarias para la conexión entre el frontend y el backend son administradas mediante variables de entorno seguras configuradas dentro de Vercel.
+
+---
+
+# Componentes del Pipeline de la Base de Datos (MySQL)
+
+## 1. Conexión segura con el backend
+
+La base de datos MySQL utilizada por BusTrack se encuentra conectada al backend mediante configuraciones seguras de producción, permitiendo el almacenamiento y actualización de información relacionada con usuarios, rutas y monitoreo del sistema.
+
+## 2. Persistencia de la información
+
+La infraestructura de la base de datos garantiza la persistencia y disponibilidad de la información, reduciendo riesgos de pérdida de datos y asegurando continuidad del servicio.
+
+## 3. Seguridad de credenciales
+
+Las credenciales de acceso y configuraciones sensibles de MySQL son gestionadas mediante variables de entorno para evitar la exposición de información crítica dentro del código fuente del proyecto.
+
+## 4. Integración con el sistema
+
+El backend se encarga de gestionar la comunicación con la base de datos, permitiendo realizar operaciones de consulta, registro y actualización de información dentro de la plataforma BusTrack.
+
+---
+
+# Automatización del Flujo de Producción
+
+La integración entre GitHub, Render y Vercel permite implementar un flujo de despliegue continuo automatizado para BusTrack. Gracias a este pipeline:
+
+* Los cambios desarrollados por el equipo se despliegan rápidamente.
+* Se reducen errores asociados a despliegues manuales.
+* Se mantiene sincronización entre frontend, backend y base de datos.
+* Se mejora la estabilidad y disponibilidad del sistema en producción.
+
+En consecuencia, BusTrack implementa un proceso de entrega continua alineado con buenas prácticas modernas de desarrollo de software y automatización DevOps.
+
+
 ## 7.4. Continuous Monitoring
 ### 7.4.1. Tools and Practices
 ### 7.4.2. Monitoring Pipeline Components

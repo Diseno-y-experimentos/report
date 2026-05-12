@@ -3497,6 +3497,7 @@ Preparación para despliegue
 ### 7.3.1. Tools and Practices.
 ### 7.3.2. Production Deployment Pipeline Components.
 
+En este apartado describe los componentes que forman parte del pipeline de despliegue a produccion y como se integra para automatizar todo el proceso
 ## 7.4. Continuous Monitoring
 ### 7.4.1. Tools and Practices
 ### 7.4.2. Monitoring Pipeline Components

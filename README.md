@@ -3305,6 +3305,7 @@ A continuación, se presentan los escenarios Gherkin que cubren las funcionalida
 ## Implementación (Step Definitions)
 Para validar la integración entre el frontend en Vue y la API RESTful, se implementaron definiciones de pasos (Step Definitions) que interceptan las peticiones de red:
 
+```
 /* global Given, When, Then, cy */
 
 Given('que el frontend solicita la lista de favoritos mediante un GET al endpoint de favoritos del usuario.', () => {
@@ -3353,7 +3354,7 @@ When('la aplicación registra la alerta desde la interfaz corporativa.', () => {
 Then('la respuesta debe tener estado 201.', () => {
   cy.wait('@postAlert').its('response.statusCode').should('eq', 201);
 });
-
+```
 
 ### 6.1.4. Core System Tests.
 ## 6.2. Static testing & Verification

@@ -3291,19 +3291,19 @@ Las pruebas unitarias de las entidades principales son fundamentales en la ingen
 
 **Bus Domain Test:**
 
-<img src="img/BusTest.jpeg" width="700">
+<img src="./img/BusTest.jpeg" width="700">
 
 **Route Domain Test:**
 
-<img src="img/RouteTest.jpg" width="700">
+<img src="./img/RouteTest.jpg" width="700">
 
 **Company Domain Test:**
 
-<img src="img/CompanyTest.jpg" width="700">
+<img src="./img/CompanyTest.jpg" width="700">
 
 **User Domain Test:**
 
-<img src="img/UserTest.jpg" width="700">
+<img src="./img/UserTest.jpg" width="700">
 
 ### 6.1.2. Core Integration Tests.
 ### 6.1.3. Core Behavior-Driven Development

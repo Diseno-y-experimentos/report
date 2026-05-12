@@ -3311,14 +3311,192 @@ _**Fuente:** elaboración propia._
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
+
+La integración continua en el proyecto Bustrack se implementa mediante GitHub Actions, con el objetivo de automatizar la validación del código cada vez que se realicen cambios en el repositorio. Al tratarse de una aplicación web desarrollada en Vue, el pipeline permite instalar las dependencias del proyecto, ejecutar validaciones del código, correr pruebas si están configuradas y compilar la aplicación antes de integrar los cambios a la rama principal.
+
+Este proceso ayuda a reducir errores manuales, detectar fallos de compilación de manera temprana y asegurar que la aplicación mantenga una versión estable durante el desarrollo. GitHub Actions permite crear flujos de integración continua para proyectos basados en Node.js, incluyendo etapas de instalación, construcción y pruebas del código.
+
 ### 7.1.1. Tools and Practices.
+
+Para la integración continua de Bustrack, se utilizarán herramientas orientadas al control de versiones, automatización del pipeline y validación del proyecto web.
+
+
+## 7.1.1. Tools and Practices
+
+Para la integración continua de **Bustrack**, se utilizarán herramientas orientadas al control de versiones, automatización del pipeline y validación del proyecto web.
+
+| Herramienta / práctica | Descripción aplicada a Bustrack |
+|---|---|
+| **Git** | Permite controlar las versiones del código fuente del proyecto. |
+| **GitHub** | Repositorio principal donde se almacena el código de Bustrack. |
+| **GitHub Actions** | Herramienta utilizada para automatizar el pipeline de integración continua. |
+| **Node.js** | Entorno necesario para ejecutar los comandos del proyecto Vue. |
+| **npm** | Gestor de paquetes utilizado para instalar dependencias y ejecutar scripts del proyecto. |
+| **Vue.js** | Framework utilizado para desarrollar la interfaz web de Bustrack. |
+| **Vite** | Herramienta utilizada para compilar la aplicación Vue y generar la versión de producción. |
+| **Pull Request** | Práctica utilizada para revisar los cambios antes de integrarlos a la rama principal. |
+| **Build automático** | Proceso que permite verificar si el proyecto puede compilar correctamente. |
+| **Pruebas automatizadas** | Validaciones que permiten comprobar el funcionamiento básico de los componentes o funcionalidades del sistema. |
+
+En el proyecto **Bustrack**, cada cambio realizado en el código deberá pasar por un proceso de validación antes de ser integrado a la rama principal. Para ello, se trabajará con ramas de desarrollo y revisiones mediante **pull requests**, de modo que el equipo pueda revisar los cambios y evitar que se integren errores que afecten el funcionamiento de la aplicación.
+
+Para implementar la integración continua en Bustrack, se creó el archivo ci.yml en .github/workflows/. Este pipeline de GitHub Actions valida automáticamente el código fuente del proyecto Vue ubicado en la carpeta BusTrack-Frontend-new-frontend, configurada como working-directory para ejecutar las dependencias, pruebas y compilación del frontend.
+
+![img .yml](./img/CI-yml.png)
+
+En la imagen se observa el archivo `ci.yml`, donde se configuran las etapas principales del pipeline de integración continua. El flujo se activa cuando se realiza un `push` o `pull request` hacia las ramas `main` o `develop`. Asimismo, se utiliza un entorno basado en Ubuntu, se configura Node.js, se instalan las dependencias con `npm ci`, se ejecutan validaciones opcionales con `npm run lint`, pruebas automatizadas con `npm run test` y finalmente se compila la aplicación Vue mediante `npm run build`.
+
+---
+
 ### 7.1.2. Build & Test Suite Pipeline Components.
+
+El pipeline de integración continua de **Bustrack** estará compuesto por diferentes etapas que permiten validar el estado técnico del proyecto antes de integrar los cambios al repositorio principal.
+
+| Componente del pipeline | Descripción |
+|---|---|
+| **Trigger del pipeline** | El pipeline se ejecuta automáticamente cuando se realiza un `push` o `pull request` hacia las ramas `main` o `develop`. |
+| **Checkout del repositorio** | Descarga el código fuente de Bustrack desde GitHub para iniciar el proceso de validación. |
+| **Configuración de Node.js** | Prepara el entorno necesario para ejecutar los comandos del proyecto Vue. |
+| **Instalación de dependencias** | Ejecuta `npm ci` para instalar las dependencias definidas en el archivo `package-lock.json`. |
+| **Validación del código** | Ejecuta `npm run lint --if-present` para revisar el código si el proyecto tiene configurado un linter. |
+| **Ejecución de pruebas** | Ejecuta `npm run test --if-present` para correr pruebas automatizadas si están configuradas. |
+| **Compilación del proyecto** | Ejecuta `npm run build` para verificar que la aplicación Vue pueda generar correctamente su versión de producción. |
+| **Resultado del pipeline** | Si todas las etapas son exitosas, el cambio puede ser integrado. Si alguna etapa falla, debe corregirse antes de continuar. |
+
+Luego de subir los cambios al repositorio, GitHub Actions ejecutó automáticamente el pipeline configurado para el proyecto **Bustrack**. En la sección **Actions** de GitHub se visualiza el resultado del proceso `build-test`, el cual representa la validación técnica del código fuente. Esta ejecución permite comprobar que el proyecto puede instalar sus dependencias, ejecutar sus validaciones y generar correctamente la versión compilada de la aplicación.
+
+![img builtest](./img/buil-test-CI.png)
+
+En la imagen se muestra la ejecución del job `build-test` dentro de GitHub Actions. Este resultado evidencia que el pipeline de integración continua fue ejecutado correctamente y que las etapas definidas en el archivo `ci.yml` fueron procesadas. Si el estado final aparecen checks, significa que la aplicación superó las validaciones establecidas y que el código se encuentra en condiciones de ser integrado a la rama principal o continuar hacia una etapa posterior de despliegue.
+
 ## 7.2. Continuous Delivery
+
+La entrega continua del proyecto BusTrack permite automatizar la construcción y preparación de la plataforma web para su posterior despliegue. Este proceso asegura que los cambios realizados en el código fuente sean validados y empaquetados de forma automática mediante un pipeline configurado en GitHub Actions.
+
+El pipeline propuesto se encarga de obtener el código fuente del repositorio, configurar el entorno de ejecución, instalar las dependencias del proyecto, compilar la plataforma web desarrollada con Vite y generar un artefacto con los archivos optimizados para despliegue.
+
+El archivo de configuración del pipeline debe ubicarse dentro del repositorio del proyecto BusTrack, en la siguiente ruta:
+
+```text
+.github/workflows/cd.yml
+```
+
 ### 7.2.1. Tools and Practices.
+
+Para la entrega continua del proyecto BusTrack se utilizan herramientas orientadas a la automatización del pipeline, gestión de dependencias, construcción de la plataforma web y protección de variables de entorno.
+
+| Herramienta o práctica | Aplicación en el proyecto BusTrack |
+|---|---|
+| **Git** | Permite controlar los cambios realizados en el código fuente del proyecto. |
+| **GitHub** | Almacena el repositorio del proyecto BusTrack. |
+| **GitHub Actions** | Automatiza el pipeline de entrega continua mediante el archivo `cd.yml`. |
+| **Node.js** | Configura el entorno necesario para ejecutar el proyecto web. |
+| **npm** | Instala las dependencias definidas en el archivo `package.json`. |
+| **Vite** | Genera la versión optimizada de la plataforma web mediante el comando `npm run build`. |
+| **GitHub Secrets** | Protege variables sensibles como la URL del backend y la clave de Google Maps API. |
+| **Artifacts** | Guarda la carpeta `dist` generada durante el proceso de construcción. |
+| **Staging Environment** | Ambiente de pruebas donde puede validarse la plataforma antes de producción. |
+
+El siguiente archivo `.yml` representa el pipeline de entrega continua propuesto para el proyecto BusTrack:
+
+```yaml
+name: BusTrack Continuous Delivery
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/deploy
+
+  pull_request:
+    branches:
+      - main
+      - develop
+      - feature/deploy
+
+jobs:
+  build-bustrack:
+    name: Build BusTrack Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout BusTrack repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: BusTrack-Frontend-new-frontend/package-lock.json
+
+      - name: Install project dependencies
+        working-directory: BusTrack-Frontend-new-frontend
+        run: npm ci
+
+      - name: Build BusTrack platform
+        working-directory: BusTrack-Frontend-new-frontend
+        run: npm run build
+        env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+          VITE_GOOGLE_MAPS_API_KEY: ${{ secrets.VITE_GOOGLE_MAPS_API_KEY }}
+          VITE_OVERPASS_API_URL: ${{ secrets.VITE_OVERPASS_API_URL }}
+
+      - name: Upload BusTrack build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bustrack-build
+          path: BusTrack-Frontend-new-frontend/dist
+```
+
 ### 7.2.2. Stages Deployment Pipeline Components.
+
+El pipeline de despliegue del proyecto BusTrack está compuesto por etapas que permiten validar y preparar la plataforma web antes de su despliegue. Estas etapas aseguran que el código fuente se construya correctamente y que los archivos finales queden disponibles como artefacto.
+
+**Flujo general del pipeline**
+
+```text
+Developer Push / Pull Request
+        ↓
+Checkout del código fuente
+        ↓
+Configuración de Node.js
+        ↓
+Instalación de dependencias
+        ↓
+Build del proyecto BusTrack
+        ↓
+Generación del artefacto
+        ↓
+Validación del resultado
+        ↓
+Preparación para despliegue
+```
+
+**Componentes del pipeline**
+
+| Etapa | Componente | Descripción | Resultado esperado |
+|---|---|---|---|
+| **1. Source Code Management** | GitHub Repository | Se obtiene el código fuente actualizado del repositorio BusTrack. | Código fuente disponible para el pipeline. |
+| **2. Pipeline Trigger** | GitHub Actions | El pipeline se ejecuta cuando se realiza un `push` o `pull request` hacia las ramas `main` o `develop`. | Inicio automático del workflow. |
+| **3. Checkout** | `actions/checkout` | Descarga el código fuente dentro del entorno de ejecución de GitHub Actions. | Código disponible en el runner. |
+| **4. Setup Node.js** | `actions/setup-node` | Configura la versión de Node.js necesaria para ejecutar el proyecto. | Entorno de Node.js preparado. |
+| **5. Install Dependencies** | `npm ci` | Instala las dependencias del proyecto usando el archivo `package-lock.json`. | Dependencias instaladas correctamente. |
+| **6. Build BusTrack Project** | `npm run build` | Compila la plataforma web desarrollada con Vite y genera los archivos optimizados. | Carpeta `dist` generada correctamente. |
+| **7. Environment Variables** | GitHub Secrets | Carga variables como `VITE_API_BASE_URL`, `VITE_GOOGLE_MAPS_API_KEY` y `VITE_OVERPASS_API_URL`. | Configuración segura del proyecto. |
+| **8. Artifact Generation** | GitHub Artifacts | Guarda la carpeta `dist` como artefacto del pipeline. | Artefacto `bustrack-build` disponible. |
+| **9. Validation** | Revisión del build | Se verifica que el proceso de construcción haya finalizado sin errores. | Proyecto listo para despliegue. |
+
+**Evidencias del pipeline**
+![evidencia](./img/evidencias-continuas-delivery-1.png)
+
+![evidencia](./img/evidencias-continuas-delivery-2.png)
+
 ## 7.3. Continuous deployment
 ### 7.3.1. Tools and Practices.
 ### 7.3.2. Production Deployment Pipeline Components.
+
 ## 7.4. Continuous Monitoring
 ### 7.4.1. Tools and Practices
 ### 7.4.2. Monitoring Pipeline Components

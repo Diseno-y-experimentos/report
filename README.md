@@ -3289,29 +3289,62 @@ _**Fuente:** elaboración propia._
 
 Las pruebas unitarias de las entidades principales son fundamentales en la ingeniería de software. Su propósito es asegurar que la lógica base del sistema opere sin fallos, lo que ayuda a evitar errores críticos y simplifica las actualizaciones futuras del código.
 
+**Alert Domain Test:**
+
+<img src="./img/AlertTests.jpg" width="700">
+
+**Notification Domain Test:**
+
+<img src="./img/NotificationTests.jpg" width="700">
+
 **Bus Domain Test:**
 
-<img src="./img/BusTest.jpeg" width="700">
+<img src="./img/BusTests.jpg/" width="700">
 
-**Route Domain Test:**
+**SavedRoute Domain Test:**
 
-<img src="./img/RouteTest.jpg" width="700">
+<img src="./img/SavedRouteTests.jpg" width="700">
+
+**Trip Domain Test:**
+
+<img src="./img/TripTests.jpg" width="700">
 
 **Company Domain Test:**
 
-<img src="./img/CompanyTest.jpg" width="700">
+<img src="./img/CompanyTests.jpg" width="700">
 
 **User Domain Test:**
 
-<img src="./img/UserTest.jpg" width="700">
+<img src="./img/UserTests.jpg" width="700">
+
+**Route Domain Test:**
+
+<img src="./img/RouteTests.jpg" width="700">
+
 
 ### 6.1.2. Core Integration Tests.
 
 Las pruebas de integración (Core Integration Tests) son clave para validar la correcta comunicación entre los controladores y elementos externos, como la base de datos o los servicios. Al simular escenarios de fallo, comprueban que el backend gestione las excepciones de forma segura y devuelva los códigos HTTP adecuados. En consecuencia, esto optimiza la experiencia del usuario, agiliza la corrección de errores y garantiza la entrega de un software robusto.
 
+**Alert Controller Tests:**
+
+<img src="./img/AlertsControllerTests.jpg" width="700">
+
+**Notification Controller Tests:**
+
+<img src="./img/NotificationControllerTests.jpg" width="700">
+
 **Buses Controller Tests:**
 
 <img src="./img/BusesControllerTests.jpg" width="700">
+
+**Trip Controller Tests:**
+
+<img src="./img/TripsControllerTests.jpg" width="700">
+
+**SavedRoutes Controller Tests:**
+
+<img src="./img/SavedRoutesControllerTests.jpg" width="700">
 
 **Companies Controller Tests:**
 
@@ -3321,9 +3354,14 @@ Las pruebas de integración (Core Integration Tests) son clave para validar la c
 
 <img src="./img/AuthenticationControllerTests.jpg" width="700">
 
+**User Controller Tests:**
+
+<img src="./img/UsersControllerTests.jpg" width="700">
+
 **Routes Controller Tests:**
 
 <img src="./img/RoutesControllerTests.jpg" width="700">
+
 
 ### 6.1.3. Core Behavior-Driven Development
 ### 6.1.4. Core System Tests.

@@ -10,7 +10,7 @@
 
 <h1 align="center"> Periodo 2026 - 1 </h1>
 
-<h1 align="center"> Código de curso: 1ASI0730</h1>
+<h1 align="center"> Código de curso: 1ASI0732</h1>
 
 <h1 align="center"> Nombre del curso: Diseño de Experimentos de Ingeniería de Software</h1>
 
@@ -3131,7 +3131,7 @@ Esto permite a los desarrolladores consultar y probar de forma interactiva los e
 ###### GET `/api/v1/notifications`
 Esta captura muestra la interfaz del endpoint encargado de listar las notificaciones de un usuario, permitiendo ingresar el parámetro `userId` y visualizar la estructura de la respuesta.
 
-<img src="/img/commons/cap1.png">
+<img src="img/commons/cap1.png">
 
 _**Figura 148.** Vista del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y el ejemplo de respuesta estructurada._  
 _**Fuente:** elaboración propia._
@@ -3141,7 +3141,7 @@ _**Fuente:** elaboración propia._
 ###### POST `/api/v1/notifications/delays`
 La imagen evidencia el formulario del endpoint para registrar notificaciones de retraso, donde se ingresan los valores `userId`, `routeId`, `delayMinutes` y `message` antes de ejecutar la solicitud.
 
-<img src="/img/commons/cap2.png">
+<img src="img/commons/cap2.png">
 
 _**Figura 149.** Endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del cuerpo de la solicitud para registrar una notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3151,7 +3151,7 @@ _**Fuente:** elaboración propia._
 ###### PUT `/api/v1/notifications/{id}/read`
 Esta captura muestra la sección del endpoint que permite marcar una notificación como leída mediante el envío del parámetro `id` en la ruta.
 
-<img src="/img/commons/cap3.png">
+<img src="img/commons/cap3.png">
 
 _**Figura 150.** Endpoint PUT `/api/v1/notifications/{id}/read`, que permite actualizar el estado de lectura de una notificación específica._  
 _**Fuente:** elaboración propia._
@@ -3161,7 +3161,7 @@ _**Fuente:** elaboración propia._
 ###### POST `/api/v1/notifications/delays` (ejecución)
 La imagen presenta la ejecución real del registro de una notificación, mostrando el cuerpo enviado y la respuesta procesada correctamente por el servidor.
 
-<img src="/img/commons/cap5.png">
+<img src="img/commons/cap5.png">
 
 _**Figura 151.** Ejecución del endpoint POST `/api/v1/notifications/delays`, evidenciando el registro exitoso de una notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3171,7 +3171,7 @@ _**Fuente:** elaboración propia._
 ###### GET `/api/v1/notifications` (ejecución)
 La captura refleja la ejecución del listado de notificaciones filtradas por usuario, mostrando el cuerpo JSON retornado por el servidor con datos persistidos.
 
-<img src="/img/commons/cap6.png">
+<img src="img/commons/cap6.png">
 
 _**Figura 152.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con notificaciones almacenadas en el sistema._  
 _**Fuente:** elaboración propia._
@@ -3181,7 +3181,7 @@ _**Fuente:** elaboración propia._
 ###### PUT `/api/v1/notifications/{id}/read` (ejecución)
 Finalmente, esta captura muestra la ejecución del proceso para marcar una notificación como leída, con el código de respuesta del servidor que confirma la actualización.
 
-<img src="/img/commons/cap7.png">
+<img src="img/commons/cap7.png">
 
 _**Figura 153.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando la actualización del estado de lectura._  
 _**Fuente:** elaboración propia._
@@ -3190,7 +3190,7 @@ _**Fuente:** elaboración propia._
 
 La siguiente captura muestra la estructura del endpoint encargado de obtener todas las notificaciones asociadas a un usuario, permitiendo ingresar el parámetro `userId` mediante query string.
 
-<img src="/img/commons/cap1.png">
+<img src="img/commons/cap1.png">
 
 _**Figura 154.** Documentación del endpoint GET `/api/v1/notifications`, mostrando los parámetros requeridos y un ejemplo de respuesta JSON._  
 _**Fuente:** elaboración propia._
@@ -3201,7 +3201,7 @@ _**Fuente:** elaboración propia._
 
 En esta evidencia se observa el formulario del cuerpo de la solicitud, donde se envían los campos necesarios para registrar una nueva notificación de retraso: `userId`, `routeId`, `delayMinutes` y `message`.
 
-<img src="/img/commons/cap2.png">
+<img src="img/commons/cap2.png">
 
 _**Figura 155.** Documentación del endpoint POST `/api/v1/notifications/delays`, mostrando el esquema del request body requerido._  
 _**Fuente:** elaboración propia._
@@ -3212,7 +3212,7 @@ _**Fuente:** elaboración propia._
 
 La siguiente captura muestra la ejecución del endpoint, incluyendo el JSON enviado y la respuesta generada por el servidor, que retorna la notificación registrada correctamente.
 
-<img src="/img/commons/cap5.png">
+<img src="img/commons/cap5.png">
 
 _**Figura 156.** Ejecución del endpoint POST `/api/v1/notifications/delays`, registrando exitosamente una nueva notificación de retraso._  
 _**Fuente:** elaboración propia._
@@ -3223,7 +3223,7 @@ _**Fuente:** elaboración propia._
 
 Esta evidencia muestra la consulta real al endpoint, retornando una lista de notificaciones efectivamente almacenadas para el usuario especificado.
 
-<img src="/img/commons/cap6.png">
+<img src="img/commons/cap6.png">
 
 _**Figura 157.** Ejecución del endpoint GET `/api/v1/notifications`, mostrando la respuesta con las notificaciones persistidas para el usuario._  
 _**Fuente:** elaboración propia._
@@ -3234,7 +3234,7 @@ _**Fuente:** elaboración propia._
 
 El siguiente endpoint permite actualizar el estado de lectura de una notificación específica enviando su identificador mediante la ruta.
 
-<img src="/img/commons/cap3.png">
+<img src="img/commons/cap3.png">
 
 _**Figura 158.** Documentación del endpoint PUT `/api/v1/notifications/{id}/read`, mostrando el parámetro de ruta y el código de respuesta esperado._  
 _**Fuente:** elaboración propia._
@@ -3245,7 +3245,7 @@ _**Fuente:** elaboración propia._
 
 Finalmente, se presenta la ejecución real del endpoint, donde el servidor confirma la actualización del estado de la notificación mediante el código HTTP **204 – No Content**.
 
-<img src="/img/commons/cap7.png">
+<img src="img/commons/cap7.png">
 
 _**Figura 159.** Ejecución del endpoint PUT `/api/v1/notifications/{id}/read`, confirmando el cambio de estado de la notificación._  
 _**Fuente:** elaboración propia._
@@ -3286,9 +3286,116 @@ _**Fuente:** elaboración propia._
 # Capítulo VI: Product Verification & Validation
 ## 6.1. Testing Suites & Validation
 ### 6.1.1. Core Entities Unit Tests.
+
+Las pruebas unitarias de las entidades principales son fundamentales en la ingeniería de software. Su propósito es asegurar que la lógica base del sistema opere sin fallos, lo que ayuda a evitar errores críticos y simplifica las actualizaciones futuras del código.
+
+**Alert Domain Test:**
+
+<img src="./img/AlertTests.jpg" width="700">
+
+**Notification Domain Test:**
+
+<img src="./img/NotificationTests.jpg" width="700">
+
+**Bus Domain Test:**
+
+<img src="./img/BusTests.jpg/" width="700">
+
+**SavedRoute Domain Test:**
+
+<img src="./img/SavedRouteTests.jpg" width="700">
+
+**Trip Domain Test:**
+
+<img src="./img/TripTests.jpg" width="700">
+
+**Company Domain Test:**
+
+<img src="./img/CompanyTests.jpg" width="700">
+
+**User Domain Test:**
+
+<img src="./img/UserTests.jpg" width="700">
+
+**Route Domain Test:**
+
+<img src="./img/RouteTests.jpg" width="700">
+
+
 ### 6.1.2. Core Integration Tests.
+
+Las pruebas de integración (Core Integration Tests) son clave para validar la correcta comunicación entre los controladores y elementos externos, como la base de datos o los servicios. Al simular escenarios de fallo, comprueban que el backend gestione las excepciones de forma segura y devuelva los códigos HTTP adecuados. En consecuencia, esto optimiza la experiencia del usuario, agiliza la corrección de errores y garantiza la entrega de un software robusto.
+
+**Alert Controller Tests:**
+
+<img src="./img/AlertsControllerTests.jpg" width="700">
+
+**Notification Controller Tests:**
+
+<img src="./img/NotificationControllerTests.jpg" width="700">
+
+**Buses Controller Tests:**
+
+<img src="./img/BusesControllerTests.jpg" width="700">
+
+**Trip Controller Tests:**
+
+<img src="./img/TripsControllerTests.jpg" width="700">
+
+**SavedRoutes Controller Tests:**
+
+<img src="./img/SavedRoutesControllerTests.jpg" width="700">
+
+**Companies Controller Tests:**
+
+<img src="./img/CompaniesControllerTests.jpg" width="700">
+
+**Authentication Controller Tests:**
+
+<img src="./img/AuthenticationControllerTests.jpg" width="700">
+
+**User Controller Tests:**
+
+<img src="./img/UsersControllerTests.jpg" width="700">
+
+**Routes Controller Tests:**
+
+<img src="./img/RoutesControllerTests.jpg" width="700">
+
+
 ### 6.1.3. Core Behavior-Driven Development
 ### 6.1.4. Core System Tests.
+
+**User Storie 01: Como pasajero, quiero guardar mis rutas frecuentes para acceder a ellas rápidamente.:**
+<img src="./img/US01.png" width="700">
+
+**User Storie 02: Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.:**
+<img src="./img/US02.png" width="700">
+
+**User Storie 03: Como administrador, quiero configurar alertas para incidentes de tráfico.:**
+<img src="./img/US03.png" width="700">
+
+**User Storie 04: Como nuevo pasajero, quiero registrarme para personalizar mis rutas.:**
+<img src="./img/US04.png" width="700">
+
+**User Storie 05: Como pasajero, quiero editar mis datos personales.:**
+<img src="./img/US05.png" width="700">
+
+**User Storie 06: Como visitante, quiero ver información de la solución para entender su utilidad.:**
+<img src="./img/US06.png" width="700">
+
+**User Storie 07: Como visitante, quiero conocer los beneficios de la aplicación.:**
+<img src="./img/US07.png" width="700">
+
+**User Storie 08: Como visitante, quiero conocer la misión y visión de la empresa.:**
+<img src="./img/US08.png" width="700">
+
+**User Storie 09: Como usuario, quiero elegir si ingreso como pasajero o empresa.:**
+<img src="./img/US09.png" width="700">
+
+**User Storie 10: Como empresa, quiero acceder al módulo de monitoreo de flota para ver el estado de mis buses y gestionar alertas.:**
+<img src="./img/US10.png" width="700">
+
 ## 6.2. Static testing & Verification
 ### 6.2.1. Static Code Analysis
 #### 6.2.1.1. Coding standard & Code conventions.

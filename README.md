@@ -3818,6 +3818,11 @@ Preparación para despliegue
 ![evidencia](./img/evidencias-continuas-delivery-2.png)
 
 ## 7.3. Continuous deployment
+
+El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen
+automáticamente desde el desarrollo hasta la producción, garantizando que cada nueva versión sea
+entregada sin intervención manual, siempre y cuando pase todas las pruebas de validación.
+
 ### 7.3.1. Tools and Practices.
 
 Para el desarrollo y despliegue continuo de BusTrack, se utilizaron distintas herramientas y prácticas de integración continua (CI) y despliegue continuo (CD), las cuales permiten automatizar procesos de validación, compilación y publicación del sistema. Estas herramientas contribuyen a mantener la estabilidad del proyecto, mejorar la colaboración entre los integrantes del equipo y reducir errores durante el desarrollo.

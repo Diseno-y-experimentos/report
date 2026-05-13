@@ -18,7 +18,7 @@
 
 <h1 align="center"> Docente: Noriega Melendez, Julio Manuel </h1>
 
-<h1 align="center"> Informe del Trabajo Final (TP) </h1>
+<h1 align="center"> Informe del Trabajo Parcial (TP) </h1>
 
 <h3 align="center"> Product: BusTrack </h3>
 

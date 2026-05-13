@@ -3870,3 +3870,51 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 ## 8.6. To-Be Software Platform Pre-launch
 ### 8.6.1. About-the-Product Intro Video
+
+
+### Anexo
+1. Objeto del Contrato
+El presente contrato regula la prestación del servicio BusTrack bajo el modelo Software as a Service (SaaS), permitiendo a los usuarios acceder a la plataforma web para la gestión y consulta de rutas, horarios y notificaciones de transporte público.
+
+2. Niveles de Servicio (SLA)
+
+Disponibilidad: El servicio estará disponible el 99% del tiempo mensual, salvo mantenimientos programados.
+Soporte: Se brindará soporte básico vía correo electrónico en horario laboral.
+Tiempo de respuesta ante incidencias críticas: máximo 48 horas hábiles.
+3. Protección de Datos Personales
+
+BusTrack cumple con la Ley N.º 29733 de Protección de Datos Personales (Perú).
+Los datos de los usuarios serán tratados con confidencialidad y solo para los fines del servicio.
+El usuario puede ejercer sus derechos de acceso, rectificación y cancelación de datos.
+4. Propiedad Intelectual
+
+Todo el software, documentación y materiales asociados a BusTrack son propiedad exclusiva del equipo desarrollador.
+El usuario no adquiere ningún derecho de propiedad intelectual sobre la plataforma.
+5. Responsabilidades del Usuario
+
+Proporcionar información verídica y mantener la confidencialidad de sus credenciales.
+Usar el sistema conforme a la ley y a los términos establecidos.
+6. Limitación de Responsabilidad
+
+BusTrack no garantiza disponibilidad absoluta ante eventos de fuerza mayor o fallas externas.
+No se responsabiliza por daños indirectos derivados del uso del sistema.
+7. Vigencia y Terminación
+
+El contrato entra en vigor con el primer acceso del usuario y puede ser rescindido por incumplimiento de las condiciones.
+
+### Conclusiones
+
+- BusTrack responde a una problemática real de movilidad urbana, aportando una solución tecnológica que mejora la experiencia de los usuarios y la gestión de empresas de transporte.
+- El desarrollo del sistema se realizó aplicando buenas prácticas de ingeniería de software, asegurando calidad, seguridad y mantenibilidad.
+- La integración de pruebas automatizadas, despliegue continuo y documentación clara garantiza la confiabilidad y escalabilidad del producto.
+- El contrato SaaS y las políticas de protección de datos refuerzan el compromiso ético y profesional del equipo con los usuarios y clientes.
+
+### Bibliografía
+
+- ComexPerú. (2024). “Accidentes de tránsito y congestión vehicular en Lima Metropolitana”.
+- Gob.pe. (2024). “Autoridad de Transporte Urbano para Lima y Callao (ATU)”.
+- TomTom Traffic Index 2024.
+- Ley N.º 29733 – Ley de Protección de Datos Personales (Perú).
+- OpenAPI Specification. https://swagger.io/specification/
+- Documentación oficial de Vue.js, Vite, .NET 8, C#, MySQL, GitHub, Render, Vercel, Cucumber.js, Cypress.
+

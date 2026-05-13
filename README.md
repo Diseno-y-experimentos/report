@@ -3365,6 +3365,37 @@ Las pruebas de integración (Core Integration Tests) son clave para validar la c
 
 ### 6.1.3. Core Behavior-Driven Development
 ### 6.1.4. Core System Tests.
+
+**User Storie 01: Como pasajero, quiero guardar mis rutas frecuentes para acceder a ellas rápidamente.:**
+<img src="./img/US01.PNG" width="700">
+
+**User Storie 02: Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.:**
+<img src="./img/US02.PNG" width="700">
+
+**User Storie 03: Como administrador, quiero configurar alertas para incidentes de tráfico.:**
+<img src="./img/US03.PNG" width="700">
+
+**User Storie 04: Como nuevo pasajero, quiero registrarme para personalizar mis rutas.:**
+<img src="./img/US04.PNG" width="700">
+
+**User Storie 05: Como pasajero, quiero editar mis datos personales.:**
+<img src="./img/US05.PNG" width="700">
+
+**User Storie 06: Como visitante, quiero ver información de la solución para entender su utilidad.:**
+<img src="./img/US06.PNG" width="700">
+
+**User Storie 07: Como visitante, quiero conocer los beneficios de la aplicación.:**
+<img src="./img/US07.PNG" width="700">
+
+**User Storie 08: Como visitante, quiero conocer la misión y visión de la empresa.:**
+<img src="./img/US08.PNG" width="700">
+
+**User Storie 09: Como usuario, quiero elegir si ingreso como pasajero o empresa.:**
+<img src="./img/US09.PNG" width="700">
+
+**User Storie 10: Como empresa, quiero acceder al módulo de monitoreo de flota para ver el estado de mis buses y gestionar alertas.:**
+<img src="./img/US10.PNG" width="700">
+
 ## 6.2. Static testing & Verification
 ### 6.2.1. Static Code Analysis
 #### 6.2.1.1. Coding standard & Code conventions.

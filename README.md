@@ -120,6 +120,8 @@
 |Lynn Meza| Chapter 7 |
 |Andrea Santur | Chapter 7|
 
+![contribution Tp](./img/tp-contributions.png)
+
 # Contenido
 
 ## Tabla de Contenidos

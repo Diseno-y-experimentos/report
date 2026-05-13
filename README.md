@@ -3386,7 +3386,146 @@ En esta sección se aplicaron técnicas de Behavior-Driven Development (BDD) par
 A continuación, se presentan los escenarios Gherkin que cubren las funcionalidades críticas de la plataforma:
 
   <img src="img/escenario1.png" width="700">
-   <img src="img/escenario2.png" width="700">
+  <img src="img/escenario2.png" width="700">
+
+**AdministracionFlotaMonitoreo**
+```
+Característica: Administración de Flota y Monitoreo
+  Como usuario de empresa en BusTrack
+  Quiero administrar buses y supervisar su estado operativo
+  Para controlar la flota y responder ante incidencias
+
+  Escenario: Agregar un bus nuevo a la flota
+    Dado que el administrador completa correctamente el formulario de "Agregar bus".
+    Cuando presiona el botón "Guardar".
+    Entonces el bus debe aparecer en la tabla de flota con un ID generado automáticamente.
+
+  Escenario: Cancelar la edición de datos de un bus
+    Dado que el administrador está modificando la información de un bus.
+    Cuando presiona el botón "Cancelar" sin guardar.
+    Entonces el sistema debe cerrar el formulario y mantener los datos originales del bus.
+
+  Escenario: Acceso al monitoreo en tiempo real para empresas
+    Dado que el usuario ha iniciado sesión con perfil de empresa.
+    Cuando abre el módulo de "Monitoreo".
+    Entonces el sistema debe cargar el mapa con la ubicación y el estado de los buses.
+
+  Escenario: Reintento por fallo de conexión en monitoreo
+    Dado que ocurre un error de comunicación con el servidor.
+    Cuando la empresa intenta cargar el mapa de flota.
+    Entonces se debe visualizar el aviso "Error de conexión" con la opción de "Reintentar".
+
+  Escenario: Registro de alerta de incidente
+    Dado que se envía un POST al endpoint /api/companies/{companyId}/alerts con datos de un incidente.
+    Cuando el servidor procesa la solicitud.
+    Entonces la API debe retornar un código de estado 201 y registrar el evento.
+```
+
+**ExperienciaUsuario**
+
+```
+Característica: Experiencia del Usuario
+  Como usuario de BusTrack
+  Quiero registrarme, administrar mi perfil y elegir mi rol de acceso
+  Para utilizar la plataforma conforme a mis necesidades
+
+  Escenario: Registro exitoso de un nuevo pasajero
+    Dado que el usuario completa todos los campos del formulario de registro.
+    Cuando presiona el botón "Registrarse".
+    Entonces el sistema debe crear la cuenta y permitir el acceso a la plataforma.
+
+  Escenario: Bloqueo de registro por campos vacíos
+    Dado que el usuario deja campos obligatorios sin llenar.
+    Cuando intenta registrarse.
+    Entonces debe aparecer el mensaje de alerta: "Complete todos los campos".
+
+  Escenario: Edición de perfil con datos válidos
+    Dado que el pasajero modifica su nombre o teléfono en la sección de perfil.
+    Cuando guarda los cambios.
+    Entonces la información del perfil debe actualizarse correctamente.
+
+  Escenario: Validación de formato de correo electrónico
+    Dado que el usuario ingresa un correo con formato incorrecto (ej. sin el @).
+    Cuando intenta guardar los cambios de perfil.
+    Entonces el sistema debe mostrar el mensaje: "Correo no válido".
+
+  Escenario: Elección de rol de usuario en el acceso
+    Dado que el usuario se encuentra en la pantalla de bienvenida.
+    Cuando selecciona el tipo de usuario "Empresa" y continúa.
+    Entonces el sistema debe mostrar el módulo de acceso corporativo.
+
+  Escenario: Botón de continuar deshabilitado sin selección de rol
+    Dado que el usuario no ha seleccionado ninguna opción de ingreso.
+    Cuando observa la pantalla de acceso.
+    Entonces el botón "Continuar" debe permanecer deshabilitado.
+```
+
+**LandingPage**
+
+```
+Característica: Landing Page
+  Como visitante del sistema BusTrack
+  Quiero conocer la solución, sus beneficios y la identidad institucional
+  Para evaluar el alcance de la plataforma antes de registrarme
+
+  Escenario: Visualización de información de la solución
+    Dado que un visitante accede a la página de inicio (Home).
+    Cuando navega hasta la sección "What Does BusTrack Offer?".
+    Entonces debe visualizar un resumen claro de las funcionalidades de la aplicación.
+
+  Escenario: Verificación de beneficios clave
+    Dado que el visitante revisa la sección "Benefits of Using BusTrack".
+    Cuando la página carga los elementos visuales.
+    Entonces debe poder leer al menos tres beneficios principales del sistema.
+
+  Escenario: Consulta de Misión y Visión corporativa
+    Dado que el visitante ingresa a la sección "About Us".
+    Cuando la sección se despliega.
+    Entonces deben aparecer los párrafos correspondientes a la misión y visión de BusTrack.
+
+  Escenario: Falla de carga de contenido por falta de internet
+    Dado que el dispositivo del visitante pierde la conexión a la red.
+    Cuando intenta cargar el Home de la aplicación.
+    Entonces el sistema no debe mostrar el texto descriptivo de la solución.
+```
+
+**RutasFavoritas**
+
+```
+Característica: Gestión de Rutas y Horarios
+  Como pasajero de BusTrack
+  Quiero gestionar rutas frecuentes y consultar información asociada
+  Para acceder con rapidez a mis recorridos más utilizados
+
+  Escenario: Guardar una ruta favorita exitosamente
+    Dado que el pasajero ha seleccionado una ruta entre "Origen A" y "Destino B".
+    Cuando presiona el botón "Guardar como favorita".
+    Entonces el sistema debe registrar la ruta en la lista de favoritos del usuario.
+    Y mostrar una confirmación: "Ruta guardada exitosamente".
+
+  Escenario: Error al guardar una ruta ya existente
+    Dado que el pasajero ya tiene guardada la ruta "Origen A - Destino B".
+    Cuando intenta guardarla nuevamente.
+    Entonces el sistema debe mostrar un mensaje de advertencia: "Esta ruta ya está guardada".
+
+  Escenario: Visualizar ruta en Google Maps con datos válidos
+    Dado que el pasajero ingresa un origen y destino reales.
+    Cuando presiona el botón "Ver en Google Maps".
+    Entonces la aplicación debe abrir la interfaz de Google Maps con el recorrido trazado.
+
+  Escenario: Sugerencias de Google Maps ante direcciones ambiguas
+    Dado que el pasajero ingresa una dirección que no es exacta.
+    Cuando presiona "Ver en Google Maps".
+    Entonces la aplicación debe abrir Google Maps y mostrar una lista de sugerencias de ubicación.
+
+  Escenario: Listar rutas favoritas desde la API
+    Dado que el frontend solicita la lista de favoritos mediante un GET al endpoint /api/users/{userId}/favorites.
+    Cuando el servidor responde con éxito.
+    Entonces la aplicación debe mostrar todas las rutas guardadas en la interfaz del pasajero.
+
+```
+
+
 
 ## Implementación (Step Definitions)
 Para validar la integración entre el frontend en Vue y la API RESTful, se implementaron definiciones de pasos (Step Definitions) que interceptan las peticiones de red:

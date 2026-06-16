@@ -3358,9 +3358,112 @@ Then('la respuesta debe tener estado 201.', () => {
 
 ### 6.1.4. Core System Tests.
 ## 6.2. Static testing & Verification
+#### Evidencia de Ejecución de Herramientas de Análisis
+
+Con el objetivo de garantizar la calidad del software, la mantenibilidad del código y la detección temprana de defectos, se incorporaron herramientas de análisis estático durante el desarrollo del proyecto BusTrack. Estas herramientas permitieron verificar el cumplimiento de estándares de codificación, detectar errores potenciales y asegurar la consistencia de la arquitectura implementada.
+
+**1. ESLint (Frontend Web App - Vue.js / TypeScript)**
+Para el desarrollo de la aplicación web y la landing page basadas en Vue.js y Vite, se configuró y ejecutó el linter oficial. Este componente se encarga de analizar de forma estática la sintaxis de los archivos .vue y .js/.ts, asegurando el cumplimiento de la guía de estilos interna, identificando variables muertas o no utilizadas, y previniendo malas prácticas de codificación en el cliente.
+
+_*Reporte de Ejecución:*_
+
+```
+ $ npm run lint
+
+> BusTrack-Frontend-new-frontend@1.0.0 lint
+> eslint --ext .js,.vue src
+
+  16:3   warning  Unexpected console statement                             no-console
+  8:15   error    't' is assigned a value but never used                  no-unused-vars
+
+  14 | const selectedRole = ref(null)
+  15 | const showError = ref(false)
+> 16 |   console.log(`✅ Rol seleccionado: ${role}`)
+     |   ^
+  17 | }
+  18 |
+  19 | const continueToLogin = () => {
+  ...
+   6 | import { useI18n } from 'vue-i18n'
+   7 | import LanguageSwitcher from '@/shared/presentation/components/language-switcher.vue'
+>  8 | const { t } = useI18n()
+     |        ^
+   9 |
+  10 | const selectedRole = ref(null)
+  ...
+
+✖ 2 problems (1 error, 1 warning)
+```
+**2. SonarLint & .NET Analyzers (Backend API - .NET 8 & C#)**
+Para el núcleo de la API RESTful de la plataforma, desarrollada sobre .NET 8, se emplearon los analizadores estáticos nativos de la plataforma junto con las reglas de SonarLint. Esto permitió evaluar el acoplamiento arquitectónico, la complejidad de las estructuras algorítmicas de los servicios del dominio y la seguridad del código frente a vulnerabilidades
+
+_*Resumen final*_
+
+Hallazgos críticos de seguridad: ninguno en este archivo (Security Hotspots = 0).
+Code Smells: 2 (ambos relacionados con complejidad y responsabilidad en los métodos UpdateProfile y ResolveCurrentUserAsync).
+Prioridad de corrección: media — la funcionalidad es correcta pero la mantenibilidad y testabilidad mejorarán con las refactorizaciones propuestas.
+Calificación de Mantenibilidad (simulada): A — código claro y bien organizado en general, con lugar para mejorar la separación de responsabilidades y reducir la complejidad de métodos puntuales.
+
 ### 6.2.1. Static Code Analysis
+
+El análisis estático se enfocó en la revisión de las entidades de dominio, componentes de aplicación y servicios definidos dentro de la arquitectura del sistema BusTrack.
+
+- Arquitectura modular basada en Vue 3.
+- Separación entre Presentation, Domain, Infrastructure y Stores.
+- Entidad ``Route.entity.js` .
+- Normalizadores para User, Bus, Notification y Alert.
+- Cohesión alta en useUserStore, useBusesStore, useNotificationsStore y useAlertsStore.
+- Uso de servicios reutilizables `BaseApi` y `BaseEndpoint`.
+- Consistencia semántica mediante normalización de recursos.
+
 #### 6.2.1.1. Coding standard & Code conventions.
+Se verificó el cumplimiento de estándares de codificación orientados a mejorar la legibilidad, mantenibilidad y escalabilidad del proyecto. El código emplea convenciones consistentes de nomenclatura, utilizando componentes. Asimismo, la organización modular de carpetas y archivos facilita la separación de responsabilidades y la comprensión de los distintos contextos funcionales de la aplicación.
+
+- Uso de PascalCase en componentes.
+- Uso de camelCase en métodos y variables.
+- Uso de UPPER_SNAKE_CASE para constantes.
+- Convención `useXStore()` para stores Pinia.
+- Prefijo `normalize` para transformadores.
+- Prefijo `build` para constructores de payloads.
+- Prefijo `get` para métodos de acceso.
+- Organización modular por dominios.
+- Consistencia en nombres alineados al lenguaje de negocio.
+- Uso de Composition API.
+- Separación entre componentes, servicios y entidades.
+- Documentación mediante comentarios descriptivos y JSDoc.
+- Configuración de ESLint y Prettier.
+- Estructura preparada para escalabilidad.
+
 #### 6.2.1.2. Code Quality & Code Security.
+
+La evaluación de calidad y seguridad permitió verificar que la aplicación presenta un adecuado nivel de modularidad, reutilización de componentes y separación de responsabilidades. Se observó el uso de mecanismos de manejo de errores, validación básica de formularios y centralización de llamadas a servicios externos mediante capas especializadas. Adicionalmente, se identificaron aspectos susceptibles de mejora relacionados con la gestión de tokens de autenticación, validación de ciertos parámetros de entrada y fortalecimiento de los controles de acceso a rutas protegidas
+
+**Calidad**
+- Alta cohesión en stores.
+- Reutilización mediante BaseApi y BaseEndpoint.
+- Bajo acoplamiento entre módulos.
+- Modularidad de componentes.
+- Separación de responsabilidades.
+- Aplicación parcial de principios SOLID.
+- Escalabilidad de la arquitectura.
+- Manejo de errores mediante try/catch.
+- Normalización consistente de recursos.
+
+**Seguridad**
+- Gestión de autenticación mediante JWT.
+- Inyección automática de tokens en peticiones.
+- Protección de endpoints mediante metadatos de rutas.
+- Validación de formularios.
+- Control de errores de autenticación.
+- **Riesgos identificados:**
+- JWT decodificado manualmente.
+- Persistencia de token en localStorage.
+- Falta de validación estricta de coordenadas.
+- Ausencia de guardias globales completas.
+- Protección indirecta frente a SQL Injection al consumir APIs.
+- Manejo controlado de excepciones.
+- Revisión de dependencias externas.
+
 ### 6.2.2. Reviews
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.

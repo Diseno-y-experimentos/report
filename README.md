@@ -4035,7 +4035,44 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 | **Null Hypothesis** | La inclusión de un panel de analítica avanzada no tendrá un impacto significativo en la tasa de conversión hacia planes de pago ni en el uso diario del módulo por parte de las empresas de transporte. |
 
 ### 8.2.2. Domain Business Metrics
+
+
+
 ### 8.2.3. Measures.
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Measure** | Evaluar el porcentaje de adopción de rutas alternativas en horas punta utilizando herramientas de analítica web y móvil. Complementar con encuestas de satisfacción in-app (CSAT) para medir la percepción de utilidad y reducción de estrés de los pasajeros en sus traslados. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Measure** | Contabilizar la cantidad de reportes de incidencias generados por los usuarios diarios activos (DAU) mediante eventos de clics en el botón de "Reporte Rápido". Comparar la precisión percibida de los tiempos estimados (ETA) antes y después del lanzamiento mediante encuestas a la comunidad. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Measure** | Monitorear la tasa de nuevos registros y la retención de usuarios cuyos navegadores o dispositivos estén configurados en idioma inglés. Utilizar herramientas de analítica para comparar el tráfico web y móvil proveniente de turistas o residentes extranjeros antes y después de la internacionalización. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Measure** | Medir la tasa de apertura (Open Rate) y la tasa de interacción (Click-Through Rate) de las notificaciones push. Analizar las métricas de retención de usuarios diarios y mensuales (DAU/MAU) para identificar si el uso de la app incrementa tras la recepción de estas alertas personalizadas. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Measure** | Rastrear la tasa de conversión (Conversion Rate) de empresas de transporte desde el plan básico gratuito hacia los planes de pago. Monitorear el tiempo de sesión promedio y la frecuencia de acceso al nuevo módulo de reportes gráficos e históricos en el portal corporativo. |
+
 ### 8.2.4. Conditions.
 ### 8.2.5. Scale Calculations and Decisions.
 ### 8.2.6. Methods Selection.

@@ -3560,11 +3560,11 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>David</td>
+    <td>Alessandro</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Torres</td>
+    <td>Bravo</td>
   </tr>
   <tr>
     <td>Edad</td>
@@ -3576,7 +3576,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   </tr>
   <tr>
     <td>Distrito</td>
-    <td>Los Olivos</td>
+    <td>San Martin</td>
   </tr>
   <tr>
     <td>Aplicaciones Usadas</td>
@@ -3591,7 +3591,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   </tr>
   <tr>
     <td>Link</td>
-    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+    <td>https://youtu.be/JW3Tt1gQCJo</td>
   </tr>
   <tr>
     <td>Duración<br></td>
@@ -3599,7 +3599,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   </tr>
   <tr>
     <td>Resumen</td>
-    <td> El entrevistado , que es <b>estudiante universitario y usuario frecuente del transporte público</b>,valoró positivamente el diseño de BusTrack, destacando que la interfaz es moderna, organizada y fácil de utilizar. Consideró que la información presentada en la landing page permite comprender rápidamente el propósito de la plataforma y las funcionalidades que ofrece. La característica que encontró más útil fue el <b>seguimiento en tiempo real de los autobuses</b>, ya que le permitiría conocer con mayor precisión la ubicación de las unidades y reducir los tiempos de espera durante sus desplazamientos diarios
+    <td> El entrevistado,tuvo una percepción positiva de BusTrack, destacando que la landing page y la aplicación son fáciles de entender y navegar. Consideró que la información presentada explica claramente el propósito de la plataforma y resaltó como funcionalidad más útil el tiempo estimado de llegada de los autobuses, ya que le ayuda a organizar mejor sus desplazamientos. Además, indicó que el seguimiento en tiempo real y las notificaciones sobre incidencias mejorarían su experiencia de viaje. Finalmente, señaló que utilizaría la aplicación con frecuencia y la recomendaría a otras personas por la utilidad de la información que proporciona.
   </tr>
 </tbody>
 </table>
@@ -3646,11 +3646,11 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   </tr>
   <tr>
     <td>Link</td>
-    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+    <td>https://youtu.be/fFs9M6ljtm0</td>
   </tr>
   <tr>
     <td>Duración<br></td>
-    <td> 10:32 min </td>
+    <td> 11:30 min </td>
   </tr>
   <tr>
     <td>Resumen</td>

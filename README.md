@@ -4153,8 +4153,19 @@ Vinculada a los experimentos de internacionalización (i18n), evalúa el crecimi
 | **Condición Experimental** | La tasa de conversión de empresas hacia planes de pago aumentará en un 25% y el uso diario del módulo administrativo crecerá un 50% tras la inclusión del panel de analítica avanzada. |
 | **Condición de Control** | No habrá un aumento significativo en la tasa de conversión a planes de pago ni en el uso del módulo corporativo tras la implementación del panel de analítica avanzada. |
 
-
 ### 8.2.5. Scale Calculations and Decisions.
+
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis en el proyecto BusTrack. Cada hipótesis se asocia con un indicador de éxito: se considera *ideal* cuando la métrica alcanza plenamente el objetivo, *aceptable* cuando está entre el mínimo y el ideal, y *desfavorable* si queda por debajo del mínimo, requiriendo así una revisión. Un nivel *excelente* se define como cuando el valor supera el ideal en un 25% o más, indicando un éxito significativo. Este enfoque permite tomar decisiones fundamentadas en métricas para validar o ajustar las hipótesis del proyecto.
+
+| Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Creemos que la integración de un indicador de nivel de ocupación en los buses mejorará la planificación de viaje. Sabremos que esto es cierto cuando observemos que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda. | Implementar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real para que los pasajeros gestionen su tiempo con autonomía. | | | X | |
+| Creemos que implementar un sistema de reportes colaborativos (crowdsourcing) mejorará la precisión de los datos y el engagement. Sabremos que esto es cierto cuando observemos un aumento del 40% en interacciones activas y un 25% de mejora en percepción de precisión. | Integrar un botón flotante de "Reporte Rápido" en el mapa que permita enviar alertas de tráfico o incidentes, fomentando la participación comunitaria. | | | | X |
+| Creemos que agregar la traducción al inglés de la plataforma aumentará la base de usuarios. Sabremos que esto es cierto cuando observemos un aumento del 10% en los registros de usuarios con configuración en inglés en tres meses. | Implementar un sistema de internacionalización (i18n) para traducir la interfaz y alertas, permitiendo a turistas y residentes extranjeros acceder al contenido. | | X | | |
+| Creemos que la integración de un sistema de notificaciones predictivas sobre retrasos mejorará la retención de usuarios. Sabremos que esto es cierto cuando observemos un incremento del 30% en la retención de usuarios diarios (DAU) y un 20% en satisfacción. | Desarrollar un servicio en el backend que cruce rutas favoritas con incidentes en tiempo real para enviar alertas push automáticas preventivas al usuario. | | | X | |
+| Creemos que la inclusión de un panel de analítica avanzada aumentará la adopción corporativa para empresas de transporte. Sabremos que esto es cierto cuando observemos un aumento del 25% en la tasa de conversión a planes de pago y un 50% en el uso diario. | Añadir un módulo *premium* en el portal de empresas que genere reportes gráficos e históricos sobre puntualidad, tiempos de ciclo y eficiencia operativa. | | | | X |
+
+
 ### 8.2.6. Methods Selection.
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 ### 8.2.8. Web and Mobile Tracking Plan.

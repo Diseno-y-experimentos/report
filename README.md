@@ -4177,7 +4177,48 @@ Para llevar a cabo la validación de los experimentos en BusTrack, es fundamenta
 | **Ventajas Principales** | Excelente para rastrear el éxito de las hipótesis, evaluar la retención y generar reportes integrables con otras plataformas. | Análisis en tiempo real de la latencia y disponibilidad desde múltiples ubicaciones, clave para el monitoreo de flotas de buses. | Permite simular picos de tráfico masivos (ej. horas punta de transporte) para asegurar que los servidores no colapsen. | Proporciona sugerencias prácticas y directas para optimizar la interfaz y acelerar la carga de la web app en dispositivos móviles. |
 
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+
 ### 8.2.8. Web and Mobile Tracking Plan.
+
+Para BusTrack, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la movilidad urbana de los pasajeros, potenciar la participación comunitaria (crowdsourcing) y aumentar la adopción de nuestros planes B2B por parte de las empresas de transporte. A medida que avancemos hacia la etapa final de los experimentos, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
+
+#### 1. Implementación Inicial:
+
+Durante esta fase, nos enfocaremos en el lanzamiento de las nuevas funcionalidades (indicadores de aforo, reportes colaborativos, notificaciones predictivas, etc.) y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+
+**Recopilación de Datos:**
+
+*   **Métricas de Uso:** Se recopilarán datos sobre el uso general de la aplicación, incluyendo el número de usuarios activos diarios (DAU), la duración de las sesiones durante las horas punta, y las tasas de conversión de empresas hacia el panel de analítica avanzada (Premium).
+*   **Interacciones de los Usuarios:** Se registrarán las interacciones de los pasajeros con las nuevas características, como la cantidad de clics en el botón de "Reporte Rápido", la consulta de rutas offline, el uso del indicador de aforo, y la participación en el sistema de recompensas (gamificación).
+*   **Feedback de Usuarios:** A través de encuestas in-app (CSAT) y herramientas de retroalimentación no intrusivas, se recogerán opiniones sobre la percepción de precisión en los tiempos estimados (ETA) y la utilidad de las notificaciones sobre retrasos.
+
+**Análisis Comparativo:**
+
+Se compararán los datos obtenidos durante esta fase de prueba con los datos históricos de la plataforma (estado *As-Is*) antes de la implementación de los experimentos, para evaluar el impacto inmediato de las mejoras en la reducción de la incertidumbre operativa.
+
+#### 2. Seguimiento Continuo:
+
+Después de la implementación inicial y validación de las hipótesis, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento a largo plazo y realizar ajustes dinámicos según sea necesario.
+
+**Recopilación de Datos:**
+
+*   **Métricas en Tiempo Real:** Se utilizarán herramientas de analítica web y móvil (como Google Analytics 4) para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar patrones de tráfico, horarios de mayor congestión y adopción de rutas alternativas.
+*   **Segmentación de Usuarios:** Los datos se segmentarán por tipo de usuario (Pasajeros recurrentes, Turistas/Extranjeros usando la interfaz en inglés, Administradores de flota y Supervisores) para entender mejor cómo cada grupo interactúa con sus módulos específicos en la plataforma.
+*   **Tasa de Retención:** Se medirá la retención de usuarios a lo largo del tiempo (a 7, 14 y 30 días) para evaluar la efectividad de las notificaciones predictivas y la gamificación en mantener a los pasajeros comprometidos y fidelizados con la aplicación.
+
+**Evaluación y Ajustes:**
+
+*   **Informes Periódicos:** Se generarán informes ejecutivos mensuales que resuman los hallazgos del seguimiento, comparando los resultados con las "Domain Business Metrics" definidas, e incluyendo recomendaciones para ajustes operativos.
+*   **Iteración Basada en Datos:** Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de la comunidad, asegurando que el algoritmo de ETA y el panel de las empresas evolucionen para satisfacer mejor las necesidades reales de movilidad y gestión.
+
+Este enfoque asegurará que BusTrack continúe evolucionando en función de datos empíricos y permita tomar decisiones informadas para transformar de manera positiva la experiencia del transporte público en Lima, tanto para los ciudadanos como para las empresas operadoras.
+
+
+
+
 ## 8.3. Experimentation
 ### 8.3.1. To-Be User Stories.
 ### 8.3.2. To-Be Product Backlog

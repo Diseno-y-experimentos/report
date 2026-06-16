@@ -3984,10 +3984,103 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 # Capítulo VIII: Experiment-Driven Development
 ## 8.1. Experiment Planning
 ### 8.1.1. As-Is Summary.
+
+La aplicación actual de BusTrack se centra en ofrecer una plataforma para la consulta de rutas y el monitoreo de transporte público en Lima Metropolitana, proporcionando funcionalidades como la gestión de perfiles (pasajeros y empresas), visualización de paraderos y un panel de control operativo para las flotas. Sin embargo, el rendimiento en la carga del mapa interactivo y la actualización de ubicaciones en tiempo real suele ser inconsistente en dispositivos móviles con conexión inestable, lo que afecta la experiencia del usuario en movimiento. La retención de usuarios, actualmente, depende únicamente de la consulta pasiva de datos.
+
+**Problemas identificados:**
+* **Rendimiento:** La aplicación web (PWA) experimenta latencia al renderizar múltiples unidades de transporte simultáneamente en el mapa, lo que puede llevar a la frustración del pasajero que requiere información con inmediatez.
+* **Usabilidad:** La falta de un modo oscuro o de alto contraste limita la comodidad visual y la legibilidad para los usuarios que interactúan con la aplicación en la calle, ya sea bajo la luz directa del sol o en paraderos con poca iluminación.
+* **Experiencia del usuario (UX):** La interfaz táctil presenta inconsistencias menores en ciertos tamaños de pantalla de dispositivos móviles, dificultando la navegación rápida con una sola mano (esencial para un pasajero en tránsito).
+* **Funcionalidad limitada (Engagement):** La plataforma carece de un sistema que fomente la colaboración activa de los pasajeros (por ejemplo, reportar buses llenos o tráfico), limitando el crecimiento de la comunidad y la precisión de los datos colaborativos.
+
+**Objetivos de mejora:** Para abordar los problemas identificados y escalar la plataforma BusTrack en los próximos Sprints, se establecen los siguientes objetivos:
+* **Optimización del rendimiento:** Reducir los tiempos de carga del mapa y optimizar las peticiones a la API, garantizando una actualización fluida de la ubicación de los buses.
+* **Expansión de la audiencia:** Introducir soporte multilingüe (inglés) para facilitar el uso de la aplicación a turistas o extranjeros que buscan navegar por el sistema de transporte urbano limeño.
+* **Implementación de gamificación:** Introducir elementos de gamificación y recompensas para incentivar a los pasajeros a reportar incidencias en tiempo real (tráfico, estado del paradero, ocupación del bus), aumentando el compromiso (engagement) y enriqueciendo los datos del sistema.
+
+---
+
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
+
+**Assumptions:**
+* **Indicador de ocupación de unidades:** Se asume que los pasajeros cambiarían su decisión de viaje (esperar el siguiente bus o tomar una ruta alternativa) si supieran de antemano que la unidad que se aproxima está a su máxima capacidad. 
+* **Traducciones:** Se asume que una parte de la audiencia potencial incluye a turistas y residentes extranjeros en Lima, por lo que disponer de la plataforma en inglés facilitaría su navegación en el complejo sistema de transporte urbano.
+* **Reportes colaborativos:** Se asume que los usuarios están dispuestos a reportar incidencias en tiempo real (tráfico intenso, paraderos inseguros o buses llenos) si se les proporciona una herramienta rápida, lo que aumentaría su sentido de comunidad y participación.
+* **Notificaciones predictivas:** Se asume que los usuarios desean recibir alertas automáticas basadas en sus rutinas (por ejemplo, retrasos en su ruta habitual 15 minutos antes de su hora típica de salida), mejorando la gestión de su tiempo.
+* **Analítica avanzada para empresas:** Se asume que las empresas de transporte urbano tienen la necesidad de optimizar sus operaciones y estarían dispuestas a adquirir servicios premium para obtener reportes detallados sobre el rendimiento de su flota.
+
+**Knowledge Gaps:**
+* **Precisión de la ocupación:** No sabemos qué nivel de precisión técnica se requiere para que el pasajero confíe en el indicador de ocupación (bajo, medio, lleno) ni si depender de los reportes del chofer será suficiente en horas punta. 
+* **Demografía de usuarios extranjeros:** Se requiere mayor investigación sobre el volumen real de turistas o extranjeros que utilizan el transporte público convencional en Lima Metropolitana para justificar el esfuerzo de internacionalización (i18n).
+* **Incentivos para la colaboración:** Necesitamos datos sobre qué elementos (gamificación, puntos, insignias o simple altruismo) motivan realmente a los pasajeros limeños a reportar incidentes de tráfico o estado de los buses.
+* **Frecuencia e impacto de notificaciones:** No hay suficiente información sobre cuál es el límite entre una notificación predictiva útil y una que el usuario perciba como intrusiva (spam), afectando su satisfacción.
+* **Disposición de pago en el sector B2B:** Se carece de un análisis exhaustivo que confirme qué métricas operativas específicas convencerían a los administradores de flota de pagar por un panel de control avanzado.
+
+**Ideas:**
+* **Indicador de estado de capacidad:** Implementar un indicador visual dinámico (verde, amarillo, rojo) en la tarjeta de detalles del bus que muestre el nivel estimado de pasajeros a bordo en tiempo real.
+* **Desarrollo de un módulo de reportes rápidos:** Crear un botón flotante y accesible en la vista del mapa que permita a los pasajeros notificar el estado del bus con un solo toque, promoviendo la recolección de datos colaborativos.
+* **Análisis de competidores y casos de estudio:** Examinar a profundidad cómo aplicaciones como Waze, Moovit o TuRuta aplican la gamificación para mantener actualizados sus datos de tráfico y retener a sus usuarios.
+* **Entrevistas de validación B2B:** Programar reuniones con empresas de transporte urbano para presentar mock-ups de reportes analíticos avanzados y evaluar su interés comercial y disposición de pago.
+
+**Claims:**
+* **Optimización de la planificación de viaje:** Se afirma que mostrar el nivel de ocupación reducirá drásticamente la frustración del usuario en el paradero, permitiéndole tomar decisiones informadas sobre abordar, esperar o buscar otra ruta. 
+* **Aumento de precisión y participación:** Se postula que integrar reportes generados por los usuarios (crowdsourcing) no solo aumentará la participación activa en BusTrack, sino que hará que las estimaciones de llegada (ETA) sean mucho más precisas frente a imprevistos.
+* **Reducción proactiva del estrés:** Se afirma que un sistema de notificaciones predictivas resultará en una mayor satisfacción del pasajero, ya que le permitirá tomar decisiones (como salir más tarde de casa) antes de llegar a enfrentarse a la espera en el paradero.
+* **Sostenibilidad y escalabilidad del negocio:** Se sostiene que la creación de un módulo de analítica y reportes operativos para empresas de transporte fortalecerá el modelo B2B, generando nuevas fuentes de ingresos y fidelizando a las líneas de transporte con la plataforma.
+
+---
+
 ### 8.1.3. Experiment-Ready Questions.
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?** | 7 - Es una función de alto valor, pero su eficacia depende de la precisión de los datos operativos. | 5 - Riesgo medio, ya que requiere sincronización de datos de capacidad desde la unidad en tiempo real. | 8 - Impacto directo en la toma de decisiones del pasajero en el paradero. | 9 - Muy alto interés para usuarios que viajan en horas punta hacia el trabajo o universidad. | **29** |
+| **¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?** | 6 - Puede atraer a turistas y expatriados, pero depende del volumen de extranjeros en buses urbanos. | 3 - Riesgo medio debido al mantenimiento continuo de los archivos de internacionalización (i18n). | 6 - Potencial moderado para expandir el mercado a usuarios no hispanohablantes. | 5 - Interesante principalmente para un nicho específico de mercado. | **20** |
+| **¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?** | 8 - Modelos similares en transporte han demostrado éxito al fomentar la comunidad. | 5 - Riesgo medio por la necesidad de moderar datos falsos y la complejidad técnica en tiempo real. | 9 - Mejora drásticamente la precisión del ETA y la participación activa del usuario. | 8 - Los pasajeros suelen tener alto interés en reportar tráfico o buses demasiado llenos. | **30** |
+| **¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?** | 9 - Alta, ya que previene la incertidumbre antes de que el pasajero salga de su casa. | 4 - Riesgo moderado por el consumo de recursos en el servidor (WebSockets/Push). | 9 - Gran impacto en la satisfacción diaria y en la fidelización a largo plazo. | 9 - Fundamental para el perfil de estudiante y trabajador que requiere puntualidad. | **31** |
+| **¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?** | 7 - Se basa en la necesidad real de las empresas por optimizar costos y tiempos operativos. | 4 - Riesgo medio debido a la resistencia tecnológica inicial de algunos transportistas. | 10 - Alto potencial de monetización (SaaS B2B) y retención de empresas de transporte. | 8 - Alto interés comercial por parte de administradores y supervisores de flota. | **29** |
+
+---
+
 ### 8.1.4. Question Backlog.
+
+| Prioridad (1,2,3,5,8) | Pregunta |
+| :---: | :--- |
+| **8** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **8** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **5** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **5** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **2** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+
+---
+
 ### 8.1.5. Experiment Cards.
+
+**Question:** ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?
+* **Why:** Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario.
+* **What:** Desplegar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real y los detalles de la flota. La data se gestionará mediante actualizaciones del operador desde su terminal o a través de validaciones colaborativas de los pasajeros que ya se encuentran en tránsito.
+* **Hypothesis:** Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad.
+
+**Question:** ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?
+* **Why:** Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA).
+* **What:** Crear un botón flotante de "Reporte Rápido" en la vista del mapa que permita enviar alertas en tiempo real. Integrar elementos de gamificación (insignias o niveles) para recompensar a los usuarios que más contribuyan con información validada.
+* **Hypothesis:** Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%.
+
+**Question:** ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?
+* **Why:** La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup.
+* **What:** Integrar un sistema de internacionalización (i18n) para traducir la interfaz, menús, estados del bus y alertas predictivas al idioma inglés, manteniendo un selector de idioma fácilmente accesible en la barra de navegación.
+* **Hypothesis:** Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses.
+
+**Question:** ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?
+* **Why:** Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada.
+* **What:** Desarrollar un servicio en el backend que cruce las rutas favoritas del pasajero con incidentes en tiempo real, enviando alertas push automáticas 15 minutos antes del horario habitual de viaje registrado por el usuario.
+* **Hypothesis:** Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%.
+
+**Question:** ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?
+* **Why:** Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto.
+* **What:** Implementar un módulo premium en el portal de empresas que genere reportes gráficos e históricos automatizados sobre puntualidad, tiempos de ciclo, cantidad de alertas generadas y eficiencia por unidad.
+* **Hypothesis:** Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%.
+
 ## 8.2. Experiment Design
 ### 8.2.1. Hypotheses.
 

@@ -3585,7 +3585,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   <tr>
     <td>Evidencia</td>
     <td><div style="text-align: left;">
-    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+    <img src="/img/commons/EntrevistaDavid.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 2 - Segmento 1.</em><br>
   </tr>
@@ -3697,7 +3697,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   <tr>
     <td>Evidencia</td>
     <td><div style="text-align: left;">
-    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+    <img src="/img/commons/EntrevistaAlejandro.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 2 - Segmento 2.</em><br>
   </tr>

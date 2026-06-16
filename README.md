@@ -4036,7 +4036,47 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 
 ### 8.2.2. Domain Business Metrics
 
+Esta sección sirve para alinear la medición de nuestros experimentos. Su objetivo es asegurar que todas las hipótesis de experimentación se vinculen directamente con los objetivos de negocio a través de métricas concretas, medibles y predefinidas. Esto mitiga el riesgo de tomar decisiones basadas en vanity metrics o datos irrelevantes.
 
+El equipo a definido todas las métricas relevantes para el dominio de negocio que serán utilizadas para evaluar los experimentos. Cada métrica esta descrita con su fórmula de cálculo, técnica de recolección y meta deseada. **Todas las Experiment Cards solo podrán hacer referencia a métricas definidas en esta sección.** No se permitirán métricas ad-hoc o no definidas previamente.
+
+---
+
+#### 1. Daily Active Users (DAU) Retention Rate (Tasa de Retención de Usuarios Diarios)
+Esta métrica evalúa el nivel de fidelización y recurrencia de los pasajeros, vinculada a los experimentos de notificaciones predictivas.
+* **Fórmula de cálculo:** `(Usuarios activos diarios al final del periodo evaluado / Usuarios activos diarios al inicio del periodo) * 100`
+* **Técnica de recolección:** Herramientas de analítica de producto (ej. Google Analytics 4 o Mixpanel) rastreando el evento de `login_success` o `app_open` diariamente.
+* **Meta deseada:** Incrementar la retención en un **30%** tras la implementación de las notificaciones sobre retrasos.
+
+#### 2. Crowdsourcing Engagement Rate (Tasa de Interacción Colaborativa)
+Mide la disposición de los pasajeros a pasar de ser consumidores pasivos a generadores de datos dentro de la plataforma (reporte de tráfico y accidentes).
+* **Fórmula de cálculo:** `(Usuarios que emiten o confirman un reporte / Total de usuarios activos diarios) * 100`
+* **Técnica de recolección:** Seguimiento de eventos (*Event Tracking*) en el frontend asociados a clics en el botón "Reporte Rápido" y confirmación de recepción en la base de datos (Backend).
+* **Meta deseada:** Lograr un aumento del **40%** en la cantidad de interacciones activas comunitarias.
+
+#### 3. B2B Conversion Rate: Free to Premium (Tasa de Conversión B2B)
+Métrica clave para validar la monetización de la plataforma, evaluando si el panel de analítica avanzada es lo suficientemente valioso para las empresas de transporte.
+* **Fórmula de cálculo:** `(Número de empresas que adquieren el plan Premium / Total de empresas registradas en el plan de monitoreo gratuito) * 100`
+* **Técnica de recolección:** Consultas a la base de datos transaccional (MySQL) filtrando por los cambios en el campo `subscription_tier` de la tabla de empresas.
+* **Meta deseada:** Alcanzar un aumento del **25%** en la tasa de conversión hacia los planes de pago.
+
+#### 4. Alternative Route Adoption Rate (Tasa de Adopción de Rutas Alternativas)
+Mide el impacto en la toma de decisiones del pasajero cuando se le presenta información sobre la capacidad/aforo de un bus.
+* **Fórmula de cálculo:** `(Usuarios que inician una navegación hacia una ruta B tras consultar el aforo de la ruta A / Total de usuarios que visualizan el indicador de aforo) * 100`
+* **Técnica de recolección:** Análisis de flujos de navegación (*User Flows*) mediante eventos personalizados que capturen el cambio de búsqueda de ruta en la misma sesión.
+* **Meta deseada:** Que la adopción de rutas alternativas crezca un **20%** durante los periodos de alta demanda (horas punta).
+
+#### 5. Customer Satisfaction Score (CSAT)
+Permite cuantificar la percepción de valor y satisfacción del usuario final respecto a nuevas funcionalidades operativas (notificaciones, aforo, reportes).
+* **Fórmula de cálculo:** `(Total de valoraciones positivas [4-5 estrellas] / Total de respuestas a la encuesta) * 100`
+* **Técnica de recolección:** Micro-encuestas *in-app* (pop-ups no intrusivos) disparadas tras el uso exitoso de una nueva funcionalidad.
+* **Meta deseada:** Alcanzar un **70%** (o más) de respuestas que cataloguen las nuevas funcionalidades como factores críticos positivos en su experiencia de movilidad.
+
+#### 6. Language-Specific Acquisition Rate (Tasa de Adquisición por Idioma)
+Vinculada a los experimentos de internacionalización (i18n), evalúa el crecimiento de mercado entre usuarios no hispanohablantes.
+* **Fórmula de cálculo:** `(Nuevos registros con configuración de navegador en inglés / Total de nuevos registros globales en el mismo periodo) * 100`
+* **Técnica de recolección:** Captura del parámetro `navigator.language` desde el frontend al momento del registro y su almacenamiento en el perfil del usuario en la base de datos.
+* **Meta deseada:** Aumento del **10%** en la proporción de registros de usuarios extranjeros en un lapso de 3 meses.
 
 ### 8.2.3. Measures.
 

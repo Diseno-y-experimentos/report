@@ -3554,7 +3554,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
 </colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #2<br></th>
+    <th colspan="2">Entrevista #1<br></th>
   </tr>
 </thead>
 <tbody>
@@ -3581,6 +3581,61 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   <tr>
     <td>Aplicaciones Usadas</td>
     <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaWalter.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 1 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado , que es <b>estudiante universitario y usuario frecuente del transporte público</b>,valoró positivamente el diseño de BusTrack, destacando que la interfaz es moderna, organizada y fácil de utilizar. Consideró que la información presentada en la landing page permite comprender rápidamente el propósito de la plataforma y las funcionalidades que ofrece. La característica que encontró más útil fue el <b>seguimiento en tiempo real de los autobuses</b>, ya que le permitiría conocer con mayor precisión la ubicación de las unidades y reducir los tiempos de espera durante sus desplazamientos diarios
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>David</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Torres</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
   </tr>
   <tr>
     <td>Evidencia</td>
@@ -3692,7 +3747,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
   </tr>
   <tr>
     <td>Aplicaciones Usadas</td>
-    <td>Grabación de pantalla</td>
+    <td>Zoom</td>
   </tr>
   <tr>
     <td>Evidencia</td>

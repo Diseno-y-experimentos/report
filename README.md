@@ -4114,6 +4114,46 @@ Vinculada a los experimentos de internacionalización (i18n), evalúa el crecimi
 | **Measure** | Rastrear la tasa de conversión (Conversion Rate) de empresas de transporte desde el plan básico gratuito hacia los planes de pago. Monitorear el tiempo de sesión promedio y la frecuencia de acceso al nuevo módulo de reportes gráficos e históricos en el portal corporativo. |
 
 ### 8.2.4. Conditions.
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Condición Experimental** | La adopción de rutas alternativas aumentará en un 20% tras la implementación del indicador de nivel de ocupación, medido durante los periodos de alta demanda. |
+| **Condición de Control** | No habrá un aumento significativo en la adopción de rutas alternativas tras la implementación del indicador de nivel de ocupación. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Condición Experimental** | La cantidad de interacciones activas en la app aumentará en un 40% y la percepción de precisión de los datos en los retrasos mejorará en un 25% tras la habilitación del sistema de reportes. |
+| **Condición de Control** | No habrá un aumento significativo en las interacciones activas ni en la percepción de precisión tras la implementación del sistema de reportes colaborativos. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Condición Experimental** | Se espera un aumento del 10% en el número de nuevos registros de usuarios con configuración de navegador en inglés durante los primeros tres meses tras implementar la traducción. |
+| **Condición de Control** | No habrá un aumento significativo en el número de registros de usuarios de habla inglesa tras la implementación de la traducción. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Condición Experimental** | La retención de usuarios diarios (DAU) incrementará en un 30% y la satisfacción general del usuario subirá un 20% después de implementar el sistema de notificaciones predictivas. |
+| **Condición de Control** | No habrá un incremento significativo en la retención de usuarios diarios ni en el índice de satisfacción tras la implementación de las notificaciones predictivas. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Condición Experimental** | La tasa de conversión de empresas hacia planes de pago aumentará en un 25% y el uso diario del módulo administrativo crecerá un 50% tras la inclusión del panel de analítica avanzada. |
+| **Condición de Control** | No habrá un aumento significativo en la tasa de conversión a planes de pago ni en el uso del módulo corporativo tras la implementación del panel de analítica avanzada. |
+
+
 ### 8.2.5. Scale Calculations and Decisions.
 ### 8.2.6. Methods Selection.
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.

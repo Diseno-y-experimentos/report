@@ -4165,8 +4165,17 @@ Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis en
 | Creemos que la integración de un sistema de notificaciones predictivas sobre retrasos mejorará la retención de usuarios. Sabremos que esto es cierto cuando observemos un incremento del 30% en la retención de usuarios diarios (DAU) y un 20% en satisfacción. | Desarrollar un servicio en el backend que cruce rutas favoritas con incidentes en tiempo real para enviar alertas push automáticas preventivas al usuario. | | | X | |
 | Creemos que la inclusión de un panel de analítica avanzada aumentará la adopción corporativa para empresas de transporte. Sabremos que esto es cierto cuando observemos un aumento del 25% en la tasa de conversión a planes de pago y un 50% en el uso diario. | Añadir un módulo *premium* en el portal de empresas que genere reportes gráficos e históricos sobre puntualidad, tiempos de ciclo y eficiencia operativa. | | | | X |
 
-
 ### 8.2.6. Methods Selection.
+
+Para llevar a cabo la validación de los experimentos en BusTrack, es fundamental seleccionar herramientas de medición y análisis que permitan recopilar datos precisos sobre el comportamiento de los pasajeros y el rendimiento de la plataforma. A continuación, se presenta una tabla comparativa con las herramientas seleccionadas para este fin:
+
+| Criterio | Google Analytics | Catchpoint | RedLine13 | Lighthouse |
+| :--- | :--- | :--- | :--- | :--- |
+| **Precio** | Versión gratuita muy completa (GA4), ideal para startups. | Modelo por suscripción de pago, aunque ofrece periodos de prueba gratuitos. | Cuenta con una capa gratuita funcional, sujeta a ciertas limitaciones de escala. | Totalmente gratuito, integrado en las herramientas de desarrollo del navegador. |
+| **Capacidad de Análisis** | Monitoreo profundo de la interacción, flujos de navegación y eventos específicos de los usuarios (pasajeros y empresas). | Supervisión integral del rendimiento de la plataforma y de la experiencia de usuario simulando distintos entornos y redes. | Especializado en la ejecución de pruebas de estrés y rendimiento de aplicaciones bajo alta concurrencia. | Auditoría técnica enfocada en la experiencia de usuario (UX), accesibilidad y métricas clave de carga (Core Web Vitals). |
+| **Sencillez de Uso** | Curva de aprendizaje amigable, con dashboards intuitivos y métricas fáciles de interpretar. | Interfaz más avanzada y técnica, orientada a un análisis de red muy detallado y minucioso. | Provee reportes de rendimiento directos, combinando resúmenes ejecutivos con datos técnicos profundos. | Entrega resultados mediante un sistema de puntuación visual muy claro (0-100) fácil de asimilar. |
+| **Ventajas Principales** | Excelente para rastrear el éxito de las hipótesis, evaluar la retención y generar reportes integrables con otras plataformas. | Análisis en tiempo real de la latencia y disponibilidad desde múltiples ubicaciones, clave para el monitoreo de flotas de buses. | Permite simular picos de tráfico masivos (ej. horas punta de transporte) para asegurar que los servidores no colapsen. | Proporciona sugerencias prácticas y directas para optimizar la interfaz y acelerar la carga de la web app en dispositivos móviles. |
+
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 ### 8.2.8. Web and Mobile Tracking Plan.
 ## 8.3. Experimentation

@@ -3989,8 +3989,51 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 ### 8.1.4. Question Backlog.
 ### 8.1.5. Experiment Cards.
 ## 8.2. Experiment Design
-f
 ### 8.2.1. Hypotheses.
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Belief** | Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario. |
+| **Hypothesis** | Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad. |
+| **Null Hypothesis** | La integración de un indicador de nivel de ocupación en los buses no tendrá un impacto significativo en la adopción de rutas alternativas ni en la percepción de la experiencia de movilidad de los usuarios. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Belief** | Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA). |
+| **Hypothesis** | Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%. |
+| **Null Hypothesis** | La implementación de un sistema de reportes colaborativos no generará un aumento significativo en las interacciones activas de la app ni mejorará la percepción de precisión de los datos. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Belief** | La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup. |
+| **Hypothesis** | Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses. |
+| **Null Hypothesis** | La inclusión de la traducción al inglés en la plataforma no tendrá un impacto significativo en el incremento de registros de nuevos usuarios extranjeros o de habla inglesa. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Belief** | Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada. |
+| **Hypothesis** | Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%. |
+| **Null Hypothesis** | La integración de un sistema de notificaciones predictivas sobre retrasos no incrementará de forma significativa la retención diaria de usuarios ni su índice de satisfacción general. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Belief** | Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto. |
+| **Hypothesis** | Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%. |
+| **Null Hypothesis** | La inclusión de un panel de analítica avanzada no tendrá un impacto significativo en la tasa de conversión hacia planes de pago ni en el uso diario del módulo por parte de las empresas de transporte. |
+
 ### 8.2.2. Domain Business Metrics
 ### 8.2.3. Measures.
 ### 8.2.4. Conditions.

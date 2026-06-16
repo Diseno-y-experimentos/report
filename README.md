@@ -3465,10 +3465,226 @@ La evaluación de calidad y seguridad permitió verificar que la aplicación pre
 - Revisión de dependencias externas.
 
 ### 6.2.2. Reviews
+
+Durante las revisiones de código realizadas en BusTrack se verificaron los siguientes aspectos:
+
+#### Tipos de Revisiones Ejecutadas
+- **Revisión por Pares (Peer Review):** Proceso cruzado en GitHub donde un desarrollador analiza el código de otro  para asegurar su legibilidad y correcto diseño.
+- **Revisión Formal:**  Reuniones síncronas grupales al cierre de cada hito entre todo el equipo para evaluar los componentes críticos usando una lista de verificación unificada.
+- **Revisión Automática**: Uso de SonarLint integrado en los entornos de desarrollo (IDE) para detectar malas prácticas, duplicaciones y code smells en tiempo real mientras se escribe el código.
+
+- **Arquitectura y organización del proyecto:**
+Se revisó la correcta separación entre las capas de presentación, dominio e infraestructura, manteniendo una estructura modular basada en Domain-Driven Design (DDD).
+
+- **Reutilización de código:**
+Se verificó el uso de componentes reutilizables y servicios compartidos como BaseApi y BaseEndpoint para reducir duplicidad y facilitar el mantenimiento.
+
+- **Calidad del código:**
+Se evaluó la legibilidad, organización y mantenibilidad del código, identificando oportunidades de mejora en algunas secciones con lógica repetida y validaciones adicionales.
+
+- **Seguridad de la aplicación:**
+Se revisaron los mecanismos de autenticación, validación de datos de entrada, manejo de errores y protección de sesiones para reducir riesgos de seguridad.
+
 ## 6.3. Validation Interviews.
+
+En esta sección se presentan las entrevistas de validación realizadas para el proyecto BusTrack. El objetivo fue obtener retroalimentación directa de los usuarios objetivo para validar las hipótesis planteadas en el Lean UX Canvas y evaluar la experiencia de uso de la solución propuesta.
+
+Durante las entrevistas, los participantes interactuaron con el landing page y la aplicación web, proporcionando comentarios sobre la facilidad de uso, claridad de la información, utilidad de las funcionalidades y confianza generada por la plataforma. Los resultados obtenidos permitieron identificar oportunidades de mejora y verificar el grado de aceptación de BusTrack como una solución para el monitoreo y seguimiento del transporte público.
+
 ### 6.3.1. Diseño de Entrevistas.
+
+#### Preguntas Generales
+- ¿Cuál es su nombre completo?
+- ¿Qué edad tiene?
+- ¿Cuál es su ocupación?
+- ¿En qué distrito reside?
+
+#### Preguntas Específicas
+
+○ ***Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)***
+
+- 1. ¿Qué le pareció el diseño general de la landing page y de la aplicación web BusTrack?
+
+- 2. ¿La información presentada en la landing page le permitió comprender fácilmente el propósito y las funcionalidades principales de BusTrack?
+
+- 3. ¿Qué funcionalidad le resultó más útil o interesante dentro de la aplicación? (Seguimiento en tiempo real, búsqueda de rutas, historial de viajes, notificaciones, etc.).
+
+- 4. ¿Considera que conocer la ubicación en tiempo real de los autobuses le ayudaría a reducir tiempos de espera? ¿Por qué?
+
+- 5. ¿La visualización del tiempo estimado de llegada de los autobuses le parece útil para planificar sus desplazamientos diarios?
+
+- 6. ¿La interfaz de la aplicación le pareció intuitiva y fácil de utilizar durante la navegación entre las diferentes secciones?
+
+- 7. ¿Le gustaría recibir notificaciones sobre retrasos, desvíos de ruta o próximas llegadas de los autobuses? ¿Por qué?
+
+- 8. ¿La aplicación le transmite confianza para registrarse y utilizarla de manera frecuente?
+
+- 9. ¿Utilizaría BusTrack como apoyo para sus desplazamientos diarios? ¿Por qué?
+
+- 10. ¿Recomendaría BusTrack a familiares, amigos o compañeros de trabajo? ¿Por qué?
+
+
+○ ***Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)***
+
+- 1. ¿Qué impresión general le generó la landing page y la aplicación web BusTrack?
+
+- 2. ¿La información presentada en la landing page comunica adecuadamente los beneficios de la plataforma para la gestión de transporte urbano?
+
+-  3. ¿Qué funcionalidad considera más valiosa para su organización? (Monitoreo en tiempo real, gestión de flota, alertas, reportes o análisis de operaciones).
+
+- 4. ¿Considera que la visualización en tiempo real de las unidades podría mejorar la supervisión de la flota? ¿Por qué?
+
+- 5. ¿La generación de alertas automáticas por retrasos o incidencias facilitaría el trabajo de supervisión y control operativo?
+
+- 6. ¿Los reportes e información proporcionados por la plataforma le ayudarían a tomar mejores decisiones sobre la operación de las rutas?
+
+- 7. ¿La interfaz destinada a empresas le pareció intuitiva y fácil de utilizar?
+
+- 8. ¿Considera que BusTrack podría contribuir a mejorar la puntualidad y calidad del servicio ofrecido a los pasajeros?
+
+- 9. ¿Su empresa estaría dispuesta a implementar una solución como BusTrack dentro de sus operaciones? ¿Por qué?
+
+- 10. ¿Recomendaría esta solución a otras empresas de transporte urbano? ¿Por qué?
+
 ### 6.3.2. Registro de Entrevistas.
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Melissa</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Sulca</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Magdalena</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em><strong>Figura 176.</strong> Evidencia de validación de entrevista 3 - Segmento 1.</em><br>
+  <em><strong>Fuente:</strong> elaboración propia.</em></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> La entrevistada, que es <b>estudiante universitaria</b>, valoró el diseño como "colores atractivos y acordes". Considera que la aplicación aporta confianza y utilidad por la facilidad de la información que hay en ella <b>información en tiempo real de los buses</b> esto se evidencia en que a veces cuando ella no ha sabido qué bus tomar, no ha tenido con quién consultar; sin embargo, en la aplicación lo puede observar en tiempo real. Sugirió añadir una <b>opción de internacionalización con estilo similiar en la landing y la web</b> y una vista previa del mapa integrada. Confirmó que la interfaz es intuitiva, genera confianza por el contenido que hay en ella y la coherencia de las funcionalidades.
+  </tr>
+</tbody>
+</table>
+
 ### 6.3.3. Evaluaciones según heurísticas.
+**SITE O APP A EVALUAR:** BusTrack – Plataforma de Monitoreo de Transporte Público
+
+**METODOLOGÍA DE MEDICIÓN:**
+Para sustentar la evaluación heurística se realizaron pruebas de usabilidad con usuarios representativos del segmento objetivo. Se analizaron aspectos relacionados con la navegación, comprensión de la información, accesibilidad y facilidad de uso de la plataforma. Asimismo, se consideraron métricas de frecuencia del problema, impacto sobre la tarea y severidad según las heurísticas.
+
+**TAREAS EVALUADAS:**
+- Registro e inicio de sesión.
+- Consulta de rutas disponibles.
+- Visualización de buses en tiempo real.
+- Consulta de tiempos estimados de llegada.
+- Búsqueda de paraderos.
+- Gestión de rutas favoritas.
+- Visualización de notificaciones y alertas.
+- Navegación entre las principales funcionalidades de la plataforma.
+- Edición del perfil de usuario.
+- Consulta del historial de búsquedas.
+
+**Tabla Resumen de Hallazgos**
+| # | Problema identificado                                          | Severidad | Heurística afectada                              |
+| - | -------------------------------------------------------------- | --------- | ------------------------------------------------ |
+| 1 | Mensajes de error poco descriptivos y sin acciones correctivas | 3         | Ayuda para reconocer y recuperarse de errores    |
+| 2 | Ausencia de indicadores de carga durante operaciones críticas  | 3         | Visibilidad del estado del sistema               |
+| 3 | Navegación inconsistente entre usuarios pasajeros y empresas   | 3         | Correspondencia entre el sistema y el mundo real |
+| 4 | Validaciones de formularios únicamente al momento del envío    | 2         | Prevención de errores                            |
+| 5 | Problemas de accesibilidad en controles e iconografía          | 3         | Inclusive Design – Experiencias comparables      |
+| 6 | Falta de leyenda y contexto visual en mapas                    | 2         | Correspondencia entre el sistema y el mundo real |
+| 7 | Dashboard empresarial con escasa jerarquía visual              | 2         | Reconocimiento antes que recuerdo                |
+
+**Problema #1: Mensajes de error poco descriptivos**
+**Severidad:** 3
+
+**Heurística Violada:** Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores.
+
+**Descripción:** Durante procesos de autenticación, búsqueda de rutas y operaciones administrativas, se identificó el uso de mensajes genéricos como “Error al guardar” o “No se pudieron obtener datos”, sin proporcionar información suficiente para que el usuario comprenda la causa del problema o las acciones necesarias para solucionarlo.
+
+**Recomendación:** Implementar mensajes de error específicos y orientados a la acción, proporcionando información clara sobre la causa del problema y posibles pasos de recuperación.
+
+#### Problema #2: Ausencia de indicadores de carga
+
+**Severidad:** 3
+
+**Heurística Violada:** Visibilidad del estado del sistema.
+
+**Descripción:** Durante la búsqueda de rutas y la obtención de información desde servicios externos, la interfaz no presenta indicadores visuales que informen al usuario que la operación continúa en ejecución.
+
+**Recomendación:** Incorporar indicadores de carga, barras de progreso o mensajes informativos para mantener al usuario informado sobre el estado de la operación.
+
+#### Problema #3: Navegación inconsistente entre roles
+
+**Severidad:** 3
+
+**Heurística Violada:** Correspondencia entre el sistema y el mundo real.
+
+**Descripción:** Los flujos de navegación de pasajeros y empresas presentan diferencias significativas en estructura y organización, dificultando la comprensión de la ubicación actual del usuario dentro del sistema.
+
+**Recomendación:** Estandarizar la navegación y mostrar claramente el rol activo y la sección actual mediante elementos visuales persistentes
+
+#### Problema #4: Validación tardía de formularios
+
+**Severidad:** 2
+
+**Heurística Violada:** Prevención de errores.
+
+**Descripción:** Los formularios de autenticación y registro muestran errores únicamente después de intentar enviar la información, obligando al usuario a corregir los datos posteriormente.
+
+**Recomendación:** Incorporar validaciones en tiempo real y mensajes de ayuda contextual durante la introducción de datos.
+
+#### Problema #5: Accesibilidad limitada en algunos controles
+
+**Severidad:** 3
+
+**Heurística Violada:** Inclusive Design – Experiencias comparables.
+
+**Descripción:** Se identificó el uso de iconografía basada en emojis y controles con soporte limitado para lectores de pantalla, lo que afecta la experiencia de usuarios con discapacidades visuales.
+
+**Recomendación:** Incorporar etiquetas ARIA, textos alternativos y componentes accesibles compatibles con estándares WCAG 2.1.
+
+**Hallazgo Principal:** La principal oportunidad de mejora identificada corresponde a la comunicación del estado del sistema y la gestión de errores, ya que ambos aspectos afectan directamente la experiencia de uso y la percepción de confiabilidad de la plataforma. La incorporación de mecanismos de retroalimentación visual, mensajes descriptivos y validaciones en tiempo real contribuiría significativamente a mejorar la usabilidad general de BusTrack.
+
 ## 6.4. Auditoría de Experiencias de Usuario
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.

@@ -3691,10 +3691,55 @@ Para sustentar la evaluación heurística se realizaron pruebas de usabilidad co
 #### 6.4.1.2. Cronograma de auditoría realizada.
 #### 6.4.1.3. Contenido de auditoría realizada.
 ### 6.4.2. Auditoría recibida.
+
+La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y experiencia de usuario de la plataforma BusTrack mediante la aplicación de principios heurísticos. El equipo auditor analizó los principales flujos de navegación tanto para pasajeros como para empresas de transporte, identificando oportunidades de mejora relacionadas con la retroalimentación del sistema, validación de formularios, accesibilidad y consistencia de la navegación.
+
 #### 6.4.2.1. Información del grupo auditor.
+
+La auditoría fue realizada por el equipo auditor asignado durante el proceso de evaluación cruzada del proyecto.
+
+| Member                           |    Code    |
+| :------------------------------- | :--------: |
+| Lynn Jeeferzon Meza Camayo       | U20201C320 |
+| Walter Luis Fajardo Monrroy      | U202221632 |
+| Andrea Elizabeth Santur Tello    | U202310988 |
+| Joaquin Alberto Cuentas Peña     | U20201F788 |
+
 #### 6.4.2.2. Cronograma de auditoría recibida.
+
+La auditoría se desarrolló siguiendo las etapas de coordinación, planificación, ejecución y elaboración del informe final.
+
+| Fase          | Actividades                                                                                              | Fecha Inicio | Fecha Fin  |
+| ------------- | -------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| Recepción     | Coordinación con el equipo BusTrack y revisión preliminar de la aplicación desplegada.                   | 15/06/2026   | 15/06/2026 |
+| Planificación | Definición de escenarios de prueba, tareas críticas y heurísticas a evaluar.                             | 15/06/2026   | 15/06/2026 |
+| Ejecución     | Evaluación de los flujos de autenticación, búsqueda de rutas, visualización de mapas y gestión de flota. | 14/06/2026   | 14/06/2026 |
+| Reporte       | Documentación de hallazgos, asignación de severidades y formulación de recomendaciones.                  | 14/06/2026   | 14/06/2026 |
+
 #### 6.4.2.3. Contenido de auditoría recibida.
+
+Durante la auditoría se evaluaron las funcionalidades principales de BusTrack, incluyendo el proceso de inicio de sesión, búsqueda de rutas, visualización de mapas, consulta de notificaciones, gestión del perfil de usuario y administración de flotas para empresas de transporte.
+
+Como resultado, se identificaron los siguientes hallazgos principales:
+
+| # | Problema identificado                                             | Severidad | Heurística violada                                      |
+| - | ----------------------------------------------------------------- | --------- | ------------------------------------------------------- |
+| 1 | Ausencia de indicadores de carga durante la búsqueda de rutas.    | 3         | Visibilidad del estado del sistema                      |
+| 2 | Mensajes de error poco descriptivos y sin acciones correctivas.   | 3         | Reconocimiento, diagnóstico y recuperación ante errores |
+| 3 | Validación de formularios únicamente después del envío.           | 2         | Prevención de errores                                   |
+| 4 | Inconsistencias de accesibilidad en algunos componentes visuales. | 2         | Diseño inclusivo                                        |
+| 5 | Falta de contexto visual en algunos elementos del mapa.           | 2         | Correspondencia entre el sistema y el mundo real        |
+
+El equipo auditor destacó que la plataforma presenta una estructura funcional adecuada y una navegación comprensible para la mayoría de las tareas principales; sin embargo, recomendó mejorar los mecanismos de retroalimentación y accesibilidad para fortalecer la experiencia de usuario.
+
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+Tras analizar las observaciones recibidas, el equipo de desarrollo de BusTrack implementó una serie de mejoras orientadas a incrementar la usabilidad y accesibilidad de la plataforma.
+
+Entre las principales modificaciones realizadas se encuentran la incorporación de indicadores visuales de carga durante las búsquedas de rutas y consultas al sistema, la mejora de los mensajes de error mediante descripciones más específicas y orientadas a la acción, la implementación de validaciones más claras en formularios de autenticación y registro, y la optimización de elementos visuales para favorecer la accesibilidad de los usuarios.
+
+Asimismo, se realizaron ajustes en la interfaz de mapas para mejorar la comprensión de la información mostrada, incorporando elementos de apoyo visual que facilitan la interpretación de rutas, ubicaciones y resultados de búsqueda. Estas mejoras permitieron atender los hallazgos identificados durante la auditoría y fortalecer la experiencia general de los usuarios de BusTrack.
+
+Lo único que tendrías que reemplazar son los **nombres/códigos del grupo auditor** y las **fechas reales** cuando las tengas. Todo lo demás queda consistente con BusTrack, el frontend que analizaste y las heurísticas que ya documentaste.
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration

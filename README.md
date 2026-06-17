@@ -3704,6 +3704,8 @@ Monster ASP.NET ofrece múltiples canales de notificación para alertar al equip
 - **Alertas automáticas:** Monster ASP puede enviar notificaciones por email cuando ocurren eventos críticos como Application Pool Restart o Fatal Communication Error
 - **Integración con herramientas externas:** Webhooks y logs exportables para integración con sistemas de ticketing (Jira) o plataformas de observabilidad como Datadog
 
+![monitoring 1](./img/monitoring-1.png)
+![monitoring 2](./img/monitoring-2.png)
 
 # Part III: Experiment-Driven Lifecycle
 # Capítulo VIII: Experiment-Driven Development

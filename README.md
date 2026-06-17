@@ -4587,7 +4587,7 @@ Se implementaron las siguientes herramientas y prácticas de monitoreo en Monste
  
 - Habilitación del logging de ASP.NET Core en modo debug para capturar excepciones detalladas durante el startup.
 - Revisión diaria de Event Logs para identificar patrones de fallos y anomalías.
-- Configuración de variables de entorno `ASPNETCORE_ENVIRONMENT=Production` para comportamiento optimizado.
+- Configuración de variables de entorno ASPNETCORE_ENVIRONMENT=Production para comportamiento optimizado.
 - Monitoreo de Application Pool para detectar crashes y reintentos automáticos.
 
 ### 7.4.2. Monitoring Pipeline Components
@@ -4786,12 +4786,10 @@ Esta sección sirve para alinear la medición de nuestros experimentos. Su objet
 
 El equipo a definido todas las métricas relevantes para el dominio de negocio que serán utilizadas para evaluar los experimentos. Cada métrica esta descrita con su fórmula de cálculo, técnica de recolección y meta deseada. **Todas las Experiment Cards solo podrán hacer referencia a métricas definidas en esta sección.** No se permitirán métricas ad-hoc o no definidas previamente.
 
----
-
 #### 1. Daily Active Users (DAU) Retention Rate (Tasa de Retención de Usuarios Diarios)
 Esta métrica evalúa el nivel de fidelización y recurrencia de los pasajeros, vinculada a los experimentos de notificaciones predictivas.
-* **Fórmula de cálculo:** `(Usuarios activos diarios al final del periodo evaluado / Usuarios activos diarios al inicio del periodo) * 100`
-* **Técnica de recolección:** Herramientas de analítica de producto (ej. Google Analytics 4 o Mixpanel) rastreando el evento de `login_success` o `app_open` diariamente.
+* **Fórmula de cálculo:** (Usuarios activos diarios al final del periodo evaluado / Usuarios activos diarios al inicio del periodo) * 100
+* **Técnica de recolección:** Herramientas de analítica de producto (ej. Google Analytics 4 o Mixpanel) rastreando el evento de login_success o app_open diariamente.
 * **Meta deseada:** Incrementar la retención en un **30%** tras la implementación de las notificaciones sobre retrasos.
 
 #### 2. Crowdsourcing Engagement Rate (Tasa de Interacción Colaborativa)
@@ -4802,19 +4800,19 @@ Mide la disposición de los pasajeros a pasar de ser consumidores pasivos a gene
 
 #### 3. B2B Conversion Rate: Free to Premium (Tasa de Conversión B2B)
 Métrica clave para validar la monetización de la plataforma, evaluando si el panel de analítica avanzada es lo suficientemente valioso para las empresas de transporte.
-* **Fórmula de cálculo:** `(Número de empresas que adquieren el plan Premium / Total de empresas registradas en el plan de monitoreo gratuito) * 100`
+* **Fórmula de cálculo:** (Número de empresas que adquieren el plan Premium / Total de empresas registradas en el plan de monitoreo gratuito) * 100
 * **Técnica de recolección:** Consultas a la base de datos transaccional (MySQL) filtrando por los cambios en el campo `subscription_tier` de la tabla de empresas.
 * **Meta deseada:** Alcanzar un aumento del **25%** en la tasa de conversión hacia los planes de pago.
 
 #### 4. Alternative Route Adoption Rate (Tasa de Adopción de Rutas Alternativas)
 Mide el impacto en la toma de decisiones del pasajero cuando se le presenta información sobre la capacidad/aforo de un bus.
-* **Fórmula de cálculo:** `(Usuarios que inician una navegación hacia una ruta B tras consultar el aforo de la ruta A / Total de usuarios que visualizan el indicador de aforo) * 100`
+* **Fórmula de cálculo:** (Usuarios que inician una navegación hacia una ruta B tras consultar el aforo de la ruta A / Total de usuarios que visualizan el indicador de aforo) * 100
 * **Técnica de recolección:** Análisis de flujos de navegación (*User Flows*) mediante eventos personalizados que capturen el cambio de búsqueda de ruta en la misma sesión.
 * **Meta deseada:** Que la adopción de rutas alternativas crezca un **20%** durante los periodos de alta demanda (horas punta).
 
 #### 5. Customer Satisfaction Score (CSAT)
 Permite cuantificar la percepción de valor y satisfacción del usuario final respecto a nuevas funcionalidades operativas (notificaciones, aforo, reportes).
-* **Fórmula de cálculo:** `(Total de valoraciones positivas [4-5 estrellas] / Total de respuestas a la encuesta) * 100`
+* **Fórmula de cálculo:** (Total de valoraciones positivas [4-5 estrellas] / Total de respuestas a la encuesta) * 100
 * **Técnica de recolección:** Micro-encuestas *in-app* (pop-ups no intrusivos) disparadas tras el uso exitoso de una nueva funcionalidad.
 * **Meta deseada:** Alcanzar un **70%** (o más) de respuestas que cataloguen las nuevas funcionalidades como factores críticos positivos en su experiencia de movilidad.
 
@@ -4989,7 +4987,6 @@ A continuación, se presentan las nuevas historias de usuario desarrolladas para
 | **UA04** | **Notificaciones predictivas**<br><br>*Relacionado con:* E10 | **Como** pasajero frecuente,<br>**quiero** recibir alertas push automáticas ante incidentes en mis rutas habituales,<br>**para** prevenir demoras antes de salir hacia mi destino. | **Escenario 1: Alerta previa a la rutina de viaje**<br>**Given** que el usuario ha guardado su ruta de lunes a viernes en un horario fijo,<br>**When** ocurra un retraso mayor a 10 minutos detectado por la API 15 minutos antes de su viaje,<br>**Then** el sistema despachará una notificación push predictiva indicando el incidente y el tiempo estimado de demora. |
 | **UA05** | **Panel de analítica B2B**<br><br>*Relacionado con:* E11 | **Como** administrador de flota,<br>**quiero** acceder a reportes estadísticos gráficos sobre tiempos de ciclo y puntualidad,<br>**para** auditar el desempeño operativo y optimizar costos de la empresa. | **Escenario 1: Consulta de métricas históricas de eficiencia**<br>**Given** que el administrador ha iniciado sesión con su cuenta corporativa Premium,<br>**When** se dirija al panel de "Analítica Avanzada" y filtre los datos por rango semanal,<br>**Then** el sistema renderizará diagramas interactivos detallando el porcentaje de cumplimiento de horarios y la eficiencia por vehículo. |
 
----
 
 ### 8.3.2. To-Be Product Backlog
 

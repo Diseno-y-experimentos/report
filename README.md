@@ -4314,7 +4314,47 @@ Este enfoque asegurará que BusTrack continúe evolucionando en función de dato
 
 ## 8.3. Experimentation
 ### 8.3.1. To-Be User Stories.
+
+A continuación, se presentan las nuevas historias de usuario desarrolladas para implementar las funcionalidades validadas en la fase de experimentación del producto BusTrack. Estas historias adoptan el prefijo **UA** (*User Story de Ajuste/Aumento*) para distinguirse del backlog inicial del proyecto.
+
+#### Registro de Nuevas Épicas e Historias de Usuario
+| Epic ID | Epic (Épica) | User Story ID | User Story (Historia de Usuario) |
+| :---: | :--- | :---: | :--- |
+| **E05** | Gestión de Monitoreo y Capacidad | UA01 | Visualización del indicador de ocupación de la unidad |
+| **E08** | Comunidad | UA02 | Reporte colaborativo de incidencias en tiempo real |
+| **E09** | Accesibilidad e Internacionalización | UA03 | Soporte multilingüe e interfaz en idioma inglés |
+| **E10** | Alertas y Notificaciones Inteligentes | UA04 | Notificaciones predictivas sobre retrasos de rutas |
+| **E11** | Inteligencia de Negocios B2B | UA05 | Panel analítico avanzado para control de flotas |
+
+#### Especificación Detallada de Historias de Usuario (Formato BDD)
+
+| Epic / Story ID | Título / Detalles | Descripción (Format) | Criterios de Aceptación (Gherkin Scenarios) |
+| :---: | :--- | :--- | :--- |
+| **UA01** | **Visualización de ocupación**<br><br>*Relacionado con:* E05 | **Como** pasajero en paradero,<br>**quiero** visualizar el nivel de ocupación estimado del bus en el mapa,<br>**para** decidir autónomamente si abordarlo o seleccionar una ruta alterna. | **Escenario 1: Monitoreo de unidad con capacidad máxima**<br>**Given** que el pasajero se encuentra visualizando el mapa en tiempo real,<br>**When** seleccione un bus en movimiento próximo a su ubicación,<br>**Then** el sistema desplegará una tarjeta flotante con la etiqueta de estado "Lleno" resaltada en color rojo.<br><br>**Escenario 2: Sincronización automática de estados**<br>**Given** que un bus disminuye su flujo de pasajeros,<br>**When** el sistema actualice el backend a través de los datos del sensor/operador,<br>**Then** la interfaz de usuario cambiará dinámicamente el estado visual a "Disponible" (Verde) o "Moderado" (Amarillo). |
+| **UA02** | **Reporte de incidencias**<br><br>*Relacionado con:* E08 | **Como** pasajero en tránsito,<br>**quiero** enviar alertas rápidas de congestión o paraderos saturados,<br>**para** enriquecer el mapa comunitario y acumular insignias de gamificación. | **Escenario 1: Envío de reporte rápido en ruta**<br>**Given** que el usuario está dentro de una unidad en circulación,<br>**When** presione el botón flotante de "Reporte Rápido" y marque el ícono "Tráfico Intenso",<br>**Then** el mapa actualizará una alerta de congestión para el resto de pasajeros y sumará 10 puntos de experiencia al perfil del remitente.<br><br>**Escenario 2: Validación comunitaria de alertas**<br>**Given** que una alerta fue generada hace más de 20 minutos,<br>**When** tres usuarios cercanos marquen la incidencia como "resuelta",<br>**Then** el sistema eliminará de forma automática el marcador de congestión vial. |
+| **UA03** | **Soporte multilingüe**<br><br>*Relacionado con:* E09 | **Como** usuario extranjero,<br>**quiero** alternar el idioma de la aplicación al inglés,<br>**para** comprender las alertas operativas y nombres de paraderos sin barreras lingüísticas. | **Escenario 1: Cambio global de idioma en la interfaz**<br>**Given** que el usuario se encuentra en el menú de configuraciones de la PWA,<br>**When** seleccione la opción de idioma "English",<br>**Then** todas las etiquetas del menú, estados de bus y descripciones de rutas se traducirán dinámicamente utilizando el sistema i18n. |
+| **UA04** | **Notificaciones predictivas**<br><br>*Relacionado con:* E10 | **Como** pasajero frecuente,<br>**quiero** recibir alertas push automáticas ante incidentes en mis rutas habituales,<br>**para** prevenir demoras antes de salir hacia mi destino. | **Escenario 1: Alerta previa a la rutina de viaje**<br>**Given** que el usuario ha guardado su ruta de lunes a viernes en un horario fijo,<br>**When** ocurra un retraso mayor a 10 minutos detectado por la API 15 minutos antes de su viaje,<br>**Then** el sistema despachará una notificación push predictiva indicando el incidente y el tiempo estimado de demora. |
+| **UA05** | **Panel de analítica B2B**<br><br>*Relacionado con:* E11 | **Como** administrador de flota,<br>**quiero** acceder a reportes estadísticos gráficos sobre tiempos de ciclo y puntualidad,<br>**para** auditar el desempeño operativo y optimizar costos de la empresa. | **Escenario 1: Consulta de métricas históricas de eficiencia**<br>**Given** que el administrador ha iniciado sesión con su cuenta corporativa Premium,<br>**When** se dirija al panel de "Analítica Avanzada" y filtre los datos por rango semanal,<br>**Then** el sistema renderizará diagramas interactivos detallando el porcentaje de cumplimiento de horarios y la eficiencia por vehículo. |
+
+---
+
 ### 8.3.2. To-Be Product Backlog
+
+El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas según el impacto estratégico determinado en el *Question Backlog* (8.1.4) y su valor de negocio para el ecosistema de BusTrack. La estimación del esfuerzo de desarrollo se ha asignado utilizando puntos de historia basados en la escala de Fibonacci (1, 2, 3, 5, 8).
+
+| # Orden | User Story ID | Título de la Historia de Usuario | Story Points (1/2/3/5/8) |
+| :---: | :---: | :--- | :---: |
+| **1** | UA04 | Integrar notificaciones predictivas de retrasos basadas en rutinas | 8 |
+| **2** | UA02 | Implementar sistema de reportes colaborativos  | 5 |
+| **3** | UA05 | Desarrollar panel de analítica avanzada y reportes para empresas de transporte | 8 |
+| **4** | UA01 | Desplegar indicador visual de los niveles de ocupación en las unidades | 5 |
+| **5** | UA03 | Añadir soporte de internacionalización (i18n) para traducción al idioma inglés | 3 |
+
+#### Justificación del Esfuerzo de Estimación (Story Points)
+* **UA04 y UA05 (8 SP):** Representan el mayor esfuerzo debido a la complejidad en el backend. UA05 involucra cálculos agregados de analítica pesada y la integración de librerías de gráficos en el portal de empresas.
+* **UA01 y UA02 (5 SP):** Tienen una complejidad media. UA01 demanda la estructuración de tres estados dinámicos controlados por eventos, mientras que UA02 requiere de lógica geoespacial para validar que los reportes de los pasajeros correspondan con las coordenadas reales de la ruta del bus.
+* **UA03 (3 SP):** Corresponde a un esfuerzo menor, enfocado en configurar la arquitectura de diccionarios JSON dentro del frontend en Vue para mapear de forma limpia las cadenas de texto.
+
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 #### 8.3.3.1. To-Be Sprint Backlogs
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence

@@ -3975,10 +3975,69 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 
 
 ## 7.4. Continuous Monitoring
+
+El monitoreo continuo de la aplicación BusTrack API se implementa a través de las herramientas nativas de Monster ASP.NET. Esta sección describe la estrategia de monitoreo, alertas y notificaciones para asegurar la disponibilidad y rendimiento del servicio en producción.
+
 ### 7.4.1. Tools and Practices
+
+
+Se implementaron las siguientes herramientas y prácticas de monitoreo en Monster ASP.NET:
+ 
+- **Panel de Control Monster ASP:** Interfaz centralizada que proporciona acceso a todos los servicios de monitoreo y configuración del hosting.
+- **Event Logs (Registros de Eventos):** Captura eventos del sistema a nivel de aplicación, incluyendo arranques, paradas, fallos de proceso y reintentos automáticos.
+- **ASP.NET Core Debug:** Logs detallados de la aplicación ASP.NET Core, incluyendo excepciones, traces de ejecución y errores de configuración.
+- **HttpPlatform Debug:** Información sobre la capa HTTP y el servidor web IIS que aloja la aplicación.
+
+**Prácticas implementadas:**
+ 
+- Habilitación del logging de ASP.NET Core en modo debug para capturar excepciones detalladas durante el startup
+- Revisión diaria de Event Logs para identificar patrones de fallos y anomalías
+- Configuración de variables de entorno `ASPNETCORE_ENVIRONMENT=Production` para comportamiento optimizado
+- Monitoreo de Application Pool para detectar crashes y reintentos automáticos
+---
+
 ### 7.4.2. Monitoring Pipeline Components
+
+El pipeline de monitoreo en Monster ASP se compone de los siguientes componentes:
+ 
+| Componente | Responsabilidad | Fuente de Datos |
+|---|---|---|
+| Application Pool | Ejecución de procesos ASP.NET | IIS/Monster ASP |
+| Event Logs | Registra eventos del sistema | Logs de Windows/IIS |
+| ASP.NET Core Debug | Captura excepciones y traces | Stdout de la aplicación |
+| Quick Statistics | Métricas en tiempo real | Dashboard Monster ASP |
+| Access Logs (W3C) | Registra peticiones HTTP | IIS Logs |
+
+**Descripción del flujo de monitoreo:**
+ 
+- La aplicación ASP.NET Core se ejecuta dentro de un Application Pool en IIS
+- Monster ASP captura eventos de lifecycle (start, stop, crash, restart) en Event Logs
+- Si se habilita ASP.NET Core Debug, se capturan logs de salida stdout hacia archivos en el servidor
+- El panel de Monster ASP muestra Quick Statistics: uptime del sitio, cantidad de errores 404/500, peticiones GET/POST/HEAD
+- Los registros de acceso W3C registran todas las peticiones HTTP con status codes, latencia y datos de cliente
+---
+
 ### 7.4.3. Alerting Pipeline Components
+
+La estrategia de alertas en Monster ASP se basa en la detección y análisis de eventos críticos:
+ 
+- **Alertas de Disponibilidad:** El Application Pool envía alertas cuando se produce un crash (exit code 0xffffffff), fatal communication error con Windows Process Activation Service, o reciclado inesperado
+- **Alertas de Errores HTTP:** Quick Statistics muestra conteo de errores 404 (no encontrado) y 500 (error del servidor), indicadores de configuración incorrecta o fallos de lógica de negocio
+- **Alertas de Conectividad:** Connection reset o timeout en Event Logs indican problemas de conexión a la base de datos MySQL
+- **Condiciones monitoreadas:** Site uptime, AppPool uptime, conteo de errores HTTP, comportamiento de procesos (process exit code), salud del worker process
+
 ### 7.4.4. Notification Pipeline Components.
+
+Monster ASP.NET ofrece múltiples canales de notificación para alertar al equipo de operaciones:
+ 
+- **Panel de Control:** Interfaz web accesible 24/7 que muestra el estado actual del Application Pool, número de errores y estadísticas de tráfico
+- **Event Logs:** Registros detallados disponibles por 7 días con timestamp, tipo de evento (SystemLog/ApplicationLog), y descripción del problema
+- **ASP.NET Core Debug Output:** Archivo de log que captura stdout de la aplicación, útil para debugging de excepciones no controladas
+- **Alertas automáticas:** Monster ASP puede enviar notificaciones por email cuando ocurren eventos críticos como Application Pool Restart o Fatal Communication Error
+- **Integración con herramientas externas:** Webhooks y logs exportables para integración con sistemas de ticketing (Jira) o plataformas de observabilidad como Datadog
+
+![monitoring 1](./img/monitoring-1.png)
+![monitoring 2](./img/monitoring-2.png)
 
 # Part III: Experiment-Driven Lifecycle
 # Capítulo VIII: Experiment-Driven Development

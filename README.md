@@ -4570,13 +4570,11 @@ La integración entre GitHub, Render y Vercel permite implementar un flujo de de
 
 En consecuencia, BusTrack implementa un proceso de entrega continua alineado con buenas prácticas modernas de desarrollo de software y automatización DevOps.
 
-
 ## 7.4. Continuous Monitoring
 
 El monitoreo continuo de la aplicación BusTrack API se implementa a través de las herramientas nativas de Monster ASP.NET. Esta sección describe la estrategia de monitoreo, alertas y notificaciones para asegurar la disponibilidad y rendimiento del servicio en producción.
 
 ### 7.4.1. Tools and Practices
-
 
 Se implementaron las siguientes herramientas y prácticas de monitoreo en Monster ASP.NET:
  
@@ -4587,11 +4585,10 @@ Se implementaron las siguientes herramientas y prácticas de monitoreo en Monste
 
 **Prácticas implementadas:**
  
-- Habilitación del logging de ASP.NET Core en modo debug para capturar excepciones detalladas durante el startup
-- Revisión diaria de Event Logs para identificar patrones de fallos y anomalías
-- Configuración de variables de entorno `ASPNETCORE_ENVIRONMENT=Production` para comportamiento optimizado
-- Monitoreo de Application Pool para detectar crashes y reintentos automáticos
----
+- Habilitación del logging de ASP.NET Core en modo debug para capturar excepciones detalladas durante el startup.
+- Revisión diaria de Event Logs para identificar patrones de fallos y anomalías.
+- Configuración de variables de entorno `ASPNETCORE_ENVIRONMENT=Production` para comportamiento optimizado.
+- Monitoreo de Application Pool para detectar crashes y reintentos automáticos.
 
 ### 7.4.2. Monitoring Pipeline Components
 

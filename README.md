@@ -3720,6 +3720,53 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
 <colgroup>
 </colgroup>
 <thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Piero</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Ricaldi Solís</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="./img/interview-companion1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em>Evidencia de validación de entrevista 3 - Piero Ricaldi.</em><br>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td>7:05 min</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>El entrevistado valoró positivamente todas las características de BusTrack, destacando que la plataforma es intuitiva, moderna y bien organizada. Le pareció excelente la funcionalidad de <b>rastreo en tiempo real de autobuses</b> y la <b>información clara sobre rutas</b>, características que considera muy útiles para optimizar sus desplazamientos diarios. Concluyó que la aplicación resuelve un problema real en el transporte urbano de Lima y <b>la recomendaría a otros usuarios</b> sin dudarlo.</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
   <tr>
     <th colspan="2">Entrevista #2<br></th>
   </tr>

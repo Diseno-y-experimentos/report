@@ -18,7 +18,7 @@
 
 <h1 align="center"> Docente: Noriega Melendez, Julio Manuel </h1>
 
-<h1 align="center"> Informe del Trabajo Final (TP) </h1>
+<h1 align="center"> Informe del Trabajo (TB2) </h1>
 
 <h3 align="center"> Product: BusTrack </h3>
 
@@ -34,7 +34,7 @@
 
 </div>
 
-<h3 align="center">Marzo, 2026</h3>
+<h3 align="center">Mayo, 2026</h3>
 
 <br><br>
 
@@ -47,6 +47,7 @@
 |  |  |  |  |
 | TB1 | 28/04 | Lynn Meza - Walter Fajardo  - Joaquin Cuentas - Andrea Santur | Desarrollo del capitulo 1 - 5 | 
 | TP | 12/05 | Lynn Meza - Walter Fajardo  - Joaquin Cuentas - Andrea Santur | Desarrollo del capitulo 5 - 7 |
+| TB2 | 16/06 | Lynn Meza - Walter Fajardo  - Joaquin Cuentas - Andrea Santur | Desarrollo del capitulo 6 - 8 |
 
 </div>
 
@@ -121,6 +122,18 @@
 |Andrea Santur | Chapter 7|
 
 ![contribution Tp](./img/tp-contributions.png)
+
+
+<br><br>
+
+--TB2--
+
+|Integrante| Desarrollo|
+|--------|----|
+|Walter Fajardo| Chapter 8 |
+|Joaquin Cuentas | Chapter 8|
+|Lynn Meza| Chapter 7 |
+|Andrea Santur | Chapter 6|
 
 # Contenido
 
@@ -257,8 +270,8 @@
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Reconoce responsabilidad ética y profesional en situaciones de ingeniería desoftware** |   **TB1**<br>  **Walter Fajardo** <br> Durante el trabajo realiza el planteamiento del problema junto con el resto de apartados del capitulo 1 que permiten contextualizar el como abordaremos grupalmente el proyecto  <br>  **Andrea Santur**  <br>  Demostré aprendizaje ágil aplicando buenas prácticas, generando documentación clara. Participé en el Capítulo 5, abordando la gestión del software, despliegue y evidencias del producto (landing, frontend, backend y API). Finalmente, trabajé con mejora continua, corrigiendo errores. <br> **Lynn Meza** <br> En el Capítulo IV, diseñé BusTrack asegurando accesibilidad, claridad y coherencia en la interfaz. Organicé la estructura de información y desarrollé wireframes, mock-ups y flujos para una experiencia de usuario intuitiva. También participé en el diseño técnico, garantizando una solución ordenada y centrada en las necesidades de los usuarios. <br> **Joaquin Cuentas** <br> Demostré aprendizaje ágil aplicando buenas prácticas, describiendo un buen entendimiento sobre el usuario. Participé en el Capítulo 3, definiendo los user stories y tecnhical stories así como planteando su orden de prioridad en  un product backlog <br> **TP** <br> **Walter Fajardo** <br> Asumí mi responsabilidad profesional mediante la implementación de Core Entities Unit Tests, asegurando que la lógica fundamental del negocio fuera correcta y robusta desde su origen. Al desarrollar también las Core Integration Tests, cumplí con el deber ético de garantizar que los distintos módulos del sistema interactúen sin errores críticos, priorizando la entrega de un software confiable y seguro que proteja la integridad de los datos y la experiencia del usuario final.<br> **Andrea Santur**<br> Asumí mi responsabilidad profesional mediante la aplicación de técnicas de Behavior-Driven Development (BDD), utilizando el lenguaje Gherkin para definir con precisión el comportamiento esperado de BusTrack. Al automatizar estos escenarios con Cucumber.js y Cypress, <br> **Lynn Meza** <br> En el proceso de integración y entrega continua, he aplicado responsabilidad ética al garantizar que cada cambio en el código pase por pruebas exhaustivas, asegurando su calidad y minimizando riesgos. Esto asegura que las soluciones entregadas sean confiables y seguras para los usuarios. <br> **Joaquin Cuentas** <br> Asumí mi responsabilidad profesional mediante la implementación pruebas funcionales con el IDE de Selenium. Al ejercer estas pruebas cumplí éticamente en evaluar un proyecto propio que estará en producción abierto al público y merece las validaciones necesarias. | **TB1** <br> Como equipo, trabajamos con responsabilidad ética y profesional al diseñar BusTrack, asegurando que la solución fuera accesible, intuitiva y respetuosa con los usuarios. Aplicamos buenas prácticas de ingeniería de software, manteniendo un enfoque en la calidad, la seguridad y la facilidad de mantenimiento del sistema. Además, nos aseguramos de cumplir con los estándares profesionales en cada etapa del proyecto, promoviendo la transparencia, la equidad y la inclusión. <br> **TP** <br> Implementamos una landing page, una aplicación frontend web y una API RESTful, asegurando la calidad del código mediante pruebas automatizadas con Selenium. Al aplicar prácticas de integración y entrega continua, reconocimos nuestra responsabilidad ética y profesional al garantizar soluciones de software seguras, confiables y de alta calidad, minimizando riesgos y mejorando la experiencia del usuario en un entorno global. |
-| **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **TB1**<br>  **Walter Fajardo** <br> Se realizo la recolección de entrevistas junto con  su análisis y demás partes del capitulo 2 con el fin de llegar al objetivo del proyecto <br>  **Andrea Santur** <br> Analicé las decisiones de despliegue, priorizando la estabilidad y accesibilidad del sistema, evaluando su impacto en los usuarios finales y en el entorno de uso real. <br> **Lynn Meza**   <br> En el Capítulo IV, diseñé BusTrack considerando su impacto en contextos globales y sociales, buscando una solución accesible y sostenible para usuarios y empresas de transporte. Evalué cómo el diseño de la interfaz podría mejorar la eficiencia operativa y reducir la huella ambiental, fomentando el uso de transporte público y contribuyendo al bienestar social. <br> **Joaquin Cuentas** <br>  Analicé las funcionalidades necesarias para la aplicación bus track y definí su alcance <br> **TP** <br> **Walter Fajardo** <br> A través de las pruebas integrales y unitarias, emití juicios técnicos para validar la viabilidad de la solución, considerando que un fallo en el núcleo del sistema podría tener impactos económicos negativos para los interesados y sociales para los usuarios. Al asegurar la estabilidad de las entidades core, garantizo que la solución de ingeniería sea sostenible y funcional en contextos reales, minimizando riesgos técnicos que pudieran comprometer el valor de la herramienta en un entorno global y competitivo. <br> **Andrea Santur** <br> A través de la ejecución de pruebas de comportamiento integrales, emití juicios técnicos para validar la viabilidad funcional de la solución en escenarios de uso real. Consideré que una falla en los flujos críticos de BusTrack (como la geolocalización o la actualización de rutas) podría tener un impacto social negativo al afectar la movilidad de los usuarios y un impacto económico para los operadores. <br> **Lynn Meza** <br> Al implementar la integración y entrega continua, emito juicios informados al considerar cómo las soluciones de ingeniería de software impactan globalmente, tanto en términos económicos como sociales y ambientales. A través de pruebas y despliegues automáticos, se optimiza la eficiencia y se promueve un desarrollo más sostenible y accesible, minimizando riesgos y mejorando la experiencia del usuario. <br> **Joaquin Cuentas** <br> Apoyándome en las pruebas funcionales, formulé evaluaciones técnicas para confirmar la viabilidad del producto, teniendo presente que cualquier vulnerabilidad influiría negativamente en la experiencia de usuario. De esta manera busco asegurar el estandar técnico | **TB1** <br>  Al desarrollar BusTrack, emitimos juicios informados considerando no solo la viabilidad técnica del sistema, sino también su impacto global, económico, ambiental y social. Buscamos crear una solución que no solo fuera eficiente desde el punto de vista económico, sino también sostenible, favoreciendo el uso del transporte público y contribuyendo a la reducción de la huella de carbono. Además, evaluamos cómo el sistema podría mejorar la calidad de vida de los usuarios y apoyar la transición hacia ciudades más sostenibles y conectadas. <br> **TP** <br> Como equipo, implementamos una landing page y una aplicación frontend web, junto con una API RESTful y su documentación. Usamos Selenium para pruebas automatizadas, cubriendo pruebas de unidad, integración y comportamiento. Aplicamos prácticas de CI/CD para garantizar soluciones de calidad, considerando su impacto global, económico y social. |
+| **Reconoce responsabilidad ética y profesional en situaciones de ingeniería desoftware** |   **TB1**<br>  **Walter Fajardo** <br> Durante el trabajo realiza el planteamiento del problema junto con el resto de apartados del capitulo 1 que permiten contextualizar el como abordaremos grupalmente el proyecto  <br>  **Andrea Santur**  <br>  Demostré aprendizaje ágil aplicando buenas prácticas, generando documentación clara. Participé en el Capítulo 5, abordando la gestión del software, despliegue y evidencias del producto (landing, frontend, backend y API). Finalmente, trabajé con mejora continua, corrigiendo errores. <br> **Lynn Meza** <br> En el Capítulo IV, diseñé BusTrack asegurando accesibilidad, claridad y coherencia en la interfaz. Organicé la estructura de información y desarrollé wireframes, mock-ups y flujos para una experiencia de usuario intuitiva. También participé en el diseño técnico, garantizando una solución ordenada y centrada en las necesidades de los usuarios. <br> **Joaquin Cuentas** <br> Demostré aprendizaje ágil aplicando buenas prácticas, describiendo un buen entendimiento sobre el usuario. Participé en el Capítulo 3, definiendo los user stories y tecnhical stories así como planteando su orden de prioridad en  un product backlog <br> **TP** <br> **Walter Fajardo** <br> Asumí mi responsabilidad profesional mediante la implementación de Core Entities Unit Tests, asegurando que la lógica fundamental del negocio fuera correcta y robusta desde su origen. Al desarrollar también las Core Integration Tests, cumplí con el deber ético de garantizar que los distintos módulos del sistema interactúen sin errores críticos, priorizando la entrega de un software confiable y seguro que proteja la integridad de los datos y la experiencia del usuario final.<br> **Andrea Santur**<br> Asumí mi responsabilidad profesional mediante la aplicación de técnicas de Behavior-Driven Development (BDD), utilizando el lenguaje Gherkin para definir con precisión el comportamiento esperado de BusTrack. Al automatizar estos escenarios con Cucumber.js y Cypress, <br> **Lynn Meza** <br> En el proceso de integración y entrega continua, he aplicado responsabilidad ética al garantizar que cada cambio en el código pase por pruebas exhaustivas, asegurando su calidad y minimizando riesgos. Esto asegura que las soluciones entregadas sean confiables y seguras para los usuarios. <br> **Joaquin Cuentas** <br> Asumí mi responsabilidad profesional mediante la implementación pruebas funcionales con el IDE de Selenium. Al ejercer estas pruebas cumplí éticamente en evaluar un proyecto propio que estará en producción abierto al público y merece las validaciones necesarias. <br> **TB2**<br>  **Walter Fajardo** <br> Se actuó con responsabilidad ética y profesional durante la fase de experimentación, garantizando que el planteamiento de las nuevas hipótesis y la selección de métricas de negocio se basaran en una comprensión profunda y honesta de las necesidades del usuario, evitando sesgos que pudieran comprometer la integridad de la solución de software. <br> **Andrea Santur** <br> Se actuó con responsabilidad ética y profesional durante las entrevistas, auditorías y evaluaciones realizadas en BusTrack, considerando la opinión de los usuarios para mejorar la calidad y usabilidad de la plataforma. <br> **Lynn Meza** <br> Desarrollé una estrategia de monitoreo continuo en Monster ASP.NET con alertas para garantizar la confiabilidad del servicio, reflejando responsabilidad ética hacia los usuarios finales y asegurando altos estándares de calidad operacional del software. <br> **Joaquin Cuentas** <br> Se actuó con responsabilidad ética y profesional durante el resumen y aplicación de hipótesis y questions acerca del usuario  | **TB1** <br> Como equipo, trabajamos con responsabilidad ética y profesional al diseñar BusTrack, asegurando que la solución fuera accesible, intuitiva y respetuosa con los usuarios. Aplicamos buenas prácticas de ingeniería de software, manteniendo un enfoque en la calidad, la seguridad y la facilidad de mantenimiento del sistema. Además, nos aseguramos de cumplir con los estándares profesionales en cada etapa del proyecto, promoviendo la transparencia, la equidad y la inclusión. <br> **TP** <br> Implementamos una landing page, una aplicación frontend web y una API RESTful, asegurando la calidad del código mediante pruebas automatizadas con Selenium. Al aplicar prácticas de integración y entrega continua, reconocimos nuestra responsabilidad ética y profesional al garantizar soluciones de software seguras, confiables y de alta calidad, minimizando riesgos y mejorando la experiencia del usuario en un entorno global. <br> **TB2** <br> Como equipo, al implementar Static Code Analysis con estándares de codificación, realizar Validation Interviews con evaluaciones heurísticas, y establecer Continuous Monitoring con alertas y notificaciones, demostramos responsabilidad ética y profesional garantizando que BusTrack API sea confiable, segura y mantenga altos estándares de calidad desde el desarrollo hasta la producción. |
+| **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **TB1**<br>  **Walter Fajardo** <br> Se realizo la recolección de entrevistas junto con  su análisis y demás partes del capitulo 2 con el fin de llegar al objetivo del proyecto <br>  **Andrea Santur** <br> Analicé las decisiones de despliegue, priorizando la estabilidad y accesibilidad del sistema, evaluando su impacto en los usuarios finales y en el entorno de uso real. <br> **Lynn Meza**   <br> En el Capítulo IV, diseñé BusTrack considerando su impacto en contextos globales y sociales, buscando una solución accesible y sostenible para usuarios y empresas de transporte. Evalué cómo el diseño de la interfaz podría mejorar la eficiencia operativa y reducir la huella ambiental, fomentando el uso de transporte público y contribuyendo al bienestar social. <br> **Joaquin Cuentas** <br>  Analicé las funcionalidades necesarias para la aplicación bus track y definí su alcance <br> **TP** <br> **Walter Fajardo** <br> A través de las pruebas integrales y unitarias, emití juicios técnicos para validar la viabilidad de la solución, considerando que un fallo en el núcleo del sistema podría tener impactos económicos negativos para los interesados y sociales para los usuarios. Al asegurar la estabilidad de las entidades core, garantizo que la solución de ingeniería sea sostenible y funcional en contextos reales, minimizando riesgos técnicos que pudieran comprometer el valor de la herramienta en un entorno global y competitivo. <br> **Andrea Santur** <br> A través de la ejecución de pruebas de comportamiento integrales, emití juicios técnicos para validar la viabilidad funcional de la solución en escenarios de uso real. Consideré que una falla en los flujos críticos de BusTrack (como la geolocalización o la actualización de rutas) podría tener un impacto social negativo al afectar la movilidad de los usuarios y un impacto económico para los operadores. <br> **Lynn Meza** <br> Al implementar la integración y entrega continua, emito juicios informados al considerar cómo las soluciones de ingeniería de software impactan globalmente, tanto en términos económicos como sociales y ambientales. A través de pruebas y despliegues automáticos, se optimiza la eficiencia y se promueve un desarrollo más sostenible y accesible, minimizando riesgos y mejorando la experiencia del usuario. <br> **Joaquin Cuentas** <br> Apoyándome en las pruebas funcionales, formulé evaluaciones técnicas para confirmar la viabilidad del producto, teniendo presente que cualquier vulnerabilidad influiría negativamente en la experiencia de usuario. De esta manera busco asegurar el estandar técnico <br> **TB2** <br> **Walter Fajardo** <br> Se evaluó el impacto económico y social de BusTrack al diseñar experimentos basados en métricas de negocio concretas, vinculando funcionalididades proyectadas (como el panel de analítica avanzada para empresas y las notificaciones predictivas para pasajeros) con cambios medibles en el comportamiento del usuario y la eficiencia operativa del sistema. <br> **Andrea Santur** <br> Se evaluó el impacto social de BusTrack al ofrecer información en tiempo real que ayuda a estudiantes, trabajadores y empresas a optimizar sus desplazamientos y reducir tiempos de espera.</br> **Lynn Meza** <br> Implementé monitoreo continuo en Monster ASP.NET que optimiza recursos y reduce inactividad del servicio, beneficiando a usuarios con una plataforma confiable para la movilidad urbana y acceso equitativo a información de transporte en Lima. <br> **Joaquin Cuentas** <br> Se evaluó el impacto social de BusTrack al reseñar los assumptions de los usuarios y con ellos generar nuevos questions backlogs para el desarrollo de la aplicación| **TB1** <br>  Al desarrollar BusTrack, emitimos juicios informados considerando no solo la viabilidad técnica del sistema, sino también su impacto global, económico, ambiental y social. Buscamos crear una solución que no solo fuera eficiente desde el punto de vista económico, sino también sostenible, favoreciendo el uso del transporte público y contribuyendo a la reducción de la huella de carbono. Además, evaluamos cómo el sistema podría mejorar la calidad de vida de los usuarios y apoyar la transición hacia ciudades más sostenibles y conectadas. <br> **TP** <br> Como equipo, implementamos una landing page y una aplicación frontend web, junto con una API RESTful y su documentación. Usamos Selenium para pruebas automatizadas, cubriendo pruebas de unidad, integración y comportamiento. Aplicamos prácticas de CI/CD para garantizar soluciones de calidad, considerando su impacto global, económico y social. <br> **TB2** <br> Como equipo, si aplicamos Static Testing & Verification, Auditorías de Experiencias de Usuario, Continuous Monitoring, y Experiment Planning basado en métricas de negocio, entonces generaremos una solución de software que mejora la movilidad urbana en Lima, optimiza recursos operacionales, proporciona acceso equitativo a información de transporte, y crea impacto positivo en contextos económicos y sociales diversos. |
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -1182,16 +1195,18 @@ Las siguientes épicas representan los bloques funcionales principales del produ
 ### Historias de Usuario
 | ID   | Epic ID | Épica                        | Nombre | Historia                                                                                                                         | Criterios de Aceptación |
 |------|---------|------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| US01 | E01     | Gestión de rutas y horarios  | Guardar rutas frecuentes | Como pasajero, quiero guardar mis rutas frecuentes para acceder a ellas rápidamente.                                             | **Positivo:** Dado que selecciono una ruta, cuando presiono “Guardar como favorita”, entonces la ruta se guarda. <br> **Negativo:** Dado que la ruta ya está guardada, cuando intento guardarla otra vez, entonces aparece “Esta ruta ya está guardada”. |
-| US02 | E02     | Monitoreo en tiempo real     | Ver ruta en Google Maps | Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.        | **Positivo:** Dado que ingreso un origen y un destino válidos, cuando presiono el botón “Ver en Google Maps”, entonces se abre Google Maps mostrando la ruta correspondiente. <br> **Negativo:** Dado que ingreso un origen o destino que no corresponde a una dirección real, cuando presiono el botón “Ver en Google Maps”, entonces la aplicación igual abre Google Maps y muestra sugerencias para el origen y destino. |
+| US01 | E01     | Gestión de rutas   | Guardar rutas  | Como pasajero, quiero guardar mis rutas para acceder a ellas .                                             | **Positivo:** Dado que selecciono una ruta, cuando presiono “Guardar como favorita”, entonces la ruta se guarda. <br> **Negativo:** Dado que la ruta ya está guardada, cuando intento guardarla otra vez, entonces aparece “Esta ruta ya está guardada”. |
+| US02 | E02     | Monitoreo de ruta     | Ver ruta en Google Maps | Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.        | **Positivo:** Dado que ingreso un origen y un destino válidos, cuando presiono el botón “Ver en Google Maps”, entonces se abre Google Maps mostrando la ruta correspondiente. <br> **Negativo:** Dado que ingreso un origen o destino que no corresponde a una dirección real, cuando presiono el botón “Ver en Google Maps”, entonces la aplicación igual abre Google Maps y muestra sugerencias para el origen y destino. |
 | US03 | E03     | Administración de flota      | Configurar alertas internas | Como administrador, quiero configurar alertas para incidentes de tráfico.                                                        | **Positivo:** Dado que completo los campos del formulario de “Agregar bus”, cuando presiono el botón “Guardar”, entonces el nuevo bus se agrega a la tabla de flota con un ID generado automáticamente.   <br> **Negativo:** Dado que estoy editando la información de un bus, cuando cierro el modal o presiono “Cancelar” sin guardar, entonces los cambios no se aplican y la información del bus se mantiene igual en la tabla. |
 | US04 | E04     | Experiencia del usuario      | Registro de pasajero | Como nuevo pasajero, quiero registrarme para personalizar mis rutas.                                                             | **Positivo:** Dado que completo los campos, cuando presiono “Registrarse”, entonces se crea la cuenta. <br> **Negativo:** Dado campos vacíos, cuando intento registrarme, entonces aparece “Complete todos los campos”. |
 | US05 | E04     | Experiencia del usuario      | Editar perfil | Como pasajero, quiero editar mis datos personales.                                                                               | **Positivo:** Dado datos válidos, cuando guardo cambios, entonces el perfil se actualiza. <br> **Negativo:** Dado correo inválido, cuando guardo, entonces aparece “Correo no válido”. |
 | US06 | E05     | Landing Page                 | Información de la solución | Como visitante, quiero ver información de la solución para entender su utilidad.                                                 | **Positivo:** Dado que ingreso al home, cuando reviso el bloque principal y la sección “What Does BusTrack Offer?”, entonces veo un resumen claro de qué es BusTrack y qué funcionalidades ofrece. <br> **Negativo:** Dado que la página no carga correctamente (por ejemplo, fallo de internet), cuando ingreso al home, entonces no puedo ver el texto que describe la solución. |
-| US07 | E05     | Landing Page                 | Beneficios | Como visitante, quiero conocer los beneficios de la aplicación.                                                                  | **Positivo:** Dado que accedo a la sección “Benefits of Using BusTrack”, cuando la reviso, entonces veo al menos tres beneficios explicados. <br> **Negativo:** Dado que por un problema de carga la sección de beneficios no se muestra, cuando navego por la landing, entonces no logro ver los beneficios de la aplicación. |
-| US08 | E05     | Landing Page                 | Misión y visión | Como visitante, quiero conocer la misión y visión de la empresa.                                                                 | **Positivo:** Dado que ingreso a la sección “About Us”, cuando la reviso, entonces veo claramente la misión y la visión de BusTrack. <br> **Negativo:** Dado que la sección “About Us” no carga correctamente, cuando intento verla, entonces no puedo ver la misión ni la visión. |
-| US09 | E04     | Experiencia del usuario      | Acceso diferenciado | Como usuario, quiero elegir si ingreso como pasajero o empresa.                                                                  | **Positivo:** Dado selección del tipo de usuario, cuando continúo, entonces accedo al módulo correspondiente. <br> **Negativo:** Dado que no selecciono ningún tipo de usuario, cuando intento continuar, entonces el botón “Continuar” permanece deshabilitado. |
-| US10 | E03     | Administración de flota      | Acceso para empresas | Como empresa, quiero acceder al módulo de monitoreo de flota para ver el estado de mis buses y gestionar alertas.                | **Positivo:** Dado que inicio sesión como empresa y el módulo de monitoreo carga correctamente, cuando abro “Monitoreo”, entonces veo el mapa y la lista de buses con su estado (a tiempo, con retraso o fuera de servicio). <br> **Negativo:** Dado un error de conexión con el servidor, cuando abro “Monitoreo”, entonces se muestra un aviso de “Error de conexión” con la opción de “Reintentar”. |
+| US07 | E03     | Administración de flota| Registrar bus | Como administrador de compañía, quiero registrar un bus en la plataforma, para asociarlo a mi empresa y poder gestionarlo dentro del sistema de monitoreo de transporte.| **Positivo:** Dado que el administrador está autenticado y ha accedido a la página de registro de buses, cuando ingresa todos los datos obligatorios correctamente y presiona Registrar bus, entonces el sistema debe guardar el bus y mostrar un mensaje de confirmación. <br> **Negativo:**  Dado que el administrador está en la página de registro de buses, cuando intenta registrar el bus sin completar todos los campos obligatorios, entonces el sistema debe mostrar un mensaje indicando qué campos faltan completar|
+| US08 | E04   | Experiencia del usuario en la app | Notificación de creación de ruta | Como pasajero, quiero que se me notifique cuando cree una ruta, para estar informado de que la ruta se ha guardado y está disponible para su uso.| **Positivo:** Dado que el pasajero ha creado una nueva ruta en la aplicación, cuando el sistema guarde correctamente la ruta, entonces el pasajero recibirá una notificación confirmando que la ruta se ha creado con éxito y está disponible. <br> **Negativo:**  Dado que el pasajero ha intentado crear una ruta pero se ha producido un error (por ejemplo, datos incompletos o formato incorrecto), cuando el sistema no pueda guardar la ruta, entonces el pasajero recibirá una notificación informando sobre el error y que la ruta no se ha creado.|
+| US09 | E04     | Experiencia del usuario      | Acceso diferenciado | Como usuario, quiero elegir si ingreso como pasajero o empresa.| **Positivo:** Dado selección del tipo de usuario, cuando continúo, entonces accedo al módulo correspondiente. <br> **Negativo:** Dado que no selecciono ningún tipo de usuario, cuando intento continuar, entonces el botón “Continuar” permanece deshabilitado.|
+| US10 | E03     | Administración de flota      | Acceso para empresas | Como empresa, quiero acceder al segmento de monitoreo de flota para ver el estado de mis buses y gestionar alertas.                | **Positivo:** Dado que inicio sesión como empresa y el módulo de monitoreo carga correctamente, cuando abro “Monitoreo”, entonces veo el mapa y la lista de buses con su estado (a tiempo, con retraso o fuera de servicio). <br> **Negativo:** Dado un error de conexión con el servidor, cuando abro “Monitoreo”, entonces se muestra un aviso de “Error de conexión” con la opción de “Reintentar”. |
+| US11 | E05     | Landing Page                 | Beneficios de la aplicación | Como visitante, quiero conocer los beneficios de la aplicación. **Positivo:** Dado que accedo a la sección “Benefits of Using BusTrack”, cuando la reviso, entonces veo al menos tres beneficios explicados. <br> **Negativo:** Dado que por un problema de carga la sección de beneficios no se muestra, cuando navego por la landing, entonces no logro ver los beneficios de la aplicación. |
+| US12 | E05     | Landing Page                 | Misión y visión | Como visitante, quiero conocer la misión y visión de la empresa.| **Positivo:** Dado que ingreso a la sección “About Us”, cuando la reviso, entonces veo claramente la misión y la visión de BusTrack. <br> **Negativo:** Dado que la sección “About Us” no carga correctamente, cuando intento verla, entonces no puedo ver la misión ni la visión. |
 
 <br>
 
@@ -1211,18 +1226,19 @@ Las siguientes Technical Stories describen los endpoints mínimos del RESTful AP
 
 | # Orden | ID   | Título                                      | Descripción                                                                                                                                                                                | Story Points |
 | ------- | ---- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| 1       | US01 | Guardar rutas frecuentes                    | Como pasajero, quiero guardar mis rutas frecuentes para acceder más rápido a ellas.                                                                                                        | 3            |
-| 2       | US02 | Ver ubicación del bus                       | Como pasajero, quiero ver la ubicación del bus en el mapa para saber cuánto tardará en llegar.                                                                                             | 5            |
+| 1       | US01 | Guardar rutas                    | Como pasajero, quiero guardar mis rutas para acceder a ellas.                                                                                                        | 3            |
+| 2       | US02 | Ver ruta en Google Maps                     | Como pasajero, quiero abrir la ruta en Google Maps para visualizar el recorrido y las opciones de transporte disponibles.                                                                  | 3            |
 | 3       | US03 | Configurar alertas internas                 | Como administrador, quiero configurar alertas para incidentes de tráfico y gestionar mejor las incidencias.                                                                                | 5            |
 | 4       | US04 | Registro de pasajero                        | Como nuevo pasajero, quiero registrarme en la aplicación para personalizar mis rutas.                                                                                                      | 3            |
 | 5       | US05 | Editar perfil                               | Como pasajero, quiero editar mis datos personales para mantener mi información actualizada.                                                                                                | 3            |
 | 6       | US06 | Información de la solución                  | Como visitante de la web, quiero ver información concisa de la solución para entender su utilidad.                                                                                         | 2            |
-| 7       | US07 | Beneficios de la aplicación                 | Como visitante de la web, quiero conocer los beneficios de la aplicación para entender cómo puede ayudarme.                                                                                | 2            |
-| 8       | US08 | Misión y visión                             | Como visitante, quiero conocer la misión y visión de la empresa para entender su propósito y enfoque.                                                                                      | 1            |
+| 7       | US07 | Registrar bus                               | Como administrador de compañía, quiero registrar un bus en la plataforma para asociarlo a mi empresa y gestionarlo dentro del sistema de monitoreo.                                        | 5            |
+| 8       | US08 | Notificación de creación de ruta            | Como pasajero, quiero que se me notifique cuando cree una ruta para estar informado de que se ha guardado correctamente y está disponible.                                                 | 2            |
 | 9       | US09 | Acceso diferenciado                         | Como usuario, quiero elegir si ingreso como pasajero o empresa para ver solo las opciones que me corresponden.                                                                             | 3            |
 | 10      | US10 | Acceso para empresas                        | Como empresa, quiero acceder a un módulo exclusivo con las funciones disponibles para la gestión de flota.                                                                                 | 5            |
-| 11      | TS01 | Endpoint: Rutas favoritas del pasajero      | Como **Developer**, quiero implementar los endpoints `GET /api/users/{userId}/favorites` y `POST /api/users/{userId}/favorites` para que la vista de “Rutas favoritas” pueda listar y guardar rutas frecuentes. | 3            |
-| 12      | TS02 | Endpoint: Alertas internas de la empresa    | Como **Developer**, quiero implementar los endpoints `GET /api/companies/{companyId}/alerts` y `POST /api/companies/{companyId}/alerts` para que la vista de “Alertas internas” pueda listar y registrar incidentes. | 5            |
+| 11      | US11 | Beneficios de la aplicación                 | Como visitante de la web, quiero conocer los beneficios de la aplicación para entender cómo puede ayudarme.                                                                                | 2            |
+| 12      | US12 | Misión y visión                             | Como visitante, quiero conocer la misión y visión de la empresa para entender su propósito y enfoque.                                                                                      | 1            |
+| 12      | TS01 | Endpoint: Alertas internas de la empresa    | Como **Developer**, quiero implementar los endpoints `GET /api/companies/{companyId}/alerts` y `POST /api/companies/{companyId}/alerts` para que la vista de “Alertas internas” pueda listar y registrar incidentes. | 5            |
 
 La imagen muestra el tablero de Trello utilizado para la planificación y seguimiento del Sprint 4 del proyecto BusTrack. En este tablero se organizaron las User Stories (US) y Technical Stories (TS) según las buenas prácticas de Scrum, distribuyéndolas en listas de Backlog, Technical Stories, Sprint Backlog y Done. Durante el sprint, las tareas fueron monitoreadas y actualizadas continuamente, moviéndose a la columna Done una vez completadas según la Definición de Terminado. Este tablero permitió mantener una visión clara del progreso del equipo, facilitando la priorización, asignación y control del avance de cada historia.
 
@@ -3388,7 +3404,146 @@ En esta sección se aplicaron técnicas de Behavior-Driven Development (BDD) par
 A continuación, se presentan los escenarios Gherkin que cubren las funcionalidades críticas de la plataforma:
 
   <img src="img/escenario1.png" width="700">
-   <img src="img/escenario2.png" width="700">
+  <img src="img/escenario2.png" width="700">
+
+**AdministracionFlotaMonitoreo**
+```
+Característica: Administración de Flota y Monitoreo
+  Como usuario de empresa en BusTrack
+  Quiero administrar buses y supervisar su estado operativo
+  Para controlar la flota y responder ante incidencias
+
+  Escenario: Agregar un bus nuevo a la flota
+    Dado que el administrador completa correctamente el formulario de "Agregar bus".
+    Cuando presiona el botón "Guardar".
+    Entonces el bus debe aparecer en la tabla de flota con un ID generado automáticamente.
+
+  Escenario: Cancelar la edición de datos de un bus
+    Dado que el administrador está modificando la información de un bus.
+    Cuando presiona el botón "Cancelar" sin guardar.
+    Entonces el sistema debe cerrar el formulario y mantener los datos originales del bus.
+
+  Escenario: Acceso al monitoreo en tiempo real para empresas
+    Dado que el usuario ha iniciado sesión con perfil de empresa.
+    Cuando abre el módulo de "Monitoreo".
+    Entonces el sistema debe cargar el mapa con la ubicación y el estado de los buses.
+
+  Escenario: Reintento por fallo de conexión en monitoreo
+    Dado que ocurre un error de comunicación con el servidor.
+    Cuando la empresa intenta cargar el mapa de flota.
+    Entonces se debe visualizar el aviso "Error de conexión" con la opción de "Reintentar".
+
+  Escenario: Registro de alerta de incidente
+    Dado que se envía un POST al endpoint /api/companies/{companyId}/alerts con datos de un incidente.
+    Cuando el servidor procesa la solicitud.
+    Entonces la API debe retornar un código de estado 201 y registrar el evento.
+```
+
+**ExperienciaUsuario**
+
+```
+Característica: Experiencia del Usuario
+  Como usuario de BusTrack
+  Quiero registrarme, administrar mi perfil y elegir mi rol de acceso
+  Para utilizar la plataforma conforme a mis necesidades
+
+  Escenario: Registro exitoso de un nuevo pasajero
+    Dado que el usuario completa todos los campos del formulario de registro.
+    Cuando presiona el botón "Registrarse".
+    Entonces el sistema debe crear la cuenta y permitir el acceso a la plataforma.
+
+  Escenario: Bloqueo de registro por campos vacíos
+    Dado que el usuario deja campos obligatorios sin llenar.
+    Cuando intenta registrarse.
+    Entonces debe aparecer el mensaje de alerta: "Complete todos los campos".
+
+  Escenario: Edición de perfil con datos válidos
+    Dado que el pasajero modifica su nombre o teléfono en la sección de perfil.
+    Cuando guarda los cambios.
+    Entonces la información del perfil debe actualizarse correctamente.
+
+  Escenario: Validación de formato de correo electrónico
+    Dado que el usuario ingresa un correo con formato incorrecto (ej. sin el @).
+    Cuando intenta guardar los cambios de perfil.
+    Entonces el sistema debe mostrar el mensaje: "Correo no válido".
+
+  Escenario: Elección de rol de usuario en el acceso
+    Dado que el usuario se encuentra en la pantalla de bienvenida.
+    Cuando selecciona el tipo de usuario "Empresa" y continúa.
+    Entonces el sistema debe mostrar el módulo de acceso corporativo.
+
+  Escenario: Botón de continuar deshabilitado sin selección de rol
+    Dado que el usuario no ha seleccionado ninguna opción de ingreso.
+    Cuando observa la pantalla de acceso.
+    Entonces el botón "Continuar" debe permanecer deshabilitado.
+```
+
+**LandingPage**
+
+```
+Característica: Landing Page
+  Como visitante del sistema BusTrack
+  Quiero conocer la solución, sus beneficios y la identidad institucional
+  Para evaluar el alcance de la plataforma antes de registrarme
+
+  Escenario: Visualización de información de la solución
+    Dado que un visitante accede a la página de inicio (Home).
+    Cuando navega hasta la sección "What Does BusTrack Offer?".
+    Entonces debe visualizar un resumen claro de las funcionalidades de la aplicación.
+
+  Escenario: Verificación de beneficios clave
+    Dado que el visitante revisa la sección "Benefits of Using BusTrack".
+    Cuando la página carga los elementos visuales.
+    Entonces debe poder leer al menos tres beneficios principales del sistema.
+
+  Escenario: Consulta de Misión y Visión corporativa
+    Dado que el visitante ingresa a la sección "About Us".
+    Cuando la sección se despliega.
+    Entonces deben aparecer los párrafos correspondientes a la misión y visión de BusTrack.
+
+  Escenario: Falla de carga de contenido por falta de internet
+    Dado que el dispositivo del visitante pierde la conexión a la red.
+    Cuando intenta cargar el Home de la aplicación.
+    Entonces el sistema no debe mostrar el texto descriptivo de la solución.
+```
+
+**RutasFavoritas**
+
+```
+Característica: Gestión de Rutas y Horarios
+  Como pasajero de BusTrack
+  Quiero gestionar rutas frecuentes y consultar información asociada
+  Para acceder con rapidez a mis recorridos más utilizados
+
+  Escenario: Guardar una ruta favorita exitosamente
+    Dado que el pasajero ha seleccionado una ruta entre "Origen A" y "Destino B".
+    Cuando presiona el botón "Guardar como favorita".
+    Entonces el sistema debe registrar la ruta en la lista de favoritos del usuario.
+    Y mostrar una confirmación: "Ruta guardada exitosamente".
+
+  Escenario: Error al guardar una ruta ya existente
+    Dado que el pasajero ya tiene guardada la ruta "Origen A - Destino B".
+    Cuando intenta guardarla nuevamente.
+    Entonces el sistema debe mostrar un mensaje de advertencia: "Esta ruta ya está guardada".
+
+  Escenario: Visualizar ruta en Google Maps con datos válidos
+    Dado que el pasajero ingresa un origen y destino reales.
+    Cuando presiona el botón "Ver en Google Maps".
+    Entonces la aplicación debe abrir la interfaz de Google Maps con el recorrido trazado.
+
+  Escenario: Sugerencias de Google Maps ante direcciones ambiguas
+    Dado que el pasajero ingresa una dirección que no es exacta.
+    Cuando presiona "Ver en Google Maps".
+    Entonces la aplicación debe abrir Google Maps y mostrar una lista de sugerencias de ubicación.
+
+  Escenario: Listar rutas favoritas desde la API
+    Dado que el frontend solicita la lista de favoritos mediante un GET al endpoint /api/users/{userId}/favorites.
+    Cuando el servidor responde con éxito.
+    Entonces la aplicación debe mostrar todas las rutas guardadas en la interfaz del pasajero.
+
+```
+
+
 
 ## Implementación (Step Definitions)
 Para validar la integración entre el frontend en Vue y la API RESTful, se implementaron definiciones de pasos (Step Definitions) que interceptan las peticiones de red:
@@ -3477,24 +3632,602 @@ Then('la respuesta debe tener estado 201.', () => {
 <img src="./img/US10.png" width="700">
 
 ## 6.2. Static testing & Verification
+#### Evidencia de Ejecución de Herramientas de Análisis
+
+Con el objetivo de garantizar la calidad del software, la mantenibilidad del código y la detección temprana de defectos, se incorporaron herramientas de análisis estático durante el desarrollo del proyecto BusTrack. Estas herramientas permitieron verificar el cumplimiento de estándares de codificación, detectar errores potenciales y asegurar la consistencia de la arquitectura implementada.
+
+**1. ESLint (Frontend Web App - Vue.js / TypeScript)**
+Para el desarrollo de la aplicación web y la landing page basadas en Vue.js y Vite, se configuró y ejecutó el linter oficial. Este componente se encarga de analizar de forma estática la sintaxis de los archivos .vue y .js/.ts, asegurando el cumplimiento de la guía de estilos interna, identificando variables muertas o no utilizadas, y previniendo malas prácticas de codificación en el cliente.
+
+_*Reporte de Ejecución:*_
+
+```
+ $ npm run lint
+
+> BusTrack-Frontend-new-frontend@1.0.0 lint
+> eslint --ext .js,.vue src
+
+  16:3   warning  Unexpected console statement                             no-console
+  8:15   error    't' is assigned a value but never used                  no-unused-vars
+
+  14 | const selectedRole = ref(null)
+  15 | const showError = ref(false)
+> 16 |   console.log(`✅ Rol seleccionado: ${role}`)
+     |   ^
+  17 | }
+  18 |
+  19 | const continueToLogin = () => {
+  ...
+   6 | import { useI18n } from 'vue-i18n'
+   7 | import LanguageSwitcher from '@/shared/presentation/components/language-switcher.vue'
+>  8 | const { t } = useI18n()
+     |        ^
+   9 |
+  10 | const selectedRole = ref(null)
+  ...
+
+✖ 2 problems (1 error, 1 warning)
+```
+**2. SonarLint & .NET Analyzers (Backend API - .NET 8 & C#)**
+Para el núcleo de la API RESTful de la plataforma, desarrollada sobre .NET 8, se emplearon los analizadores estáticos nativos de la plataforma junto con las reglas de SonarLint. Esto permitió evaluar el acoplamiento arquitectónico, la complejidad de las estructuras algorítmicas de los servicios del dominio y la seguridad del código frente a vulnerabilidades
+
+_*Resumen final*_
+
+Hallazgos críticos de seguridad: ninguno en este archivo (Security Hotspots = 0).
+Code Smells: 2 (ambos relacionados con complejidad y responsabilidad en los métodos UpdateProfile y ResolveCurrentUserAsync).
+Prioridad de corrección: media — la funcionalidad es correcta pero la mantenibilidad y testabilidad mejorarán con las refactorizaciones propuestas.
+Calificación de Mantenibilidad (simulada): A — código claro y bien organizado en general, con lugar para mejorar la separación de responsabilidades y reducir la complejidad de métodos puntuales.
+
 ### 6.2.1. Static Code Analysis
+
+El análisis estático se enfocó en la revisión de las entidades de dominio, componentes de aplicación y servicios definidos dentro de la arquitectura del sistema BusTrack.
+
+- Arquitectura modular basada en Vue 3.
+- Separación entre Presentation, Domain, Infrastructure y Stores.
+- Entidad ``Route.entity.js` .
+- Normalizadores para User, Bus, Notification y Alert.
+- Cohesión alta en useUserStore, useBusesStore, useNotificationsStore y useAlertsStore.
+- Uso de servicios reutilizables `BaseApi` y `BaseEndpoint`.
+- Consistencia semántica mediante normalización de recursos.
+
 #### 6.2.1.1. Coding standard & Code conventions.
+Se verificó el cumplimiento de estándares de codificación orientados a mejorar la legibilidad, mantenibilidad y escalabilidad del proyecto. El código emplea convenciones consistentes de nomenclatura, utilizando componentes. Asimismo, la organización modular de carpetas y archivos facilita la separación de responsabilidades y la comprensión de los distintos contextos funcionales de la aplicación.
+
+- Uso de PascalCase en componentes.
+- Uso de camelCase en métodos y variables.
+- Uso de UPPER_SNAKE_CASE para constantes.
+- Convención `useXStore()` para stores Pinia.
+- Prefijo `normalize` para transformadores.
+- Prefijo `build` para constructores de payloads.
+- Prefijo `get` para métodos de acceso.
+- Organización modular por dominios.
+- Consistencia en nombres alineados al lenguaje de negocio.
+- Uso de Composition API.
+- Separación entre componentes, servicios y entidades.
+- Documentación mediante comentarios descriptivos y JSDoc.
+- Configuración de ESLint y Prettier.
+- Estructura preparada para escalabilidad.
+
 #### 6.2.1.2. Code Quality & Code Security.
+
+La evaluación de calidad y seguridad permitió verificar que la aplicación presenta un adecuado nivel de modularidad, reutilización de componentes y separación de responsabilidades. Se observó el uso de mecanismos de manejo de errores, validación básica de formularios y centralización de llamadas a servicios externos mediante capas especializadas. Adicionalmente, se identificaron aspectos susceptibles de mejora relacionados con la gestión de tokens de autenticación, validación de ciertos parámetros de entrada y fortalecimiento de los controles de acceso a rutas protegidas
+
+**Calidad**
+- Alta cohesión en stores.
+- Reutilización mediante BaseApi y BaseEndpoint.
+- Bajo acoplamiento entre módulos.
+- Modularidad de componentes.
+- Separación de responsabilidades.
+- Aplicación parcial de principios SOLID.
+- Escalabilidad de la arquitectura.
+- Manejo de errores mediante try/catch.
+- Normalización consistente de recursos.
+
+**Seguridad**
+- Gestión de autenticación mediante JWT.
+- Inyección automática de tokens en peticiones.
+- Protección de endpoints mediante metadatos de rutas.
+- Validación de formularios.
+- Control de errores de autenticación.
+- **Riesgos identificados:**
+- JWT decodificado manualmente.
+- Persistencia de token en localStorage.
+- Falta de validación estricta de coordenadas.
+- Ausencia de guardias globales completas.
+- Protección indirecta frente a SQL Injection al consumir APIs.
+- Manejo controlado de excepciones.
+- Revisión de dependencias externas.
+
 ### 6.2.2. Reviews
+
+Durante las revisiones de código realizadas en BusTrack se verificaron los siguientes aspectos:
+
+#### Tipos de Revisiones Ejecutadas
+- **Revisión por Pares (Peer Review):** Proceso cruzado en GitHub donde un desarrollador analiza el código de otro  para asegurar su legibilidad y correcto diseño.
+- **Revisión Formal:**  Reuniones síncronas grupales al cierre de cada hito entre todo el equipo para evaluar los componentes críticos usando una lista de verificación unificada.
+- **Revisión Automática**: Uso de SonarLint integrado en los entornos de desarrollo (IDE) para detectar malas prácticas, duplicaciones y code smells en tiempo real mientras se escribe el código.
+
+- **Arquitectura y organización del proyecto:**
+Se revisó la correcta separación entre las capas de presentación, dominio e infraestructura, manteniendo una estructura modular basada en Domain-Driven Design (DDD).
+
+- **Reutilización de código:**
+Se verificó el uso de componentes reutilizables y servicios compartidos como BaseApi y BaseEndpoint para reducir duplicidad y facilitar el mantenimiento.
+
+- **Calidad del código:**
+Se evaluó la legibilidad, organización y mantenibilidad del código, identificando oportunidades de mejora en algunas secciones con lógica repetida y validaciones adicionales.
+
+- **Seguridad de la aplicación:**
+Se revisaron los mecanismos de autenticación, validación de datos de entrada, manejo de errores y protección de sesiones para reducir riesgos de seguridad.
+
 ## 6.3. Validation Interviews.
+
+En esta sección se presentan las entrevistas de validación realizadas para el proyecto BusTrack. El objetivo fue obtener retroalimentación directa de los usuarios objetivo para validar las hipótesis planteadas en el Lean UX Canvas y evaluar la experiencia de uso de la solución propuesta.
+
+Durante las entrevistas, los participantes interactuaron con el landing page y la aplicación web, proporcionando comentarios sobre la facilidad de uso, claridad de la información, utilidad de las funcionalidades y confianza generada por la plataforma. Los resultados obtenidos permitieron identificar oportunidades de mejora y verificar el grado de aceptación de BusTrack como una solución para el monitoreo y seguimiento del transporte público.
+
 ### 6.3.1. Diseño de Entrevistas.
+
+#### Preguntas Generales
+- ¿Cuál es su nombre completo?
+- ¿Qué edad tiene?
+- ¿Cuál es su ocupación?
+- ¿En qué distrito reside?
+
+#### Preguntas Específicas
+
+○ ***Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)***
+
+- 1. ¿Qué le pareció el diseño general de la landing page y de la aplicación web BusTrack?
+
+- 2. ¿La información presentada en la landing page le permitió comprender fácilmente el propósito y las funcionalidades principales de BusTrack?
+
+- 3. ¿Qué funcionalidad le resultó más útil o interesante dentro de la aplicación? (Seguimiento en tiempo real, búsqueda de rutas, historial de viajes, notificaciones, etc.).
+
+- 4. ¿Considera que conocer la ubicación en tiempo real de los autobuses le ayudaría a reducir tiempos de espera? ¿Por qué?
+
+- 5. ¿La visualización del tiempo estimado de llegada de los autobuses le parece útil para planificar sus desplazamientos diarios?
+
+- 6. ¿La interfaz de la aplicación le pareció intuitiva y fácil de utilizar durante la navegación entre las diferentes secciones?
+
+- 7. ¿Le gustaría recibir notificaciones sobre retrasos, desvíos de ruta o próximas llegadas de los autobuses? ¿Por qué?
+
+- 8. ¿La aplicación le transmite confianza para registrarse y utilizarla de manera frecuente?
+
+- 9. ¿Utilizaría BusTrack como apoyo para sus desplazamientos diarios? ¿Por qué?
+
+- 10. ¿Recomendaría BusTrack a familiares, amigos o compañeros de trabajo? ¿Por qué?
+
+
+○ ***Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)***
+
+- 1. ¿Qué impresión general le generó la landing page y la aplicación web BusTrack?
+
+- 2. ¿La información presentada en la landing page comunica adecuadamente los beneficios de la plataforma para la gestión de transporte urbano?
+
+-  3. ¿Qué funcionalidad considera más valiosa para su organización? (Monitoreo en tiempo real, gestión de flota, alertas, reportes o análisis de operaciones).
+
+- 4. ¿Considera que la visualización en tiempo real de las unidades podría mejorar la supervisión de la flota? ¿Por qué?
+
+- 5. ¿La generación de alertas automáticas por retrasos o incidencias facilitaría el trabajo de supervisión y control operativo?
+
+- 6. ¿Los reportes e información proporcionados por la plataforma le ayudarían a tomar mejores decisiones sobre la operación de las rutas?
+
+- 7. ¿La interfaz destinada a empresas le pareció intuitiva y fácil de utilizar?
+
+- 8. ¿Considera que BusTrack podría contribuir a mejorar la puntualidad y calidad del servicio ofrecido a los pasajeros?
+
+- 9. ¿Su empresa estaría dispuesta a implementar una solución como BusTrack dentro de sus operaciones? ¿Por qué?
+
+- 10. ¿Recomendaría esta solución a otras empresas de transporte urbano? ¿Por qué?
+
 ### 6.3.2. Registro de Entrevistas.
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alessandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Bravo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Martin</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaWalter.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 1 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/JW3Tt1gQCJo</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado,tuvo una percepción positiva de BusTrack, destacando que la landing page y la aplicación son fáciles de entender y navegar. Consideró que la información presentada explica claramente el propósito de la plataforma y resaltó como funcionalidad más útil el tiempo estimado de llegada de los autobuses, ya que le ayuda a organizar mejor sus desplazamientos. Además, indicó que el seguimiento en tiempo real y las notificaciones sobre incidencias mejorarían su experiencia de viaje. Finalmente, señaló que utilizaría la aplicación con frecuencia y la recomendaría a otras personas por la utilidad de la información que proporciona.
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>David</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Torres</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaDavid.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/fFs9M6ljtm0</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 11:30 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado , que es <b>estudiante universitario y usuario frecuente del transporte público</b>,valoró positivamente el diseño de BusTrack, destacando que la interfaz es moderna, organizada y fácil de utilizar. Consideró que la información presentada en la landing page permite comprender rápidamente el propósito de la plataforma y las funcionalidades que ofrece. La característica que encontró más útil fue el <b>seguimiento en tiempo real de los autobuses</b>, ya que le permitiría conocer con mayor precisión la ubicación de las unidades y reducir los tiempos de espera durante sus desplazamientos diarios
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Melissa</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Sulca</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Magdalena</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 3 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> La entrevistada, que es <b>estudiante universitaria</b>, valoró el diseño como "colores atractivos y acordes". Considera que la aplicación aporta confianza y utilidad por la facilidad de la información que hay en ella <b>información en tiempo real de los buses</b> esto se evidencia en que a veces cuando ella no ha sabido qué bus tomar, no ha tenido con quién consultar; sin embargo, en la aplicación lo puede observar en tiempo real. Sugirió añadir una <b>opción de internacionalización con estilo similiar en la landing y la web</b> y una vista previa del mapa integrada. Confirmó que la interfaz es intuitiva, genera confianza por el contenido que hay en ella y la coherencia de las funcionalidades.
+  </tr>
+</tbody>
+</table>
+
+### Segmento Objetivo 2: Empresas de Transporte Urbano
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Piero</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Ricaldi Solís</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="./img/interview-companion1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em>Evidencia de validación de entrevista 3 - Piero Ricaldi.</em><br>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td>7:05 min</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>El entrevistado valoró positivamente todas las características de BusTrack, destacando que la plataforma es intuitiva, moderna y bien organizada. Le pareció excelente la funcionalidad de <b>rastreo en tiempo real de autobuses</b> y la <b>información clara sobre rutas</b>, características que considera muy útiles para optimizar sus desplazamientos diarios. Concluyó que la aplicación resuelve un problema real en el transporte urbano de Lima y <b>la recomendaría a otros usuarios</b> sin dudarlo.</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alejandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Barturen</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>30 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaAlejandro.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 2.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado destacó que BusTrack presenta una interfaz clara y fácil de utilizar, resaltando el monitoreo en tiempo real de las unidades como la funcionalidad más valiosa. Considera que las alertas y reportes ayudan a mejorar la supervisión de la flota y la toma de decisiones, contribuyendo a una mayor puntualidad y calidad del servicio. Además, indicó que implementaría una solución como BusTrack en su empresa y la recomendaría a otras organizaciones del sector por los beneficios que ofrece en la gestión operativa.
+  </tr>
+</tbody>
+</table>
+
+
 ### 6.3.3. Evaluaciones según heurísticas.
+**SITE O APP A EVALUAR:** BusTrack – Plataforma de Monitoreo de Transporte Público
+
+**METODOLOGÍA DE MEDICIÓN:**
+Para sustentar la evaluación heurística se realizaron pruebas de usabilidad con usuarios representativos del segmento objetivo. Se analizaron aspectos relacionados con la navegación, comprensión de la información, accesibilidad y facilidad de uso de la plataforma. Asimismo, se consideraron métricas de frecuencia del problema, impacto sobre la tarea y severidad según las heurísticas.
+
+**TAREAS EVALUADAS:**
+- Registro e inicio de sesión.
+- Consulta de rutas disponibles.
+- Visualización de buses en tiempo real.
+- Consulta de tiempos estimados de llegada.
+- Búsqueda de paraderos.
+- Gestión de rutas favoritas.
+- Visualización de notificaciones y alertas.
+- Navegación entre las principales funcionalidades de la plataforma.
+- Edición del perfil de usuario.
+- Consulta del historial de búsquedas.
+
+**Tabla Resumen de Hallazgos**
+| # | Problema identificado                                          | Severidad | Heurística afectada                              |
+| - | -------------------------------------------------------------- | --------- | ------------------------------------------------ |
+| 1 | Mensajes de error poco descriptivos y sin acciones correctivas | 3         | Ayuda para reconocer y recuperarse de errores    |
+| 2 | Ausencia de indicadores de carga durante operaciones críticas  | 3         | Visibilidad del estado del sistema               |
+| 3 | Navegación inconsistente entre usuarios pasajeros y empresas   | 3         | Correspondencia entre el sistema y el mundo real |
+| 4 | Validaciones de formularios únicamente al momento del envío    | 2         | Prevención de errores                            |
+| 5 | Problemas de accesibilidad en controles e iconografía          | 3         | Inclusive Design – Experiencias comparables      |
+| 6 | Falta de leyenda y contexto visual en mapas                    | 2         | Correspondencia entre el sistema y el mundo real |
+| 7 | Dashboard empresarial con escasa jerarquía visual              | 2         | Reconocimiento antes que recuerdo                |
+
+**Problema #1: Mensajes de error poco descriptivos**
+**Severidad:** 3
+
+**Heurística Violada:** Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores.
+
+**Descripción:** Durante procesos de autenticación, búsqueda de rutas y operaciones administrativas, se identificó el uso de mensajes genéricos como “Error al guardar” o “No se pudieron obtener datos”, sin proporcionar información suficiente para que el usuario comprenda la causa del problema o las acciones necesarias para solucionarlo.
+
+**Recomendación:** Implementar mensajes de error específicos y orientados a la acción, proporcionando información clara sobre la causa del problema y posibles pasos de recuperación.
+
+#### Problema #2: Ausencia de indicadores de carga
+
+**Severidad:** 3
+
+**Heurística Violada:** Visibilidad del estado del sistema.
+
+**Descripción:** Durante la búsqueda de rutas y la obtención de información desde servicios externos, la interfaz no presenta indicadores visuales que informen al usuario que la operación continúa en ejecución.
+
+**Recomendación:** Incorporar indicadores de carga, barras de progreso o mensajes informativos para mantener al usuario informado sobre el estado de la operación.
+
+#### Problema #3: Navegación inconsistente entre roles
+
+**Severidad:** 3
+
+**Heurística Violada:** Correspondencia entre el sistema y el mundo real.
+
+**Descripción:** Los flujos de navegación de pasajeros y empresas presentan diferencias significativas en estructura y organización, dificultando la comprensión de la ubicación actual del usuario dentro del sistema.
+
+**Recomendación:** Estandarizar la navegación y mostrar claramente el rol activo y la sección actual mediante elementos visuales persistentes
+
+#### Problema #4: Validación tardía de formularios
+
+**Severidad:** 2
+
+**Heurística Violada:** Prevención de errores.
+
+**Descripción:** Los formularios de autenticación y registro muestran errores únicamente después de intentar enviar la información, obligando al usuario a corregir los datos posteriormente.
+
+**Recomendación:** Incorporar validaciones en tiempo real y mensajes de ayuda contextual durante la introducción de datos.
+
+#### Problema #5: Accesibilidad limitada en algunos controles
+
+**Severidad:** 3
+
+**Heurística Violada:** Inclusive Design – Experiencias comparables.
+
+**Descripción:** Se identificó el uso de iconografía basada en emojis y controles con soporte limitado para lectores de pantalla, lo que afecta la experiencia de usuarios con discapacidades visuales.
+
+**Recomendación:** Incorporar etiquetas ARIA, textos alternativos y componentes accesibles compatibles con estándares WCAG 2.1.
+
+**Hallazgo Principal:** La principal oportunidad de mejora identificada corresponde a la comunicación del estado del sistema y la gestión de errores, ya que ambos aspectos afectan directamente la experiencia de uso y la percepción de confiabilidad de la plataforma. La incorporación de mecanismos de retroalimentación visual, mensajes descriptivos y validaciones en tiempo real contribuiría significativamente a mejorar la usabilidad general de BusTrack.
+
 ## 6.4. Auditoría de Experiencias de Usuario
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
 #### 6.4.1.2. Cronograma de auditoría realizada.
 #### 6.4.1.3. Contenido de auditoría realizada.
 ### 6.4.2. Auditoría recibida.
+
+La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y experiencia de usuario de la plataforma BusTrack mediante la aplicación de principios heurísticos. El equipo auditor analizó los principales flujos de navegación tanto para pasajeros como para empresas de transporte, identificando oportunidades de mejora relacionadas con la retroalimentación del sistema, validación de formularios, accesibilidad y consistencia de la navegación.
+
 #### 6.4.2.1. Información del grupo auditor.
+
+La auditoría fue realizada por el equipo auditor asignado durante el proceso de evaluación cruzada del proyecto.
+
+| Member                           |    Code    |
+| :------------------------------- | :--------: |
+| Lynn Jeeferzon Meza Camayo       | U20201C320 |
+| Walter Luis Fajardo Monrroy      | U202221632 |
+| Andrea Elizabeth Santur Tello    | U202310988 |
+| Joaquin Alberto Cuentas Peña     | U20201F788 |
+
 #### 6.4.2.2. Cronograma de auditoría recibida.
+
+La auditoría se desarrolló siguiendo las etapas de coordinación, planificación, ejecución y elaboración del informe final.
+
+| Fase          | Actividades                                                                                              | Fecha Inicio | Fecha Fin  |
+| ------------- | -------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| Recepción     | Coordinación con el equipo BusTrack y revisión preliminar de la aplicación desplegada.                   | 15/06/2026   | 15/06/2026 |
+| Planificación | Definición de escenarios de prueba, tareas críticas y heurísticas a evaluar.                             | 15/06/2026   | 15/06/2026 |
+| Ejecución     | Evaluación de los flujos de autenticación, búsqueda de rutas, visualización de mapas y gestión de flota. | 14/06/2026   | 14/06/2026 |
+| Reporte       | Documentación de hallazgos, asignación de severidades y formulación de recomendaciones.                  | 14/06/2026   | 14/06/2026 |
+
 #### 6.4.2.3. Contenido de auditoría recibida.
+
+Durante la auditoría se evaluaron las funcionalidades principales de BusTrack, incluyendo el proceso de inicio de sesión, búsqueda de rutas, visualización de mapas, consulta de notificaciones, gestión del perfil de usuario y administración de flotas para empresas de transporte.
+
+Como resultado, se identificaron los siguientes hallazgos principales:
+
+| # | Problema identificado                                             | Severidad | Heurística violada                                      |
+| - | ----------------------------------------------------------------- | --------- | ------------------------------------------------------- |
+| 1 | Ausencia de indicadores de carga durante la búsqueda de rutas.    | 3         | Visibilidad del estado del sistema                      |
+| 2 | Mensajes de error poco descriptivos y sin acciones correctivas.   | 3         | Reconocimiento, diagnóstico y recuperación ante errores |
+| 3 | Validación de formularios únicamente después del envío.           | 2         | Prevención de errores                                   |
+| 4 | Inconsistencias de accesibilidad en algunos componentes visuales. | 2         | Diseño inclusivo                                        |
+| 5 | Falta de contexto visual en algunos elementos del mapa.           | 2         | Correspondencia entre el sistema y el mundo real        |
+
+El equipo auditor destacó que la plataforma presenta una estructura funcional adecuada y una navegación comprensible para la mayoría de las tareas principales; sin embargo, recomendó mejorar los mecanismos de retroalimentación y accesibilidad para fortalecer la experiencia de usuario.
+
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+Tras analizar las observaciones recibidas, el equipo de desarrollo de BusTrack implementó una serie de mejoras orientadas a incrementar la usabilidad y accesibilidad de la plataforma.
+
+Entre las principales modificaciones realizadas se encuentran la incorporación de indicadores visuales de carga durante las búsquedas de rutas y consultas al sistema, la mejora de los mensajes de error mediante descripciones más específicas y orientadas a la acción, la implementación de validaciones más claras en formularios de autenticación y registro, y la optimización de elementos visuales para favorecer la accesibilidad de los usuarios.
+
+Asimismo, se realizaron ajustes en la interfaz de mapas para mejorar la comprensión de la información mostrada, incorporando elementos de apoyo visual que facilitan la interpretación de rutas, ubicaciones y resultados de búsqueda. Estas mejoras permitieron atender los hallazgos identificados durante la auditoría y fortalecer la experiencia general de los usuarios de BusTrack.
+
+Lo único que tendrías que reemplazar son los **nombres/códigos del grupo auditor** y las **fechas reales** cuando las tengas. Todo lo demás queda consistente con BusTrack, el frontend que analizaste y las heurísticas que ya documentaste.
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
@@ -3681,6 +4414,11 @@ Preparación para despliegue
 ![evidencia](./img/evidencias-continuas-delivery-2.png)
 
 ## 7.3. Continuous deployment
+
+El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen
+automáticamente desde el desarrollo hasta la producción, garantizando que cada nueva versión sea
+entregada sin intervención manual, siempre y cuando pase todas las pruebas de validación.
+
 ### 7.3.1. Tools and Practices.
 
 Para el desarrollo y despliegue continuo de BusTrack, se utilizaron distintas herramientas y prácticas de integración continua (CI) y despliegue continuo (CD), las cuales permiten automatizar procesos de validación, compilación y publicación del sistema. Estas herramientas contribuyen a mantener la estabilidad del proyecto, mejorar la colaboración entre los integrantes del equipo y reducir errores durante el desarrollo.
@@ -3830,31 +4568,445 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 
 
 ## 7.4. Continuous Monitoring
+
+El monitoreo continuo de la aplicación BusTrack API se implementa a través de las herramientas nativas de Monster ASP.NET. Esta sección describe la estrategia de monitoreo, alertas y notificaciones para asegurar la disponibilidad y rendimiento del servicio en producción.
+
 ### 7.4.1. Tools and Practices
+
+
+Se implementaron las siguientes herramientas y prácticas de monitoreo en Monster ASP.NET:
+ 
+- **Panel de Control Monster ASP:** Interfaz centralizada que proporciona acceso a todos los servicios de monitoreo y configuración del hosting.
+- **Event Logs (Registros de Eventos):** Captura eventos del sistema a nivel de aplicación, incluyendo arranques, paradas, fallos de proceso y reintentos automáticos.
+- **ASP.NET Core Debug:** Logs detallados de la aplicación ASP.NET Core, incluyendo excepciones, traces de ejecución y errores de configuración.
+- **HttpPlatform Debug:** Información sobre la capa HTTP y el servidor web IIS que aloja la aplicación.
+
+**Prácticas implementadas:**
+ 
+- Habilitación del logging de ASP.NET Core en modo debug para capturar excepciones detalladas durante el startup
+- Revisión diaria de Event Logs para identificar patrones de fallos y anomalías
+- Configuración de variables de entorno `ASPNETCORE_ENVIRONMENT=Production` para comportamiento optimizado
+- Monitoreo de Application Pool para detectar crashes y reintentos automáticos
+---
+
 ### 7.4.2. Monitoring Pipeline Components
+
+El pipeline de monitoreo en Monster ASP se compone de los siguientes componentes:
+ 
+| Componente | Responsabilidad | Fuente de Datos |
+|---|---|---|
+| Application Pool | Ejecución de procesos ASP.NET | IIS/Monster ASP |
+| Event Logs | Registra eventos del sistema | Logs de Windows/IIS |
+| ASP.NET Core Debug | Captura excepciones y traces | Stdout de la aplicación |
+| Quick Statistics | Métricas en tiempo real | Dashboard Monster ASP |
+| Access Logs (W3C) | Registra peticiones HTTP | IIS Logs |
+
+**Descripción del flujo de monitoreo:**
+ 
+- La aplicación ASP.NET Core se ejecuta dentro de un Application Pool en IIS
+- Monster ASP captura eventos de lifecycle (start, stop, crash, restart) en Event Logs
+- Si se habilita ASP.NET Core Debug, se capturan logs de salida stdout hacia archivos en el servidor
+- El panel de Monster ASP muestra Quick Statistics: uptime del sitio, cantidad de errores 404/500, peticiones GET/POST/HEAD
+- Los registros de acceso W3C registran todas las peticiones HTTP con status codes, latencia y datos de cliente
+---
+
 ### 7.4.3. Alerting Pipeline Components
+
+La estrategia de alertas en Monster ASP se basa en la detección y análisis de eventos críticos:
+ 
+- **Alertas de Disponibilidad:** El Application Pool envía alertas cuando se produce un crash (exit code 0xffffffff), fatal communication error con Windows Process Activation Service, o reciclado inesperado
+- **Alertas de Errores HTTP:** Quick Statistics muestra conteo de errores 404 (no encontrado) y 500 (error del servidor), indicadores de configuración incorrecta o fallos de lógica de negocio
+- **Alertas de Conectividad:** Connection reset o timeout en Event Logs indican problemas de conexión a la base de datos MySQL
+- **Condiciones monitoreadas:** Site uptime, AppPool uptime, conteo de errores HTTP, comportamiento de procesos (process exit code), salud del worker process
+
 ### 7.4.4. Notification Pipeline Components.
+
+Monster ASP.NET ofrece múltiples canales de notificación para alertar al equipo de operaciones:
+ 
+- **Panel de Control:** Interfaz web accesible 24/7 que muestra el estado actual del Application Pool, número de errores y estadísticas de tráfico
+- **Event Logs:** Registros detallados disponibles por 7 días con timestamp, tipo de evento (SystemLog/ApplicationLog), y descripción del problema
+- **ASP.NET Core Debug Output:** Archivo de log que captura stdout de la aplicación, útil para debugging de excepciones no controladas
+- **Alertas automáticas:** Monster ASP puede enviar notificaciones por email cuando ocurren eventos críticos como Application Pool Restart o Fatal Communication Error
+- **Integración con herramientas externas:** Webhooks y logs exportables para integración con sistemas de ticketing (Jira) o plataformas de observabilidad como Datadog
+
+![monitoring 1](./img/monitoring-1.png)
+![monitoring 2](./img/monitoring-2.png)
 
 # Part III: Experiment-Driven Lifecycle
 # Capítulo VIII: Experiment-Driven Development
 ## 8.1. Experiment Planning
 ### 8.1.1. As-Is Summary.
+
+La aplicación actual de BusTrack se centra en ofrecer una plataforma para la consulta de rutas y el monitoreo de transporte público en Lima Metropolitana, proporcionando funcionalidades como la gestión de perfiles (pasajeros y empresas), visualización de paraderos y un panel de control operativo para las flotas. Sin embargo, el rendimiento en la carga del mapa interactivo y la actualización de ubicaciones en tiempo real suele ser inconsistente en dispositivos móviles con conexión inestable, lo que afecta la experiencia del usuario en movimiento. La retención de usuarios, actualmente, depende únicamente de la consulta pasiva de datos.
+
+**Problemas identificados:**
+* **Rendimiento:** La aplicación web (PWA) experimenta latencia al renderizar múltiples unidades de transporte simultáneamente en el mapa, lo que puede llevar a la frustración del pasajero que requiere información con inmediatez.
+* **Usabilidad:** La falta de un modo oscuro o de alto contraste limita la comodidad visual y la legibilidad para los usuarios que interactúan con la aplicación en la calle, ya sea bajo la luz directa del sol o en paraderos con poca iluminación.
+* **Experiencia del usuario (UX):** La interfaz táctil presenta inconsistencias menores en ciertos tamaños de pantalla de dispositivos móviles, dificultando la navegación rápida con una sola mano (esencial para un pasajero en tránsito).
+* **Funcionalidad limitada (Engagement):** La plataforma carece de un sistema que fomente la colaboración activa de los pasajeros (por ejemplo, reportar buses llenos o tráfico), limitando el crecimiento de la comunidad y la precisión de los datos colaborativos.
+
+**Objetivos de mejora:** Para abordar los problemas identificados y escalar la plataforma BusTrack en los próximos Sprints, se establecen los siguientes objetivos:
+* **Optimización del rendimiento:** Reducir los tiempos de carga del mapa y optimizar las peticiones a la API, garantizando una actualización fluida de la ubicación de los buses.
+* **Expansión de la audiencia:** Introducir soporte multilingüe (inglés) para facilitar el uso de la aplicación a turistas o extranjeros que buscan navegar por el sistema de transporte urbano limeño.
+* **Implementación de gamificación:** Introducir elementos de gamificación y recompensas para incentivar a los pasajeros a reportar incidencias en tiempo real (tráfico, estado del paradero, ocupación del bus), aumentando el compromiso (engagement) y enriqueciendo los datos del sistema.
+
+---
+
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
+
+**Assumptions:**
+* **Indicador de ocupación de unidades:** Se asume que los pasajeros cambiarían su decisión de viaje (esperar el siguiente bus o tomar una ruta alternativa) si supieran de antemano que la unidad que se aproxima está a su máxima capacidad. 
+* **Traducciones:** Se asume que una parte de la audiencia potencial incluye a turistas y residentes extranjeros en Lima, por lo que disponer de la plataforma en inglés facilitaría su navegación en el complejo sistema de transporte urbano.
+* **Reportes colaborativos:** Se asume que los usuarios están dispuestos a reportar incidencias en tiempo real (tráfico intenso, paraderos inseguros o buses llenos) si se les proporciona una herramienta rápida, lo que aumentaría su sentido de comunidad y participación.
+* **Notificaciones predictivas:** Se asume que los usuarios desean recibir alertas automáticas basadas en sus rutinas (por ejemplo, retrasos en su ruta habitual 15 minutos antes de su hora típica de salida), mejorando la gestión de su tiempo.
+* **Analítica avanzada para empresas:** Se asume que las empresas de transporte urbano tienen la necesidad de optimizar sus operaciones y estarían dispuestas a adquirir servicios premium para obtener reportes detallados sobre el rendimiento de su flota.
+
+**Knowledge Gaps:**
+* **Precisión de la ocupación:** No sabemos qué nivel de precisión técnica se requiere para que el pasajero confíe en el indicador de ocupación (bajo, medio, lleno) ni si depender de los reportes del chofer será suficiente en horas punta. 
+* **Demografía de usuarios extranjeros:** Se requiere mayor investigación sobre el volumen real de turistas o extranjeros que utilizan el transporte público convencional en Lima Metropolitana para justificar el esfuerzo de internacionalización (i18n).
+* **Incentivos para la colaboración:** Necesitamos datos sobre qué elementos (gamificación, puntos, insignias o simple altruismo) motivan realmente a los pasajeros limeños a reportar incidentes de tráfico o estado de los buses.
+* **Frecuencia e impacto de notificaciones:** No hay suficiente información sobre cuál es el límite entre una notificación predictiva útil y una que el usuario perciba como intrusiva (spam), afectando su satisfacción.
+* **Disposición de pago en el sector B2B:** Se carece de un análisis exhaustivo que confirme qué métricas operativas específicas convencerían a los administradores de flota de pagar por un panel de control avanzado.
+
+**Ideas:**
+* **Indicador de estado de capacidad:** Implementar un indicador visual dinámico (verde, amarillo, rojo) en la tarjeta de detalles del bus que muestre el nivel estimado de pasajeros a bordo en tiempo real.
+* **Desarrollo de un módulo de reportes rápidos:** Crear un botón flotante y accesible en la vista del mapa que permita a los pasajeros notificar el estado del bus con un solo toque, promoviendo la recolección de datos colaborativos.
+* **Análisis de competidores y casos de estudio:** Examinar a profundidad cómo aplicaciones como Waze, Moovit o TuRuta aplican la gamificación para mantener actualizados sus datos de tráfico y retener a sus usuarios.
+* **Entrevistas de validación B2B:** Programar reuniones con empresas de transporte urbano para presentar mock-ups de reportes analíticos avanzados y evaluar su interés comercial y disposición de pago.
+
+**Claims:**
+* **Optimización de la planificación de viaje:** Se afirma que mostrar el nivel de ocupación reducirá drásticamente la frustración del usuario en el paradero, permitiéndole tomar decisiones informadas sobre abordar, esperar o buscar otra ruta. 
+* **Aumento de precisión y participación:** Se postula que integrar reportes generados por los usuarios (crowdsourcing) no solo aumentará la participación activa en BusTrack, sino que hará que las estimaciones de llegada (ETA) sean mucho más precisas frente a imprevistos.
+* **Reducción proactiva del estrés:** Se afirma que un sistema de notificaciones predictivas resultará en una mayor satisfacción del pasajero, ya que le permitirá tomar decisiones (como salir más tarde de casa) antes de llegar a enfrentarse a la espera en el paradero.
+* **Sostenibilidad y escalabilidad del negocio:** Se sostiene que la creación de un módulo de analítica y reportes operativos para empresas de transporte fortalecerá el modelo B2B, generando nuevas fuentes de ingresos y fidelizando a las líneas de transporte con la plataforma.
+
+---
+
 ### 8.1.3. Experiment-Ready Questions.
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?** | 7 - Es una función de alto valor, pero su eficacia depende de la precisión de los datos operativos. | 5 - Riesgo medio, ya que requiere sincronización de datos de capacidad desde la unidad en tiempo real. | 8 - Impacto directo en la toma de decisiones del pasajero en el paradero. | 9 - Muy alto interés para usuarios que viajan en horas punta hacia el trabajo o universidad. | **29** |
+| **¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?** | 6 - Puede atraer a turistas y expatriados, pero depende del volumen de extranjeros en buses urbanos. | 3 - Riesgo medio debido al mantenimiento continuo de los archivos de internacionalización (i18n). | 6 - Potencial moderado para expandir el mercado a usuarios no hispanohablantes. | 5 - Interesante principalmente para un nicho específico de mercado. | **20** |
+| **¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?** | 8 - Modelos similares en transporte han demostrado éxito al fomentar la comunidad. | 5 - Riesgo medio por la necesidad de moderar datos falsos y la complejidad técnica en tiempo real. | 9 - Mejora drásticamente la precisión del ETA y la participación activa del usuario. | 8 - Los pasajeros suelen tener alto interés en reportar tráfico o buses demasiado llenos. | **30** |
+| **¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?** | 9 - Alta, ya que previene la incertidumbre antes de que el pasajero salga de su casa. | 4 - Riesgo moderado por el consumo de recursos en el servidor (WebSockets/Push). | 9 - Gran impacto en la satisfacción diaria y en la fidelización a largo plazo. | 9 - Fundamental para el perfil de estudiante y trabajador que requiere puntualidad. | **31** |
+| **¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?** | 7 - Se basa en la necesidad real de las empresas por optimizar costos y tiempos operativos. | 4 - Riesgo medio debido a la resistencia tecnológica inicial de algunos transportistas. | 10 - Alto potencial de monetización (SaaS B2B) y retención de empresas de transporte. | 8 - Alto interés comercial por parte de administradores y supervisores de flota. | **29** |
+
+---
+
 ### 8.1.4. Question Backlog.
+
+| Prioridad (1,2,3,5,8) | Pregunta |
+| :---: | :--- |
+| **8** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **8** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **5** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **5** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **2** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+
+---
+
 ### 8.1.5. Experiment Cards.
+
+**Question:** ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?
+* **Why:** Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario.
+* **What:** Desplegar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real y los detalles de la flota. La data se gestionará mediante actualizaciones del operador desde su terminal o a través de validaciones colaborativas de los pasajeros que ya se encuentran en tránsito.
+* **Hypothesis:** Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad.
+
+**Question:** ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?
+* **Why:** Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA).
+* **What:** Crear un botón flotante de "Reporte Rápido" en la vista del mapa que permita enviar alertas en tiempo real. Integrar elementos de gamificación (insignias o niveles) para recompensar a los usuarios que más contribuyan con información validada.
+* **Hypothesis:** Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%.
+
+**Question:** ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?
+* **Why:** La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup.
+* **What:** Integrar un sistema de internacionalización (i18n) para traducir la interfaz, menús, estados del bus y alertas predictivas al idioma inglés, manteniendo un selector de idioma fácilmente accesible en la barra de navegación.
+* **Hypothesis:** Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses.
+
+**Question:** ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?
+* **Why:** Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada.
+* **What:** Desarrollar un servicio en el backend que cruce las rutas favoritas del pasajero con incidentes en tiempo real, enviando alertas push automáticas 15 minutos antes del horario habitual de viaje registrado por el usuario.
+* **Hypothesis:** Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%.
+
+**Question:** ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?
+* **Why:** Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto.
+* **What:** Implementar un módulo premium en el portal de empresas que genere reportes gráficos e históricos automatizados sobre puntualidad, tiempos de ciclo, cantidad de alertas generadas y eficiencia por unidad.
+* **Hypothesis:** Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%.
+
 ## 8.2. Experiment Design
 ### 8.2.1. Hypotheses.
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Belief** | Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario. |
+| **Hypothesis** | Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad. |
+| **Null Hypothesis** | La integración de un indicador de nivel de ocupación en los buses no tendrá un impacto significativo en la adopción de rutas alternativas ni en la percepción de la experiencia de movilidad de los usuarios. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Belief** | Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA). |
+| **Hypothesis** | Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%. |
+| **Null Hypothesis** | La implementación de un sistema de reportes colaborativos no generará un aumento significativo en las interacciones activas de la app ni mejorará la percepción de precisión de los datos. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Belief** | La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup. |
+| **Hypothesis** | Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses. |
+| **Null Hypothesis** | La inclusión de la traducción al inglés en la plataforma no tendrá un impacto significativo en el incremento de registros de nuevos usuarios extranjeros o de habla inglesa. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Belief** | Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada. |
+| **Hypothesis** | Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%. |
+| **Null Hypothesis** | La integración de un sistema de notificaciones predictivas sobre retrasos no incrementará de forma significativa la retención diaria de usuarios ni su índice de satisfacción general. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Belief** | Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto. |
+| **Hypothesis** | Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%. |
+| **Null Hypothesis** | La inclusión de un panel de analítica avanzada no tendrá un impacto significativo en la tasa de conversión hacia planes de pago ni en el uso diario del módulo por parte de las empresas de transporte. |
+
 ### 8.2.2. Domain Business Metrics
+
+Esta sección sirve para alinear la medición de nuestros experimentos. Su objetivo es asegurar que todas las hipótesis de experimentación se vinculen directamente con los objetivos de negocio a través de métricas concretas, medibles y predefinidas. Esto mitiga el riesgo de tomar decisiones basadas en vanity metrics o datos irrelevantes.
+
+El equipo a definido todas las métricas relevantes para el dominio de negocio que serán utilizadas para evaluar los experimentos. Cada métrica esta descrita con su fórmula de cálculo, técnica de recolección y meta deseada. **Todas las Experiment Cards solo podrán hacer referencia a métricas definidas en esta sección.** No se permitirán métricas ad-hoc o no definidas previamente.
+
+---
+
+#### 1. Daily Active Users (DAU) Retention Rate (Tasa de Retención de Usuarios Diarios)
+Esta métrica evalúa el nivel de fidelización y recurrencia de los pasajeros, vinculada a los experimentos de notificaciones predictivas.
+* **Fórmula de cálculo:** `(Usuarios activos diarios al final del periodo evaluado / Usuarios activos diarios al inicio del periodo) * 100`
+* **Técnica de recolección:** Herramientas de analítica de producto (ej. Google Analytics 4 o Mixpanel) rastreando el evento de `login_success` o `app_open` diariamente.
+* **Meta deseada:** Incrementar la retención en un **30%** tras la implementación de las notificaciones sobre retrasos.
+
+#### 2. Crowdsourcing Engagement Rate (Tasa de Interacción Colaborativa)
+Mide la disposición de los pasajeros a pasar de ser consumidores pasivos a generadores de datos dentro de la plataforma (reporte de tráfico y accidentes).
+* **Fórmula de cálculo:** `(Usuarios que emiten o confirman un reporte / Total de usuarios activos diarios) * 100`
+* **Técnica de recolección:** Seguimiento de eventos (*Event Tracking*) en el frontend asociados a clics en el botón "Reporte Rápido" y confirmación de recepción en la base de datos (Backend).
+* **Meta deseada:** Lograr un aumento del **40%** en la cantidad de interacciones activas comunitarias.
+
+#### 3. B2B Conversion Rate: Free to Premium (Tasa de Conversión B2B)
+Métrica clave para validar la monetización de la plataforma, evaluando si el panel de analítica avanzada es lo suficientemente valioso para las empresas de transporte.
+* **Fórmula de cálculo:** `(Número de empresas que adquieren el plan Premium / Total de empresas registradas en el plan de monitoreo gratuito) * 100`
+* **Técnica de recolección:** Consultas a la base de datos transaccional (MySQL) filtrando por los cambios en el campo `subscription_tier` de la tabla de empresas.
+* **Meta deseada:** Alcanzar un aumento del **25%** en la tasa de conversión hacia los planes de pago.
+
+#### 4. Alternative Route Adoption Rate (Tasa de Adopción de Rutas Alternativas)
+Mide el impacto en la toma de decisiones del pasajero cuando se le presenta información sobre la capacidad/aforo de un bus.
+* **Fórmula de cálculo:** `(Usuarios que inician una navegación hacia una ruta B tras consultar el aforo de la ruta A / Total de usuarios que visualizan el indicador de aforo) * 100`
+* **Técnica de recolección:** Análisis de flujos de navegación (*User Flows*) mediante eventos personalizados que capturen el cambio de búsqueda de ruta en la misma sesión.
+* **Meta deseada:** Que la adopción de rutas alternativas crezca un **20%** durante los periodos de alta demanda (horas punta).
+
+#### 5. Customer Satisfaction Score (CSAT)
+Permite cuantificar la percepción de valor y satisfacción del usuario final respecto a nuevas funcionalidades operativas (notificaciones, aforo, reportes).
+* **Fórmula de cálculo:** `(Total de valoraciones positivas [4-5 estrellas] / Total de respuestas a la encuesta) * 100`
+* **Técnica de recolección:** Micro-encuestas *in-app* (pop-ups no intrusivos) disparadas tras el uso exitoso de una nueva funcionalidad.
+* **Meta deseada:** Alcanzar un **70%** (o más) de respuestas que cataloguen las nuevas funcionalidades como factores críticos positivos en su experiencia de movilidad.
+
+#### 6. Language-Specific Acquisition Rate (Tasa de Adquisición por Idioma)
+Vinculada a los experimentos de internacionalización (i18n), evalúa el crecimiento de mercado entre usuarios no hispanohablantes.
+* **Fórmula de cálculo:** `(Nuevos registros con configuración de navegador en inglés / Total de nuevos registros globales en el mismo periodo) * 100`
+* **Técnica de recolección:** Captura del parámetro `navigator.language` desde el frontend al momento del registro y su almacenamiento en el perfil del usuario en la base de datos.
+* **Meta deseada:** Aumento del **10%** en la proporción de registros de usuarios extranjeros en un lapso de 3 meses.
+
 ### 8.2.3. Measures.
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Measure** | Evaluar el porcentaje de adopción de rutas alternativas en horas punta utilizando herramientas de analítica web y móvil. Complementar con encuestas de satisfacción in-app (CSAT) para medir la percepción de utilidad y reducción de estrés de los pasajeros en sus traslados. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Measure** | Contabilizar la cantidad de reportes de incidencias generados por los usuarios diarios activos (DAU) mediante eventos de clics en el botón de "Reporte Rápido". Comparar la precisión percibida de los tiempos estimados (ETA) antes y después del lanzamiento mediante encuestas a la comunidad. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Measure** | Monitorear la tasa de nuevos registros y la retención de usuarios cuyos navegadores o dispositivos estén configurados en idioma inglés. Utilizar herramientas de analítica para comparar el tráfico web y móvil proveniente de turistas o residentes extranjeros antes y después de la internacionalización. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Measure** | Medir la tasa de apertura (Open Rate) y la tasa de interacción (Click-Through Rate) de las notificaciones push. Analizar las métricas de retención de usuarios diarios y mensuales (DAU/MAU) para identificar si el uso de la app incrementa tras la recepción de estas alertas personalizadas. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Measure** | Rastrear la tasa de conversión (Conversion Rate) de empresas de transporte desde el plan básico gratuito hacia los planes de pago. Monitorear el tiempo de sesión promedio y la frecuencia de acceso al nuevo módulo de reportes gráficos e históricos en el portal corporativo. |
+
 ### 8.2.4. Conditions.
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
+| **Condición Experimental** | La adopción de rutas alternativas aumentará en un 20% tras la implementación del indicador de nivel de ocupación, medido durante los periodos de alta demanda. |
+| **Condición de Control** | No habrá un aumento significativo en la adopción de rutas alternativas tras la implementación del indicador de nivel de ocupación. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
+| **Condición Experimental** | La cantidad de interacciones activas en la app aumentará en un 40% y la percepción de precisión de los datos en los retrasos mejorará en un 25% tras la habilitación del sistema de reportes. |
+| **Condición de Control** | No habrá un aumento significativo en las interacciones activas ni en la percepción de precisión tras la implementación del sistema de reportes colaborativos. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Condición Experimental** | Se espera un aumento del 10% en el número de nuevos registros de usuarios con configuración de navegador en inglés durante los primeros tres meses tras implementar la traducción. |
+| **Condición de Control** | No habrá un aumento significativo en el número de registros de usuarios de habla inglesa tras la implementación de la traducción. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
+| **Condición Experimental** | La retención de usuarios diarios (DAU) incrementará en un 30% y la satisfacción general del usuario subirá un 20% después de implementar el sistema de notificaciones predictivas. |
+| **Condición de Control** | No habrá un incremento significativo en la retención de usuarios diarios ni en el índice de satisfacción tras la implementación de las notificaciones predictivas. |
+
+<br>
+
+| | |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
+| **Condición Experimental** | La tasa de conversión de empresas hacia planes de pago aumentará en un 25% y el uso diario del módulo administrativo crecerá un 50% tras la inclusión del panel de analítica avanzada. |
+| **Condición de Control** | No habrá un aumento significativo en la tasa de conversión a planes de pago ni en el uso del módulo corporativo tras la implementación del panel de analítica avanzada. |
+
 ### 8.2.5. Scale Calculations and Decisions.
+
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis en el proyecto BusTrack. Cada hipótesis se asocia con un indicador de éxito: se considera *ideal* cuando la métrica alcanza plenamente el objetivo, *aceptable* cuando está entre el mínimo y el ideal, y *desfavorable* si queda por debajo del mínimo, requiriendo así una revisión. Un nivel *excelente* se define como cuando el valor supera el ideal en un 25% o más, indicando un éxito significativo. Este enfoque permite tomar decisiones fundamentadas en métricas para validar o ajustar las hipótesis del proyecto.
+
+| Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Creemos que la integración de un indicador de nivel de ocupación en los buses mejorará la planificación de viaje. Sabremos que esto es cierto cuando observemos que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda. | Implementar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real para que los pasajeros gestionen su tiempo con autonomía. | | | X | |
+| Creemos que implementar un sistema de reportes colaborativos (crowdsourcing) mejorará la precisión de los datos y el engagement. Sabremos que esto es cierto cuando observemos un aumento del 40% en interacciones activas y un 25% de mejora en percepción de precisión. | Integrar un botón flotante de "Reporte Rápido" en el mapa que permita enviar alertas de tráfico o incidentes, fomentando la participación comunitaria. | | | | X |
+| Creemos que agregar la traducción al inglés de la plataforma aumentará la base de usuarios. Sabremos que esto es cierto cuando observemos un aumento del 10% en los registros de usuarios con configuración en inglés en tres meses. | Implementar un sistema de internacionalización (i18n) para traducir la interfaz y alertas, permitiendo a turistas y residentes extranjeros acceder al contenido. | | X | | |
+| Creemos que la integración de un sistema de notificaciones predictivas sobre retrasos mejorará la retención de usuarios. Sabremos que esto es cierto cuando observemos un incremento del 30% en la retención de usuarios diarios (DAU) y un 20% en satisfacción. | Desarrollar un servicio en el backend que cruce rutas favoritas con incidentes en tiempo real para enviar alertas push automáticas preventivas al usuario. | | | X | |
+| Creemos que la inclusión de un panel de analítica avanzada aumentará la adopción corporativa para empresas de transporte. Sabremos que esto es cierto cuando observemos un aumento del 25% en la tasa de conversión a planes de pago y un 50% en el uso diario. | Añadir un módulo *premium* en el portal de empresas que genere reportes gráficos e históricos sobre puntualidad, tiempos de ciclo y eficiencia operativa. | | | | X |
+
 ### 8.2.6. Methods Selection.
+
+Para llevar a cabo la validación de los experimentos en BusTrack, es fundamental seleccionar herramientas de medición y análisis que permitan recopilar datos precisos sobre el comportamiento de los pasajeros y el rendimiento de la plataforma. A continuación, se presenta una tabla comparativa con las herramientas seleccionadas para este fin:
+
+| Criterio | Google Analytics | Catchpoint | RedLine13 | Lighthouse |
+| :--- | :--- | :--- | :--- | :--- |
+| **Precio** | Versión gratuita muy completa (GA4), ideal para startups. | Modelo por suscripción de pago, aunque ofrece periodos de prueba gratuitos. | Cuenta con una capa gratuita funcional, sujeta a ciertas limitaciones de escala. | Totalmente gratuito, integrado en las herramientas de desarrollo del navegador. |
+| **Capacidad de Análisis** | Monitoreo profundo de la interacción, flujos de navegación y eventos específicos de los usuarios (pasajeros y empresas). | Supervisión integral del rendimiento de la plataforma y de la experiencia de usuario simulando distintos entornos y redes. | Especializado en la ejecución de pruebas de estrés y rendimiento de aplicaciones bajo alta concurrencia. | Auditoría técnica enfocada en la experiencia de usuario (UX), accesibilidad y métricas clave de carga (Core Web Vitals). |
+| **Sencillez de Uso** | Curva de aprendizaje amigable, con dashboards intuitivos y métricas fáciles de interpretar. | Interfaz más avanzada y técnica, orientada a un análisis de red muy detallado y minucioso. | Provee reportes de rendimiento directos, combinando resúmenes ejecutivos con datos técnicos profundos. | Entrega resultados mediante un sistema de puntuación visual muy claro (0-100) fácil de asimilar. |
+| **Ventajas Principales** | Excelente para rastrear el éxito de las hipótesis, evaluar la retención y generar reportes integrables con otras plataformas. | Análisis en tiempo real de la latencia y disponibilidad desde múltiples ubicaciones, clave para el monitoreo de flotas de buses. | Permite simular picos de tráfico masivos (ej. horas punta de transporte) para asegurar que los servidores no colapsen. | Proporciona sugerencias prácticas y directas para optimizar la interfaz y acelerar la carga de la web app en dispositivos móviles. |
+
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+
 ### 8.2.8. Web and Mobile Tracking Plan.
+
+Para BusTrack, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la movilidad urbana de los pasajeros, potenciar la participación comunitaria (crowdsourcing) y aumentar la adopción de nuestros planes B2B por parte de las empresas de transporte. A medida que avancemos hacia la etapa final de los experimentos, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
+
+#### 1. Implementación Inicial:
+
+Durante esta fase, nos enfocaremos en el lanzamiento de las nuevas funcionalidades (indicadores de aforo, reportes colaborativos, notificaciones predictivas, etc.) y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+
+**Recopilación de Datos:**
+
+*   **Métricas de Uso:** Se recopilarán datos sobre el uso general de la aplicación, incluyendo el número de usuarios activos diarios (DAU), la duración de las sesiones durante las horas punta, y las tasas de conversión de empresas hacia el panel de analítica avanzada (Premium).
+*   **Interacciones de los Usuarios:** Se registrarán las interacciones de los pasajeros con las nuevas características, como la cantidad de clics en el botón de "Reporte Rápido", la consulta de rutas offline, el uso del indicador de aforo, y la participación en el sistema de recompensas (gamificación).
+*   **Feedback de Usuarios:** A través de encuestas in-app (CSAT) y herramientas de retroalimentación no intrusivas, se recogerán opiniones sobre la percepción de precisión en los tiempos estimados (ETA) y la utilidad de las notificaciones sobre retrasos.
+
+**Análisis Comparativo:**
+
+Se compararán los datos obtenidos durante esta fase de prueba con los datos históricos de la plataforma (estado *As-Is*) antes de la implementación de los experimentos, para evaluar el impacto inmediato de las mejoras en la reducción de la incertidumbre operativa.
+
+#### 2. Seguimiento Continuo:
+
+Después de la implementación inicial y validación de las hipótesis, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento a largo plazo y realizar ajustes dinámicos según sea necesario.
+
+**Recopilación de Datos:**
+
+*   **Métricas en Tiempo Real:** Se utilizarán herramientas de analítica web y móvil (como Google Analytics 4) para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar patrones de tráfico, horarios de mayor congestión y adopción de rutas alternativas.
+*   **Segmentación de Usuarios:** Los datos se segmentarán por tipo de usuario (Pasajeros recurrentes, Turistas/Extranjeros usando la interfaz en inglés, Administradores de flota y Supervisores) para entender mejor cómo cada grupo interactúa con sus módulos específicos en la plataforma.
+*   **Tasa de Retención:** Se medirá la retención de usuarios a lo largo del tiempo (a 7, 14 y 30 días) para evaluar la efectividad de las notificaciones predictivas y la gamificación en mantener a los pasajeros comprometidos y fidelizados con la aplicación.
+
+**Evaluación y Ajustes:**
+
+*   **Informes Periódicos:** Se generarán informes ejecutivos mensuales que resuman los hallazgos del seguimiento, comparando los resultados con las "Domain Business Metrics" definidas, e incluyendo recomendaciones para ajustes operativos.
+*   **Iteración Basada en Datos:** Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de la comunidad, asegurando que el algoritmo de ETA y el panel de las empresas evolucionen para satisfacer mejor las necesidades reales de movilidad y gestión.
+
+Este enfoque asegurará que BusTrack continúe evolucionando en función de datos empíricos y permita tomar decisiones informadas para transformar de manera positiva la experiencia del transporte público en Lima, tanto para los ciudadanos como para las empresas operadoras.
+
+
+
+
 ## 8.3. Experimentation
 ### 8.3.1. To-Be User Stories.
+
+A continuación, se presentan las nuevas historias de usuario desarrolladas para implementar las funcionalidades validadas en la fase de experimentación del producto BusTrack. Estas historias adoptan el prefijo **UA** (*User Story de Ajuste/Aumento*) para distinguirse del backlog inicial del proyecto.
+
+#### Registro de Nuevas Épicas e Historias de Usuario
+| Epic ID | Epic (Épica) | User Story ID | User Story (Historia de Usuario) |
+| :---: | :--- | :---: | :--- |
+| **E05** | Gestión de Monitoreo y Capacidad | UA01 | Visualización del indicador de ocupación de la unidad |
+| **E08** | Comunidad | UA02 | Reporte colaborativo de incidencias en tiempo real |
+| **E09** | Accesibilidad e Internacionalización | UA03 | Soporte multilingüe e interfaz en idioma inglés |
+| **E10** | Alertas y Notificaciones Inteligentes | UA04 | Notificaciones predictivas sobre retrasos de rutas |
+| **E11** | Inteligencia de Negocios B2B | UA05 | Panel analítico avanzado para control de flotas |
+
+#### Especificación Detallada de Historias de Usuario (Formato BDD)
+
+| Epic / Story ID | Título / Detalles | Descripción (Format) | Criterios de Aceptación (Gherkin Scenarios) |
+| :---: | :--- | :--- | :--- |
+| **UA01** | **Visualización de ocupación**<br><br>*Relacionado con:* E05 | **Como** pasajero en paradero,<br>**quiero** visualizar el nivel de ocupación estimado del bus en el mapa,<br>**para** decidir autónomamente si abordarlo o seleccionar una ruta alterna. | **Escenario 1: Monitoreo de unidad con capacidad máxima**<br>**Given** que el pasajero se encuentra visualizando el mapa en tiempo real,<br>**When** seleccione un bus en movimiento próximo a su ubicación,<br>**Then** el sistema desplegará una tarjeta flotante con la etiqueta de estado "Lleno" resaltada en color rojo.<br><br>**Escenario 2: Sincronización automática de estados**<br>**Given** que un bus disminuye su flujo de pasajeros,<br>**When** el sistema actualice el backend a través de los datos del sensor/operador,<br>**Then** la interfaz de usuario cambiará dinámicamente el estado visual a "Disponible" (Verde) o "Moderado" (Amarillo). |
+| **UA02** | **Reporte de incidencias**<br><br>*Relacionado con:* E08 | **Como** pasajero en tránsito,<br>**quiero** enviar alertas rápidas de congestión o paraderos saturados,<br>**para** enriquecer el mapa comunitario y acumular insignias de gamificación. | **Escenario 1: Envío de reporte rápido en ruta**<br>**Given** que el usuario está dentro de una unidad en circulación,<br>**When** presione el botón flotante de "Reporte Rápido" y marque el ícono "Tráfico Intenso",<br>**Then** el mapa actualizará una alerta de congestión para el resto de pasajeros y sumará 10 puntos de experiencia al perfil del remitente.<br><br>**Escenario 2: Validación comunitaria de alertas**<br>**Given** que una alerta fue generada hace más de 20 minutos,<br>**When** tres usuarios cercanos marquen la incidencia como "resuelta",<br>**Then** el sistema eliminará de forma automática el marcador de congestión vial. |
+| **UA03** | **Soporte multilingüe**<br><br>*Relacionado con:* E09 | **Como** usuario extranjero,<br>**quiero** alternar el idioma de la aplicación al inglés,<br>**para** comprender las alertas operativas y nombres de paraderos sin barreras lingüísticas. | **Escenario 1: Cambio global de idioma en la interfaz**<br>**Given** que el usuario se encuentra en el menú de configuraciones de la PWA,<br>**When** seleccione la opción de idioma "English",<br>**Then** todas las etiquetas del menú, estados de bus y descripciones de rutas se traducirán dinámicamente utilizando el sistema i18n. |
+| **UA04** | **Notificaciones predictivas**<br><br>*Relacionado con:* E10 | **Como** pasajero frecuente,<br>**quiero** recibir alertas push automáticas ante incidentes en mis rutas habituales,<br>**para** prevenir demoras antes de salir hacia mi destino. | **Escenario 1: Alerta previa a la rutina de viaje**<br>**Given** que el usuario ha guardado su ruta de lunes a viernes en un horario fijo,<br>**When** ocurra un retraso mayor a 10 minutos detectado por la API 15 minutos antes de su viaje,<br>**Then** el sistema despachará una notificación push predictiva indicando el incidente y el tiempo estimado de demora. |
+| **UA05** | **Panel de analítica B2B**<br><br>*Relacionado con:* E11 | **Como** administrador de flota,<br>**quiero** acceder a reportes estadísticos gráficos sobre tiempos de ciclo y puntualidad,<br>**para** auditar el desempeño operativo y optimizar costos de la empresa. | **Escenario 1: Consulta de métricas históricas de eficiencia**<br>**Given** que el administrador ha iniciado sesión con su cuenta corporativa Premium,<br>**When** se dirija al panel de "Analítica Avanzada" y filtre los datos por rango semanal,<br>**Then** el sistema renderizará diagramas interactivos detallando el porcentaje de cumplimiento de horarios y la eficiencia por vehículo. |
+
+---
+
 ### 8.3.2. To-Be Product Backlog
+
+El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas según el impacto estratégico determinado en el *Question Backlog* (8.1.4) y su valor de negocio para el ecosistema de BusTrack. La estimación del esfuerzo de desarrollo se ha asignado utilizando puntos de historia basados en la escala de Fibonacci (1, 2, 3, 5, 8).
+
+| # Orden | User Story ID | Título de la Historia de Usuario | Story Points (1/2/3/5/8) |
+| :---: | :---: | :--- | :---: |
+| **1** | UA04 | Integrar notificaciones predictivas de retrasos basadas en rutinas | 8 |
+| **2** | UA02 | Implementar sistema de reportes colaborativos  | 5 |
+| **3** | UA05 | Desarrollar panel de analítica avanzada y reportes para empresas de transporte | 8 |
+| **4** | UA01 | Desplegar indicador visual de los niveles de ocupación en las unidades | 5 |
+| **5** | UA03 | Añadir soporte de internacionalización (i18n) para traducción al idioma inglés | 3 |
+
+#### Justificación del Esfuerzo de Estimación (Story Points)
+* **UA04 y UA05 (8 SP):** Representan el mayor esfuerzo debido a la complejidad en el backend. UA05 involucra cálculos agregados de analítica pesada y la integración de librerías de gráficos en el portal de empresas.
+* **UA01 y UA02 (5 SP):** Tienen una complejidad media. UA01 demanda la estructuración de tres estados dinámicos controlados por eventos, mientras que UA02 requiere de lógica geoespacial para validar que los reportes de los pasajeros correspondan con las coordenadas reales de la ruta del bus.
+* **UA03 (3 SP):** Corresponde a un esfuerzo menor, enfocado en configurar la arquitectura de diccionarios JSON dentro del frontend en Vue para mapear de forma limpia las cadenas de texto.
+
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 #### 8.3.3.1. To-Be Sprint Backlogs
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
@@ -3872,3 +5024,51 @@ En consecuencia, BusTrack implementa un proceso de entrega continua alineado con
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 ## 8.6. To-Be Software Platform Pre-launch
 ### 8.6.1. About-the-Product Intro Video
+
+
+### Anexo
+1. Objeto del Contrato
+El presente contrato regula la prestación del servicio BusTrack bajo el modelo Software as a Service (SaaS), permitiendo a los usuarios acceder a la plataforma web para la gestión y consulta de rutas, horarios y notificaciones de transporte público.
+
+2. Niveles de Servicio (SLA)
+
+Disponibilidad: El servicio estará disponible el 99% del tiempo mensual, salvo mantenimientos programados.
+Soporte: Se brindará soporte básico vía correo electrónico en horario laboral.
+Tiempo de respuesta ante incidencias críticas: máximo 48 horas hábiles.
+3. Protección de Datos Personales
+
+BusTrack cumple con la Ley N.º 29733 de Protección de Datos Personales (Perú).
+Los datos de los usuarios serán tratados con confidencialidad y solo para los fines del servicio.
+El usuario puede ejercer sus derechos de acceso, rectificación y cancelación de datos.
+4. Propiedad Intelectual
+
+Todo el software, documentación y materiales asociados a BusTrack son propiedad exclusiva del equipo desarrollador.
+El usuario no adquiere ningún derecho de propiedad intelectual sobre la plataforma.
+5. Responsabilidades del Usuario
+
+Proporcionar información verídica y mantener la confidencialidad de sus credenciales.
+Usar el sistema conforme a la ley y a los términos establecidos.
+6. Limitación de Responsabilidad
+
+BusTrack no garantiza disponibilidad absoluta ante eventos de fuerza mayor o fallas externas.
+No se responsabiliza por daños indirectos derivados del uso del sistema.
+7. Vigencia y Terminación
+
+El contrato entra en vigor con el primer acceso del usuario y puede ser rescindido por incumplimiento de las condiciones.
+
+### Conclusiones
+
+- BusTrack responde a una problemática real de movilidad urbana, aportando una solución tecnológica que mejora la experiencia de los usuarios y la gestión de empresas de transporte.
+- El desarrollo del sistema se realizó aplicando buenas prácticas de ingeniería de software, asegurando calidad, seguridad y mantenibilidad.
+- La integración de pruebas automatizadas, despliegue continuo y documentación clara garantiza la confiabilidad y escalabilidad del producto.
+- El contrato SaaS y las políticas de protección de datos refuerzan el compromiso ético y profesional del equipo con los usuarios y clientes.
+
+### Bibliografía
+
+- ComexPerú. (2024). “Accidentes de tránsito y congestión vehicular en Lima Metropolitana”.
+- Gob.pe. (2024). “Autoridad de Transporte Urbano para Lima y Callao (ATU)”.
+- TomTom Traffic Index 2024.
+- Ley N.º 29733 – Ley de Protección de Datos Personales (Perú).
+- OpenAPI Specification. https://swagger.io/specification/
+- Documentación oficial de Vue.js, Vite, .NET 8, C#, MySQL, GitHub, Render, Vercel, Cucumber.js, Cypress.
+

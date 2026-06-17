@@ -4020,6 +4020,10 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
     <td>Zoom</td>
   </tr>
   <tr>
+    <td>Link</td>
+    <td>https://www.youtube.com/watch?v=F1QOfURv0cQ</td>
+  </tr>
+  <tr>
     <td>Evidencia</td>
     <td><div style="text-align: left;">
     <img src="./img/interview-companion1.png" style="width: 350px; height: auto;" />

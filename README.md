@@ -150,7 +150,7 @@
 ### [Capítulo I: Introducción](#capítulo-i-introducción-1)
 
 - [1.1. Startup Profile](#11-startup-profile)
-  - [1.1.1. Descripción de la Startup](#111-description-de-la-startup)
+  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
   - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
@@ -175,15 +175,15 @@
   - [2.3.2. User Task Matrix](#232-user-task-matrix)
   - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
   - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-- [2.4. Big Picture Event Storning](#24-big-picture-event-storning)
+- [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
 - [2.5. Ubiquitous Language](#25-ubiquitous-language)
  
 ### [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification-1)
 
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-- [3.1. User Stories](#32-user-stories)
-- [3.2. Impact Mapping](#33-impact-mapping)
-- [3.3. Product Backlog](#34-product-backlog)
+- [3.2. User Stories](#32-user-stories)
+- [3.3. Impact Mapping](#33-impact-mapping)
+- [3.4. Product Backlog](#34-product-backlog)
 
 ### [Capítulo IV: Product Design](#capítulo-iv-product-design-1)
 
@@ -234,7 +234,7 @@
     - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
   - [5.2.2. Sprint 2](#522-sprint-2)
     - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
-    - [5.2.2.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+    - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
     - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
     - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
     - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
@@ -243,7 +243,7 @@
     - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
   - [5.2.3. Sprint 3](#523-sprint-3)
     - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
-    - [5.2.3.2. Aspect Leaders and Collaborators.](#5232-aspect-leaders-and-collaborators)
+    - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
     - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
     - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
     - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
@@ -252,8 +252,8 @@
     - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
   - [5.2.4. Sprint 4](#524-sprint-4)
     - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
-    - [5.2.4.2. Aspect Leaders and Collaborators.](#5242-aspect-leaders-and-collaborators)
-    - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-3)
+    - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
+    - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
     - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
     - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
     - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
@@ -264,14 +264,99 @@
   - [5.3.2. Registro de entrevistas](#532-registro-de-entrevistas)
   - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
 - [5.4. Video About-The-Product](#54-video-about-the-product)
-<br><br>
+
+### [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+
+- [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+  - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+  - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+  - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+  - [6.1.4. Core System Tests](#614-core-system-tests)
+- [6.2. Static testing & Verification](#62-static-testing--verification)
+  - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+    - [6.2.1.1. Coding standard & Code conventions](#6211-coding-standard--code-conventions)
+    - [6.2.1.2. Code Quality & Code Security](#6212-code-quality--code-security)
+  - [6.2.2. Reviews](#622-reviews)
+- [6.3. Validation Interviews](#63-validation-interviews)
+  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+- [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+  - [6.4.1. Auditoría realizada](#641-auditoría-realizada)
+  - [6.4.2. Auditoría recibida](#642-auditoría-recibida)
+  - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
+
+### [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+
+- [7.1. Continuous Integration](#71-continuous-integration)
+  - [7.1.1. Tools and Practices](#711-tools-and-practices)
+  - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+- [7.2. Continuous Delivery](#72-continuous-delivery)
+  - [7.2.1. Tools and Practices](#721-tools-and-practices)
+  - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+- [7.3. Continuous deployment](#73-continuous-deployment)
+  - [7.3.1. Tools and Practices](#731-tools-and-practices)
+  - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+- [7.4. Continuous Monitoring](#74-continuous-monitoring)
+  - [7.4.1. Tools and Practices](#741-tools-and-practices)
+  - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+  - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+  - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+
+### [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+
+- [8.1. Experiment Planning](#81-experiment-planning)
+  - [8.1.1. As-Is Summary](#811-as-is-summary)
+  - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+  - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+  - [8.1.4. Question Backlog](#814-question-backlog)
+  - [8.1.5. Experiment Cards](#815-experiment-cards)
+- [8.2. Experiment Design](#82-experiment-design)
+  - [8.2.1. Hypotheses](#821-hypotheses)
+  - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+  - [8.2.3. Measures](#823-measures)
+  - [8.2.4. Conditions](#824-conditions)
+  - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+  - [8.2.6. Methods Selection](#826-methods-selection)
+  - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+  - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+- [8.3. Experimentation](#83-experimentation)
+  - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+  - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+  - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+    - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+    - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+    - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+    - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+    - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+    - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+  - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+    - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+    - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+- [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+  - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+  - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+- [8.5. Continuous Learning](#85-continuous-learning)
+  - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+- [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+  - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+
+### [Conclusiones](#conclusiones)
+
+### [Video App Validation](#video-app-validation)
+
+### [Video About-The-Team](#video-about-the-team)
+
+### [Bibliografía](#bibliografía)
+
+### [Anexos](#anexos)
 
 ### *ABET – EAC - Student Outcome 5*
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Reconoce responsabilidad ética y profesional en situaciones de ingeniería desoftware** |   **TB1**<br>  **Walter Fajardo** <br> Durante el trabajo realiza el planteamiento del problema junto con el resto de apartados del capitulo 1 que permiten contextualizar el como abordaremos grupalmente el proyecto  <br>  **Andrea Santur**  <br>  Demostré aprendizaje ágil aplicando buenas prácticas, generando documentación clara. Participé en el Capítulo 5, abordando la gestión del software, despliegue y evidencias del producto (landing, frontend, backend y API). Finalmente, trabajé con mejora continua, corrigiendo errores. <br> **Lynn Meza** <br> En el Capítulo IV, diseñé BusTrack asegurando accesibilidad, claridad y coherencia en la interfaz. Organicé la estructura de información y desarrollé wireframes, mock-ups y flujos para una experiencia de usuario intuitiva. También participé en el diseño técnico, garantizando una solución ordenada y centrada en las necesidades de los usuarios. <br> **Joaquin Cuentas** <br> Demostré aprendizaje ágil aplicando buenas prácticas, describiendo un buen entendimiento sobre el usuario. Participé en el Capítulo 3, definiendo los user stories y tecnhical stories así como planteando su orden de prioridad en  un product backlog <br> **TP** <br> **Walter Fajardo** <br> Asumí mi responsabilidad profesional mediante la implementación de Core Entities Unit Tests, asegurando que la lógica fundamental del negocio fuera correcta y robusta desde su origen. Al desarrollar también las Core Integration Tests, cumplí con el deber ético de garantizar que los distintos módulos del sistema interactúen sin errores críticos, priorizando la entrega de un software confiable y seguro que proteja la integridad de los datos y la experiencia del usuario final.<br> **Andrea Santur**<br> Asumí mi responsabilidad profesional mediante la aplicación de técnicas de Behavior-Driven Development (BDD), utilizando el lenguaje Gherkin para definir con precisión el comportamiento esperado de BusTrack. Al automatizar estos escenarios con Cucumber.js y Cypress, <br> **Lynn Meza** <br> En el proceso de integración y entrega continua, he aplicado responsabilidad ética al garantizar que cada cambio en el código pase por pruebas exhaustivas, asegurando su calidad y minimizando riesgos. Esto asegura que las soluciones entregadas sean confiables y seguras para los usuarios. <br> **Joaquin Cuentas** <br> Asumí mi responsabilidad profesional mediante la implementación pruebas funcionales con el IDE de Selenium. Al ejercer estas pruebas cumplí éticamente en evaluar un proyecto propio que estará en producción abierto al público y merece las validaciones necesarias. <br> **TB2**<br>  **Walter Fajardo** <br> Se actuó con responsabilidad ética y profesional durante la fase de experimentación, garantizando que el planteamiento de las nuevas hipótesis y la selección de métricas de negocio se basaran en una comprensión profunda y honesta de las necesidades del usuario, evitando sesgos que pudieran comprometer la integridad de la solución de software. <br> **Andrea Santur** <br> Se actuó con responsabilidad ética y profesional durante las entrevistas, auditorías y evaluaciones realizadas en BusTrack, considerando la opinión de los usuarios para mejorar la calidad y usabilidad de la plataforma. <br> **Lynn Meza** <br> Desarrollé una estrategia de monitoreo continuo en Monster ASP.NET con alertas para garantizar la confiabilidad del servicio, reflejando responsabilidad ética hacia los usuarios finales y asegurando altos estándares de calidad operacional del software. <br> **Joaquin Cuentas** <br> Se actuó con responsabilidad ética y profesional durante el resumen y aplicación de hipótesis y questions acerca del usuario  | **TB1** <br> Como equipo, trabajamos con responsabilidad ética y profesional al diseñar BusTrack, asegurando que la solución fuera accesible, intuitiva y respetuosa con los usuarios. Aplicamos buenas prácticas de ingeniería de software, manteniendo un enfoque en la calidad, la seguridad y la facilidad de mantenimiento del sistema. Además, nos aseguramos de cumplir con los estándares profesionales en cada etapa del proyecto, promoviendo la transparencia, la equidad y la inclusión. <br> **TP** <br> Implementamos una landing page, una aplicación frontend web y una API RESTful, asegurando la calidad del código mediante pruebas automatizadas con Selenium. Al aplicar prácticas de integración y entrega continua, reconocimos nuestra responsabilidad ética y profesional al garantizar soluciones de software seguras, confiables y de alta calidad, minimizando riesgos y mejorando la experiencia del usuario en un entorno global. <br> **TB2** <br> Como equipo, al implementar Static Code Analysis con estándares de codificación, realizar Validation Interviews con evaluaciones heurísticas, y establecer Continuous Monitoring con alertas y notificaciones, demostramos responsabilidad ética y profesional garantizando que BusTrack API sea confiable, segura y mantenga altos estándares de calidad desde el desarrollo hasta la producción. |
-| **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **TB1**<br>  **Walter Fajardo** <br> Se realizo la recolección de entrevistas junto con  su análisis y demás partes del capitulo 2 con el fin de llegar al objetivo del proyecto <br>  **Andrea Santur** <br> Analicé las decisiones de despliegue, priorizando la estabilidad y accesibilidad del sistema, evaluando su impacto en los usuarios finales y en el entorno de uso real. <br> **Lynn Meza**   <br> En el Capítulo IV, diseñé BusTrack considerando su impacto en contextos globales y sociales, buscando una solución accesible y sostenible para usuarios y empresas de transporte. Evalué cómo el diseño de la interfaz podría mejorar la eficiencia operativa y reducir la huella ambiental, fomentando el uso de transporte público y contribuyendo al bienestar social. <br> **Joaquin Cuentas** <br>  Analicé las funcionalidades necesarias para la aplicación bus track y definí su alcance <br> **TP** <br> **Walter Fajardo** <br> A través de las pruebas integrales y unitarias, emití juicios técnicos para validar la viabilidad de la solución, considerando que un fallo en el núcleo del sistema podría tener impactos económicos negativos para los interesados y sociales para los usuarios. Al asegurar la estabilidad de las entidades core, garantizo que la solución de ingeniería sea sostenible y funcional en contextos reales, minimizando riesgos técnicos que pudieran comprometer el valor de la herramienta en un entorno global y competitivo. <br> **Andrea Santur** <br> A través de la ejecución de pruebas de comportamiento integrales, emití juicios técnicos para validar la viabilidad funcional de la solución en escenarios de uso real. Consideré que una falla en los flujos críticos de BusTrack (como la geolocalización o la actualización de rutas) podría tener un impacto social negativo al afectar la movilidad de los usuarios y un impacto económico para los operadores. <br> **Lynn Meza** <br> Al implementar la integración y entrega continua, emito juicios informados al considerar cómo las soluciones de ingeniería de software impactan globalmente, tanto en términos económicos como sociales y ambientales. A través de pruebas y despliegues automáticos, se optimiza la eficiencia y se promueve un desarrollo más sostenible y accesible, minimizando riesgos y mejorando la experiencia del usuario. <br> **Joaquin Cuentas** <br> Apoyándome en las pruebas funcionales, formulé evaluaciones técnicas para confirmar la viabilidad del producto, teniendo presente que cualquier vulnerabilidad influiría negativamente en la experiencia de usuario. De esta manera busco asegurar el estandar técnico <br> **TB2** <br> **Walter Fajardo** <br> Se evaluó el impacto económico y social de BusTrack al diseñar experimentos basados en métricas de negocio concretas, vinculando funcionalididades proyectadas (como el panel de analítica avanzada para empresas y las notificaciones predictivas para pasajeros) con cambios medibles en el comportamiento del usuario y la eficiencia operativa del sistema. <br> **Andrea Santur** <br> Se evaluó el impacto social de BusTrack al ofrecer información en tiempo real que ayuda a estudiantes, trabajadores y empresas a optimizar sus desplazamientos y reducir tiempos de espera.</br> **Lynn Meza** <br> Implementé monitoreo continuo en Monster ASP.NET que optimiza recursos y reduce inactividad del servicio, beneficiando a usuarios con una plataforma confiable para la movilidad urbana y acceso equitativo a información de transporte en Lima. <br> **Joaquin Cuentas** <br> Se evaluó el impacto social de BusTrack al reseñar los assumptions de los usuarios y con ellos generar nuevos questions backlogs para el desarrollo de la aplicación| **TB1** <br>  Al desarrollar BusTrack, emitimos juicios informados considerando no solo la viabilidad técnica del sistema, sino también su impacto global, económico, ambiental y social. Buscamos crear una solución que no solo fuera eficiente desde el punto de vista económico, sino también sostenible, favoreciendo el uso del transporte público y contribuyendo a la reducción de la huella de carbono. Además, evaluamos cómo el sistema podría mejorar la calidad de vida de los usuarios y apoyar la transición hacia ciudades más sostenibles y conectadas. <br> **TP** <br> Como equipo, implementamos una landing page y una aplicación frontend web, junto con una API RESTful y su documentación. Usamos Selenium para pruebas automatizadas, cubriendo pruebas de unidad, integración y comportamiento. Aplicamos prácticas de CI/CD para garantizar soluciones de calidad, considerando su impacto global, económico y social. <br> **TB2** <br> Como equipo, si aplicamos Static Testing & Verification, Auditorías de Experiencias de Usuario, Continuous Monitoring, y Experiment Planning basado en métricas de negocio, entonces generaremos una solución de software que mejora la movilidad urbana en Lima, optimiza recursos operacionales, proporciona acceso equitativo a información de transporte, y crea impacto positivo en contextos económicos y sociales diversos. |
+| **Reconoce responsabilidad ética y profesional en situaciones de ingeniería desoftware** |   **TB1**<br>  **Walter Fajardo** <br> Durante el trabajo realiza el planteamiento del problema junto con el resto de apartados del capitulo 1 que permiten contextualizar el como abordaremos grupalmente el proyecto  <br>  **Andrea Santur**  <br>  Demostré aprendizaje ágil aplicando buenas prácticas, generando documentación clara. Participé en el Capítulo 5, abordando la gestión del software, despliegue y evidencias del producto (landing, frontend, backend y API). Finalmente, trabajé con mejora continua, corrigiendo errores. <br> **Lynn Meza** <br> En el Capítulo IV, diseñé BusTrack asegurando accesibilidad, claridad y coherencia en la interfaz. Organicé la estructura de información y desarrollé wireframes, mock-ups y flujos para una experiencia de usuario intuitiva. También participé en el diseño técnico, garantizando una solución ordenada y centrada en las necesidades de los usuarios. <br> **Joaquin Cuentas** <br> Demostré aprendizaje ágil aplicando buenas prácticas, describiendo un buen entendimiento sobre el usuario. Participé en el Capítulo 3, definiendo los user stories y tecnhical stories así como planteando su orden de prioridad en  un product backlog <br> **TP** <br> **Walter Fajardo** <br> Asumí mi responsabilidad profesional mediante la implementación de Core Entities Unit Tests, asegurando que la lógica fundamental del negocio fuera correcta y robusta desde su origen. Al desarrollar también las Core Integration Tests, cumplí con el deber ético de garantizar que los distintos módulos del sistema interactúen sin errores críticos, priorizando la entrega de un software confiable y seguro que proteja la integridad de los datos y la experiencia del usuario final.<br> **Andrea Santur**<br> Asumí mi responsabilidad profesional mediante la aplicación de técnicas de Behavior-Driven Development (BDD), utilizando el lenguaje Gherkin para definir con precisión el comportamiento esperado de BusTrack. Al automatizar estos escenarios con Cucumber.js y Cypress, <br> **Lynn Meza** <br> En el proceso de integración y entrega continua, he aplicado responsabilidad ética al garantizar que cada cambio en el código pase por pruebas exhaustivas, asegurando su calidad y minimizando riesgos. Esto asegura que las soluciones entregadas sean confiables y seguras para los usuarios. <br> **Joaquin Cuentas** <br> Asumí mi responsabilidad profesional mediante la implementación pruebas funcionales con el IDE de Selenium. Al ejercer estas pruebas cumplí éticamente en evaluar un proyecto propio que estará en producción abierto al público y merece las validaciones necesarias. <br> **TB2**<br>  **Walter Fajardo** <br> Se actuó con responsabilidad ética y profesional durante la fase de experimentación, garantizando que el planteamiento de las nuevas hipótesis y la selección de métricas de negocio se basaran en una comprensión profunda y honesta de las necesidades del usuario, evitando sesgos que pudieran comprometer la integridad de la solución de software. <br> **Andrea Santur** <br> Se actuó con responsabilidad ética y profesional durante las entrevistas, auditorías y evaluaciones realizadas en BusTrack, considerando la opinión de los usuarios para mejorar la calidad y usabilidad de la plataforma. <br> **Lynn Meza** <br> Desarrollé una estrategia de monitoreo continuo en Monster ASP.NET con alertas para garantizar la confiabilidad del servicio, reflejando responsabilidad ética hacia los usuarios finales y asegurando altos estándares de calidad operacional del software. <br> **Joaquin Cuentas** <br> Se actuó con responsabilidad ética y profesional durante el resumen y aplicación de hipótesis y questions acerca del usuario <br> **TF**<br>  **Walter Fajardo** <br> Asumí mi responsabilidad profesional al estructurar de manera transparente el To-Be Sprint Backlog y documentar el Learning Workflow del proyecto. Garanticé la trazabilidad del desarrollo organizando las nuevas historias de usuario experimentales y asegurando que las decisiones técnicas se basen en validaciones reales. Esto demuestra un compromiso ético al construir software centrado en las necesidades reales del usuario. <br> **Andrea Santur** <br> Asumí la responsabilidad profesional de validar los experimentos a través del diseño estructurado de encuestas y el análisis de resultados (Shareback Session). Actué con ética al recopilar y procesar la retroalimentación de los usuarios sin sesgos, asegurando que la repriorización del backlog refleje genuinamente las necesidades de los pasajeros y empresas. <br> **Lynn Meza** <br> Demostré responsabilidad ética al plasmar las conclusiones de los experimentos en el prototipo final (To-Be) en Figma. Garanticé que las nuevas interfaces, como el indicador de aforo y el soporte multilingüe, mantuvieran los altos estándares de accesibilidad y claridad visual (Inclusive Design) previamente establecidos. <br> **Joaquin Cuentas** <br> Ejercí mi responsabilidad técnica al colaborar en la especificación y desarrollo de las notificaciones predictivas y reportes colaborativos. Apliqué buenas prácticas para garantizar que la recopilación de datos geoespaciales y el envío de alertas respeten la privacidad del usuario y la seguridad de la plataforma. | **TB1** <br> Como equipo, trabajamos con responsabilidad ética y profesional al diseñar BusTrack, asegurando que la solución fuera accesible, intuitiva y respetuosa con los usuarios. Aplicamos buenas prácticas de ingeniería de software, manteniendo un enfoque en la calidad, la seguridad y la facilidad de mantenimiento del sistema. Además, nos aseguramos de cumplir con los estándares profesionales en cada etapa del proyecto, promoviendo la transparencia, la equidad y la inclusión. <br> **TP** <br> Implementamos una landing page, una aplicación frontend web y una API RESTful, asegurando la calidad del código mediante pruebas automatizadas con Selenium. Al aplicar prácticas de integración y entrega continua, reconocimos nuestra responsabilidad ética y profesional al garantizar soluciones de software seguras, confiables y de alta calidad, minimizando riesgos y mejorando la experiencia del usuario en un entorno global. <br> **TB2** <br> Como equipo, al implementar Static Code Analysis con estándares de codificación, realizar Validation Interviews con evaluaciones heurísticas, y establecer Continuous Monitoring con alertas y notificaciones, demostramos responsabilidad ética y profesional garantizando que BusTrack API sea confiable, segura y mantenga altos estándares de calidad desde el desarrollo hasta la producción. <br> **TF** <br> Como equipo, demostramos un compromiso ético inquebrantable al cerrar el ciclo de vida del software con validaciones reales y aprendizaje continuo. La elaboración del Learning Workflow y la ejecución de los experimentos nos permitieron entregar un producto final transparente, documentado bajo estándares de la industria y orientado a resolver problemas reales con integridad técnica.|
+| **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **TB1**<br>  **Walter Fajardo** <br> Se realizo la recolección de entrevistas junto con  su análisis y demás partes del capitulo 2 con el fin de llegar al objetivo del proyecto <br>  **Andrea Santur** <br> Analicé las decisiones de despliegue, priorizando la estabilidad y accesibilidad del sistema, evaluando su impacto en los usuarios finales y en el entorno de uso real. <br> **Lynn Meza**   <br> En el Capítulo IV, diseñé BusTrack considerando su impacto en contextos globales y sociales, buscando una solución accesible y sostenible para usuarios y empresas de transporte. Evalué cómo el diseño de la interfaz podría mejorar la eficiencia operativa y reducir la huella ambiental, fomentando el uso de transporte público y contribuyendo al bienestar social. <br> **Joaquin Cuentas** <br>  Analicé las funcionalidades necesarias para la aplicación bus track y definí su alcance <br> **TP** <br> **Walter Fajardo** <br> A través de las pruebas integrales y unitarias, emití juicios técnicos para validar la viabilidad de la solución, considerando que un fallo en el núcleo del sistema podría tener impactos económicos negativos para los interesados y sociales para los usuarios. Al asegurar la estabilidad de las entidades core, garantizo que la solución de ingeniería sea sostenible y funcional en contextos reales, minimizando riesgos técnicos que pudieran comprometer el valor de la herramienta en un entorno global y competitivo. <br> **Andrea Santur** <br> A través de la ejecución de pruebas de comportamiento integrales, emití juicios técnicos para validar la viabilidad funcional de la solución en escenarios de uso real. Consideré que una falla en los flujos críticos de BusTrack (como la geolocalización o la actualización de rutas) podría tener un impacto social negativo al afectar la movilidad de los usuarios y un impacto económico para los operadores. <br> **Lynn Meza** <br> Al implementar la integración y entrega continua, emito juicios informados al considerar cómo las soluciones de ingeniería de software impactan globalmente, tanto en términos económicos como sociales y ambientales. A través de pruebas y despliegues automáticos, se optimiza la eficiencia y se promueve un desarrollo más sostenible y accesible, minimizando riesgos y mejorando la experiencia del usuario. <br> **Joaquin Cuentas** <br> Apoyándome en las pruebas funcionales, formulé evaluaciones técnicas para confirmar la viabilidad del producto, teniendo presente que cualquier vulnerabilidad influiría negativamente en la experiencia de usuario. De esta manera busco asegurar el estandar técnico <br> **TB2** <br> **Walter Fajardo** <br> Se evaluó el impacto económico y social de BusTrack al diseñar experimentos basados en métricas de negocio concretas, vinculando funcionalididades proyectadas (como el panel de analítica avanzada para empresas y las notificaciones predictivas para pasajeros) con cambios medibles en el comportamiento del usuario y la eficiencia operativa del sistema. <br> **Andrea Santur** <br> Se evaluó el impacto social de BusTrack al ofrecer información en tiempo real que ayuda a estudiantes, trabajadores y empresas a optimizar sus desplazamientos y reducir tiempos de espera.</br> **Lynn Meza** <br> Implementé monitoreo continuo en Monster ASP.NET que optimiza recursos y reduce inactividad del servicio, beneficiando a usuarios con una plataforma confiable para la movilidad urbana y acceso equitativo a información de transporte en Lima. <br> **Joaquin Cuentas** <br> Se evaluó el impacto social de BusTrack al reseñar los assumptions de los usuarios y con ellos generar nuevos questions backlogs para el desarrollo de la aplicación <br> **TF**<br>  **Walter Fajardo** <br> Emití juicios informados al planificar la ejecución de los experimentos finales, evaluando cómo las nuevas funcionalidades (como los reportes colaborativos) impactan en el entorno urbano de Lima Metropolitana. Consideré su impacto social al reducir la ansiedad de los pasajeros y su impacto económico al proveer a las empresas de transporte herramientas viables de optimización. <br> **Andrea Santur** <br> Emití juicios informados al interpretar los resultados de los experimentos y evaluar su viabilidad a gran escala. Consideré el impacto social positivo de incorporar funciones inclusivas (i18n), así como el impacto económico de asegurar que las nuevas características no generen costos operativos insostenibles para las empresas que adopten el sistema. <br> **Lynn Meza** <br> Emití juicios informados sobre el impacto de la interfaz en la experiencia diaria del usuario limeño. Consideré cómo un diseño claro y responsivo en los módulos experimentales tiene un impacto social directo al reducir la carga cognitiva del usuario en situaciones de estrés en el paradero, fomentando un uso más amigable del transporte. <br> **Joaquin Cuentas** <br> Emití juicios informados al evaluar el impacto tecnológico y social de implementar notificaciones push y algoritmos de crowdsourcing. Tomé en cuenta cómo la generación de alertas en tiempo real puede transformar la economía de tiempo del usuario y mejorar el flujo de información, aportando a un entorno urbano más inteligente.| **TB1** <br>  Al desarrollar BusTrack, emitimos juicios informados considerando no solo la viabilidad técnica del sistema, sino también su impacto global, económico, ambiental y social. Buscamos crear una solución que no solo fuera eficiente desde el punto de vista económico, sino también sostenible, favoreciendo el uso del transporte público y contribuyendo a la reducción de la huella de carbono. Además, evaluamos cómo el sistema podría mejorar la calidad de vida de los usuarios y apoyar la transición hacia ciudades más sostenibles y conectadas. <br> **TP** <br> Como equipo, implementamos una landing page y una aplicación frontend web, junto con una API RESTful y su documentación. Usamos Selenium para pruebas automatizadas, cubriendo pruebas de unidad, integración y comportamiento. Aplicamos prácticas de CI/CD para garantizar soluciones de calidad, considerando su impacto global, económico y social. <br> **TB2** <br> Como equipo, si aplicamos Static Testing & Verification, Auditorías de Experiencias de Usuario, Continuous Monitoring, y Experiment Planning basado en métricas de negocio, entonces generaremos una solución de software que mejora la movilidad urbana en Lima, optimiza recursos operacionales, proporciona acceso equitativo a información de transporte, y crea impacto positivo en contextos económicos y sociales diversos. <br> **TF** <br> Como equipo, emitimos juicios informados durante el cierre del proyecto al comprender que BusTrack actúa como un agente de cambio. Concluimos que nuestras decisiones arquitectónicas y experimentales generan un impacto económico favorable para las flotas, un claro beneficio social al reducir el estrés urbano en Lima Metropolitana, y sientan las bases tecnológicas para un transporte público moderno. |
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -5728,6 +5813,21 @@ Este reordenamiento prioriza la administración de flotas y la internacionalizac
 
 ## 8.5. Continuous Learning
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
+Figma (Prototipo): El prototipo interactivo desarrollado en Figma refleja las interfaces y soluciones propuestas, diseñadas con base en las necesidades y expectativas de los usuarios (pasajeros y empresas de transporte). Este artefacto muestra cómo el equipo iteró y ajustó los elementos visuales y funcionales de BusTrack durante el proceso de diseño de los experimentos.
+
+Enlace Figma: [https://www.figma.com/design/gfihE4UEnoiFtzf54xXuL8/BusTrack-wireframes-y-mockups?node-id=0-1&p=f]
+
+![Prototipo en Figma](img/figma%20imc.png)
+
+<br>
+
+Encuesta de Google Forms: Se utilizó una encuesta creada en Google Forms para recopilar el feedback de los usuarios y validar las hipótesis planteadas durante el diseño. Esta encuesta permitió evaluar la experiencia del usuario y recopilar datos cuantitativos y cualitativos que respaldan las decisiones tomadas en la mejora de la aplicación BusTrack.
+
+Enlace encuesta: [[Inserta tu enlace de Google Forms aquí](https://docs.google.com/forms/d/e/1FAIpQLSdbrgj40ig1nQAOVCPslgcphU2kLnq_k_yuHXUaEnf6-a2XKg/viewform)]
+
+![Encuesta de Google Forms](img/encuestapf.png)
+
+
 ## 8.6. To-Be Software Platform Pre-launch
 ### 8.6.1. About-the-Product Intro Video
 

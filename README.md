@@ -5380,7 +5380,69 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 </tbody>
 </table>
 
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Jean Paul </td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Condori</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>40 años</td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td> Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Villa María del Triunfo</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>
+      <div style="text-align: left;">
+    <img src="/img/commons/administrador-de-flota-entrevista1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em><strong>Figura 177.</strong> Evidencia de validación de entrevista 4 - Segmento 2.</em><br>
+  <em><strong>Fuente:</strong> elaboración propia.</em></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://drive.google.com/file/d/15VTwUG2F1Gw29zwPIvR-8cGvkLp0O0Hr/view?usp=sharing</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:35 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El administrador destacó que la plataforma es fácil de navegar gracias a sus botones grandes y la estructura clara. Valoró especialmente funciones como paraderos cercanos y un mapa para visualizar la ubicación del bus. Sin embargo, sugirió mejorar la claridad de la landing page, ya que está dirigida solo a estudiantes y trabajadores. Asimismo, considera fundamental que la web permita monitorear tanto a los buses como a los choferes para mantener el orden operativo, idealmente mediante GPS integrado y notificaciones automáticas. Además, indicó que estaría dispuesto a pagar por una demo de un mes y que sí recomendaría la herramienta para probarla.
+  </tr>
+</tbody>
+</table>
+
+
+
 <img src="./img/analisis.png" style="width: 350px; height: auto;" />
+
+
+
 
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results

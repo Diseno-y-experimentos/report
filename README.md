@@ -5385,6 +5385,8 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 </tbody>
 </table>
 
+<img src="./img/analisis.png" style="width: 350px; height: auto;" />
+
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
@@ -5400,14 +5402,39 @@ El presente contrato regula la prestación del servicio BusTrack bajo el modelo 
 
 2. Niveles de Servicio (SLA)
 
-Disponibilidad: El servicio estará disponible el 99% del tiempo mensual, salvo mantenimientos programados.
-Soporte: Se brindará soporte básico vía correo electrónico en horario laboral.
-Tiempo de respuesta ante incidencias críticas: máximo 48 horas hábiles.
+**Disponibilidad del servicio:** BusTrack garantiza una disponibilidad mensual del **99%** (*uptime*), medida sobre el total de horas del mes calendario y calculada mediante el monitoreo continuo de los servicios desplegados en Render (backend) y Vercel (frontend). Quedan excluidos del cálculo los mantenimientos programados, que serán notificados a los usuarios con un mínimo de **24 horas de anticipación** a través de la plataforma y/o correo electrónico.
+
+**Niveles de severidad y tiempos de respuesta:** Las incidencias reportadas se clasifican y atienden según la siguiente escala:
+
+| Severidad | Descripción | Tiempo de respuesta | Tiempo estimado de resolución |
+| :---: | :--- | :---: | :---: |
+| **Crítica (P1)** | Caída total del servicio o imposibilidad de acceso a la plataforma (API o Frontend caídos). | Máximo 4 horas hábiles | Máximo 48 horas hábiles |
+| **Alta (P2)** | Falla parcial que afecta funcionalidades clave (mapa en tiempo real, notificaciones, autenticación). | Máximo 8 horas hábiles | Máximo 5 días hábiles |
+| **Media (P3)** | Errores puntuales que no bloquean el uso general del sistema (visualización, reportes secundarios). | Máximo 24 horas hábiles | Máximo 10 días hábiles |
+| **Baja (P4)** | Consultas, mejoras o incidencias cosméticas sin impacto funcional. | Máximo 48 horas hábiles | Según planificación del backlog |
+
+**Canal y horario de soporte:** El soporte se brinda vía correo electrónico institucional del equipo BusTrack, en horario laboral (lunes a viernes, 9:00 a.m. – 6:00 p.m., hora Perú - GMT-5). Para el segmento empresarial (Segmento 2), el plan Premium contempla un canal de soporte prioritario con tiempos de respuesta reducidos a la mitad de los indicados en la tabla anterior.
+
+**Medición y reporte de cumplimiento:** El cumplimiento del SLA se verificará mensualmente mediante herramientas de monitoreo continuo (*continuous monitoring*), y los resultados podrán ser solicitados por el usuario corporativo como parte de la transparencia del servicio.
+
+**Compensación por incumplimiento:** En caso la disponibilidad mensual real sea inferior al 99% comprometido, se evaluará una compensación proporcional (créditos de servicio o extensión del periodo de suscripción) para los usuarios del plan Premium/corporativo, exceptuando los casos de fuerza mayor detallados en la cláusula 6.
+
 3. Protección de Datos Personales
 
-BusTrack cumple con la Ley N.º 29733 de Protección de Datos Personales (Perú).
-Los datos de los usuarios serán tratados con confidencialidad y solo para los fines del servicio.
-El usuario puede ejercer sus derechos de acceso, rectificación y cancelación de datos.
+**Marco normativo:** BusTrack cumple con la **Ley N.º 29733 – Ley de Protección de Datos Personales (Perú)** y su Reglamento (Decreto Supremo N.º 003-2013-JUS), garantizando el tratamiento lícito, proporcional y transparente de la información de sus usuarios.
+
+**Datos recopilados:** La plataforma recolecta únicamente los datos necesarios para la prestación del servicio: (a) datos de identificación y contacto (nombre, correo electrónico, credenciales de acceso); (b) datos de geolocalización en tiempo real, utilizados exclusivamente para mostrar rutas, paraderos cercanos y el estado de las unidades; (c) historial de rutas guardadas y viajes recientes; y (d) datos operativos de las empresas de transporte (unidades, rutas, horarios).
+
+**Finalidad del tratamiento:** Los datos se emplean únicamente para: la prestación del servicio (visualización de rutas y notificaciones), la mejora de la experiencia del usuario, y la generación de reportes agregados y anonimizados para el panel de analítica B2B (UA05), sin identificar individualmente a los pasajeros.
+
+**Confidencialidad y medidas de seguridad:** La información se almacena en bases de datos con acceso restringido y credenciales cifradas, aplicando el principio de mínimo privilegio. Las contraseñas se almacenan mediante *hashing* y no se comparte información personal con terceros sin consentimiento expreso del usuario, salvo requerimiento de autoridad competente.
+
+**Plazo de conservación:** Los datos personales se conservarán mientras la cuenta del usuario permanezca activa. Tras la eliminación de la cuenta, la información se elimina o anonimiza en un plazo máximo de **30 días calendario**, salvo obligación legal de conservación mayor.
+
+**Derechos ARCO:** El usuario puede ejercer en cualquier momento sus derechos de **Acceso, Rectificación, Cancelación y Oposición (ARCO)** sobre sus datos personales, mediante solicitud al correo de soporte de BusTrack. La solicitud será atendida en un plazo máximo de **10 días hábiles**, conforme a la normativa vigente.
+
+**Notificación ante incidentes de seguridad:** En caso de detectarse una brecha de seguridad que comprometa datos personales, BusTrack notificará a los usuarios afectados y, de corresponder, a la Autoridad Nacional de Protección de Datos Personales, en un plazo no mayor a **72 horas** desde su detección.
+
 4. Propiedad Intelectual
 
 Todo el software, documentación y materiales asociados a BusTrack son propiedad exclusiva del equipo desarrollador.

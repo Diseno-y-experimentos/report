@@ -5024,10 +5024,17 @@ El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas s
 | | | TK10 | Crear endpoints de agregación (Analytics) | Desarrollar consultas y lógica en .NET para calcular tiempos de ciclo, puntualidad y eficiencia por unidad. | 5 | Walter | Done |
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
-#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
-#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
-#### 8.3.3.6. Team Collaboration Insights
+
+#### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+
+#### 8.3.3.5. Team Collaboration Insights
+
+
+
 ### 8.3.4. To-Be Validation Interviews
 #### 8.3.4.1. Diseño de Entrevistas.
 #### 8.3.4.2. Registro de Entrevistas.

@@ -5041,8 +5041,24 @@ El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas s
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
 ## 8.5. Continuous Learning
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
+Figma (Prototipo): El prototipo interactivo desarrollado en Figma refleja las interfaces y soluciones propuestas, diseñadas con base en las necesidades y expectativas de los usuarios (pasajeros y empresas de transporte). Este artefacto muestra cómo el equipo iteró y ajustó los elementos visuales y funcionales de BusTrack durante el proceso de diseño de los experimentos.
+
+Enlace Figma: [https://www.figma.com/design/gfihE4UEnoiFtzf54xXuL8/BusTrack-wireframes-y-mockups?node-id=0-1&p=f]
+
+![Prototipo en Figma](img/figma%20imc.png)
+
+<br>
+
+Encuesta de Google Forms: Se utilizó una encuesta creada en Google Forms para recopilar el feedback de los usuarios y validar las hipótesis planteadas durante el diseño. Esta encuesta permitió evaluar la experiencia del usuario y recopilar datos cuantitativos y cualitativos que respaldan las decisiones tomadas en la mejora de la aplicación BusTrack.
+
+Enlace encuesta: [[Inserta tu enlace de Google Forms aquí](https://docs.google.com/forms/d/e/1FAIpQLSdbrgj40ig1nQAOVCPslgcphU2kLnq_k_yuHXUaEnf6-a2XKg/viewform)]
+
+![Encuesta de Google Forms](img/encuestapf.png)
+
+
 ## 8.6. To-Be Software Platform Pre-launch
 ### 8.6.1. About-the-Product Intro Video
 

@@ -5442,11 +5442,41 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 <img src="./img/analisis.png" style="width: 350px; height: auto;" />
 
 
-
-
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results
+
+Tras la implementación de las historias de usuario priorizadas en el backlog (UA01, UA02, UA03, UA04 y UA05) y su validación mediante entrevistas a los dos segmentos objetivo (pasajeros de transporte público y empresas de transporte urbano), se obtuvieron los siguientes resultados:
+
+**Indicador visual de buses activos (UA01):** Los entrevistados valoraron positivamente contar con una referencia visual clara del estado de las unidades disponibles, señalándola como un aporte a la confianza y utilidad general de la plataforma.
+
+**Historial de búsquedas (UA02):** Los pasajeros identificaron esta funcionalidad como un apoyo práctico para agilizar consultas recurrentes, sin necesidad de repetir búsquedas de rutas frecuentes.
+
+**Internacionalización - i18n (UA03):** Fue explícitamente solicitada por una de las entrevistadas del segmento de pasajeros, quien sugirió añadir soporte de traducción al inglés manteniendo un estilo consistente entre la landing page y la aplicación web, confirmando que existe una necesidad real no cubierta previamente.
+
+**Notificaciones de rutas guardadas (UA04):** Los entrevistados de ambos segmentos expresaron interés en recibir notificaciones relacionadas con sus rutas de interés, considerándolo un factor que mejora la experiencia de uso frecuente.
+
+**Administración de flotas (UA05):** Los administradores y supervisores entrevistados destacaron esta funcionalidad como la más valiosa para su organización, indicando que facilita el monitoreo y la toma de decisiones operativas, y que contribuye a mejorar la puntualidad y calidad del servicio.
+
+**Diseño de landing page y usabilidad general:** Los entrevistados de ambos segmentos coincidieron en que la interfaz es intuitiva, moderna y fácil de navegar, y que la información presentada en la landing page comunica con claridad el propósito de BusTrack.
+
+**Confianza y disposición de uso:** Los entrevistados manifestaron confianza para registrarse y utilizar la plataforma, así como disposición a recomendarla a otros usuarios y organizaciones del sector transporte.
+
+En conjunto, estos resultados validan las hipótesis iniciales sobre las historias priorizadas, confirmando que las funcionalidades desarrolladas responden a las necesidades tanto de pasajeros como de empresas de transporte urbano en Lima.
+
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Con base en los resultados obtenidos y el feedback de usuarios recopilado en las entrevistas, se reajustó el puntaje y la prioridad del backlog de preguntas experimentales asociado a las historias de usuario desarrolladas. A continuación, se presenta la nueva priorización:
+
+| Pregunta | Confianza | Riesgo | Impacto | Interés | Puntuación Total | Nueva Prioridad |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| ¿Implementar administración de flotas mejorará la supervisión y toma de decisiones operativas? | 3 | 1 | 3 | 3 | 10 | 1 |
+| ¿Añadir soporte de internacionalización (i18n) ampliará el alcance de usuarios de la plataforma? | 3 | 1 | 2 | 3 | 9 | 2 |
+| ¿Notificar sobre rutas guardadas incrementará la frecuencia de uso de la aplicación? | 2 | 1 | 3 | 3 | 9 | 3 |
+| ¿Un indicador visual de buses activos aumentará la confianza en la información mostrada? | 3 | 1 | 2 | 2 | 8 | 4 |
+| ¿Un historial de búsquedas agilizará la experiencia de consulta de rutas frecuentes? | 2 | 1 | 2 | 2 | 7 | 5 |
+
+Este reordenamiento prioriza la administración de flotas y la internacionalización, funcionalidades que en las entrevistas mostraron mayor impacto percibido tanto para el segmento de pasajeros como para el de empresas de transporte urbano.
+
 ## 8.5. Continuous Learning
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 ## 8.6. To-Be Software Platform Pre-launch

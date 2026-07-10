@@ -5006,7 +5006,23 @@ El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas s
 * **UA03 (3 SP):** Corresponde a un esfuerzo menor, enfocado en configurar la arquitectura de diccionarios JSON dentro del frontend en Vue para mapear de forma limpia las cadenas de texto.
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
-#### 8.3.3.1. To-Be Sprint Backlogs
+
+#### 8.3.3.1. To-Be Sprint Backlog
+
+| Sprint # | Sprint 5 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (SP)** | **Assigned To** | **Status** |
+| UA01 | Visualización del indicador de ocupación de la unidad | TK1 | Diseñar componente visual de aforo | Diseñar una escala visual de tres estados dinámicos (Disponible, Moderado, Lleno) para el mapa y las tarjetas de buses. | 2 | Lynn | Done |
+| UA01 | Visualización del indicador de ocupación de la unidad | TK2 | Integrar endpoint de capacidad en frontend | Conectar la interfaz con el backend para actualizar dinámicamente el aforo del bus mediante WebSockets. | 3 | Walter | Done |
+| UA02 | Reporte colaborativo de incidencias en tiempo real | TK3 | Crear botón y modal para reporte rápido | Implementar un botón flotante en la vista del mapa para que los pasajeros notifiquen tráfico o bus lleno. | 2 | Andrea | Done |
+| UA02 | Reporte colaborativo de incidencias en tiempo real | TK4 | Desarrollar lógica geoespacial en backend | Validar en el servidor que las coordenadas del usuario coincidan con la ruta reportada para evitar spam. | 3 | Joaquin | Done |
+| UA03 | Soporte multilingüe e interfaz en idioma inglés | TK5 | Configurar librería i18n | Instalar y configurar `vue-i18n` en el frontend, agregando el selector de idioma en la barra de navegación. | 1 | Lynn | Done |
+| UA03 | Soporte multilingüe e interfaz en idioma inglés | TK6 | Crear diccionarios JSON (es/en) | Generar los archivos de traducción para etiquetas, menús, estados del bus y notificaciones operativas. | 2 | Andrea | Done |
+| UA04 | Notificaciones predictivas sobre retrasos de rutas | TK7 | Desarrollar Worker/CRON de cruce de datos | Crear un servicio en background que cruce las rutas favoritas del pasajero con incidentes reales 15 min antes de su viaje. | 5 | Walter | Done |
+| UA04 | Notificaciones predictivas sobre retrasos de rutas | TK8 | Configurar Web Push Notifications | Integrar el servicio de notificaciones Push en la PWA para recibir las alertas generadas por el backend. | 3 | Joaquin | Done |
+| UA05 | Panel analítico avanzado para control de flotas | TK9 | Implementar vistas de reportes gráficos | Integrar una librería de visualización en el portal de empresas para mostrar cumplimiento de horarios. | 3 | Lynn | Done |
+| UA05 | Panel analítico avanzado para control de flotas | TK10 | Crear endpoints de agregación (Analytics) | Desarrollar consultas y lógica en .NET para calcular tiempos de ciclo, puntualidad y eficiencia por unidad. | 5 | Walter | Done |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence

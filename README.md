@@ -4174,8 +4174,126 @@ Para sustentar la evaluación heurística se realizaron pruebas de usabilidad co
 ## 6.4. Auditoría de Experiencias de Usuario
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
+
+| Campo | Detalle |
+| :--- | :--- |
+| Producto auditado | PlantCare Web Application |
+| Versión | 1.2.0 (Desarrollo) |
+| Tipo de aplicación | Single Page Application (SPA) — Plataforma web de gestión y monitoreo de plantas con IoT |
+| Stack tecnológico | Vue 3.5.22 + Rolldown-Vite 7.1.14 + TypeScript 5.9.3 + Supabase + PrimeVue 4.4.0 + Pinia 3.0.3 + vue-i18n 11.4.0 |
+| Repositorio | Plant-Care-Web-main |
+| URL de prueba | https://plant-care-web-experimental.vercel.app/login |
+| Ambiente de despliegue | Vercel (producción) / URL |
+| Base de datos | Supabase (PostgreSQL) — 7 tablas
+
+
+### EQUIPO AUDITOR
+
+| Rol | Nombre / Identificación | Responsabilidad |
+| :--- | :--- | :--- |
+| Auditor Líder | Lynn Meza | Planificación, ejecución de auditoría, elaboración de informes |
+| Auditor Técnico | Walter Fajardo | Revisión de código fuente, arquitectura, seguridad |
+| Auditor Funcional | Andrea Santur | Navegación por la aplicación, pruebas funcionales |
+| Auditor de UX | Joaquin Cuentas | Evaluación de interfaz, accesibilidad, internacionalización |
+
 #### 6.4.1.2. Cronograma de auditoría realizada.
+
+## Día 1 — 5 de julio de 2026
+
+| Horario | Área / Proceso auditado | Auditor | Responsable del área | Criterios / Requisitos evaluados | Entorno |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 16:12 - 16:14 | **REUNIÓN DE APERTURA** | — | Auditor Líder / Equipo de desarrollo | Revisión de `package.json`, estructura de carpetas, reconocimiento del proyecto | `PlanDeAuditoria.md`, `README.md`, `.env.local` |
+| 16:14 - 16:16 | Módulo de Autenticación | Auditor Funcional | Frontend Lead | Login funcional, redirección, manejo de errores, almacenamiento de token, validación de sesión | Supabase |
+| 16:16 - 16:18 | Dashboard | Auditor Funcional | Frontend Lead | Carga de datos, tarjetas de estadísticas, próximo riego, actividad reciente, animaciones, responsive | URL |
+| 16:18 - 16:20 | Gestión de Plantas (CRUD) | Auditor Funcional | Backend Lead | Lista, detalle, formulario de creación, edición, métricas IoT, historial de riego, validación de inputs | URL |
+| 16:20 - 16:22 | Analytics | Auditor Funcional | Data Team | Visualización de datos, integración Vercel Analytics, Speed Insights | URL |
+| 16:22 - 16:24 | Perfil de Usuario | Auditor UX | Frontend Lead | Datos personales, estadísticas, sistema de logros, gamificación, edición de perfil | URL |
+| 16:24 - 16:26 | Configuración (Settings) | Auditor UX | Frontend Lead | Tema claro/oscuro/sistema, idioma ES/EN, Discord webhooks, notificaciones, zona de riesgo | URL |
+| 16:26 - 16:28 | Revisión técnica de código | Auditor Técnico | Tech Lead | Arquitectura hexagonal, Clean Architecture, patrones de diseño, seguridad, naming conventions | Código |
+| 16:28 - 16:28 | Ejecución de suite de tests | Auditor Técnico | QA Lead | 12 archivos de test, 32 tests (unitarios + integración + componentes), estado de ejecución | Terminal |
+| 16:28 - 16:29 | Revisión de esquema de BD | Auditor Técnico | DBA / Backend Lead | 7 tablas, RLS, índices, triggers, constraints, tablas experimentales | SQL Schema |
+| 16:29 - 16:30 | **REUNIÓN DE CIERRE** | — | Auditor Líder / Equipo de desarrollo | Elaboración del informe final, consolidación de hallazgos, clasificación de hallazgos por severidad | `PlanDeAuditoria.md` |
+
+*Fuente: PlanDeAuditoria.md — 2026-07-06 — 3/7*
+
+
 #### 6.4.1.3. Contenido de auditoría realizada.
+
+OBJETIVO DE LA AUDITORÍA
+
+Evaluar de manera integral la calidad del producto de software PlantCare Web en las siguientes dimensiones:
+
+1. **Funcionalidad:** Verificar que todas las funcionalidades implementadas operen correctamente según los requisitos definidos.
+2. **Seguridad:** Identificar vulnerabilidades en la autenticación, almacenamiento de datos sensibles y políticas de acceso.
+3. **Arquitectura y código:** Evaluar la organización del código, adherencia a patrones de diseño y mantenibilidad.
+4. **Testing:** Revisar la cobertura de pruebas y el estado de ejecución del suite de tests.
+5. **UX/UI:** Auditar la interfaz de usuario, accesibilidad, diseño responsivo e internacionalización.
+6. **Rendimiento:** Evaluar tiempos de carga, optimización de recursos y buenas prácticas de rendimiento.
+7. **Base de datos:** Verificar el esquema, políticas de seguridad a nivel de fila (RLS) e indexación.
+
+Alcanze
+
+| # | Módulo / Área | Componentes principales | Incluido |
+| :---: | :--- | :--- | :---: |
+| 1 | Autenticación (Auth) | Login, Sign-Up, Logout, Guards de ruta, Gestión de sesión | Sí |
+| 2 | Dashboard | Tarjetas de estadísticas, Próximo riego, Actividad reciente | Sí |
+| 3 | Gestión de Plantas | CRUD completo, Detalle de planta, Métricas IoT, Historial de riego | Sí |
+| 4 | Analytics | Visualización de datos, Métricas de rendimiento | Sí |
+| 5 | Perfil de Usuario | Información personal, Estadísticas, Sistema de logros (gamificación) | Sí |
+| 6 | Configuración (Settings) | Tema, Idioma, Notificaciones, Alertas Discord, Zona de riesgo | Sí |
+| 7 | Experimentos | Cache, Discord webhooks, Gamificación, Premium simulado, Tracking de eventos | Sí |
+| 8 | Componentes compartidos | Header, Sidebar, AuthForm, Router | Sí |
+
+CRITERIOS DE AUDITORÍA
+
+La auditoría se realizó bajo los siguientes criterios y estándares de referencia:
+
+| Estándar / Referencia | Aplicación |
+| :--- | :--- |
+| ISO/IEC 25010:2011 | Modelo de calidad del producto de software (funcionalidad, seguridad, usabilidad, mantenibilidad, rendimiento) |
+| OWASP Top 10 (2021) | Verificación de vulnerabilidades de seguridad web comunes |
+| ISO/IEC 25023:2016 | Métricas de calidad de producto de software |
+| WCAG 2.1 (Nivel AA) | Accesibilidad web |
+| Clean Architecture (Robert C. Martin) | Evaluación de la arquitectura de código y separación de responsabilidades |
+| Vue.js Style Guide (Official) | Convenciones de código y mejores prácticas de Vue.js |
+| Documentación interna del proyecto | `README.md`, `supabase_schema.sql`, `PlanAuditoriaEjemplo.md` |
+
+### Escala de puntuación por área
+
+| Puntuación | Nivel | Descripción |
+| :---: | :--- | :--- |
+| 9 - 10 | Excelente | Cumple todos los criterios, sin observaciones significativas |
+| 7 - 8 | Bueno | Cumple la mayoría de criterios, observaciones menores |
+| 5 - 6 | Aceptable | Cumple criterios básicos, requiere mejoras importantes |
+| 3 - 4 | Deficiente | Incumplimientos significativos, requiere acción correctiva |
+| 1 - 2 | Crítico | Incumplimientos graves que afectan la operación del sistema |
+
+*Fuente: PlanDeAuditoria.md — 2026-07-06 — 5/7*
+
+### Clasificación de hallazgos
+
+| Severidad | Símbolo | Criterio | Plazo de corrección |
+| :--- | :---: | :--- | :--- |
+| Crítica | 🔴 | Vulnerabilidad de seguridad explotable, pérdida de datos, fallo del sistema | Inmediato (< 24h) |
+| Alta | 🟠 | Funcionalidad rota, tests fallidos en CI, riesgo de seguridad moderado | < 1 semana |
+| Media | 🟡 | Inconsistencias de código, errores de UX, deuda técnica significativa | < 2 semanas |
+| Baja | 🟢 | Mejoras de calidad, optimizaciones, inconsistencias menores de estilo | Próximo sprint |
+| Sugerencia | 🔵 | Recomendaciones de mejora a largo plazo, nuevas funcionalidades | Backlog |
+
+##  RESULTADOS RESUMIDOS
+
+| Área evaluada | Puntuación | Hallazgos Críticos | Hallazgos Altos | Hallazgos Medios | Hallazgos Bajos |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Funcionalidad general | 8/10 | 0 | 0 | 0 | 1 |
+| Diseño UI/UX | 9/10 | 0 | 0 | 1 | 2 |
+| Seguridad | 6/10 | 1 | 1 | 1 | 0 |
+| Arquitectura de código | 8/10 | 0 | 0 | 1 | 1 |
+| Testing | 6/10 | 0 | 1 | 0 | 1 |
+| i18n / Accesibilidad | 7/10 | 0 | 0 | 1 | 1 |
+| Rendimiento | 8/10 | 0 | 0 | 0 | 0 |
+| Base de datos | 9/10 | 0 | 0 | 0 | 0 |
+| **TOTAL** | **7.4/10** | **1** | **2** | **4** | **6** |
+
 ### 6.4.2. Auditoría recibida.
 
 La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y experiencia de usuario de la plataforma BusTrack mediante la aplicación de principios heurísticos. El equipo auditor analizó los principales flujos de navegación tanto para pasajeros como para empresas de transporte, identificando oportunidades de mejora relacionadas con la retroalimentación del sistema, validación de formularios, accesibilidad y consistencia de la navegación.
@@ -4184,48 +4302,179 @@ La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y
 
 La auditoría fue realizada por el equipo auditor asignado durante el proceso de evaluación cruzada del proyecto.
 
-| Member                           |    Code    |
-| :------------------------------- | :--------: |
-| Lynn Jeeferzon Meza Camayo       | U20201C320 |
-| Walter Luis Fajardo Monrroy      | U202221632 |
-| Andrea Elizabeth Santur Tello    | U202310988 |
-| Joaquin Alberto Cuentas Peña     | U20201F788 |
+EQUIPO AUDITOR
+
+| Rol | Nombre | Responsabilidad |
+| :--- | :--- | :--- |
+| **Auditor Líder** | Ernesto Casaverde | Planificación, validación de la experiencia operativa, revisión de estrategias de monitoreo continuo y despliegue. |
+| **Auditor Técnico** | Sebastian Estupiñan | Revisión de código fuente en .NET, pruebas de integración (Core Integration Tests), arquitectura DDD y base de datos. |
+| **Auditor Funcional** | Enrique Mantilla | Ejecución de pruebas de comportamiento (BDD con Cucumber/Cypress) en flujos críticos, verificación de despliegues. |
+| **Auditor de UX** | Brayan Corvacho | Evaluación de la interfaz, testeo funcional con Selenium, validación de heurísticas y consistencia visual de los Wireflows. |
+
+---
 
 #### 6.4.2.2. Cronograma de auditoría recibida.
 
-La auditoría se desarrolló siguiendo las etapas de coordinación, planificación, ejecución y elaboración del informe final.
+**Día 1: 05 de julio de 2026**
 
-| Fase          | Actividades                                                                                              | Fecha Inicio | Fecha Fin  |
-| ------------- | -------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| Recepción     | Coordinación con el equipo BusTrack y revisión preliminar de la aplicación desplegada.                   | 15/06/2026   | 15/06/2026 |
-| Planificación | Definición de escenarios de prueba, tareas críticas y heurísticas a evaluar.                             | 15/06/2026   | 15/06/2026 |
-| Ejecución     | Evaluación de los flujos de autenticación, búsqueda de rutas, visualización de mapas y gestión de flota. | 14/06/2026   | 14/06/2026 |
-| Reporte       | Documentación de hallazgos, asignación de severidades y formulación de recomendaciones.                  | 14/06/2026   | 14/06/2026 |
+| Horario | Área / Proceso auditado | Auditor | Responsable | Criterios evaluados | Entorno |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 10:00 - 10:05 | **Reunión de Apertura** | Auditor Líder | Todo el equipo | Revisión del backlog actualizado (UA01-UA05), diagramas de arquitectura (C4). | Repositorios |
+| 10:05 - 10:10 | **Landing Page** | Auditor UX | Frontend | Responsive design, carga de videos incrustados, redirección a módulos de login, accesibilidad. | Prod URL |
+| 10:10 - 10:15 | **Auth & Roles** | Auditor Funcional | Backend | Login diferenciado (Pasajero/Empresa), validación de campos vacíos, manejo de JWT. | Prod URL |
+| 10:15 - 10:20 | **Módulo Pasajeros** | Auditor UX | Frontend | Mapa en tiempo real, búsqueda de rutas (historial), rutas guardadas, i18n (Cambio a inglés). | Prod URL |
+| 10:20 - 10:25 | **Módulo Empresas** | Auditor Líder | Frontend | Administración de flota, gestión de alertas internas, configuración. | Prod URL |
+| 10:25 - 10:35 | **Backend & BD** | Auditor Técnico | Backend | Análisis con SonarLint, controladores, servicios, repositorios. Revisión del esquema en MySQL. | Source Code |
+| 10:35 - 10:40 | **Testing Suite** | Auditor Funcional | QA | Ejecución de *Core Entities Unit Tests*, *Integration Tests* y *BDD Scenarios* (Gherkin/Cypress). | Terminal |
+| 10:40 - 10:45 | **Reunión de Cierre** | Auditor Líder | Todo el equipo | Consolidación de hallazgos, evaluación heurística y firmas. | Local |
+
+---
 
 #### 6.4.2.3. Contenido de auditoría recibida.
 
-Durante la auditoría se evaluaron las funcionalidades principales de BusTrack, incluyendo el proceso de inicio de sesión, búsqueda de rutas, visualización de mapas, consulta de notificaciones, gestión del perfil de usuario y administración de flotas para empresas de transporte.
+LEYENDA DE EVALUACIÓN
+| Símbolo | Estado | Descripción |
+| :---: | :--- | :--- |
+| **✓** | Conforme | El requisito se cumple satisfactoriamente |
+| **O** | Observación | Se cumple parcialmente o presenta desviaciones menores |
+| **X** | No conforme | No se cumple el requisito, requiere acción correctiva |
+| **-** | No aplica | El requisito no es aplicable al producto auditado |
+| **?** | No verificado | No fue posible verificar durante esta auditoría |
 
-Como resultado, se identificaron los siguientes hallazgos principales:
+SECCIÓN 1: FUNCIONALIDAD (ISO/IEC 25010 - Adecuación Funcional)
 
-| # | Problema identificado                                             | Severidad | Heurística violada                                      |
-| - | ----------------------------------------------------------------- | --------- | ------------------------------------------------------- |
-| 1 | Ausencia de indicadores de carga durante la búsqueda de rutas.    | 3         | Visibilidad del estado del sistema                      |
-| 2 | Mensajes de error poco descriptivos y sin acciones correctivas.   | 3         | Reconocimiento, diagnóstico y recuperación ante errores |
-| 3 | Validación de formularios únicamente después del envío.           | 2         | Prevención de errores                                   |
-| 4 | Inconsistencias de accesibilidad en algunos componentes visuales. | 2         | Diseño inclusivo                                        |
-| 5 | Falta de contexto visual en algunos elementos del mapa.           | 2         | Correspondencia entre el sistema y el mundo real        |
+#### 1.1 Autenticación y Roles
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| F-01 | El sistema permite iniciar sesión diferenciada (Pasajero/Empresa). | ✓ | Login exitoso redireccionando a los módulos correspondientes. | |
+| F-02 | El sistema muestra mensajes de error cuando las credenciales son inválidas. | O | El mensaje es genérico ("Error de autenticación"). Podría ser más descriptivo. | Baja |
+| F-03 | Las rutas protegidas validan el rol del usuario antes del acceso. | ✓ | Guard de rutas en Vue bloquea acceso a `/dashboard` sin JWT. | |
 
-El equipo auditor destacó que la plataforma presenta una estructura funcional adecuada y una navegación comprensible para la mayoría de las tareas principales; sin embargo, recomendó mejorar los mecanismos de retroalimentación y accesibilidad para fortalecer la experiencia de usuario.
+#### 1.2 Módulo Pasajeros (Rutas y Búsqueda)
+| # | Requisito verificado                                                                                       | Estado | Evidencia / Observación | Severidad |
+| :--- |:-----------------------------------------------------------------------------------------------------------| :---: | :--- | :--- |
+| F-04 | El sistema permite buscar rutas especificando origen y destino, y se puede ver en el mapa la ruta buscada. | ✓ | Funcionalidad operativa con integración de Google Maps que renderiza el trazado de la ruta. | |
+| F-05 | El usuario puede guardar rutas como favoritas.                                                             | ✓ | Botón "Guardar como favorita" almacena la ruta en la tabla `Route_Stop`. | |
+| F-06 | Se muestra en el mapa la búsqueda realizada.                                                               | ✓ | Tarjetas informativas con distancia exacta al usuario. | |
+| F-07 | El historial de búsquedas registra los viajes previos.                                                     | ✓ | Listado disponible en el Perfil del pasajero. | |
 
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
-Tras analizar las observaciones recibidas, el equipo de desarrollo de BusTrack implementó una serie de mejoras orientadas a incrementar la usabilidad y accesibilidad de la plataforma.
+#### 1.3 Módulo Empresas (Monitoreo y Alertas)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| F-08 | El dashboard muestra los buses activos y su estado operativo. | ✓ | Mapa renderiza marcadores de buses (En horario, Retraso, Mantenimiento). | |
+| F-09 | El sistema permite generar y gestionar alertas internas. | ✓ | Alertas categorizadas correctamente en el panel de empresa. | |
+| F-10 | El administrador puede registrar y asignar nuevos buses a rutas. | ✓ | Formularios de CRUD operativos en la administración de flota. | |
 
-Entre las principales modificaciones realizadas se encuentran la incorporación de indicadores visuales de carga durante las búsquedas de rutas y consultas al sistema, la mejora de los mensajes de error mediante descripciones más específicas y orientadas a la acción, la implementación de validaciones más claras en formularios de autenticación y registro, y la optimización de elementos visuales para favorecer la accesibilidad de los usuarios.
+---
 
-Asimismo, se realizaron ajustes en la interfaz de mapas para mejorar la comprensión de la información mostrada, incorporando elementos de apoyo visual que facilitan la interpretación de rutas, ubicaciones y resultados de búsqueda. Estas mejoras permitieron atender los hallazgos identificados durante la auditoría y fortalecer la experiencia general de los usuarios de BusTrack.
+### SECCIÓN 2: SEGURIDAD (OWASP Top 10)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| S-01 | Los tokens JWT se almacenan de forma segura. | X | No conforme. JWT almacenado en `localStorage`, expuesto a XSS. Se recomienda usar `HttpOnly cookies`. | Media |
+| S-02 | Las contraseñas se almacenan encriptadas en la base de datos. | ✓ | Backend en .NET utiliza hashing seguro (Bcrypt/Identity) antes de guardar en MySQL. | |
+| S-03 | El sistema previene Inyecciones SQL. | ✓ | Uso de Entity Framework Core en .NET evita inyecciones directas. | |
 
-Lo único que tendrías que reemplazar son los **nombres/códigos del grupo auditor** y las **fechas reales** cuando las tengas. Todo lo demás queda consistente con BusTrack, el frontend que analizaste y las heurísticas que ya documentaste.
+---
+
+### SECCIÓN 3: ARQUITECTURA Y CÓDIGO (Domain-Driven Design)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| A-01 | El backend respeta el patrón Domain-Driven Design (DDD). | ✓ | Separación clara en Core Entities, Controllers, Services y Repositories. | |
+| A-02 | Integración y Despliegue Continuo (CI/CD) funcionales. | ✓ | GitHub Actions configurado (`ci.yml`, `cd.yml`). Despliegue en Vercel/Render activo. | |
+| A-03 | Inconsistencia de nomenclatura en el frontend. | O | Algunas vistas en Vue no siguen estandarización estricta (mezcla de PascalCase y camelCase en componentes). | Baja |
+
+---
+
+### SECCIÓN 4: TESTING (Calidad de Pruebas)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| T-01 | Existen pruebas unitarias para entidades core (Core Entities Unit Tests). | ✓ | Validado con pruebas sobre `Route`, `Bus`, `Trip`, `Alert`, etc. | |
+| T-02 | Existen pruebas de comportamiento (BDD) con Cucumber/Cypress. | ✓ | Archivos `.feature` redactados y ejecutándose correctamente en el pipeline. | |
+| T-03 | Cobertura en escenarios de error (Unhappy path). | O | La cobertura de escenarios de error de red es limitada en las pruebas frontend. | Baja |
+
+---
+
+### SECCIÓN 5: UI/UX Y ACCESIBILIDAD (Evaluación Heurística)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| U-01 | El diseño es responsivo (móvil y escritorio). | ✓ | Se adapta correctamente gracias a los media queries de Vite/CSS. | |
+| U-02 | Los mensajes de error son descriptivos (Heurística: Ayuda y Recuperación). | X | Errores genéricos ("Error al guardar") sin pasos para solucionar. | Alta |
+| U-03 | Indicadores de carga visibles durante peticiones a la API. | X | Ausencia de spinners en el renderizado de rutas en el mapa (falta de visibilidad de estado). | Alta |
+| U-04 | Navegación consistente entre módulos (Pasajeros vs Empresas). | O | Flujos de navegación presentan saltos visuales confusos al cambiar de contexto. | Media |
+| U-05 | Internacionalización (i18n) funcional. | ✓ | Selector Español/Inglés operativo en menús principales. | |
+
+---
+
+### SECCIÓN 6: BASE DE DATOS (MySQL)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| D-01 | El diagrama físico (ER) es consistente con la implementación. | ✓ | 9 tablas (Users, Passenger, Route, Bus, etc.) desplegadas correctamente. | |
+| D-02 | Claves foráneas (FK) y restricciones de integridad configuradas. | ✓ | Uso de `ON DELETE CASCADE` donde corresponde. | |
+| D-03 | Gestión de credenciales DB mediante variables de entorno. | ✓ | Credenciales inyectadas desde secretos de Render, no hardcodeadas. | |
+
+---
+
+### SECCIÓN 7: RENDIMIENTO Y DESPLIEGUE
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| R-01 | Tiempos de respuesta de la APIRESTful óptimos (<500ms). | ✓ | Verificado mediante endpoints de Swagger (`/routes`, `/notifications`). | |
+| R-02 | Monitoreo continuo implementado. | ✓ | Panel de Monster ASP.NET y Event Logs activos para detectar caídas. | |
+
+---
+
+### SECCIÓN 8: FUNCIONALIDADES EXPERIMENTALES (To-Be Scenarios)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| E-01 | **(UA04)** Integrar notificaciones de rutas guardadas. | ✓ | Alertas vinculadas a las rutas marcadas como favoritas operativas. | |
+| E-02 | **(UA02)** Implementar historial de búsquedas. | ✓ | Registro de búsquedas pasadas accesible desde el perfil del pasajero. | |
+| E-03 | **(UA05)** Desarrollar administración de flotas. | ✓ | Módulo B2B funcional con herramientas operativas básicas para unidades. | |
+| E-04 | **(UA01)** Desplegar indicador visual de buses activos. | ✓ | El mapa renderiza los buses en operación para reducir la incertidumbre. | |
+| E-05 | **(UA03)** Añadir soporte de internacionalización (i18n). | ✓ | Selector Español/Inglés operativo en el frontend mediante diccionarios. | |
+
+---
+
+### RESUMEN DE NO CONFORMIDADES (Hallazgos Principales)
+
+| # | Sección | ID | Descripción resumida | Severidad | Acción correctiva propuesta | Plazo |
+| :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| 1 | S2 | S-01 | Token JWT en localStorage (Riesgo XSS) | Media | Migrar persistencia de sesión a HttpOnly cookies. | < 2 semanas |
+| 2 | S5 | U-02 | Mensajes de error poco descriptivos | Alta | Implementar manejador de errores global con sugerencias de acción. | < 1 semana |
+| 3 | S5 | U-03 | Ausencia de indicadores de carga (Loading) | Alta | Agregar spinners/skeletons durante peticiones al mapa y API. | < 1 semana |
+| 4 | S5 | U-04 | Navegación inconsistente entre roles | Media | Estandarizar layout (Sidebar/Header) para todos los roles. | < 2 semanas |
+
+---
+
+| Área evaluada | Puntuación | Hallazgos Críticos | Hallazgos Altos | Hallazgos Medios | Hallazgos Bajos |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Funcionalidad General** | 8/10 | 0 | 0 | 1 | 1 |
+| **Diseño UI/UX (Mapas/Roles)** | 8/10 | 0 | 0 | 2 | 1 |
+| **Seguridad (JWT/Auth)** | 7/10 | 0 | 1 | 0 | 0 |
+| **Arquitectura de código (DDD)** | 9/10 | 0 | 0 | 0 | 1 |
+| **Testing (Unit/Integration/BDD)** | 9/10 | 0 | 0 | 0 | 0 |
+| **Internacionalización (i18n)** | 8/10 | 0 | 0 | 1 | 0 |
+| **Rendimiento / Despliegue** | 9/10 | 0 | 0 | 0 | 0 |
+| **Base de Datos (MySQL)** | 9/10 | 0 | 0 | 0 | 0 |
+| **TOTAL** | **8.4/10** | **0** | **1** | **4** | **3** |
+
+---
+
+### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+
+A partir de las no conformidades identificadas durante la auditoría interna de BusTrack (sección 6.4.2.3), se definieron las siguientes modificaciones correctivas sobre el sistema, priorizadas según su severidad y plazo de corrección establecido en el informe:
+
+| # | Hallazgo | Módulo afectado | Modificación propuesta | Severidad | Plazo |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | Token JWT almacenado en `localStorage`, expuesto a ataques XSS (S-01) | Autenticación | Migrar la persistencia de sesión de `localStorage` a `HttpOnly cookies`, eliminando la exposición del token ante scripts maliciosos en el navegador. | Media | < 2 semanas |
+| 2 | Mensajes de error poco descriptivos en el guardado de datos (U-02) | UI/UX general | Implementar un manejador de errores global que reemplace los mensajes genéricos ("Error al guardar") por mensajes con pasos concretos de solución. | Alta | < 1 semana |
+| 3 | Ausencia de indicadores de carga durante peticiones a la API (U-03) | Mapa / consumo de API | Incorporar spinners y skeletons durante el renderizado de rutas en el mapa y las peticiones a los endpoints de la API, mejorando la visibilidad del estado del sistema. | Alta | < 1 semana |
+| 4 | Navegación inconsistente entre módulos Pasajeros/Empresas (U-04) | Layout general (Sidebar/Header) | Estandarizar el layout compartido entre ambos roles, unificando la estructura de navegación para reducir los saltos visuales al cambiar de contexto. | Media | < 2 semanas |
+
+Adicionalmente, aunque no constituyó una no conformidad formal, se registraron dos observaciones menores (severidad Baja) que se atenderán en el siguiente sprint:
+
+- **F-02:** el mensaje de error de credenciales inválidas es genérico ("Error de autenticación"); se propone hacerlo más descriptivo.
+- **A-03:** inconsistencia de nomenclatura en componentes Vue (mezcla de PascalCase y camelCase); se propone estandarizar bajo la Vue.js Style Guide.
+
+Con la implementación de estas modificaciones, se espera elevar la puntuación total de la auditoría (8.4/10) al cerrar el hallazgo de severidad Alta pendiente en Seguridad (JWT/Auth) y reducir las observaciones medias registradas en UI/UX, sin afectar las áreas que ya alcanzaron un nivel de calificación "Excelente" (Testing, Base de Datos y Rendimiento/Despliegue).
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration

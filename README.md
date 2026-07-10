@@ -5050,7 +5050,43 @@ En esta sección se presenta evidencia de la implementación del backend de la p
 ![insing](./img/insg-back.png)
 
 ### 8.3.4. To-Be Validation Interviews
+Una vez implementadas y desplegadas las nuevas funcionalidades del backlog To-Be (UA01 – Indicador de ocupación, UA02 – Reporte colaborativo de incidencias, UA03 – Soporte multilingüe, UA04 – Notificaciones predictivas y UA05 – Panel analítico B2B), se plantea una segunda ronda de entrevistas semiestructuradas dirigida a los mismos dos segmentos objetivo. A diferencia de las entrevistas iniciales (capítulo 2.2), cuyo propósito era explorar el problema y las frustraciones del usuario, estas entrevistas de validación tienen como propósito confirmar si los incrementos desarrollados resuelven realmente los pain points detectados, si el valor percibido coincide con las hipótesis planteadas en el Lean Canvas y si existen fricciones de usabilidad o nuevas oportunidades de mejora sobre el producto ya construido. Para ello, se mostrará a cada entrevistado un demo funcional de BusTrack (aplicación web desplegada en bustrack-frontend-main.vercel.app y API documentada en Swagger) antes de recoger sus impresiones.
 #### 8.3.4.1. Diseño de Entrevistas.
+Objetivo general: Validar la utilidad, usabilidad y valor percibido de las funcionalidades To-Be implementadas en BusTrack, contrastando los resultados con las hipótesis e indicadores definidos en la etapa de experimentación
+Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalidades planificadas en el backlog y los cambios propuestos a la experiencia de usuario. El objetivo fue confirmar si las mejoras proyectadas incrementan usabilidad, claridad, motivación y retención Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)
+
+Objetivo específico: Validar si el indicador de ocupación, el reporte colaborativo de incidencias, el soporte multilingüe y las notificaciones predictivas reducen la incertidumbre y mejoran la confianza y experiencia de viaje del pasajero.
+
+
+Después de ver el mapa en tiempo real, ¿qué tan claro te resultó identificar el nivel de ocupación de un bus (Disponible, Moderado, Lleno) antes de decidir abordarlo?
+¿Consideras que este indicador de ocupación cambiaría tu decisión de esperar el siguiente bus o abordar el que está lleno? ¿Por qué?
+¿Qué tan fácil te pareció enviar un reporte rápido de incidencia (tráfico, paradero saturado, etc.) usando el botón flotante durante el recorrido?
+¿Confiarías en las alertas de congestión o incidentes reportadas por otros pasajeros de la comunidad? ¿Qué te haría confiar más o menos en ellas?
+¿Te motivaría acumular puntos o insignias por reportar incidencias? ¿Por qué sí o por qué no?
+Si guardaras tu ruta habitual (por ejemplo, casa-universidad de lunes a viernes), ¿qué tan útil sería recibir una notificación predictiva 15 minutos antes de tu viaje avisándote sobre un posible retraso?
+¿En qué situaciones dejarías de confiar o ignorarías una notificación predictiva de retraso?
+¿Qué tan importante es para ti poder cambiar el idioma de la aplicación a inglés? ¿En qué contexto lo usarías?
+Comparando esta versión de BusTrack con tu forma actual de informarte (llamadas, redes sociales, preguntar en el paradero), ¿qué tan dispuesto estarías a usar la app de manera diaria?
+Del conjunto de funciones que viste hoy (ocupación, reportes colaborativos, notificaciones predictivas, multilenguaje), ¿cuál priorizarías primero y cuál eliminarías o mejorarías?
+
+
+
+Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)
+
+Objetivo específico: Validar si el panel analítico B2B, el indicador de ocupación y el reporte colaborativo de incidencias aportan valor operativo real, son adoptables por la empresa y justifican una eventual disposición de pago.
+
+
+Después de revisar el panel de analítica avanzada, ¿los indicadores mostrados (cumplimiento de horarios, eficiencia por vehículo) reflejan las métricas que realmente usan para evaluar su flota?
+¿Qué tan fácil fue interpretar los gráficos y filtros del panel (por rango semanal, por unidad) sin necesitar apoyo o capacitación adicional?
+¿Qué decisiones operativas concretas podrían tomar a partir de estos reportes que hoy no pueden tomar con sus herramientas actuales (Excel, WhatsApp, llamadas)?
+¿Consideran que el indicador de ocupación por unidad ayudaría a distribuir mejor sus buses en las rutas con mayor demanda?
+¿Qué tan confiables perciben los reportes colaborativos de incidencias enviados por los pasajeros para la gestión de sus rutas y conductores?
+¿Cómo creen que reaccionarían sus conductores ante un sistema que recibe reportes de los propios pasajeros sobre el servicio?
+¿Este panel de analítica y monitoreo podría ayudarles a fortalecer la confianza de los pasajeros en su empresa? ¿De qué manera?
+Pensando en el modelo Premium/corporativo del panel analítico, ¿qué funcionalidades justificarían pagar por este servicio y cuáles esperarían que sean gratuitas?
+¿Qué barreras internas (costo, capacitación, resistencia del personal) anticipan para adoptar estas funcionalidades en su operación diaria?
+De las funcionalidades mostradas (panel analítico, indicador de ocupación, reportes de incidencias), ¿cuál implementarían primero en su empresa y por qué?
+
 #### 8.3.4.2. Registro de Entrevistas.
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results

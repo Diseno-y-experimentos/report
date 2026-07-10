@@ -3775,7 +3775,7 @@ Durante las entrevistas, los participantes interactuaron con el landing page y l
 
 #### Preguntas Específicas
 
-○ ***Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)***
+***Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)***
 
 - 1. ¿Qué le pareció el diseño general de la landing page y de la aplicación web BusTrack?
 
@@ -4180,8 +4180,126 @@ Para sustentar la evaluación heurística se realizaron pruebas de usabilidad co
 ## 6.4. Auditoría de Experiencias de Usuario
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
+
+| Campo | Detalle |
+| :--- | :--- |
+| Producto auditado | PlantCare Web Application |
+| Versión | 1.2.0 (Desarrollo) |
+| Tipo de aplicación | Single Page Application (SPA) — Plataforma web de gestión y monitoreo de plantas con IoT |
+| Stack tecnológico | Vue 3.5.22 + Rolldown-Vite 7.1.14 + TypeScript 5.9.3 + Supabase + PrimeVue 4.4.0 + Pinia 3.0.3 + vue-i18n 11.4.0 |
+| Repositorio | Plant-Care-Web-main |
+| URL de prueba | https://plant-care-web-experimental.vercel.app/login |
+| Ambiente de despliegue | Vercel (producción) / URL |
+| Base de datos | Supabase (PostgreSQL) — 7 tablas
+
+
+### EQUIPO AUDITOR
+
+| Rol | Nombre / Identificación | Responsabilidad |
+| :--- | :--- | :--- |
+| Auditor Líder | Lynn Meza | Planificación, ejecución de auditoría, elaboración de informes |
+| Auditor Técnico | Walter Fajardo | Revisión de código fuente, arquitectura, seguridad |
+| Auditor Funcional | Andrea Santur | Navegación por la aplicación, pruebas funcionales |
+| Auditor de UX | Joaquin Cuentas | Evaluación de interfaz, accesibilidad, internacionalización |
+
 #### 6.4.1.2. Cronograma de auditoría realizada.
+
+## Día 1 — 5 de julio de 2026
+
+| Horario | Área / Proceso auditado | Auditor | Responsable del área | Criterios / Requisitos evaluados | Entorno |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 16:12 - 16:14 | **REUNIÓN DE APERTURA** | — | Auditor Líder / Equipo de desarrollo | Revisión de `package.json`, estructura de carpetas, reconocimiento del proyecto | `PlanDeAuditoria.md`, `README.md`, `.env.local` |
+| 16:14 - 16:16 | Módulo de Autenticación | Auditor Funcional | Frontend Lead | Login funcional, redirección, manejo de errores, almacenamiento de token, validación de sesión | Supabase |
+| 16:16 - 16:18 | Dashboard | Auditor Funcional | Frontend Lead | Carga de datos, tarjetas de estadísticas, próximo riego, actividad reciente, animaciones, responsive | URL |
+| 16:18 - 16:20 | Gestión de Plantas (CRUD) | Auditor Funcional | Backend Lead | Lista, detalle, formulario de creación, edición, métricas IoT, historial de riego, validación de inputs | URL |
+| 16:20 - 16:22 | Analytics | Auditor Funcional | Data Team | Visualización de datos, integración Vercel Analytics, Speed Insights | URL |
+| 16:22 - 16:24 | Perfil de Usuario | Auditor UX | Frontend Lead | Datos personales, estadísticas, sistema de logros, gamificación, edición de perfil | URL |
+| 16:24 - 16:26 | Configuración (Settings) | Auditor UX | Frontend Lead | Tema claro/oscuro/sistema, idioma ES/EN, Discord webhooks, notificaciones, zona de riesgo | URL |
+| 16:26 - 16:28 | Revisión técnica de código | Auditor Técnico | Tech Lead | Arquitectura hexagonal, Clean Architecture, patrones de diseño, seguridad, naming conventions | Código |
+| 16:28 - 16:28 | Ejecución de suite de tests | Auditor Técnico | QA Lead | 12 archivos de test, 32 tests (unitarios + integración + componentes), estado de ejecución | Terminal |
+| 16:28 - 16:29 | Revisión de esquema de BD | Auditor Técnico | DBA / Backend Lead | 7 tablas, RLS, índices, triggers, constraints, tablas experimentales | SQL Schema |
+| 16:29 - 16:30 | **REUNIÓN DE CIERRE** | — | Auditor Líder / Equipo de desarrollo | Elaboración del informe final, consolidación de hallazgos, clasificación de hallazgos por severidad | `PlanDeAuditoria.md` |
+
+*Fuente: PlanDeAuditoria.md — 2026-07-06 — 3/7*
+
+
 #### 6.4.1.3. Contenido de auditoría realizada.
+
+OBJETIVO DE LA AUDITORÍA
+
+Evaluar de manera integral la calidad del producto de software PlantCare Web en las siguientes dimensiones:
+
+1. **Funcionalidad:** Verificar que todas las funcionalidades implementadas operen correctamente según los requisitos definidos.
+2. **Seguridad:** Identificar vulnerabilidades en la autenticación, almacenamiento de datos sensibles y políticas de acceso.
+3. **Arquitectura y código:** Evaluar la organización del código, adherencia a patrones de diseño y mantenibilidad.
+4. **Testing:** Revisar la cobertura de pruebas y el estado de ejecución del suite de tests.
+5. **UX/UI:** Auditar la interfaz de usuario, accesibilidad, diseño responsivo e internacionalización.
+6. **Rendimiento:** Evaluar tiempos de carga, optimización de recursos y buenas prácticas de rendimiento.
+7. **Base de datos:** Verificar el esquema, políticas de seguridad a nivel de fila (RLS) e indexación.
+
+Alcanze
+
+| # | Módulo / Área | Componentes principales | Incluido |
+| :---: | :--- | :--- | :---: |
+| 1 | Autenticación (Auth) | Login, Sign-Up, Logout, Guards de ruta, Gestión de sesión | Sí |
+| 2 | Dashboard | Tarjetas de estadísticas, Próximo riego, Actividad reciente | Sí |
+| 3 | Gestión de Plantas | CRUD completo, Detalle de planta, Métricas IoT, Historial de riego | Sí |
+| 4 | Analytics | Visualización de datos, Métricas de rendimiento | Sí |
+| 5 | Perfil de Usuario | Información personal, Estadísticas, Sistema de logros (gamificación) | Sí |
+| 6 | Configuración (Settings) | Tema, Idioma, Notificaciones, Alertas Discord, Zona de riesgo | Sí |
+| 7 | Experimentos | Cache, Discord webhooks, Gamificación, Premium simulado, Tracking de eventos | Sí |
+| 8 | Componentes compartidos | Header, Sidebar, AuthForm, Router | Sí |
+
+CRITERIOS DE AUDITORÍA
+
+La auditoría se realizó bajo los siguientes criterios y estándares de referencia:
+
+| Estándar / Referencia | Aplicación |
+| :--- | :--- |
+| ISO/IEC 25010:2011 | Modelo de calidad del producto de software (funcionalidad, seguridad, usabilidad, mantenibilidad, rendimiento) |
+| OWASP Top 10 (2021) | Verificación de vulnerabilidades de seguridad web comunes |
+| ISO/IEC 25023:2016 | Métricas de calidad de producto de software |
+| WCAG 2.1 (Nivel AA) | Accesibilidad web |
+| Clean Architecture (Robert C. Martin) | Evaluación de la arquitectura de código y separación de responsabilidades |
+| Vue.js Style Guide (Official) | Convenciones de código y mejores prácticas de Vue.js |
+| Documentación interna del proyecto | `README.md`, `supabase_schema.sql`, `PlanAuditoriaEjemplo.md` |
+
+### Escala de puntuación por área
+
+| Puntuación | Nivel | Descripción |
+| :---: | :--- | :--- |
+| 9 - 10 | Excelente | Cumple todos los criterios, sin observaciones significativas |
+| 7 - 8 | Bueno | Cumple la mayoría de criterios, observaciones menores |
+| 5 - 6 | Aceptable | Cumple criterios básicos, requiere mejoras importantes |
+| 3 - 4 | Deficiente | Incumplimientos significativos, requiere acción correctiva |
+| 1 - 2 | Crítico | Incumplimientos graves que afectan la operación del sistema |
+
+*Fuente: PlanDeAuditoria.md — 2026-07-06 — 5/7*
+
+### Clasificación de hallazgos
+
+| Severidad | Símbolo | Criterio | Plazo de corrección |
+| :--- | :---: | :--- | :--- |
+| Crítica | 🔴 | Vulnerabilidad de seguridad explotable, pérdida de datos, fallo del sistema | Inmediato (< 24h) |
+| Alta | 🟠 | Funcionalidad rota, tests fallidos en CI, riesgo de seguridad moderado | < 1 semana |
+| Media | 🟡 | Inconsistencias de código, errores de UX, deuda técnica significativa | < 2 semanas |
+| Baja | 🟢 | Mejoras de calidad, optimizaciones, inconsistencias menores de estilo | Próximo sprint |
+| Sugerencia | 🔵 | Recomendaciones de mejora a largo plazo, nuevas funcionalidades | Backlog |
+
+##  RESULTADOS RESUMIDOS
+
+| Área evaluada | Puntuación | Hallazgos Críticos | Hallazgos Altos | Hallazgos Medios | Hallazgos Bajos |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Funcionalidad general | 8/10 | 0 | 0 | 0 | 1 |
+| Diseño UI/UX | 9/10 | 0 | 0 | 1 | 2 |
+| Seguridad | 6/10 | 1 | 1 | 1 | 0 |
+| Arquitectura de código | 8/10 | 0 | 0 | 1 | 1 |
+| Testing | 6/10 | 0 | 1 | 0 | 1 |
+| i18n / Accesibilidad | 7/10 | 0 | 0 | 1 | 1 |
+| Rendimiento | 8/10 | 0 | 0 | 0 | 0 |
+| Base de datos | 9/10 | 0 | 0 | 0 | 0 |
+| **TOTAL** | **7.4/10** | **1** | **2** | **4** | **6** |
+
 ### 6.4.2. Auditoría recibida.
 
 La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y experiencia de usuario de la plataforma BusTrack mediante la aplicación de principios heurísticos. El equipo auditor analizó los principales flujos de navegación tanto para pasajeros como para empresas de transporte, identificando oportunidades de mejora relacionadas con la retroalimentación del sistema, validación de formularios, accesibilidad y consistencia de la navegación.
@@ -4190,48 +4308,179 @@ La auditoría recibida tuvo como objetivo evaluar la usabilidad, accesibilidad y
 
 La auditoría fue realizada por el equipo auditor asignado durante el proceso de evaluación cruzada del proyecto.
 
-| Member                           |    Code    |
-| :------------------------------- | :--------: |
-| Lynn Jeeferzon Meza Camayo       | U20201C320 |
-| Walter Luis Fajardo Monrroy      | U202221632 |
-| Andrea Elizabeth Santur Tello    | U202310988 |
-| Joaquin Alberto Cuentas Peña     | U20201F788 |
+EQUIPO AUDITOR
+
+| Rol | Nombre | Responsabilidad |
+| :--- | :--- | :--- |
+| **Auditor Líder** | Ernesto Casaverde | Planificación, validación de la experiencia operativa, revisión de estrategias de monitoreo continuo y despliegue. |
+| **Auditor Técnico** | Sebastian Estupiñan | Revisión de código fuente en .NET, pruebas de integración (Core Integration Tests), arquitectura DDD y base de datos. |
+| **Auditor Funcional** | Enrique Mantilla | Ejecución de pruebas de comportamiento (BDD con Cucumber/Cypress) en flujos críticos, verificación de despliegues. |
+| **Auditor de UX** | Brayan Corvacho | Evaluación de la interfaz, testeo funcional con Selenium, validación de heurísticas y consistencia visual de los Wireflows. |
+
+---
 
 #### 6.4.2.2. Cronograma de auditoría recibida.
 
-La auditoría se desarrolló siguiendo las etapas de coordinación, planificación, ejecución y elaboración del informe final.
+**Día 1: 05 de julio de 2026**
 
-| Fase          | Actividades                                                                                              | Fecha Inicio | Fecha Fin  |
-| ------------- | -------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| Recepción     | Coordinación con el equipo BusTrack y revisión preliminar de la aplicación desplegada.                   | 15/06/2026   | 15/06/2026 |
-| Planificación | Definición de escenarios de prueba, tareas críticas y heurísticas a evaluar.                             | 15/06/2026   | 15/06/2026 |
-| Ejecución     | Evaluación de los flujos de autenticación, búsqueda de rutas, visualización de mapas y gestión de flota. | 14/06/2026   | 14/06/2026 |
-| Reporte       | Documentación de hallazgos, asignación de severidades y formulación de recomendaciones.                  | 14/06/2026   | 14/06/2026 |
+| Horario | Área / Proceso auditado | Auditor | Responsable | Criterios evaluados | Entorno |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 10:00 - 10:05 | **Reunión de Apertura** | Auditor Líder | Todo el equipo | Revisión del backlog actualizado (UA01-UA05), diagramas de arquitectura (C4). | Repositorios |
+| 10:05 - 10:10 | **Landing Page** | Auditor UX | Frontend | Responsive design, carga de videos incrustados, redirección a módulos de login, accesibilidad. | Prod URL |
+| 10:10 - 10:15 | **Auth & Roles** | Auditor Funcional | Backend | Login diferenciado (Pasajero/Empresa), validación de campos vacíos, manejo de JWT. | Prod URL |
+| 10:15 - 10:20 | **Módulo Pasajeros** | Auditor UX | Frontend | Mapa en tiempo real, búsqueda de rutas (historial), rutas guardadas, i18n (Cambio a inglés). | Prod URL |
+| 10:20 - 10:25 | **Módulo Empresas** | Auditor Líder | Frontend | Administración de flota, gestión de alertas internas, configuración. | Prod URL |
+| 10:25 - 10:35 | **Backend & BD** | Auditor Técnico | Backend | Análisis con SonarLint, controladores, servicios, repositorios. Revisión del esquema en MySQL. | Source Code |
+| 10:35 - 10:40 | **Testing Suite** | Auditor Funcional | QA | Ejecución de *Core Entities Unit Tests*, *Integration Tests* y *BDD Scenarios* (Gherkin/Cypress). | Terminal |
+| 10:40 - 10:45 | **Reunión de Cierre** | Auditor Líder | Todo el equipo | Consolidación de hallazgos, evaluación heurística y firmas. | Local |
+
+---
 
 #### 6.4.2.3. Contenido de auditoría recibida.
 
-Durante la auditoría se evaluaron las funcionalidades principales de BusTrack, incluyendo el proceso de inicio de sesión, búsqueda de rutas, visualización de mapas, consulta de notificaciones, gestión del perfil de usuario y administración de flotas para empresas de transporte.
+LEYENDA DE EVALUACIÓN
+| Símbolo | Estado | Descripción |
+| :---: | :--- | :--- |
+| **✓** | Conforme | El requisito se cumple satisfactoriamente |
+| **O** | Observación | Se cumple parcialmente o presenta desviaciones menores |
+| **X** | No conforme | No se cumple el requisito, requiere acción correctiva |
+| **-** | No aplica | El requisito no es aplicable al producto auditado |
+| **?** | No verificado | No fue posible verificar durante esta auditoría |
 
-Como resultado, se identificaron los siguientes hallazgos principales:
+SECCIÓN 1: FUNCIONALIDAD (ISO/IEC 25010 - Adecuación Funcional)
 
-| # | Problema identificado                                             | Severidad | Heurística violada                                      |
-| - | ----------------------------------------------------------------- | --------- | ------------------------------------------------------- |
-| 1 | Ausencia de indicadores de carga durante la búsqueda de rutas.    | 3         | Visibilidad del estado del sistema                      |
-| 2 | Mensajes de error poco descriptivos y sin acciones correctivas.   | 3         | Reconocimiento, diagnóstico y recuperación ante errores |
-| 3 | Validación de formularios únicamente después del envío.           | 2         | Prevención de errores                                   |
-| 4 | Inconsistencias de accesibilidad en algunos componentes visuales. | 2         | Diseño inclusivo                                        |
-| 5 | Falta de contexto visual en algunos elementos del mapa.           | 2         | Correspondencia entre el sistema y el mundo real        |
+#### 1.1 Autenticación y Roles
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| F-01 | El sistema permite iniciar sesión diferenciada (Pasajero/Empresa). | ✓ | Login exitoso redireccionando a los módulos correspondientes. | |
+| F-02 | El sistema muestra mensajes de error cuando las credenciales son inválidas. | O | El mensaje es genérico ("Error de autenticación"). Podría ser más descriptivo. | Baja |
+| F-03 | Las rutas protegidas validan el rol del usuario antes del acceso. | ✓ | Guard de rutas en Vue bloquea acceso a `/dashboard` sin JWT. | |
 
-El equipo auditor destacó que la plataforma presenta una estructura funcional adecuada y una navegación comprensible para la mayoría de las tareas principales; sin embargo, recomendó mejorar los mecanismos de retroalimentación y accesibilidad para fortalecer la experiencia de usuario.
+#### 1.2 Módulo Pasajeros (Rutas y Búsqueda)
+| # | Requisito verificado                                                                                       | Estado | Evidencia / Observación | Severidad |
+| :--- |:-----------------------------------------------------------------------------------------------------------| :---: | :--- | :--- |
+| F-04 | El sistema permite buscar rutas especificando origen y destino, y se puede ver en el mapa la ruta buscada. | ✓ | Funcionalidad operativa con integración de Google Maps que renderiza el trazado de la ruta. | |
+| F-05 | El usuario puede guardar rutas como favoritas.                                                             | ✓ | Botón "Guardar como favorita" almacena la ruta en la tabla `Route_Stop`. | |
+| F-06 | Se muestra en el mapa la búsqueda realizada.                                                               | ✓ | Tarjetas informativas con distancia exacta al usuario. | |
+| F-07 | El historial de búsquedas registra los viajes previos.                                                     | ✓ | Listado disponible en el Perfil del pasajero. | |
 
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
-Tras analizar las observaciones recibidas, el equipo de desarrollo de BusTrack implementó una serie de mejoras orientadas a incrementar la usabilidad y accesibilidad de la plataforma.
+#### 1.3 Módulo Empresas (Monitoreo y Alertas)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| F-08 | El dashboard muestra los buses activos y su estado operativo. | ✓ | Mapa renderiza marcadores de buses (En horario, Retraso, Mantenimiento). | |
+| F-09 | El sistema permite generar y gestionar alertas internas. | ✓ | Alertas categorizadas correctamente en el panel de empresa. | |
+| F-10 | El administrador puede registrar y asignar nuevos buses a rutas. | ✓ | Formularios de CRUD operativos en la administración de flota. | |
 
-Entre las principales modificaciones realizadas se encuentran la incorporación de indicadores visuales de carga durante las búsquedas de rutas y consultas al sistema, la mejora de los mensajes de error mediante descripciones más específicas y orientadas a la acción, la implementación de validaciones más claras en formularios de autenticación y registro, y la optimización de elementos visuales para favorecer la accesibilidad de los usuarios.
+---
 
-Asimismo, se realizaron ajustes en la interfaz de mapas para mejorar la comprensión de la información mostrada, incorporando elementos de apoyo visual que facilitan la interpretación de rutas, ubicaciones y resultados de búsqueda. Estas mejoras permitieron atender los hallazgos identificados durante la auditoría y fortalecer la experiencia general de los usuarios de BusTrack.
+### SECCIÓN 2: SEGURIDAD (OWASP Top 10)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| S-01 | Los tokens JWT se almacenan de forma segura. | X | No conforme. JWT almacenado en `localStorage`, expuesto a XSS. Se recomienda usar `HttpOnly cookies`. | Media |
+| S-02 | Las contraseñas se almacenan encriptadas en la base de datos. | ✓ | Backend en .NET utiliza hashing seguro (Bcrypt/Identity) antes de guardar en MySQL. | |
+| S-03 | El sistema previene Inyecciones SQL. | ✓ | Uso de Entity Framework Core en .NET evita inyecciones directas. | |
 
-Lo único que tendrías que reemplazar son los **nombres/códigos del grupo auditor** y las **fechas reales** cuando las tengas. Todo lo demás queda consistente con BusTrack, el frontend que analizaste y las heurísticas que ya documentaste.
+---
+
+### SECCIÓN 3: ARQUITECTURA Y CÓDIGO (Domain-Driven Design)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| A-01 | El backend respeta el patrón Domain-Driven Design (DDD). | ✓ | Separación clara en Core Entities, Controllers, Services y Repositories. | |
+| A-02 | Integración y Despliegue Continuo (CI/CD) funcionales. | ✓ | GitHub Actions configurado (`ci.yml`, `cd.yml`). Despliegue en Vercel/Render activo. | |
+| A-03 | Inconsistencia de nomenclatura en el frontend. | O | Algunas vistas en Vue no siguen estandarización estricta (mezcla de PascalCase y camelCase en componentes). | Baja |
+
+---
+
+### SECCIÓN 4: TESTING (Calidad de Pruebas)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| T-01 | Existen pruebas unitarias para entidades core (Core Entities Unit Tests). | ✓ | Validado con pruebas sobre `Route`, `Bus`, `Trip`, `Alert`, etc. | |
+| T-02 | Existen pruebas de comportamiento (BDD) con Cucumber/Cypress. | ✓ | Archivos `.feature` redactados y ejecutándose correctamente en el pipeline. | |
+| T-03 | Cobertura en escenarios de error (Unhappy path). | O | La cobertura de escenarios de error de red es limitada en las pruebas frontend. | Baja |
+
+---
+
+### SECCIÓN 5: UI/UX Y ACCESIBILIDAD (Evaluación Heurística)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| U-01 | El diseño es responsivo (móvil y escritorio). | ✓ | Se adapta correctamente gracias a los media queries de Vite/CSS. | |
+| U-02 | Los mensajes de error son descriptivos (Heurística: Ayuda y Recuperación). | X | Errores genéricos ("Error al guardar") sin pasos para solucionar. | Alta |
+| U-03 | Indicadores de carga visibles durante peticiones a la API. | X | Ausencia de spinners en el renderizado de rutas en el mapa (falta de visibilidad de estado). | Alta |
+| U-04 | Navegación consistente entre módulos (Pasajeros vs Empresas). | O | Flujos de navegación presentan saltos visuales confusos al cambiar de contexto. | Media |
+| U-05 | Internacionalización (i18n) funcional. | ✓ | Selector Español/Inglés operativo en menús principales. | |
+
+---
+
+### SECCIÓN 6: BASE DE DATOS (MySQL)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| D-01 | El diagrama físico (ER) es consistente con la implementación. | ✓ | 9 tablas (Users, Passenger, Route, Bus, etc.) desplegadas correctamente. | |
+| D-02 | Claves foráneas (FK) y restricciones de integridad configuradas. | ✓ | Uso de `ON DELETE CASCADE` donde corresponde. | |
+| D-03 | Gestión de credenciales DB mediante variables de entorno. | ✓ | Credenciales inyectadas desde secretos de Render, no hardcodeadas. | |
+
+---
+
+### SECCIÓN 7: RENDIMIENTO Y DESPLIEGUE
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| R-01 | Tiempos de respuesta de la APIRESTful óptimos (<500ms). | ✓ | Verificado mediante endpoints de Swagger (`/routes`, `/notifications`). | |
+| R-02 | Monitoreo continuo implementado. | ✓ | Panel de Monster ASP.NET y Event Logs activos para detectar caídas. | |
+
+---
+
+### SECCIÓN 8: FUNCIONALIDADES EXPERIMENTALES (To-Be Scenarios)
+| # | Requisito verificado | Estado | Evidencia / Observación | Severidad |
+| :--- | :--- | :---: | :--- | :--- |
+| E-01 | **(UA04)** Integrar notificaciones de rutas guardadas. | ✓ | Alertas vinculadas a las rutas marcadas como favoritas operativas. | |
+| E-02 | **(UA02)** Implementar historial de búsquedas. | ✓ | Registro de búsquedas pasadas accesible desde el perfil del pasajero. | |
+| E-03 | **(UA05)** Desarrollar administración de flotas. | ✓ | Módulo B2B funcional con herramientas operativas básicas para unidades. | |
+| E-04 | **(UA01)** Desplegar indicador visual de buses activos. | ✓ | El mapa renderiza los buses en operación para reducir la incertidumbre. | |
+| E-05 | **(UA03)** Añadir soporte de internacionalización (i18n). | ✓ | Selector Español/Inglés operativo en el frontend mediante diccionarios. | |
+
+---
+
+### RESUMEN DE NO CONFORMIDADES (Hallazgos Principales)
+
+| # | Sección | ID | Descripción resumida | Severidad | Acción correctiva propuesta | Plazo |
+| :---: | :---: | :---: | :--- | :--- | :--- | :--- |
+| 1 | S2 | S-01 | Token JWT en localStorage (Riesgo XSS) | Media | Migrar persistencia de sesión a HttpOnly cookies. | < 2 semanas |
+| 2 | S5 | U-02 | Mensajes de error poco descriptivos | Alta | Implementar manejador de errores global con sugerencias de acción. | < 1 semana |
+| 3 | S5 | U-03 | Ausencia de indicadores de carga (Loading) | Alta | Agregar spinners/skeletons durante peticiones al mapa y API. | < 1 semana |
+| 4 | S5 | U-04 | Navegación inconsistente entre roles | Media | Estandarizar layout (Sidebar/Header) para todos los roles. | < 2 semanas |
+
+---
+
+| Área evaluada | Puntuación | Hallazgos Críticos | Hallazgos Altos | Hallazgos Medios | Hallazgos Bajos |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Funcionalidad General** | 8/10 | 0 | 0 | 1 | 1 |
+| **Diseño UI/UX (Mapas/Roles)** | 8/10 | 0 | 0 | 2 | 1 |
+| **Seguridad (JWT/Auth)** | 7/10 | 0 | 1 | 0 | 0 |
+| **Arquitectura de código (DDD)** | 9/10 | 0 | 0 | 0 | 1 |
+| **Testing (Unit/Integration/BDD)** | 9/10 | 0 | 0 | 0 | 0 |
+| **Internacionalización (i18n)** | 8/10 | 0 | 0 | 1 | 0 |
+| **Rendimiento / Despliegue** | 9/10 | 0 | 0 | 0 | 0 |
+| **Base de Datos (MySQL)** | 9/10 | 0 | 0 | 0 | 0 |
+| **TOTAL** | **8.4/10** | **0** | **1** | **4** | **3** |
+
+---
+
+### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+
+A partir de las no conformidades identificadas durante la auditoría interna de BusTrack (sección 6.4.2.3), se definieron las siguientes modificaciones correctivas sobre el sistema, priorizadas según su severidad y plazo de corrección establecido en el informe:
+
+| # | Hallazgo | Módulo afectado | Modificación propuesta | Severidad | Plazo |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | Token JWT almacenado en `localStorage`, expuesto a ataques XSS (S-01) | Autenticación | Migrar la persistencia de sesión de `localStorage` a `HttpOnly cookies`, eliminando la exposición del token ante scripts maliciosos en el navegador. | Media | < 2 semanas |
+| 2 | Mensajes de error poco descriptivos en el guardado de datos (U-02) | UI/UX general | Implementar un manejador de errores global que reemplace los mensajes genéricos ("Error al guardar") por mensajes con pasos concretos de solución. | Alta | < 1 semana |
+| 3 | Ausencia de indicadores de carga durante peticiones a la API (U-03) | Mapa / consumo de API | Incorporar spinners y skeletons durante el renderizado de rutas en el mapa y las peticiones a los endpoints de la API, mejorando la visibilidad del estado del sistema. | Alta | < 1 semana |
+| 4 | Navegación inconsistente entre módulos Pasajeros/Empresas (U-04) | Layout general (Sidebar/Header) | Estandarizar el layout compartido entre ambos roles, unificando la estructura de navegación para reducir los saltos visuales al cambiar de contexto. | Media | < 2 semanas |
+
+Adicionalmente, aunque no constituyó una no conformidad formal, se registraron dos observaciones menores (severidad Baja) que se atenderán en el siguiente sprint:
+
+- **F-02:** el mensaje de error de credenciales inválidas es genérico ("Error de autenticación"); se propone hacerlo más descriptivo.
+- **A-03:** inconsistencia de nomenclatura en componentes Vue (mezcla de PascalCase y camelCase); se propone estandarizar bajo la Vue.js Style Guide.
+
+Con la implementación de estas modificaciones, se espera elevar la puntuación total de la auditoría (8.4/10) al cerrar el hallazgo de severidad Alta pendiente en Seguridad (JWT/Auth) y reducir las observaciones medias registradas en UI/UX, sin afectar las áreas que ya alcanzaron un nivel de calificación "Excelente" (Testing, Base de Datos y Rendimiento/Despliegue).
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
@@ -5007,17 +5256,476 @@ El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas s
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 #### 8.3.3.1. To-Be Sprint Backlogs
+
+Para el ciclo de vida to-be de la plataforma, el backlog de sprint se priorizó considerando el valor entregado al usuario final y la complejidad técnica de cada historia. La Tabla presenta el orden de desarrollo definido para las historias de usuario correspondientes al sprint, junto con su estimación en story points.
+
+| # Orden | User Story ID | Título de la Historia de Usuario | Story Points (1/2/3/5/8) |
+| :---: | :---: | :--- | :---: |
+| **1** | UA04 | Integrar notificaciones de rutas guardadas | 5 |
+| **2** | UA02 | Implementar historial de búsquedas | 5 |
+| **3** | UA05 | Desarrollar de administración de flotas | 5 |
+| **4** | UA01 | Desplegar indicador visual buses activos | 5 |
+| **5** | UA03 | Añadir soporte de internacionalización (i18n) para traducción al idioma inglés | 3 |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+![landing](./img/landing1.png)
+![landing](./img/landing2.png)
+![landing](./img/landing3.png)
+![landing](./img/landing4.png)
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+![front end](./img/front1.png)
+![front end](./img/front2.png)
+![front end](./img/front3.png)
+![front end](./img/front4.png)
+![front end](./img/front5.png)
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+En esta sección se presenta evidencia de la implementación del backend de la plataforma Bustrack, que incluye la creación de endpoints RESTful para las funcionalidades principales del sistema.
+
+![backend](./img/backend1.png)
+![backend](./img/backend2.png)
+![backend](./img/backend3.png)
+![backend](./img/backend4.png)
+![backend](./img/backend5.png)
+
 #### 8.3.3.6. Team Collaboration Insights
+
+![insing](./img/insg-back.png)
+
 ### 8.3.4. To-Be Validation Interviews
+Una vez implementadas y desplegadas las nuevas funcionalidades del backlog To-Be (UA01 – Indicador de ocupación, UA02 – Reporte colaborativo de incidencias, UA03 – Soporte multilingüe, UA04 – Notificaciones predictivas y UA05 – Panel analítico B2B), se plantea una segunda ronda de entrevistas semiestructuradas dirigida a los mismos dos segmentos objetivo. A diferencia de las entrevistas iniciales (capítulo 2.2), cuyo propósito era explorar el problema y las frustraciones del usuario, estas entrevistas de validación tienen como propósito confirmar si los incrementos desarrollados resuelven realmente los pain points detectados, si el valor percibido coincide con las hipótesis planteadas en el Lean Canvas y si existen fricciones de usabilidad o nuevas oportunidades de mejora sobre el producto ya construido. Para ello, se mostrará a cada entrevistado un demo funcional de BusTrack (aplicación web desplegada en bustrack-frontend-main.vercel.app y API documentada en Swagger) antes de recoger sus impresiones.
 #### 8.3.4.1. Diseño de Entrevistas.
+
+# Guía de Entrevistas de Validación — BusTrack
+
+## Objetivo General
+
+Validar la utilidad, usabilidad y valor percibido de las funcionalidades **To-Be** implementadas en BusTrack, contrastando los resultados con las hipótesis e indicadores definidos en la etapa de experimentación.
+
+Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalidades planificadas en el backlog y los cambios propuestos a la experiencia de usuario. El objetivo fue confirmar si las mejoras proyectadas incrementan **usabilidad, claridad, motivación y retención**.
+
+---
+
+## Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)
+
+**Objetivo específico:** Validar si el indicador de ocupación, el reporte colaborativo de incidencias, el soporte multilingüe y las notificaciones predictivas reducen la incertidumbre y mejoran la confianza y experiencia de viaje del pasajero.
+
+| # | Funcionalidad | Pregunta |
+|---|---------------|----------|
+| 1 | Indicador de ocupación | Después de ver el mapa en tiempo real, ¿qué tan claro te resultó identificar el nivel de ocupación de un bus (Disponible, Moderado, Lleno) antes de decidir abordarlo? |
+| 2 | Indicador de ocupación | ¿Consideras que este indicador de ocupación cambiaría tu decisión de esperar el siguiente bus o abordar el que está lleno? ¿Por qué? |
+| 3 | Reporte colaborativo de incidencias | ¿Qué tan fácil te pareció enviar un reporte rápido de incidencia (tráfico, paradero saturado, etc.) usando el botón flotante durante el recorrido? |
+| 4 | Reporte colaborativo de incidencias | ¿Confiarías en las alertas de congestión o incidentes reportadas por otros pasajeros de la comunidad? ¿Qué te haría confiar más o menos en ellas? |
+| 5 | Reporte colaborativo de incidencias | ¿Te motivaría acumular puntos o insignias por reportar incidencias? ¿Por qué sí o por qué no? |
+| 6 | Notificaciones predictivas | Si guardaras tu ruta habitual (por ejemplo, casa-universidad de lunes a viernes), ¿qué tan útil sería recibir una notificación predictiva 15 minutos antes de tu viaje avisándote sobre un posible retraso? |
+| 7 | Notificaciones predictivas | ¿En qué situaciones dejarías de confiar o ignorarías una notificación predictiva de retraso? |
+| 8 | Soporte multilingüe | ¿Qué tan importante es para ti poder cambiar el idioma de la aplicación a inglés? ¿En qué contexto lo usarías? |
+| 9 | General | Comparando esta versión de BusTrack con tu forma actual de informarte (llamadas, redes sociales, preguntar en el paradero), ¿qué tan dispuesto estarías a usar la app de manera diaria? |
+| 10 | General | Del conjunto de funciones que viste hoy (ocupación, reportes colaborativos, notificaciones predictivas, multilenguaje), ¿cuál priorizarías primero y cuál eliminarías o mejorarías? |
+
+---
+
+## Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)
+
+**Objetivo específico:** Validar si el panel analítico B2B, el indicador de ocupación y el reporte colaborativo de incidencias aportan valor operativo real, son adoptables por la empresa y justifican una eventual disposición de pago.
+
+| # | Funcionalidad | Pregunta |
+|---|---------------|----------|
+| 1 | Reporte colaborativo de incidencias | ¿Qué tan confiables perciben los reportes colaborativos de incidencias enviados por los pasajeros para la gestión de sus rutas y conductores? |
+| 2 | Reporte colaborativo de incidencias | ¿Cómo creen que reaccionarían sus conductores ante un sistema que recibe reportes de los propios pasajeros sobre el servicio? |
+| 3 | Panel de analítica avanzada | ¿Este panel de analítica y monitoreo podría ayudarles a fortalecer la confianza de los pasajeros en su empresa? ¿De qué manera? |
+| 4 | Modelo Premium/corporativo | Pensando en el modelo Premium/corporativo del panel analítico, ¿qué funcionalidades justificarían pagar por este servicio y cuáles esperarían que sean gratuitas? |
+| 5 | General | De las funcionalidades mostradas (gestion de flotas, reportes de incidencias), ¿cuál implementarían primero en su empresa y por qué? |
+
+---
+
+## Resumen de Funcionalidades por Segmento
+
+| Funcionalidad | Segmento 1 (Pasajeros) | Segmento 2 (Empresas) |
+|---|:---:|:---:|
+| Indicador de ocupación | ✅ | ✅ |
+| Reporte colaborativo de incidencias | ✅ | ✅ |
+| Notificaciones predictivas | ✅ | ❌ |
+| Soporte multilingüe | ✅ | ❌ |
+| Panel de analítica avanzada (B2B) | ❌ | ✅ |
+| Modelo Premium/corporativo | ❌ | ✅ |
+
 #### 8.3.4.2. Registro de Entrevistas.
+
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alessandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Bravo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Martin</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaWalter.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 1 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/JW3Tt1gQCJo</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado identificó de forma clara e inmediata el indicador de ocupación (Disponible, Moderado, Lleno) sobre el mapa en tiempo real, señalando que le permitiría decidir sin dudar si espera el siguiente bus o aborda el que está por llegar, evitando así viajar en unidades sobrecargadas. Consideró sencillo el envío de un reporte rápido de incidencia mediante el botón flotante y expresó que sí confiaría en las alertas comunitarias de congestión siempre que provengan de varios pasajeros que validen la misma incidencia. La posibilidad de sumar puntos o insignias por reportar le pareció un incentivo adicional, aunque no determinante. Sobre las notificaciones predictivas de retraso para su ruta habitual (casa-universidad), las consideró muy útiles para salir con tiempo, aunque señaló que dejaría de confiar en ellas si recibiera avisos poco precisos de forma repetida. No usaría el cambio de idioma a inglés de forma frecuente, pero valora que exista. En conjunto, indicó que usaría la app a diario y que priorizaría el indicador de ocupación y las notificaciones predictivas por sobre el multilenguaje.
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>David</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Torres</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaDavid.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/fFs9M6ljtm0</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 11:30 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado, <b>estudiante universitario y usuario frecuente del transporte público</b>, valoró el indicador de ocupación como una mejora directa frente a su forma actual de decidir en el paradero "a simple vista", afirmando que sí cambiaría su decisión de abordar un bus si lo ve marcado como "Lleno". Sobre el reporte colaborativo de incidencias, indicó que lo usaría en situaciones de tráfico intenso, aunque su confianza en las alertas de otros pasajeros dependería de qué tan reciente sea el reporte. Las notificaciones predictivas le parecieron la funcionalidad más valiosa para su rutina diaria universidad-casa, ya que le permitirían anticiparse a retrasos sin depender de preguntar en el paradero. Frente al multilenguaje, mencionó que no es prioritario para su uso personal. Comparando BusTrack con su método actual (preguntar a otros pasajeros o esperar sin información), señaló que estaría muy dispuesto a usar la app diariamente, priorizando el seguimiento en tiempo real y las notificaciones predictivas por encima del resto de funciones.
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Melissa</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Sulca</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Magdalena</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 3 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> La entrevistada, <b>estudiante universitaria</b>, consideró el indicador de ocupación fácil de identificar y útil especialmente en horas punta, cuando suele viajar en buses saturados sin saberlo de antemano. Señaló que sí confiaría en los reportes colaborativos de incidencias, ya que muchas veces no tiene con quién consultar sobre desvíos o congestión y esta funcionalidad cubre ese vacío de información; la gamificación (puntos/insignias) le pareció un plus agradable pero no el motivo principal de uso. Sobre las notificaciones predictivas, mencionó que le darían mayor tranquilidad antes de salir de casa, aunque dejaría de confiar en ellas si nota que no coinciden con la realidad en varias ocasiones seguidas. Valoró positivamente el soporte multilingüe y sugirió mantener un estilo visual consistente entre la landing page y la web al cambiar de idioma. En general, indicó que usaría BusTrack de forma diaria y que priorizaría el indicador de ocupación y los reportes colaborativos como las funciones más importantes.
+  </tr>
+</tbody>
+</table>
+
+### Segmento Objetivo 2: Empresas de Transporte Urbano
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Piero</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Ricaldi Solís</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="./img/interview-companion1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em>Evidencia de validación de entrevista 3 - Piero Ricaldi.</em><br>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td>7:05 min</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>El entrevistado consideró que los indicadores del panel de analítica avanzada (cumplimiento de horarios, eficiencia por vehículo) sí reflejan las métricas que le interesan al momento de evaluar el desempeño de una flota, y calificó los gráficos y filtros por rango semanal como fáciles de interpretar sin necesitar capacitación adicional. Señaló que, a partir de estos reportes, podría tomar decisiones que hoy no puede tomar con hojas de cálculo, como reasignar unidades a rutas con mayor demanda gracias al indicador de ocupación. Consideró confiables los reportes colaborativos de incidencias enviados por los pasajeros, siempre que exista algún mecanismo de validación comunitaria, y anticipó que los conductores podrían mostrar cierta resistencia inicial ante un sistema que los "supervisa" desde el lado del pasajero. Concluyó que el panel de analítica fortalecería la confianza de los pasajeros en la empresa y que <b>lo recomendaría a otras organizaciones del sector</b>, priorizando su implementación por encima del resto de funcionalidades.</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alejandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Barturen</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>30 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaAlejandro.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 2.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado destacó que el panel de analítica avanzada muestra información que actualmente gestiona de forma manual (llamadas, WhatsApp y cuadernos físicos), por lo que le permitiría tomar decisiones operativas más rápidas ante retrasos o fallas. Consideró que el indicador de ocupación por unidad ayudaría a redistribuir buses en rutas con mayor demanda y que los reportes colaborativos de incidencias son confiables como una primera alerta, aunque preferiría cruzarlos con la información de sus propios conductores. Sobre el modelo Premium/corporativo, indicó que pagaría por el panel de analítica y las alertas en tiempo real, pero esperaría que funciones básicas de monitoreo se mantengan gratuitas. Identificó como principales barreras de adopción el costo de la suscripción y la resistencia de algunos conductores al cambio tecnológico. Finalmente, señaló que implementaría primero el panel de analítica y el indicador de ocupación en su empresa, ya que impactan directamente en la puntualidad y calidad del servicio.
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Jean Paul </td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Condori</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>40 años</td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td> Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Villa María del Triunfo</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>
+      <div style="text-align: left;">
+    <img src="/img/commons/administrador-de-flota-entrevista1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em><strong>Figura 177.</strong> Evidencia de validación de entrevista 4 - Segmento 2.</em><br>
+  <em><strong>Fuente:</strong> elaboración propia.</em></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://drive.google.com/file/d/15VTwUG2F1Gw29zwPIvR-8cGvkLp0O0Hr/view?usp=sharing</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:35 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El administrador destacó que la plataforma es fácil de navegar gracias a sus botones grandes y la estructura clara. Valoró especialmente funciones como paraderos cercanos y un mapa para visualizar la ubicación del bus. Sin embargo, sugirió mejorar la claridad de la landing page, ya que está dirigida solo a estudiantes y trabajadores. Asimismo, considera fundamental que la web permita monitorear tanto a los buses como a los choferes para mantener el orden operativo, idealmente mediante GPS integrado y notificaciones automáticas. Además, indicó que estaría dispuesto a pagar por una demo de un mes y que sí recomendaría la herramienta para probarla.
+  </tr>
+</tbody>
+</table>
+
+
+
+<img src="./img/analisis.png" style="width: 350px; height: auto;" />
+
+
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results
+
+Tras la implementación de las historias de usuario priorizadas en el backlog (UA01, UA02, UA03, UA04 y UA05) y su validación mediante entrevistas a los dos segmentos objetivo (pasajeros de transporte público y empresas de transporte urbano), se obtuvieron los siguientes resultados:
+
+**Indicador visual de buses activos (UA01):** Los entrevistados valoraron positivamente contar con una referencia visual clara del estado de las unidades disponibles, señalándola como un aporte a la confianza y utilidad general de la plataforma.
+
+**Historial de búsquedas (UA02):** Los pasajeros identificaron esta funcionalidad como un apoyo práctico para agilizar consultas recurrentes, sin necesidad de repetir búsquedas de rutas frecuentes.
+
+**Internacionalización - i18n (UA03):** Fue explícitamente solicitada por una de las entrevistadas del segmento de pasajeros, quien sugirió añadir soporte de traducción al inglés manteniendo un estilo consistente entre la landing page y la aplicación web, confirmando que existe una necesidad real no cubierta previamente.
+
+**Notificaciones de rutas guardadas (UA04):** Los entrevistados de ambos segmentos expresaron interés en recibir notificaciones relacionadas con sus rutas de interés, considerándolo un factor que mejora la experiencia de uso frecuente.
+
+**Administración de flotas (UA05):** Los administradores y supervisores entrevistados destacaron esta funcionalidad como la más valiosa para su organización, indicando que facilita el monitoreo y la toma de decisiones operativas, y que contribuye a mejorar la puntualidad y calidad del servicio.
+
+**Diseño de landing page y usabilidad general:** Los entrevistados de ambos segmentos coincidieron en que la interfaz es intuitiva, moderna y fácil de navegar, y que la información presentada en la landing page comunica con claridad el propósito de BusTrack.
+
+**Confianza y disposición de uso:** Los entrevistados manifestaron confianza para registrarse y utilizar la plataforma, así como disposición a recomendarla a otros usuarios y organizaciones del sector transporte.
+
+En conjunto, estos resultados validan las hipótesis iniciales sobre las historias priorizadas, confirmando que las funcionalidades desarrolladas responden a las necesidades tanto de pasajeros como de empresas de transporte urbano en Lima.
+
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Con base en los resultados obtenidos y el feedback de usuarios recopilado en las entrevistas, se reajustó el puntaje y la prioridad del backlog de preguntas experimentales asociado a las historias de usuario desarrolladas. A continuación, se presenta la nueva priorización:
+
+| Pregunta | Confianza | Riesgo | Impacto | Interés | Puntuación Total | Nueva Prioridad |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| ¿Implementar administración de flotas mejorará la supervisión y toma de decisiones operativas? | 3 | 1 | 3 | 3 | 10 | 1 |
+| ¿Añadir soporte de internacionalización (i18n) ampliará el alcance de usuarios de la plataforma? | 3 | 1 | 2 | 3 | 9 | 2 |
+| ¿Notificar sobre rutas guardadas incrementará la frecuencia de uso de la aplicación? | 2 | 1 | 3 | 3 | 9 | 3 |
+| ¿Un indicador visual de buses activos aumentará la confianza en la información mostrada? | 3 | 1 | 2 | 2 | 8 | 4 |
+| ¿Un historial de búsquedas agilizará la experiencia de consulta de rutas frecuentes? | 2 | 1 | 2 | 2 | 7 | 5 |
+
+Este reordenamiento prioriza la administración de flotas y la internacionalización, funcionalidades que en las entrevistas mostraron mayor impacto percibido tanto para el segmento de pasajeros como para el de empresas de transporte urbano.
+
 ## 8.5. Continuous Learning
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 ## 8.6. To-Be Software Platform Pre-launch
@@ -5030,14 +5738,39 @@ El presente contrato regula la prestación del servicio BusTrack bajo el modelo 
 
 2. Niveles de Servicio (SLA)
 
-Disponibilidad: El servicio estará disponible el 99% del tiempo mensual, salvo mantenimientos programados.
-Soporte: Se brindará soporte básico vía correo electrónico en horario laboral.
-Tiempo de respuesta ante incidencias críticas: máximo 48 horas hábiles.
+**Disponibilidad del servicio:** BusTrack garantiza una disponibilidad mensual del **99%** (*uptime*), medida sobre el total de horas del mes calendario y calculada mediante el monitoreo continuo de los servicios desplegados en Render (backend) y Vercel (frontend). Quedan excluidos del cálculo los mantenimientos programados, que serán notificados a los usuarios con un mínimo de **24 horas de anticipación** a través de la plataforma y/o correo electrónico.
+
+**Niveles de severidad y tiempos de respuesta:** Las incidencias reportadas se clasifican y atienden según la siguiente escala:
+
+| Severidad | Descripción | Tiempo de respuesta | Tiempo estimado de resolución |
+| :---: | :--- | :---: | :---: |
+| **Crítica (P1)** | Caída total del servicio o imposibilidad de acceso a la plataforma (API o Frontend caídos). | Máximo 4 horas hábiles | Máximo 48 horas hábiles |
+| **Alta (P2)** | Falla parcial que afecta funcionalidades clave (mapa en tiempo real, notificaciones, autenticación). | Máximo 8 horas hábiles | Máximo 5 días hábiles |
+| **Media (P3)** | Errores puntuales que no bloquean el uso general del sistema (visualización, reportes secundarios). | Máximo 24 horas hábiles | Máximo 10 días hábiles |
+| **Baja (P4)** | Consultas, mejoras o incidencias cosméticas sin impacto funcional. | Máximo 48 horas hábiles | Según planificación del backlog |
+
+**Canal y horario de soporte:** El soporte se brinda vía correo electrónico institucional del equipo BusTrack, en horario laboral (lunes a viernes, 9:00 a.m. – 6:00 p.m., hora Perú - GMT-5). Para el segmento empresarial (Segmento 2), el plan Premium contempla un canal de soporte prioritario con tiempos de respuesta reducidos a la mitad de los indicados en la tabla anterior.
+
+**Medición y reporte de cumplimiento:** El cumplimiento del SLA se verificará mensualmente mediante herramientas de monitoreo continuo (*continuous monitoring*), y los resultados podrán ser solicitados por el usuario corporativo como parte de la transparencia del servicio.
+
+**Compensación por incumplimiento:** En caso la disponibilidad mensual real sea inferior al 99% comprometido, se evaluará una compensación proporcional (créditos de servicio o extensión del periodo de suscripción) para los usuarios del plan Premium/corporativo, exceptuando los casos de fuerza mayor detallados en la cláusula 6.
+
 3. Protección de Datos Personales
 
-BusTrack cumple con la Ley N.º 29733 de Protección de Datos Personales (Perú).
-Los datos de los usuarios serán tratados con confidencialidad y solo para los fines del servicio.
-El usuario puede ejercer sus derechos de acceso, rectificación y cancelación de datos.
+**Marco normativo:** BusTrack cumple con la **Ley N.º 29733 – Ley de Protección de Datos Personales (Perú)** y su Reglamento (Decreto Supremo N.º 003-2013-JUS), garantizando el tratamiento lícito, proporcional y transparente de la información de sus usuarios.
+
+**Datos recopilados:** La plataforma recolecta únicamente los datos necesarios para la prestación del servicio: (a) datos de identificación y contacto (nombre, correo electrónico, credenciales de acceso); (b) datos de geolocalización en tiempo real, utilizados exclusivamente para mostrar rutas, paraderos cercanos y el estado de las unidades; (c) historial de rutas guardadas y viajes recientes; y (d) datos operativos de las empresas de transporte (unidades, rutas, horarios).
+
+**Finalidad del tratamiento:** Los datos se emplean únicamente para: la prestación del servicio (visualización de rutas y notificaciones), la mejora de la experiencia del usuario, y la generación de reportes agregados y anonimizados para el panel de analítica B2B (UA05), sin identificar individualmente a los pasajeros.
+
+**Confidencialidad y medidas de seguridad:** La información se almacena en bases de datos con acceso restringido y credenciales cifradas, aplicando el principio de mínimo privilegio. Las contraseñas se almacenan mediante *hashing* y no se comparte información personal con terceros sin consentimiento expreso del usuario, salvo requerimiento de autoridad competente.
+
+**Plazo de conservación:** Los datos personales se conservarán mientras la cuenta del usuario permanezca activa. Tras la eliminación de la cuenta, la información se elimina o anonimiza en un plazo máximo de **30 días calendario**, salvo obligación legal de conservación mayor.
+
+**Derechos ARCO:** El usuario puede ejercer en cualquier momento sus derechos de **Acceso, Rectificación, Cancelación y Oposición (ARCO)** sobre sus datos personales, mediante solicitud al correo de soporte de BusTrack. La solicitud será atendida en un plazo máximo de **10 días hábiles**, conforme a la normativa vigente.
+
+**Notificación ante incidentes de seguridad:** En caso de detectarse una brecha de seguridad que comprometa datos personales, BusTrack notificará a los usuarios afectados y, de corresponder, a la Autoridad Nacional de Protección de Datos Personales, en un plazo no mayor a **72 horas** desde su detección.
+
 4. Propiedad Intelectual
 
 Todo el software, documentación y materiales asociados a BusTrack son propiedad exclusiva del equipo desarrollador.

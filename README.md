@@ -5052,42 +5052,339 @@ En esta sección se presenta evidencia de la implementación del backend de la p
 ### 8.3.4. To-Be Validation Interviews
 Una vez implementadas y desplegadas las nuevas funcionalidades del backlog To-Be (UA01 – Indicador de ocupación, UA02 – Reporte colaborativo de incidencias, UA03 – Soporte multilingüe, UA04 – Notificaciones predictivas y UA05 – Panel analítico B2B), se plantea una segunda ronda de entrevistas semiestructuradas dirigida a los mismos dos segmentos objetivo. A diferencia de las entrevistas iniciales (capítulo 2.2), cuyo propósito era explorar el problema y las frustraciones del usuario, estas entrevistas de validación tienen como propósito confirmar si los incrementos desarrollados resuelven realmente los pain points detectados, si el valor percibido coincide con las hipótesis planteadas en el Lean Canvas y si existen fricciones de usabilidad o nuevas oportunidades de mejora sobre el producto ya construido. Para ello, se mostrará a cada entrevistado un demo funcional de BusTrack (aplicación web desplegada en bustrack-frontend-main.vercel.app y API documentada en Swagger) antes de recoger sus impresiones.
 #### 8.3.4.1. Diseño de Entrevistas.
-Objetivo general: Validar la utilidad, usabilidad y valor percibido de las funcionalidades To-Be implementadas en BusTrack, contrastando los resultados con las hipótesis e indicadores definidos en la etapa de experimentación
-Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalidades planificadas en el backlog y los cambios propuestos a la experiencia de usuario. El objetivo fue confirmar si las mejoras proyectadas incrementan usabilidad, claridad, motivación y retención Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)
 
-Objetivo específico: Validar si el indicador de ocupación, el reporte colaborativo de incidencias, el soporte multilingüe y las notificaciones predictivas reducen la incertidumbre y mejoran la confianza y experiencia de viaje del pasajero.
+# Guía de Entrevistas de Validación — BusTrack
 
+## Objetivo General
 
-Después de ver el mapa en tiempo real, ¿qué tan claro te resultó identificar el nivel de ocupación de un bus (Disponible, Moderado, Lleno) antes de decidir abordarlo?
-¿Consideras que este indicador de ocupación cambiaría tu decisión de esperar el siguiente bus o abordar el que está lleno? ¿Por qué?
-¿Qué tan fácil te pareció enviar un reporte rápido de incidencia (tráfico, paradero saturado, etc.) usando el botón flotante durante el recorrido?
-¿Confiarías en las alertas de congestión o incidentes reportadas por otros pasajeros de la comunidad? ¿Qué te haría confiar más o menos en ellas?
-¿Te motivaría acumular puntos o insignias por reportar incidencias? ¿Por qué sí o por qué no?
-Si guardaras tu ruta habitual (por ejemplo, casa-universidad de lunes a viernes), ¿qué tan útil sería recibir una notificación predictiva 15 minutos antes de tu viaje avisándote sobre un posible retraso?
-¿En qué situaciones dejarías de confiar o ignorarías una notificación predictiva de retraso?
-¿Qué tan importante es para ti poder cambiar el idioma de la aplicación a inglés? ¿En qué contexto lo usarías?
-Comparando esta versión de BusTrack con tu forma actual de informarte (llamadas, redes sociales, preguntar en el paradero), ¿qué tan dispuesto estarías a usar la app de manera diaria?
-Del conjunto de funciones que viste hoy (ocupación, reportes colaborativos, notificaciones predictivas, multilenguaje), ¿cuál priorizarías primero y cuál eliminarías o mejorarías?
+Validar la utilidad, usabilidad y valor percibido de las funcionalidades **To-Be** implementadas en BusTrack, contrastando los resultados con las hipótesis e indicadores definidos en la etapa de experimentación.
 
+Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalidades planificadas en el backlog y los cambios propuestos a la experiencia de usuario. El objetivo fue confirmar si las mejoras proyectadas incrementan **usabilidad, claridad, motivación y retención**.
 
+---
 
-Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)
+## Segmento Objetivo 1: Pasajeros de Transporte Público (Estudiantes y Trabajadores)
 
-Objetivo específico: Validar si el panel analítico B2B, el indicador de ocupación y el reporte colaborativo de incidencias aportan valor operativo real, son adoptables por la empresa y justifican una eventual disposición de pago.
+**Objetivo específico:** Validar si el indicador de ocupación, el reporte colaborativo de incidencias, el soporte multilingüe y las notificaciones predictivas reducen la incertidumbre y mejoran la confianza y experiencia de viaje del pasajero.
 
+| # | Funcionalidad | Pregunta |
+|---|---------------|----------|
+| 1 | Indicador de ocupación | Después de ver el mapa en tiempo real, ¿qué tan claro te resultó identificar el nivel de ocupación de un bus (Disponible, Moderado, Lleno) antes de decidir abordarlo? |
+| 2 | Indicador de ocupación | ¿Consideras que este indicador de ocupación cambiaría tu decisión de esperar el siguiente bus o abordar el que está lleno? ¿Por qué? |
+| 3 | Reporte colaborativo de incidencias | ¿Qué tan fácil te pareció enviar un reporte rápido de incidencia (tráfico, paradero saturado, etc.) usando el botón flotante durante el recorrido? |
+| 4 | Reporte colaborativo de incidencias | ¿Confiarías en las alertas de congestión o incidentes reportadas por otros pasajeros de la comunidad? ¿Qué te haría confiar más o menos en ellas? |
+| 5 | Reporte colaborativo de incidencias | ¿Te motivaría acumular puntos o insignias por reportar incidencias? ¿Por qué sí o por qué no? |
+| 6 | Notificaciones predictivas | Si guardaras tu ruta habitual (por ejemplo, casa-universidad de lunes a viernes), ¿qué tan útil sería recibir una notificación predictiva 15 minutos antes de tu viaje avisándote sobre un posible retraso? |
+| 7 | Notificaciones predictivas | ¿En qué situaciones dejarías de confiar o ignorarías una notificación predictiva de retraso? |
+| 8 | Soporte multilingüe | ¿Qué tan importante es para ti poder cambiar el idioma de la aplicación a inglés? ¿En qué contexto lo usarías? |
+| 9 | General | Comparando esta versión de BusTrack con tu forma actual de informarte (llamadas, redes sociales, preguntar en el paradero), ¿qué tan dispuesto estarías a usar la app de manera diaria? |
+| 10 | General | Del conjunto de funciones que viste hoy (ocupación, reportes colaborativos, notificaciones predictivas, multilenguaje), ¿cuál priorizarías primero y cuál eliminarías o mejorarías? |
 
-Después de revisar el panel de analítica avanzada, ¿los indicadores mostrados (cumplimiento de horarios, eficiencia por vehículo) reflejan las métricas que realmente usan para evaluar su flota?
-¿Qué tan fácil fue interpretar los gráficos y filtros del panel (por rango semanal, por unidad) sin necesitar apoyo o capacitación adicional?
-¿Qué decisiones operativas concretas podrían tomar a partir de estos reportes que hoy no pueden tomar con sus herramientas actuales (Excel, WhatsApp, llamadas)?
-¿Consideran que el indicador de ocupación por unidad ayudaría a distribuir mejor sus buses en las rutas con mayor demanda?
-¿Qué tan confiables perciben los reportes colaborativos de incidencias enviados por los pasajeros para la gestión de sus rutas y conductores?
-¿Cómo creen que reaccionarían sus conductores ante un sistema que recibe reportes de los propios pasajeros sobre el servicio?
-¿Este panel de analítica y monitoreo podría ayudarles a fortalecer la confianza de los pasajeros en su empresa? ¿De qué manera?
-Pensando en el modelo Premium/corporativo del panel analítico, ¿qué funcionalidades justificarían pagar por este servicio y cuáles esperarían que sean gratuitas?
-¿Qué barreras internas (costo, capacitación, resistencia del personal) anticipan para adoptar estas funcionalidades en su operación diaria?
-De las funcionalidades mostradas (panel analítico, indicador de ocupación, reportes de incidencias), ¿cuál implementarían primero en su empresa y por qué?
+---
+
+## Segmento Objetivo 2: Empresas de Transporte Urbano (Administradores y Supervisores de Flota)
+
+**Objetivo específico:** Validar si el panel analítico B2B, el indicador de ocupación y el reporte colaborativo de incidencias aportan valor operativo real, son adoptables por la empresa y justifican una eventual disposición de pago.
+
+| # | Funcionalidad | Pregunta |
+|---|---------------|----------|
+| 1 | Panel de analítica avanzada | Después de revisar el panel de analítica avanzada, ¿los indicadores mostrados (cumplimiento de horarios, eficiencia por vehículo) reflejan las métricas que realmente usan para evaluar su flota? |
+| 2 | Panel de analítica avanzada | ¿Qué tan fácil fue interpretar los gráficos y filtros del panel (por rango semanal, por unidad) sin necesitar apoyo o capacitación adicional? |
+| 3 | Panel de analítica avanzada | ¿Qué decisiones operativas concretas podrían tomar a partir de estos reportes que hoy no pueden tomar con sus herramientas actuales (Excel, WhatsApp, llamadas)? |
+| 4 | Indicador de ocupación | ¿Consideran que el indicador de ocupación por unidad ayudaría a distribuir mejor sus buses en las rutas con mayor demanda? |
+| 5 | Reporte colaborativo de incidencias | ¿Qué tan confiables perciben los reportes colaborativos de incidencias enviados por los pasajeros para la gestión de sus rutas y conductores? |
+| 6 | Reporte colaborativo de incidencias | ¿Cómo creen que reaccionarían sus conductores ante un sistema que recibe reportes de los propios pasajeros sobre el servicio? |
+| 7 | Panel de analítica avanzada | ¿Este panel de analítica y monitoreo podría ayudarles a fortalecer la confianza de los pasajeros en su empresa? ¿De qué manera? |
+| 8 | Modelo Premium/corporativo | Pensando en el modelo Premium/corporativo del panel analítico, ¿qué funcionalidades justificarían pagar por este servicio y cuáles esperarían que sean gratuitas? |
+| 9 | Adopción | ¿Qué barreras internas (costo, capacitación, resistencia del personal) anticipan para adoptar estas funcionalidades en su operación diaria? |
+| 10 | General | De las funcionalidades mostradas (panel analítico, indicador de ocupación, reportes de incidencias), ¿cuál implementarían primero en su empresa y por qué? |
+
+---
+
+## Resumen de Funcionalidades por Segmento
+
+| Funcionalidad | Segmento 1 (Pasajeros) | Segmento 2 (Empresas) |
+|---|:---:|:---:|
+| Indicador de ocupación | ✅ | ✅ |
+| Reporte colaborativo de incidencias | ✅ | ✅ |
+| Notificaciones predictivas | ✅ | ❌ |
+| Soporte multilingüe | ✅ | ❌ |
+| Panel de analítica avanzada (B2B) | ❌ | ✅ |
+| Modelo Premium/corporativo | ❌ | ✅ |
 
 #### 8.3.4.2. Registro de Entrevistas.
+
+### Segmento Objetivo 1: Pasajeros de Transporte Público
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alessandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Bravo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Martin</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaWalter.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 1 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/JW3Tt1gQCJo</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado,tuvo una percepción positiva de BusTrack, destacando que la landing page y la aplicación son fáciles de entender y navegar. Consideró que la información presentada explica claramente el propósito de la plataforma y resaltó como funcionalidad más útil el tiempo estimado de llegada de los autobuses, ya que le ayuda a organizar mejor sus desplazamientos. Además, indicó que el seguimiento en tiempo real y las notificaciones sobre incidencias mejorarían su experiencia de viaje. Finalmente, señaló que utilizaría la aplicación con frecuencia y la recomendaría a otras personas por la utilidad de la información que proporciona.
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>David</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Torres</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaDavid.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/fFs9M6ljtm0</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 11:30 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado , que es <b>estudiante universitario y usuario frecuente del transporte público</b>,valoró positivamente el diseño de BusTrack, destacando que la interfaz es moderna, organizada y fácil de utilizar. Consideró que la información presentada en la landing page permite comprender rápidamente el propósito de la plataforma y las funcionalidades que ofrece. La característica que encontró más útil fue el <b>seguimiento en tiempo real de los autobuses</b>, ya que le permitiría conocer con mayor precisión la ubicación de las unidades y reducir los tiempos de espera durante sus desplazamientos diarios
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Melissa</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Sulca</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Magdalena</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 3 - Segmento 1.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> La entrevistada, que es <b>estudiante universitaria</b>, valoró el diseño como "colores atractivos y acordes". Considera que la aplicación aporta confianza y utilidad por la facilidad de la información que hay en ella <b>información en tiempo real de los buses</b> esto se evidencia en que a veces cuando ella no ha sabido qué bus tomar, no ha tenido con quién consultar; sin embargo, en la aplicación lo puede observar en tiempo real. Sugirió añadir una <b>opción de internacionalización con estilo similiar en la landing y la web</b> y una vista previa del mapa integrada. Confirmó que la interfaz es intuitiva, genera confianza por el contenido que hay en ella y la coherencia de las funcionalidades.
+  </tr>
+</tbody>
+</table>
+
+### Segmento Objetivo 2: Empresas de Transporte Urbano
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Piero</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Ricaldi Solís</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="./img/interview-companion1.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em>Evidencia de validación de entrevista 3 - Piero Ricaldi.</em><br>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td>7:05 min</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>El entrevistado valoró positivamente todas las características de BusTrack, destacando que la plataforma es intuitiva, moderna y bien organizada. Le pareció excelente la funcionalidad de <b>rastreo en tiempo real de autobuses</b> y la <b>información clara sobre rutas</b>, características que considera muy útiles para optimizar sus desplazamientos diarios. Concluyó que la aplicación resuelve un problema real en el transporte urbano de Lima y <b>la recomendaría a otros usuarios</b> sin dudarlo.</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+</colgroup>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alejandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Barturen</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>30 </td>
+  </tr>
+   <tr>
+    <td>Ocupación</td>
+    <td>Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
+    <img src="/img/commons/EntrevistaAlejandro.png" style="width: 350px; height: auto;" />
+  </div> <br>
+  <em> Evidencia de validación de entrevista 2 - Segmento 2.</em><br>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado destacó que BusTrack presenta una interfaz clara y fácil de utilizar, resaltando el monitoreo en tiempo real de las unidades como la funcionalidad más valiosa. Considera que las alertas y reportes ayudan a mejorar la supervisión de la flota y la toma de decisiones, contribuyendo a una mayor puntualidad y calidad del servicio. Además, indicó que implementaría una solución como BusTrack en su empresa y la recomendaría a otras organizaciones del sector por los beneficios que ofrece en la gestión operativa.
+  </tr>
+</tbody>
+</table>
+
 ## 8.4. Experiment Aftermath & Analysis
 ### 8.4.1. Analysis and Interpretation of Results
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog

@@ -5120,54 +5120,54 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 <colgroup>
 </colgroup>
 <thead>
-  <tr>
-    <th colspan="2">Entrevista #1<br></th>
-  </tr>
+  <tr>
+    <th colspan="2">Entrevista #1<br></th>
+  </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Alessandro</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Bravo</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>21 </td>
-  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>Alessandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Bravo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
    <tr>
-    <td>Ocupación</td>
-    <td>Estudiante </td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>San Martin</td>
-  </tr>
-  <tr>
-    <td>Aplicaciones Usadas</td>
-    <td>Grabación de pantalla</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div style="text-align: left;">
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Martin</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
     <img src="/img/commons/EntrevistaWalter.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 1 - Segmento 1.</em><br>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>https://youtu.be/JW3Tt1gQCJo</td>
-  </tr>
-  <tr>
-    <td>Duración<br></td>
-    <td> 10:32 min </td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td> El entrevistado,tuvo una percepción positiva de BusTrack, destacando que la landing page y la aplicación son fáciles de entender y navegar. Consideró que la información presentada explica claramente el propósito de la plataforma y resaltó como funcionalidad más útil el tiempo estimado de llegada de los autobuses, ya que le ayuda a organizar mejor sus desplazamientos. Además, indicó que el seguimiento en tiempo real y las notificaciones sobre incidencias mejorarían su experiencia de viaje. Finalmente, señaló que utilizaría la aplicación con frecuencia y la recomendaría a otras personas por la utilidad de la información que proporciona.
-  </tr>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/JW3Tt1gQCJo</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado identificó de forma clara e inmediata el indicador de ocupación (Disponible, Moderado, Lleno) sobre el mapa en tiempo real, señalando que le permitiría decidir sin dudar si espera el siguiente bus o aborda el que está por llegar, evitando así viajar en unidades sobrecargadas. Consideró sencillo el envío de un reporte rápido de incidencia mediante el botón flotante y expresó que sí confiaría en las alertas comunitarias de congestión siempre que provengan de varios pasajeros que validen la misma incidencia. La posibilidad de sumar puntos o insignias por reportar le pareció un incentivo adicional, aunque no determinante. Sobre las notificaciones predictivas de retraso para su ruta habitual (casa-universidad), las consideró muy útiles para salir con tiempo, aunque señaló que dejaría de confiar en ellas si recibiera avisos poco precisos de forma repetida. No usaría el cambio de idioma a inglés de forma frecuente, pero valora que exista. En conjunto, indicó que usaría la app a diario y que priorizaría el indicador de ocupación y las notificaciones predictivas por sobre el multilenguaje.
+  </tr>
 </tbody>
 </table>
 
@@ -5175,54 +5175,54 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 <colgroup>
 </colgroup>
 <thead>
-  <tr>
-    <th colspan="2">Entrevista #2<br></th>
-  </tr>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>David</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Torres</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>21 </td>
-  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>David</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Torres</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>21 </td>
+  </tr>
    <tr>
-    <td>Ocupación</td>
-    <td>Estudiante </td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Los Olivos</td>
-  </tr>
-  <tr>
-    <td>Aplicaciones Usadas</td>
-    <td>Zoom</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div style="text-align: left;">
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
     <img src="/img/commons/EntrevistaDavid.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 2 - Segmento 1.</em><br>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>https://youtu.be/fFs9M6ljtm0</td>
-  </tr>
-  <tr>
-    <td>Duración<br></td>
-    <td> 11:30 min </td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td> El entrevistado , que es <b>estudiante universitario y usuario frecuente del transporte público</b>,valoró positivamente el diseño de BusTrack, destacando que la interfaz es moderna, organizada y fácil de utilizar. Consideró que la información presentada en la landing page permite comprender rápidamente el propósito de la plataforma y las funcionalidades que ofrece. La característica que encontró más útil fue el <b>seguimiento en tiempo real de los autobuses</b>, ya que le permitiría conocer con mayor precisión la ubicación de las unidades y reducir los tiempos de espera durante sus desplazamientos diarios
-  </tr>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://youtu.be/fFs9M6ljtm0</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 11:30 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado, <b>estudiante universitario y usuario frecuente del transporte público</b>, valoró el indicador de ocupación como una mejora directa frente a su forma actual de decidir en el paradero "a simple vista", afirmando que sí cambiaría su decisión de abordar un bus si lo ve marcado como "Lleno". Sobre el reporte colaborativo de incidencias, indicó que lo usaría en situaciones de tráfico intenso, aunque su confianza en las alertas de otros pasajeros dependería de qué tan reciente sea el reporte. Las notificaciones predictivas le parecieron la funcionalidad más valiosa para su rutina diaria universidad-casa, ya que le permitirían anticiparse a retrasos sin depender de preguntar en el paradero. Frente al multilenguaje, mencionó que no es prioritario para su uso personal. Comparando BusTrack con su método actual (preguntar a otros pasajeros o esperar sin información), señaló que estaría muy dispuesto a usar la app diariamente, priorizando el seguimiento en tiempo real y las notificaciones predictivas por encima del resto de funciones.
+  </tr>
 </tbody>
 </table>
 
@@ -5230,54 +5230,54 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 <colgroup>
 </colgroup>
 <thead>
-  <tr>
-    <th colspan="2">Entrevista #3<br></th>
-  </tr>
+  <tr>
+    <th colspan="2">Entrevista #3<br></th>
+  </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Melissa</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Sulca</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>23 </td>
-  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>Melissa</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Sulca</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23 </td>
+  </tr>
    <tr>
-    <td>Ocupación</td>
-    <td>Estudiante </td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Magdalena</td>
-  </tr>
-  <tr>
-    <td>Aplicaciones Usadas</td>
-    <td>Grabación de pantalla</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div style="text-align: left;">
+    <td>Ocupación</td>
+    <td>Estudiante </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Magdalena</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Grabación de pantalla</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
     <img src="/img/commons/evidencia9.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 3 - Segmento 1.</em><br>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
-  </tr>
-  <tr>
-    <td>Duración<br></td>
-    <td> 10:32 min </td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td> La entrevistada, que es <b>estudiante universitaria</b>, valoró el diseño como "colores atractivos y acordes". Considera que la aplicación aporta confianza y utilidad por la facilidad de la información que hay en ella <b>información en tiempo real de los buses</b> esto se evidencia en que a veces cuando ella no ha sabido qué bus tomar, no ha tenido con quién consultar; sin embargo, en la aplicación lo puede observar en tiempo real. Sugirió añadir una <b>opción de internacionalización con estilo similiar en la landing y la web</b> y una vista previa del mapa integrada. Confirmó que la interfaz es intuitiva, genera confianza por el contenido que hay en ella y la coherencia de las funcionalidades.
-  </tr>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> La entrevistada, <b>estudiante universitaria</b>, consideró el indicador de ocupación fácil de identificar y útil especialmente en horas punta, cuando suele viajar en buses saturados sin saberlo de antemano. Señaló que sí confiaría en los reportes colaborativos de incidencias, ya que muchas veces no tiene con quién consultar sobre desvíos o congestión y esta funcionalidad cubre ese vacío de información; la gamificación (puntos/insignias) le pareció un plus agradable pero no el motivo principal de uso. Sobre las notificaciones predictivas, mencionó que le darían mayor tranquilidad antes de salir de casa, aunque dejaría de confiar en ellas si nota que no coinciden con la realidad en varias ocasiones seguidas. Valoró positivamente el soporte multilingüe y sugirió mantener un estilo visual consistente entre la landing page y la web al cambiar de idioma. En general, indicó que usaría BusTrack de forma diaria y que priorizaría el indicador de ocupación y los reportes colaborativos como las funciones más importantes.
+  </tr>
 </tbody>
 </table>
 
@@ -5325,7 +5325,7 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
   </tr>
   <tr>
     <td>Resumen</td>
-    <td>El entrevistado valoró positivamente todas las características de BusTrack, destacando que la plataforma es intuitiva, moderna y bien organizada. Le pareció excelente la funcionalidad de <b>rastreo en tiempo real de autobuses</b> y la <b>información clara sobre rutas</b>, características que considera muy útiles para optimizar sus desplazamientos diarios. Concluyó que la aplicación resuelve un problema real en el transporte urbano de Lima y <b>la recomendaría a otros usuarios</b> sin dudarlo.</td>
+    <td>El entrevistado consideró que los indicadores del panel de analítica avanzada (cumplimiento de horarios, eficiencia por vehículo) sí reflejan las métricas que le interesan al momento de evaluar el desempeño de una flota, y calificó los gráficos y filtros por rango semanal como fáciles de interpretar sin necesitar capacitación adicional. Señaló que, a partir de estos reportes, podría tomar decisiones que hoy no puede tomar con hojas de cálculo, como reasignar unidades a rutas con mayor demanda gracias al indicador de ocupación. Consideró confiables los reportes colaborativos de incidencias enviados por los pasajeros, siempre que exista algún mecanismo de validación comunitaria, y anticipó que los conductores podrían mostrar cierta resistencia inicial ante un sistema que los "supervisa" desde el lado del pasajero. Concluyó que el panel de analítica fortalecería la confianza de los pasajeros en la empresa y que <b>lo recomendaría a otras organizaciones del sector</b>, priorizando su implementación por encima del resto de funcionalidades.</td>
   </tr>
 </tbody>
 </table>
@@ -5334,54 +5334,54 @@ Se diseñó un proceso de entrevistas orientado a validar las nuevas funcionalid
 <colgroup>
 </colgroup>
 <thead>
-  <tr>
-    <th colspan="2">Entrevista #2<br></th>
-  </tr>
+  <tr>
+    <th colspan="2">Entrevista #2<br></th>
+  </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Alejandro</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Barturen</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>30 </td>
-  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>Alejandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Barturen</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>30 </td>
+  </tr>
    <tr>
-    <td>Ocupación</td>
-    <td>Administrador de flota </td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>San Miguel</td>
-  </tr>
-  <tr>
-    <td>Aplicaciones Usadas</td>
-    <td>Zoom</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div style="text-align: left;">
+    <td>Ocupación</td>
+    <td>Administrador de flota </td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Aplicaciones Usadas</td>
+    <td>Zoom</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><div style="text-align: left;">
     <img src="/img/commons/EntrevistaAlejandro.png" style="width: 350px; height: auto;" />
   </div> <br>
   <em> Evidencia de validación de entrevista 2 - Segmento 2.</em><br>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
-  </tr>
-  <tr>
-    <td>Duración<br></td>
-    <td> 10:32 min </td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td> El entrevistado destacó que BusTrack presenta una interfaz clara y fácil de utilizar, resaltando el monitoreo en tiempo real de las unidades como la funcionalidad más valiosa. Considera que las alertas y reportes ayudan a mejorar la supervisión de la flota y la toma de decisiones, contribuyendo a una mayor puntualidad y calidad del servicio. Además, indicó que implementaría una solución como BusTrack en su empresa y la recomendaría a otras organizaciones del sector por los beneficios que ofrece en la gestión operativa.
-  </tr>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f788_upc_edu_pe/IQDjD6pJvYEEQqLwUomsUt3eAQa4ppQDKFYCW7ZiCzGb3iM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hRTY4f</td>
+  </tr>
+  <tr>
+    <td>Duración<br></td>
+    <td> 10:32 min </td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td> El entrevistado destacó que el panel de analítica avanzada muestra información que actualmente gestiona de forma manual (llamadas, WhatsApp y cuadernos físicos), por lo que le permitiría tomar decisiones operativas más rápidas ante retrasos o fallas. Consideró que el indicador de ocupación por unidad ayudaría a redistribuir buses en rutas con mayor demanda y que los reportes colaborativos de incidencias son confiables como una primera alerta, aunque preferiría cruzarlos con la información de sus propios conductores. Sobre el modelo Premium/corporativo, indicó que pagaría por el panel de analítica y las alertas en tiempo real, pero esperaría que funciones básicas de monitoreo se mantengan gratuitas. Identificó como principales barreras de adopción el costo de la suscripción y la resistencia de algunos conductores al cambio tecnológico. Finalmente, señaló que implementaría primero el panel de analítica y el indicador de ocupación en su empresa, ya que impactan directamente en la puntualidad y calidad del servicio.
+  </tr>
 </tbody>
 </table>
 

@@ -5007,11 +5007,48 @@ El To-Be Product Backlog consolida las nuevas historias de usuario priorizadas s
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 #### 8.3.3.1. To-Be Sprint Backlogs
+
+Para el ciclo de vida to-be de la plataforma, el backlog de sprint se priorizó considerando el valor entregado al usuario final y la complejidad técnica de cada historia. La Tabla presenta el orden de desarrollo definido para las historias de usuario correspondientes al sprint, junto con su estimación en story points.
+
+| # Orden | User Story ID | Título de la Historia de Usuario | Story Points (1/2/3/5/8) |
+| :---: | :---: | :--- | :---: |
+| **1** | UA04 | Integrar notificaciones de rutas guardadas | 5 |
+| **2** | UA02 | Implementar historial de búsquedas | 5 |
+| **3** | UA05 | Desarrollar de administración de flotas | 5 |
+| **4** | UA01 | Desplegar indicador visual buses activos | 5 |
+| **5** | UA03 | Añadir soporte de internacionalización (i18n) para traducción al idioma inglés | 3 |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+![landing](./img/landing1.png)
+![landing](./img/landing2.png)
+![landing](./img/landing3.png)
+![landing](./img/landing4.png)
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+![front end](./img/front1.png)
+![front end](./img/front2.png)
+![front end](./img/front3.png)
+![front end](./img/front4.png)
+![front end](./img/front5.png)
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+En esta sección se presenta evidencia de la implementación del backend de la plataforma Bustrack, que incluye la creación de endpoints RESTful para las funcionalidades principales del sistema.
+
+![backend](./img/backend1.png)
+![backend](./img/backend2.png)
+![backend](./img/backend3.png)
+![backend](./img/backend4.png)
+![backend](./img/backend5.png)
+
 #### 8.3.3.6. Team Collaboration Insights
+
+![insing](./img/insg-back.png)
+
 ### 8.3.4. To-Be Validation Interviews
 #### 8.3.4.1. Diseño de Entrevistas.
 #### 8.3.4.2. Registro de Entrevistas.

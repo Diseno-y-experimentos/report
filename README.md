@@ -5021,11 +5021,11 @@ La aplicación actual de BusTrack se centra en ofrecer una plataforma para la co
 
 | Question | Confidence | Risk | Impact | Interest | Total Score |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?** | 7 - Es una función de alto valor, pero su eficacia depende de la precisión de los datos operativos. | 5 - Riesgo medio, ya que requiere sincronización de datos de capacidad desde la unidad en tiempo real. | 8 - Impacto directo en la toma de decisiones del pasajero en el paradero. | 9 - Muy alto interés para usuarios que viajan en horas punta hacia el trabajo o universidad. | **29** |
-| **¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?** | 6 - Puede atraer a turistas y expatriados, pero depende del volumen de extranjeros en buses urbanos. | 3 - Riesgo medio debido al mantenimiento continuo de los archivos de internacionalización (i18n). | 6 - Potencial moderado para expandir el mercado a usuarios no hispanohablantes. | 5 - Interesante principalmente para un nicho específico de mercado. | **20** |
-| **¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?** | 8 - Modelos similares en transporte han demostrado éxito al fomentar la comunidad. | 5 - Riesgo medio por la necesidad de moderar datos falsos y la complejidad técnica en tiempo real. | 9 - Mejora drásticamente la precisión del ETA y la participación activa del usuario. | 8 - Los pasajeros suelen tener alto interés en reportar tráfico o buses demasiado llenos. | **30** |
-| **¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?** | 9 - Alta, ya que previene la incertidumbre antes de que el pasajero salga de su casa. | 4 - Riesgo moderado por el consumo de recursos en el servidor (WebSockets/Push). | 9 - Gran impacto en la satisfacción diaria y en la fidelización a largo plazo. | 9 - Fundamental para el perfil de estudiante y trabajador que requiere puntualidad. | **31** |
-| **¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?** | 7 - Se basa en la necesidad real de las empresas por optimizar costos y tiempos operativos. | 4 - Riesgo medio debido a la resistencia tecnológica inicial de algunos transportistas. | 10 - Alto potencial de monetización (SaaS B2B) y retención de empresas de transporte. | 8 - Alto interés comercial por parte de administradores y supervisores de flota. | **29** |
+| **¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas?** | 9 - Alta, ya que previene la incertidumbre antes de que el pasajero salga de su casa. | 4 - Riesgo moderado por el consumo de recursos en el servidor (WebSockets/Push). | 9 - Gran impacto en la satisfacción diaria y en la fidelización a largo plazo. | 9 - Fundamental para el perfil de estudiante y trabajador que requiere puntualidad. | **31** |
+| **¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas?** | 9 - Funcionalidad estándar en apps de movilidad con éxito comprobado. | 3 - Riesgo bajo, la implementación es local o con bajo consumo de base de datos. | 8 - Agiliza directamente el caso de uso principal (buscar cómo llegar). | 9 - Alto interés por parte de usuarios recurrentes con destinos fijos. | **29** |
+| **¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada?** | 7 - Se basa en la necesidad real de las empresas por optimizar costos y tiempos operativos. | 4 - Riesgo medio debido a la resistencia tecnológica inicial de algunos transportistas. | 10 - Alto potencial de monetización (SaaS B2B) y retención de empresas de transporte. | 8 - Alto interés comercial por parte de administradores y supervisores de flota. | **29** |
+| **¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación?** | 7 - Es una función de alto valor, pero su eficacia depende de la precisión de los datos operativos. | 5 - Riesgo medio, ya que requiere sincronización de datos de capacidad desde la unidad en tiempo real. | 8 - Impacto directo en la toma de decisiones del pasajero en el paradero. | 9 - Muy alto interés para usuarios que viajan en horas punta hacia el trabajo o universidad. | **29** |
+| **¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés?** | 6 - Puede atraer a turistas y expatriados, pero depende del volumen de extranjeros en buses urbanos. | 3 - Riesgo medio debido al mantenimiento continuo de los archivos de internacionalización (i18n). | 6 - Potencial moderado para expandir el mercado a usuarios no hispanohablantes. | 5 - Interesante principalmente para un nicho específico de mercado. | **20** |
 
 ---
 
@@ -5033,86 +5033,90 @@ La aplicación actual de BusTrack se centra en ofrecer una plataforma para la co
 
 | Prioridad (1,2,3,5,8) | Pregunta |
 | :---: | :--- |
-| **8** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
-| **8** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
-| **5** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
-| **5** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
-| **2** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **5** | ¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas? |
+| **5** | ¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas? |
+| **5** | ¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada? |
+| **5** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación? |
+| **3** | ¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés? |
 
 ---
 
 ### 8.1.5. Experiment Cards.
 
-**Question:** ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses?
-* **Why:** Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario.
-* **What:** Desplegar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real y los detalles de la flota. La data se gestionará mediante actualizaciones del operador desde su terminal o a través de validaciones colaborativas de los pasajeros que ya se encuentran en tránsito.
-* **Hypothesis:** Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad.
-
-**Question:** ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)?
-* **Why:** Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA).
-* **What:** Crear un botón flotante de "Reporte Rápido" en la vista del mapa que permita enviar alertas en tiempo real. Integrar elementos de gamificación (insignias o niveles) para recompensar a los usuarios que más contribuyan con información validada.
-* **Hypothesis:** Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%.
-
-**Question:** ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma?
-* **Why:** La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup.
-* **What:** Integrar un sistema de internacionalización (i18n) para traducir la interfaz, menús, estados del bus y alertas predictivas al idioma inglés, manteniendo un selector de idioma fácilmente accesible en la barra de navegación.
-* **Hypothesis:** Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses.
-
-**Question:** ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos?
+**Question:** ¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas?
 * **Why:** Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada.
-* **What:** Desarrollar un servicio en el backend que cruce las rutas favoritas del pasajero con incidentes en tiempo real, enviando alertas push automáticas 15 minutos antes del horario habitual de viaje registrado por el usuario.
-* **Hypothesis:** Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%.
+* **What:** Desarrollar un servicio en el backend que cruce las rutas guardadas (favoritas) del pasajero con incidentes en tiempo real, enviando alertas push automáticas 15 minutos antes del horario habitual de viaje registrado por el usuario.
+* **Hypothesis:** Se espera que, tras la integración de notificaciones de rutas guardadas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%.
 
-**Question:** ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte?
+**Question:** ¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas?
+* **Why:** Los usuarios frecuentes suelen buscar los mismos destinos o paraderos diariamente. Proveer un acceso rápido a sus búsquedas recientes evita tareas repetitivas, agiliza la planificación del viaje y mejora directamente la experiencia de usuario.
+* **What:** Implementar una sección en la pantalla de inicio y desplegable en la barra de búsqueda que muestre las últimas ubicaciones o rutas consultadas por el pasajero, almacenadas localmente para un acceso a un solo clic.
+* **Hypothesis:** Se espera que, al implementar el historial de búsquedas, el tiempo promedio que tarda un usuario en trazar su ruta habitual disminuya en un 15% y la retención semanal aumente en un 10%.
+
+**Question:** ¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada?
 * **Why:** Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto.
-* **What:** Implementar un módulo premium en el portal de empresas que genere reportes gráficos e históricos automatizados sobre puntualidad, tiempos de ciclo, cantidad de alertas generadas y eficiencia por unidad.
-* **Hypothesis:** Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%.
+* **What:** Implementar un módulo premium de administración en el portal de empresas que genere reportes gráficos e históricos automatizados sobre puntualidad, tiempos de ciclo, cantidad de alertas y eficiencia por unidad de la flota.
+* **Hypothesis:** Se espera que, con el desarrollo de la administración de flotas, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%.
+
+**Question:** ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación?
+* **Why:** Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar el estado y capacidad de los buses activos permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar o alternar su trayecto, mitigando el estrés.
+* **What:** Desplegar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del mapa de buses activos. La data se gestionará mediante actualizaciones del operador desde su terminal o validaciones colaborativas de pasajeros en tránsito.
+* **Hypothesis:** Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue el indicador visual como un factor crítico en su movilidad.
+
+**Question:** ¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés?
+* **Why:** La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup.
+* **What:** Integrar un sistema de internacionalización (i18n) para traducir la interfaz, menús, estados del bus y alertas predictivas al idioma inglés, manteniendo un selector de idioma de fácil acceso.
+* **Hypothesis:** Se espera que, tras añadir el soporte de traducción al inglés, los registros de usuarios con la configuración de navegador/teléfono en inglés aumenten en un 10% en los primeros tres meses.
+
+---
 
 ## 8.2. Experiment Design
 ### 8.2.1. Hypotheses.
 
 | | Hypothesis |
 | :--- | :--- |
-| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
-| **Belief** | Si bien el ETA es vital, su relevancia disminuye cuando la unidad llega saturada. Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario. |
+| **Question** | ¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas? |
+| **Belief** | Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada. |
+| **Hypothesis** | Se espera que, tras la integración de estas notificaciones, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%. |
+| **Null Hypothesis** | La integración de notificaciones automáticas sobre rutas guardadas no incrementará de forma significativa la retención diaria de usuarios ni su índice de satisfacción general. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas? |
+| **Belief** | Proveer un acceso rápido a búsquedas recientes evita tareas repetitivas, agilizando la planificación del viaje para usuarios que frecuentan los mismos destinos diarios. |
+| **Hypothesis** | Se espera que, al implementar el historial de búsquedas, el tiempo promedio que tarda un usuario en trazar su ruta habitual disminuya en un 15% y la retención semanal aumente en un 10%. |
+| **Null Hypothesis** | La implementación del historial de búsquedas no reducirá el tiempo de interacción del usuario ni impactará significativamente en la retención semanal. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada? |
+| **Belief** | Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B. |
+| **Hypothesis** | Se espera que, con el desarrollo de la administración de flotas, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%. |
+| **Null Hypothesis** | El desarrollo de un módulo de administración de flotas no tendrá un impacto significativo en la tasa de conversión hacia planes de pago ni en el uso diario del portal corporativo. |
+
+<br>
+
+| | Hypothesis |
+| :--- | :--- |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación? |
+| **Belief** | Visualizar la capacidad del bus permite al pasajero gestionar su tiempo con autonomía, decidiendo si esperar, desplazarse a otro punto o alternar su trayecto, mitigando la incertidumbre operativa y el estrés del traslado diario. |
 | **Hypothesis** | Se proyecta que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda y que un 70% de la muestra de usuarios catalogue la funcionalidad como un factor crítico en su experiencia de movilidad. |
-| **Null Hypothesis** | La integración de un indicador de nivel de ocupación en los buses no tendrá un impacto significativo en la adopción de rutas alternativas ni en la percepción de la experiencia de movilidad de los usuarios. |
+| **Null Hypothesis** | La integración de un indicador visual de nivel de ocupación en los buses no tendrá un impacto significativo en la adopción de rutas alternativas ni en la percepción de la experiencia de movilidad. |
 
 <br>
 
 | | Hypothesis |
 | :--- | :--- |
-| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
-| **Belief** | Fomentar la participación activa convierte al usuario de un consumidor pasivo a un generador de valor. Si los pasajeros pueden informar sobre tráfico, accidentes o buses a máxima capacidad, se ayuda a la comunidad y se ajustan dinámicamente los tiempos estimados (ETA). |
-| **Hypothesis** | Se espera que, con la implementación de reportes colaborativos, la cantidad de interacciones activas en la app aumente en un 40% y la percepción de precisión en los retrasos mejore en un 25%. |
-| **Null Hypothesis** | La implementación de un sistema de reportes colaborativos no generará un aumento significativo en las interacciones activas de la app ni mejorará la percepción de precisión de los datos. |
-
-<br>
-
-| | Hypothesis |
-| :--- | :--- |
-| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
+| **Question** | ¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés? |
 | **Belief** | La inclusión del idioma inglés hace la aplicación accesible para turistas o residentes extranjeros que se enfrentan a la complejidad del transporte limeño, expandiendo el mercado objetivo y mejorando la proyección internacional de la startup. |
-| **Hypothesis** | Se espera que, tras el despliegue del soporte multilingüe, los registros de usuarios con configuración de navegador en inglés aumenten en un 10% en los primeros tres meses. |
+| **Hypothesis** | Se espera que, tras añadir el soporte de traducción al inglés, los registros de usuarios con la configuración de navegador en inglés aumenten en un 10% en los primeros tres meses. |
 | **Null Hypothesis** | La inclusión de la traducción al inglés en la plataforma no tendrá un impacto significativo en el incremento de registros de nuevos usuarios extranjeros o de habla inglesa. |
 
-<br>
-
-| | Hypothesis |
-| :--- | :--- |
-| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
-| **Belief** | Aporta un valor inmenso al prevenir al pasajero sobre problemas en su ruta antes de que salga de casa o del trabajo. Esto elimina la incertidumbre y las esperas en paraderos inseguros, generando una experiencia altamente satisfactoria y personalizada. |
-| **Hypothesis** | Se espera que, tras la integración de estas notificaciones predictivas, la retención de usuarios diarios (DAU) incremente en un 30% y el índice de satisfacción general suba un 20%. |
-| **Null Hypothesis** | La integración de un sistema de notificaciones predictivas sobre retrasos no incrementará de forma significativa la retención diaria de usuarios ni su índice de satisfacción general. |
-
-<br>
-
-| | Hypothesis |
-| :--- | :--- |
-| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
-| **Belief** | Transformar el panel de monitoreo básico en una herramienta de inteligencia de negocios ayuda a las empresas de transporte a reducir costos operativos, controlar mejor a sus conductores y cumplir horarios, facilitando la monetización B2B del producto. |
-| **Hypothesis** | Se espera que, con la inclusión del panel de analítica avanzada, la tasa de conversión de empresas hacia planes de pago aumente en un 25% y el uso diario del módulo administrativo crezca un 50%. |
-| **Null Hypothesis** | La inclusión de un panel de analítica avanzada no tendrá un impacto significativo en la tasa de conversión hacia planes de pago ni en el uso diario del módulo por parte de las empresas de transporte. |
+---
 
 ### 8.2.2. Domain Business Metrics
 
@@ -5121,127 +5125,133 @@ Esta sección sirve para alinear la medición de nuestros experimentos. Su objet
 El equipo a definido todas las métricas relevantes para el dominio de negocio que serán utilizadas para evaluar los experimentos. Cada métrica esta descrita con su fórmula de cálculo, técnica de recolección y meta deseada. **Todas las Experiment Cards solo podrán hacer referencia a métricas definidas en esta sección.** No se permitirán métricas ad-hoc o no definidas previamente.
 
 #### 1. Daily Active Users (DAU) Retention Rate (Tasa de Retención de Usuarios Diarios)
-Esta métrica evalúa el nivel de fidelización y recurrencia de los pasajeros, vinculada a los experimentos de notificaciones predictivas.
+Esta métrica evalúa el nivel de fidelización y recurrencia de los pasajeros, vinculada a los experimentos de notificaciones de rutas guardadas.
 * **Fórmula de cálculo:** (Usuarios activos diarios al final del periodo evaluado / Usuarios activos diarios al inicio del periodo) * 100
 * **Técnica de recolección:** Herramientas de analítica de producto (ej. Google Analytics 4 o Mixpanel) rastreando el evento de login_success o app_open diariamente.
-* **Meta deseada:** Incrementar la retención en un **30%** tras la implementación de las notificaciones sobre retrasos.
+* **Meta deseada:** Incrementar la retención en un **30%** tras la implementación de las notificaciones automáticas.
 
-#### 2. Crowdsourcing Engagement Rate (Tasa de Interacción Colaborativa)
-Mide la disposición de los pasajeros a pasar de ser consumidores pasivos a generadores de datos dentro de la plataforma (reporte de tráfico y accidentes).
-* **Fórmula de cálculo:** `(Usuarios que emiten o confirman un reporte / Total de usuarios activos diarios) * 100`
-* **Técnica de recolección:** Seguimiento de eventos (*Event Tracking*) en el frontend asociados a clics en el botón "Reporte Rápido" y confirmación de recepción en la base de datos (Backend).
-* **Meta deseada:** Lograr un aumento del **40%** en la cantidad de interacciones activas comunitarias.
+#### 2. Average Route Search Time (Tiempo Promedio de Búsqueda de Ruta)
+Mide la reducción de la fricción en la interfaz de usuario al utilizar el historial de búsquedas para planificar un viaje habitual.
+* **Fórmula de cálculo:** (Suma del tiempo transcurrido desde la apertura de la app hasta la solicitud de cálculo de ruta) / Total de sesiones de búsqueda.
+* **Técnica de recolección:** Seguimiento de eventos (Event Tracking) midiendo el *timestamp* entre la visualización de la pantalla principal y el evento de éxito al seleccionar una ruta del historial.
+* **Meta deseada:** Disminuir el tiempo promedio de búsqueda en un **15%**.
 
 #### 3. B2B Conversion Rate: Free to Premium (Tasa de Conversión B2B)
-Métrica clave para validar la monetización de la plataforma, evaluando si el panel de analítica avanzada es lo suficientemente valioso para las empresas de transporte.
+Métrica clave para validar la monetización de la plataforma, evaluando si el módulo de administración de flotas es lo suficientemente valioso para las empresas de transporte.
 * **Fórmula de cálculo:** (Número de empresas que adquieren el plan Premium / Total de empresas registradas en el plan de monitoreo gratuito) * 100
-* **Técnica de recolección:** Consultas a la base de datos transaccional (MySQL) filtrando por los cambios en el campo `subscription_tier` de la tabla de empresas.
+* **Técnica de recolección:** Consultas a la base de datos transaccional filtrando por los cambios en el campo `subscription_tier` de la tabla de empresas.
 * **Meta deseada:** Alcanzar un aumento del **25%** en la tasa de conversión hacia los planes de pago.
 
 #### 4. Alternative Route Adoption Rate (Tasa de Adopción de Rutas Alternativas)
-Mide el impacto en la toma de decisiones del pasajero cuando se le presenta información sobre la capacidad/aforo de un bus.
+Mide el impacto en la toma de decisiones del pasajero cuando se le presenta el indicador visual de capacidad/aforo de un bus.
 * **Fórmula de cálculo:** (Usuarios que inician una navegación hacia una ruta B tras consultar el aforo de la ruta A / Total de usuarios que visualizan el indicador de aforo) * 100
-* **Técnica de recolección:** Análisis de flujos de navegación (*User Flows*) mediante eventos personalizados que capturen el cambio de búsqueda de ruta en la misma sesión.
-* **Meta deseada:** Que la adopción de rutas alternativas crezca un **20%** durante los periodos de alta demanda (horas punta).
+* **Técnica de recolección:** Análisis de flujos de navegación mediante eventos personalizados que capturen el cambio de búsqueda de ruta en la misma sesión.
+* **Meta deseada:** Que la adopción de rutas alternativas crezca un **20%** durante los periodos de alta demanda.
 
 #### 5. Customer Satisfaction Score (CSAT)
-Permite cuantificar la percepción de valor y satisfacción del usuario final respecto a nuevas funcionalidades operativas (notificaciones, aforo, reportes).
+Permite cuantificar la percepción de valor y satisfacción del usuario final respecto a nuevas funcionalidades operativas (notificaciones, aforo, historial).
 * **Fórmula de cálculo:** (Total de valoraciones positivas [4-5 estrellas] / Total de respuestas a la encuesta) * 100
 * **Técnica de recolección:** Micro-encuestas *in-app* (pop-ups no intrusivos) disparadas tras el uso exitoso de una nueva funcionalidad.
-* **Meta deseada:** Alcanzar un **70%** (o más) de respuestas que cataloguen las nuevas funcionalidades como factores críticos positivos en su experiencia de movilidad.
+* **Meta deseada:** Alcanzar un **70%** (o más) de respuestas que cataloguen las nuevas funcionalidades como factores críticos positivos en su experiencia.
 
 #### 6. Language-Specific Acquisition Rate (Tasa de Adquisición por Idioma)
 Vinculada a los experimentos de internacionalización (i18n), evalúa el crecimiento de mercado entre usuarios no hispanohablantes.
 * **Fórmula de cálculo:** `(Nuevos registros con configuración de navegador en inglés / Total de nuevos registros globales en el mismo periodo) * 100`
-* **Técnica de recolección:** Captura del parámetro `navigator.language` desde el frontend al momento del registro y su almacenamiento en el perfil del usuario en la base de datos.
+* **Técnica de recolección:** Captura del parámetro `navigator.language` desde el frontend al momento del registro.
 * **Meta deseada:** Aumento del **10%** en la proporción de registros de usuarios extranjeros en un lapso de 3 meses.
+
+---
 
 ### 8.2.3. Measures.
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
-| **Measure** | Evaluar el porcentaje de adopción de rutas alternativas en horas punta utilizando herramientas de analítica web y móvil. Complementar con encuestas de satisfacción in-app (CSAT) para medir la percepción de utilidad y reducción de estrés de los pasajeros en sus traslados. |
+| **Question** | ¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas? |
+| **Measure** | Medir la tasa de apertura (Open Rate) y la tasa de interacción (Click-Through Rate) de las notificaciones push. Analizar las métricas de retención de usuarios diarios y mensuales (DAU/MAU) para identificar si el uso de la app incrementa tras recibir alertas de sus rutas favoritas. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
-| **Measure** | Contabilizar la cantidad de reportes de incidencias generados por los usuarios diarios activos (DAU) mediante eventos de clics en el botón de "Reporte Rápido". Comparar la precisión percibida de los tiempos estimados (ETA) antes y después del lanzamiento mediante encuestas a la comunidad. |
+| **Question** | ¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas? |
+| **Measure** | Medir el tiempo promedio en pantalla desde que se abre la app hasta que se inicia la navegación de una ruta. Comparar analíticamente la frecuencia de uso de los accesos directos del historial frente a las búsquedas manuales tecleadas. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
-| **Measure** | Monitorear la tasa de nuevos registros y la retención de usuarios cuyos navegadores o dispositivos estén configurados en idioma inglés. Utilizar herramientas de analítica para comparar el tráfico web y móvil proveniente de turistas o residentes extranjeros antes y después de la internacionalización. |
+| **Question** | ¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada? |
+| **Measure** | Rastrear la tasa de conversión (Conversion Rate) de empresas de transporte desde el plan básico gratuito hacia los planes de pago. Monitorear el tiempo de sesión promedio y la frecuencia de acceso al nuevo módulo de reportes del portal corporativo. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
-| **Measure** | Medir la tasa de apertura (Open Rate) y la tasa de interacción (Click-Through Rate) de las notificaciones push. Analizar las métricas de retención de usuarios diarios y mensuales (DAU/MAU) para identificar si el uso de la app incrementa tras la recepción de estas alertas personalizadas. |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación? |
+| **Measure** | Evaluar el porcentaje de adopción de rutas alternativas en horas punta utilizando herramientas de analítica web y móvil. Complementar con encuestas in-app (CSAT) para medir la percepción de utilidad de la información de aforo. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
-| **Measure** | Rastrear la tasa de conversión (Conversion Rate) de empresas de transporte desde el plan básico gratuito hacia los planes de pago. Monitorear el tiempo de sesión promedio y la frecuencia de acceso al nuevo módulo de reportes gráficos e históricos en el portal corporativo. |
+| **Question** | ¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés? |
+| **Measure** | Monitorear la tasa de nuevos registros y la retención de usuarios cuyos navegadores o dispositivos estén configurados en idioma inglés. Utilizar analítica para comparar el tráfico proveniente de turistas antes y después de la internacionalización. |
+
+---
 
 ### 8.2.4. Conditions.
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador de nivel de ocupación en los buses? |
-| **Condición Experimental** | La adopción de rutas alternativas aumentará en un 20% tras la implementación del indicador de nivel de ocupación, medido durante los periodos de alta demanda. |
-| **Condición de Control** | No habrá un aumento significativo en la adopción de rutas alternativas tras la implementación del indicador de nivel de ocupación. |
+| **Question** | ¿Mejorará la retención de usuarios la integración de notificaciones automáticas sobre sus rutas guardadas? |
+| **Condición Experimental** | La retención de usuarios diarios (DAU) incrementará en un 30% y la satisfacción general del usuario subirá un 20% después de implementar las notificaciones de rutas. |
+| **Condición de Control** | No habrá un incremento significativo en la retención de usuarios diarios ni en el índice de satisfacción tras la implementación de las alertas predictivas. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la precisión de los datos y el engagement al implementar un sistema de reportes colaborativos (crowdsourcing)? |
-| **Condición Experimental** | La cantidad de interacciones activas en la app aumentará en un 40% y la percepción de precisión de los datos en los retrasos mejorará en un 25% tras la habilitación del sistema de reportes. |
-| **Condición de Control** | No habrá un aumento significativo en las interacciones activas ni en la percepción de precisión tras la implementación del sistema de reportes colaborativos. |
+| **Question** | ¿Reducirá la fricción y el tiempo de interacción en la app la implementación de un historial de búsquedas de rutas? |
+| **Condición Experimental** | El tiempo promedio de búsqueda de ruta se reducirá en un 15% y la retención semanal crecerá un 10% tras la disponibilidad del historial de accesos rápidos. |
+| **Condición de Control** | El tiempo de búsqueda no presentará una reducción significativa y el uso de los atajos del historial será marginal o nulo. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Aumentará la base de usuarios agregando la traducción al inglés de la plataforma? |
-| **Condición Experimental** | Se espera un aumento del 10% en el número de nuevos registros de usuarios con configuración de navegador en inglés durante los primeros tres meses tras implementar la traducción. |
-| **Condición de Control** | No habrá un aumento significativo en el número de registros de usuarios de habla inglesa tras la implementación de la traducción. |
+| **Question** | ¿Aumentaría la adopción corporativa el desarrollo de un módulo de administración de flotas basado en analítica avanzada? |
+| **Condición Experimental** | La tasa de conversión de empresas hacia planes de pago aumentará en un 25% y el uso diario del módulo administrativo crecerá un 50% tras su inclusión. |
+| **Condición de Control** | No habrá un aumento significativo en la tasa de conversión a planes de pago ni en el uso del módulo corporativo tras su lanzamiento. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Mejorará la retención de usuarios la integración de un sistema de notificaciones predictivas sobre retrasos? |
-| **Condición Experimental** | La retención de usuarios diarios (DAU) incrementará en un 30% y la satisfacción general del usuario subirá un 20% después de implementar el sistema de notificaciones predictivas. |
-| **Condición de Control** | No habrá un incremento significativo en la retención de usuarios diarios ni en el índice de satisfacción tras la implementación de las notificaciones predictivas. |
+| **Question** | ¿Mejorará la planificación de viaje de los usuarios la integración de un indicador visual de los buses activos y su nivel de ocupación? |
+| **Condición Experimental** | La adopción de rutas alternativas aumentará en un 20% tras la visualización del indicador de ocupación, medido durante periodos de alta demanda. |
+| **Condición de Control** | No habrá un aumento significativo en la adopción de rutas alternativas pese a la visualización de la ocupación del bus. |
 
 <br>
 
 | | |
 | :--- | :--- |
-| **Question** | ¿Aumentaría la adopción corporativa la inclusión de un panel de analítica avanzada para empresas de transporte? |
-| **Condición Experimental** | La tasa de conversión de empresas hacia planes de pago aumentará en un 25% y el uso diario del módulo administrativo crecerá un 50% tras la inclusión del panel de analítica avanzada. |
-| **Condición de Control** | No habrá un aumento significativo en la tasa de conversión a planes de pago ni en el uso del módulo corporativo tras la implementación del panel de analítica avanzada. |
+| **Question** | ¿Aumentará la base de usuarios al añadir soporte de internacionalización (i18n) para la traducción al inglés? |
+| **Condición Experimental** | Se espera un aumento del 10% en el número de nuevos registros de usuarios con configuración en inglés durante los primeros tres meses. |
+| **Condición de Control** | No habrá un aumento significativo en el número de registros de usuarios de habla inglesa tras el soporte i18n. |
+
+---
 
 ### 8.2.5. Scale Calculations and Decisions.
 
-Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis en el proyecto BusTrack. Cada hipótesis se asocia con un indicador de éxito: se considera *ideal* cuando la métrica alcanza plenamente el objetivo, *aceptable* cuando está entre el mínimo y el ideal, y *desfavorable* si queda por debajo del mínimo, requiriendo así una revisión. Un nivel *excelente* se define como cuando el valor supera el ideal en un 25% o más, indicando un éxito significativo. Este enfoque permite tomar decisiones fundamentadas en métricas para validar o ajustar las hipótesis del proyecto.
-
 | Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| Creemos que la integración de un indicador de nivel de ocupación en los buses mejorará la planificación de viaje. Sabremos que esto es cierto cuando observemos que la adopción de rutas alternativas crezca un 20% en periodos de alta demanda. | Implementar una escala visual de tres estados (Disponible, Moderado, Lleno) dentro del monitoreo en tiempo real para que los pasajeros gestionen su tiempo con autonomía. | | | X | |
-| Creemos que implementar un sistema de reportes colaborativos (crowdsourcing) mejorará la precisión de los datos y el engagement. Sabremos que esto es cierto cuando observemos un aumento del 40% en interacciones activas y un 25% de mejora en percepción de precisión. | Integrar un botón flotante de "Reporte Rápido" en el mapa que permita enviar alertas de tráfico o incidentes, fomentando la participación comunitaria. | | | | X |
-| Creemos que agregar la traducción al inglés de la plataforma aumentará la base de usuarios. Sabremos que esto es cierto cuando observemos un aumento del 10% en los registros de usuarios con configuración en inglés en tres meses. | Implementar un sistema de internacionalización (i18n) para traducir la interfaz y alertas, permitiendo a turistas y residentes extranjeros acceder al contenido. | | X | | |
-| Creemos que la integración de un sistema de notificaciones predictivas sobre retrasos mejorará la retención de usuarios. Sabremos que esto es cierto cuando observemos un incremento del 30% en la retención de usuarios diarios (DAU) y un 20% en satisfacción. | Desarrollar un servicio en el backend que cruce rutas favoritas con incidentes en tiempo real para enviar alertas push automáticas preventivas al usuario. | | | X | |
-| Creemos que la inclusión de un panel de analítica avanzada aumentará la adopción corporativa para empresas de transporte. Sabremos que esto es cierto cuando observemos un aumento del 25% en la tasa de conversión a planes de pago y un 50% en el uso diario. | Añadir un módulo *premium* en el portal de empresas que genere reportes gráficos e históricos sobre puntualidad, tiempos de ciclo y eficiencia operativa. | | | | X |
+| Creemos que la integración de notificaciones sobre rutas guardadas mejorará la retención. Sabremos que esto es cierto cuando observemos un incremento del 30% en la retención de usuarios diarios (DAU) y un 20% en satisfacción. | Desarrollar un servicio en el backend que cruce rutas favoritas con incidentes en tiempo real para enviar alertas push preventivas. | | | X | |
+| Creemos que la implementación de un historial de búsquedas reducirá la fricción. Sabremos que esto es cierto cuando observemos que el tiempo promedio de búsqueda disminuye en un 15%. | Implementar una sección en la pantalla de inicio con los últimos destinos consultados, almacenados localmente para acceso rápido. | | | | X |
+| Creemos que la inclusión de un módulo de administración de flotas aumentará la adopción corporativa. Sabremos que esto es cierto cuando observemos un aumento del 25% en la conversión a planes premium y un 50% en el uso diario. | Añadir un módulo en el portal de empresas que genere reportes gráficos e históricos sobre puntualidad, tiempos y eficiencia operativa. | | | X | |
+| Creemos que un indicador visual de ocupación mejorará la planificación de viaje. Sabremos que esto es cierto cuando la adopción de rutas alternativas crezca un 20% en periodos de alta demanda. | Desplegar una escala visual (Disponible, Moderado, Lleno) dentro del mapa para que los pasajeros gestionen su tiempo con autonomía. | | | X | |
+| Creemos que agregar traducción al inglés aumentará la base de usuarios. Sabremos que esto es cierto cuando observemos un aumento del 10% en los registros de usuarios con configuración en inglés en tres meses. | Implementar un sistema de internacionalización (i18n) para traducir la interfaz, abriendo el mercado a turistas y residentes extranjeros. | | X | | |
+
+---
 
 ### 8.2.6. Methods Selection.
 
@@ -5250,32 +5260,36 @@ Para llevar a cabo la validación de los experimentos en BusTrack, es fundamenta
 | Criterio | Google Analytics | Catchpoint | RedLine13 | Lighthouse |
 | :--- | :--- | :--- | :--- | :--- |
 | **Precio** | Versión gratuita muy completa (GA4), ideal para startups. | Modelo por suscripción de pago, aunque ofrece periodos de prueba gratuitos. | Cuenta con una capa gratuita funcional, sujeta a ciertas limitaciones de escala. | Totalmente gratuito, integrado en las herramientas de desarrollo del navegador. |
-| **Capacidad de Análisis** | Monitoreo profundo de la interacción, flujos de navegación y eventos específicos de los usuarios (pasajeros y empresas). | Supervisión integral del rendimiento de la plataforma y de la experiencia de usuario simulando distintos entornos y redes. | Especializado en la ejecución de pruebas de estrés y rendimiento de aplicaciones bajo alta concurrencia. | Auditoría técnica enfocada en la experiencia de usuario (UX), accesibilidad y métricas clave de carga (Core Web Vitals). |
+| **Capacidad de Análisis** | Monitoreo profundo de la interacción, flujos de navegación, reducción de tiempos de sesión y eventos específicos (historial, notificaciones). | Supervisión integral del rendimiento de la plataforma y de la experiencia de usuario simulando distintos entornos y redes. | Especializado en la ejecución de pruebas de estrés y rendimiento de aplicaciones bajo alta concurrencia. | Auditoría técnica enfocada en la experiencia de usuario (UX), accesibilidad y métricas clave de carga (Core Web Vitals). |
 | **Sencillez de Uso** | Curva de aprendizaje amigable, con dashboards intuitivos y métricas fáciles de interpretar. | Interfaz más avanzada y técnica, orientada a un análisis de red muy detallado y minucioso. | Provee reportes de rendimiento directos, combinando resúmenes ejecutivos con datos técnicos profundos. | Entrega resultados mediante un sistema de puntuación visual muy claro (0-100) fácil de asimilar. |
 | **Ventajas Principales** | Excelente para rastrear el éxito de las hipótesis, evaluar la retención y generar reportes integrables con otras plataformas. | Análisis en tiempo real de la latencia y disponibilidad desde múltiples ubicaciones, clave para el monitoreo de flotas de buses. | Permite simular picos de tráfico masivos (ej. horas punta de transporte) para asegurar que los servidores no colapsen. | Proporciona sugerencias prácticas y directas para optimizar la interfaz y acelerar la carga de la web app en dispositivos móviles. |
 
-### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+---
 
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+*(Esta sección se mantiene reservada para el desarrollo de KPIs técnicos específicos)*
+
+---
 
 ### 8.2.8. Web and Mobile Tracking Plan.
 
-Para BusTrack, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la movilidad urbana de los pasajeros, potenciar la participación comunitaria (crowdsourcing) y aumentar la adopción de nuestros planes B2B por parte de las empresas de transporte. A medida que avancemos hacia la etapa final de los experimentos, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+Para BusTrack, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la movilidad urbana de los pasajeros, reducir la fricción en la búsqueda de destinos y aumentar la adopción de nuestros planes B2B por parte de las empresas de transporte. A medida que avancemos hacia la etapa final de los experimentos, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
 
 El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
 
 #### 1. Implementación Inicial:
 
-Durante esta fase, nos enfocaremos en el lanzamiento de las nuevas funcionalidades (indicadores de aforo, reportes colaborativos, notificaciones predictivas, etc.) y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+Durante esta fase, nos enfocaremos en el lanzamiento de las nuevas funcionalidades (notificaciones de rutas, historial de búsquedas, indicadores de aforo, administración de flotas y traducción al inglés) y en la recolección de datos iniciales para establecer una línea base de rendimiento.
 
 **Recopilación de Datos:**
 
-*   **Métricas de Uso:** Se recopilarán datos sobre el uso general de la aplicación, incluyendo el número de usuarios activos diarios (DAU), la duración de las sesiones durante las horas punta, y las tasas de conversión de empresas hacia el panel de analítica avanzada (Premium).
-*   **Interacciones de los Usuarios:** Se registrarán las interacciones de los pasajeros con las nuevas características, como la cantidad de clics en el botón de "Reporte Rápido", la consulta de rutas offline, el uso del indicador de aforo, y la participación en el sistema de recompensas (gamificación).
-*   **Feedback de Usuarios:** A través de encuestas in-app (CSAT) y herramientas de retroalimentación no intrusivas, se recogerán opiniones sobre la percepción de precisión en los tiempos estimados (ETA) y la utilidad de las notificaciones sobre retrasos.
+*   **Métricas de Uso:** Se recopilarán datos sobre el uso general de la aplicación, incluyendo el número de usuarios activos diarios (DAU), la disminución del tiempo invertido en la pantalla de inicio, y las tasas de conversión de empresas hacia el panel de analítica avanzada (Premium).
+*   **Interacciones de los Usuarios:** Se registrarán las interacciones de los pasajeros con las nuevas características, como la cantidad de veces que se selecciona una ruta sugerida en el historial, la apertura de notificaciones *push*, y la consulta del indicador visual de aforo de los buses.
+*   **Feedback de Usuarios:** A través de encuestas in-app (CSAT) y herramientas de retroalimentación no intrusivas, se recogerán opiniones sobre la utilidad del historial rápido y la asertividad de las notificaciones predictivas.
 
 **Análisis Comparativo:**
 
-Se compararán los datos obtenidos durante esta fase de prueba con los datos históricos de la plataforma (estado *As-Is*) antes de la implementación de los experimentos, para evaluar el impacto inmediato de las mejoras en la reducción de la incertidumbre operativa.
+Se compararán los datos obtenidos durante esta fase de prueba con los datos históricos de la plataforma (estado *As-Is*) antes de la implementación de los experimentos, para evaluar el impacto inmediato de las mejoras en la agilidad de uso y la reducción de la incertidumbre operativa.
 
 #### 2. Seguimiento Continuo:
 
@@ -5283,16 +5297,14 @@ Después de la implementación inicial y validación de las hipótesis, se estab
 
 **Recopilación de Datos:**
 
-*   **Métricas en Tiempo Real:** Se utilizarán herramientas de analítica web y móvil (como Google Analytics 4) para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar patrones de tráfico, horarios de mayor congestión y adopción de rutas alternativas.
-*   **Segmentación de Usuarios:** Los datos se segmentarán por tipo de usuario (Pasajeros recurrentes, Turistas/Extranjeros usando la interfaz en inglés, Administradores de flota y Supervisores) para entender mejor cómo cada grupo interactúa con sus módulos específicos en la plataforma.
-*   **Tasa de Retención:** Se medirá la retención de usuarios a lo largo del tiempo (a 7, 14 y 30 días) para evaluar la efectividad de las notificaciones predictivas y la gamificación en mantener a los pasajeros comprometidos y fidelizados con la aplicación.
+*   **Métricas en Tiempo Real:** Se utilizarán herramientas de analítica web y móvil (como Google Analytics 4) para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar patrones de tráfico, rapidez en la decisión de viaje y adopción de rutas alternativas.
+*   **Segmentación de Usuarios:** Los datos se segmentarán por tipo de usuario (Pasajeros con rutas guardadas, Turistas/Extranjeros usando la interfaz en inglés, Administradores de flota y Supervisores) para entender mejor cómo cada grupo interactúa con sus módulos específicos en la plataforma.
+*   **Tasa de Retención:** Se medirá la retención de usuarios a lo largo del tiempo (a 7, 14 y 30 días) para evaluar la efectividad de las notificaciones personalizadas y la reducción de fricción generada por el historial de búsquedas.
 
 **Evaluación y Ajustes:**
 
 *   **Informes Periódicos:** Se generarán informes ejecutivos mensuales que resuman los hallazgos del seguimiento, comparando los resultados con las "Domain Business Metrics" definidas, e incluyendo recomendaciones para ajustes operativos.
-*   **Iteración Basada en Datos:** Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de la comunidad, asegurando que el algoritmo de ETA y el panel de las empresas evolucionen para satisfacer mejor las necesidades reales de movilidad y gestión.
-
-Este enfoque asegurará que BusTrack continúe evolucionando en función de datos empíricos y permita tomar decisiones informadas para transformar de manera positiva la experiencia del transporte público en Lima, tanto para los ciudadanos como para las empresas operadoras.
+*   **Iteración Basada en Datos:** Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de la comunidad, asegurando que las notificaciones, el sistema de búsqueda y el panel de las empresas evolucionen para satisfacer mejor las necesidades reales de movilidad y gestión.
 
 
 
